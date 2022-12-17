@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "oem",
+  "version": "${version}",
+
+  "name": "OrigamiKingsEnhancementMod",
+  "description": "",
+  "authors": [
+    "Me!"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+
+  "license": "",
+  "icon": "assets/modid/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.origamiking.mcmods.oem.OemMain"
+    ],
+    "fabric-datagen": [
+      "net.origamiking.mcmods.oem.datagen.ModDataGeneration"
+    ],
+    "client": [
+      "net.origamiking.mcmods.oem.OemClient"
+    ]
+},
+
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+  }
+}
