@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
+import net.minecraft.item.Item;
 import net.origamiking.mcmods.oem.blocks.ModBlocks;
 import net.origamiking.mcmods.oem.items.ModItems;
 
@@ -17,10 +18,6 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
        // blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TEST);
-        /*blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_CONCRETE_SLAB);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WHITE_CONCRETE_STAIR);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_CONCRETE_SLAB);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BLACK_CONCRETE_STAIR);*/
     }
 
     @Override
