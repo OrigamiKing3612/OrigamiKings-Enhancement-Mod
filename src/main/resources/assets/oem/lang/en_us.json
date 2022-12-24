@@ -1,0 +1,30 @@
+{
+  "block.oem.oak_ladder": "Oak Ladder",
+  "block.oem.spruce_ladder": "Spruce Ladder",
+  "block.oem.birch_ladder": "Birch Ladder",
+  "block.oem.jungle_ladder": "Jungle Ladder",
+  "block.oem.acacia_ladder": "Acacia Ladder",
+  "block.oem.dark_oak_ladder": "Dark Oak Ladder",
+  "block.oem.mangrove_ladder": "Mangrove Ladder",
+  "block.oem.crimson_ladder": "Crimson Ladder",
+  "block.oem.warped_ladder": "Warped Ladder",
+
+  "block.oem.oak_barrel": "Oak Barrel",
+  "block.oem.spruce_barrel": "Spruce Barrel",
+  "block.oem.birch_barrel": "Birch Barrel",
+  "block.oem.jungle_barrel": "Jungle Barrel",
+  "block.oem.acacia_barrel": "Acacia Barrel",
+  "block.oem.dark_oak_barrel": "Dark Oak Barrel",
+  "block.oem.mangrove_barrel": "Mangrove Barrel",
+  "block.oem.crimson_barrel": "Crimson Barrel",
+  "block.oem.warped_barrel": "Warped Barrel",
+
+  "block.oem.spruce_bookshelf": "Spruce Bookshelf",
+  "block.oem.birch_bookshelf": "Birch Bookshelf",
+  "block.oem.jungle_bookshelf": "Jungle Bookshelf",
+  "block.oem.acacia_bookshelf": "Acacia Bookshelf",
+  "block.oem.dark_oak_bookshelf": "Dark Oak Bookshelf",
+  "block.oem.mangrove_bookshelf": "Mangrove Bookshelf",
+  "block.oem.crimson_bookshelf": "Crimson Bookshelf",
+  "block.oem.warped_bookshelf": "Warped Bookshelf"
+}

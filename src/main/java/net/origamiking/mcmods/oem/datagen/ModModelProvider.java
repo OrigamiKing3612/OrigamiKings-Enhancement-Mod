@@ -18,6 +18,15 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
        // blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TEST);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.SPRUCE_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.BIRCH_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.JUNGLE_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.ACACIA_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DARK_OAK_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MANGROVE_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WARPED_BOOKSHELF);
+
     }
 
     @Override

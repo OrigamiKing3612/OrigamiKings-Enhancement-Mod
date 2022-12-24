@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "oem:block/ladder/mangrove_ladder",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "oem:block/ladder/mangrove_ladder"
+    },
+    "facing=south": {
+      "model": "oem:block/ladder/mangrove_ladder",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "oem:block/ladder/mangrove_ladder",
+      "y": 270
+    }
+  }
+}

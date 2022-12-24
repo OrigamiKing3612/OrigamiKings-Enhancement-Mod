@@ -1,7 +1,10 @@
 package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.provider.FabricLootTableProvider;
 import net.fabricmc.fabric.api.datagen.v1.provider.SimpleFabricLootTableProvider;
+import net.fabricmc.tinyremapper.ClassInstance;
+import net.minecraft.block.Block;
 import net.minecraft.data.server.loottable.BlockLootTableGenerator;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.context.LootContextType;
@@ -19,5 +22,6 @@ public class ModLootTableGenerator extends SimpleFabricLootTableProvider {
     @Override
     public void accept(BiConsumer<Identifier, LootTable.Builder> identifierBuilderBiConsumer) {
         //identifierBuilderBiConsumer.accept(new Identifier(OemMain.MOD_ID, "blocks/test"), BlockLootTableGenerator.drops(ModBlocks.TEST));
+        //identifierBuilderBiConsumer.accept(new Identifier(OemMain.MOD_ID, "blocks/spruce_barrel"), BlockLootTableGenerator.drops(ModBlocks.SPRUCE_BARREL));
     }
 }

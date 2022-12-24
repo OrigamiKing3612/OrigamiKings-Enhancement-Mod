@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "oem:acacia_ladder",
+    "oem:birch_ladder",
+    "oem:crimson_ladder",
+    "oem:dark_oak_ladder",
+    "oem:jungle_ladder",
+    "oem:oak_ladder",
+    "oem:spruce_ladder",
+    "oem:warped_ladder"
+  ]
+}
