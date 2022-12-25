@@ -6,15 +6,15 @@
   "name": "OrigamiKingsEnhancementMod",
   "description": "",
   "authors": [
-    "Me!"
+    "OrigamiKing3612"
   ],
   "contact": {
     "homepage": "",
     "sources": ""
   },
 
-  "license": "",
-  "icon": "assets/modid/icon.png",
+  "license": "Apache-2.0",
+  "icon": "",
 
   "environment": "*",
   "entrypoints": {
