@@ -26,6 +26,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MANGROVE_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WARPED_BOOKSHELF);
+        blockStateModelGenerator.registerLantern(ModBlocks.GOLD_LANTERN);
 
     }
 

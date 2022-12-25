@@ -26,5 +26,22 @@
   "block.oem.dark_oak_bookshelf": "Dark Oak Bookshelf",
   "block.oem.mangrove_bookshelf": "Mangrove Bookshelf",
   "block.oem.crimson_bookshelf": "Crimson Bookshelf",
-  "block.oem.warped_bookshelf": "Warped Bookshelf"
+  "block.oem.warped_bookshelf": "Warped Bookshelf",
+
+  "block.oem.white_concrete_stairs": "White Concrete Stairs",
+  "block.oem.light_gray_concrete_stairs": "Light Gray Concrete Stairs",
+  "block.oem.gray_concrete_stairs": "Gray Concrete Stairs",
+  "block.oem.black_concrete_stairs": "Black Concrete Stairs",
+  "block.oem.brown_concrete_stairs": "Brown Concrete Stairs",
+  "block.oem.red_concrete_stairs": "Red Concrete Stairs",
+  "block.oem.orange_concrete_stairs": "Orange Concrete Stairs",
+  "block.oem.yellow_concrete_stairs": "Yellow Concrete Stairs",
+  "block.oem.lime_concrete_stairs": "Lime Concrete Stairs",
+  "block.oem.green_concrete_stairs": "Green Concrete Stairs",
+  "block.oem.cyan_concrete_stairs": "Cyan Concrete Stairs",
+  "block.oem.light_blue_concrete_stairs": "Light Blue Concrete Stairs",
+  "block.oem.blue_concrete_stairs": "Blue Concrete Stairs",
+  "block.oem.purple_concrete_stairs": "Purple Concrete Stairs",
+  "block.oem.magenta_concrete_stairs": "Magenta Concrete Stairs",
+  "block.oem.pink_concrete_stairs": "Pink Concrete Stairs"
 }
