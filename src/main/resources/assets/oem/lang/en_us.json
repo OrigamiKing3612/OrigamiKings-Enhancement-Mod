@@ -43,5 +43,26 @@
   "block.oem.blue_concrete_stairs": "Blue Concrete Stairs",
   "block.oem.purple_concrete_stairs": "Purple Concrete Stairs",
   "block.oem.magenta_concrete_stairs": "Magenta Concrete Stairs",
-  "block.oem.pink_concrete_stairs": "Pink Concrete Stairs"
+  "block.oem.pink_concrete_stairs": "Pink Concrete Stairs",
+  "block.oem.sculk_stairs": "Sculk Stairs",
+
+  "block.oem.white_concrete_slab": "White Concrete Slab",
+  "block.oem.light_gray_concrete_slab": "Light Gray Concrete Slab",
+  "block.oem.gray_concrete_slab": "Gray Concrete Slab",
+  "block.oem.black_concrete_slab": "Black Concrete Slab",
+  "block.oem.brown_concrete_slab": "Brown Concrete Slab",
+  "block.oem.red_concrete_slab": "Red Concrete Slab",
+  "block.oem.orange_concrete_slab": "Orange Concrete Slab",
+  "block.oem.yellow_concrete_slab": "Yellow Concrete Slab",
+  "block.oem.lime_concrete_slab": "Lime Concrete Slab",
+  "block.oem.green_concrete_slab": "Green Concrete Slab",
+  "block.oem.cyan_concrete_slab": "Cyan Concrete Slab",
+  "block.oem.light_blue_concrete_slab": "Light Blue Concrete Slab",
+  "block.oem.blue_concrete_slab": "Blue Concrete Slab",
+  "block.oem.purple_concrete_slab": "Purple Concrete Slab",
+  "block.oem.magenta_concrete_slab": "Magenta Concrete Slab",
+  "block.oem.pink_concrete_slab": "Pink Concrete Slab",
+  "block.oem.sculk_slab": "Sculk Slab"
+
+
 }

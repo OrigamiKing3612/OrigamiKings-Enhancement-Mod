@@ -79,6 +79,8 @@ public class ModGroups {
                 entries.add(ModBlocks.MAGENTA_CONCRETE_SLAB);
                 entries.add(ModBlocks.PINK_CONCRETE_STAIR);
                 entries.add(ModBlocks.PINK_CONCRETE_SLAB);
+                entries.add(ModBlocks.SCULK_STAIR);
+                entries.add(ModBlocks.SCULK_SLAB);
             })
             .build();
     public static void register() {

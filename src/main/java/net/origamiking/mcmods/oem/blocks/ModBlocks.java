@@ -33,6 +33,7 @@ public class ModBlocks {
     public static final Block PURPLE_CONCRETE_STAIR = registerBlock("purple_concrete_stairs", new StairsBlock(Blocks.PURPLE_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
     public static final Block MAGENTA_CONCRETE_STAIR = registerBlock("magenta_concrete_stairs", new StairsBlock(Blocks.MAGENTA_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
     public static final Block PINK_CONCRETE_STAIR = registerBlock("pink_concrete_stairs", new StairsBlock(Blocks.PINK_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block SCULK_STAIR = registerBlock("sculk_stairs", new StairsBlock(Blocks.SCULK.getDefaultState(),FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool()));
     public static final Block OAK_BARREL = registerBlock("oak_barrel", new BarrelBlock(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool()));
     public static final Block SPRUCE_BARREL = registerBlock("spruce_barrel", new BarrelBlock(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool()));
     public static final Block BIRCH_BARREL = registerBlock("birch_barrel", new BarrelBlock(FabricBlockSettings.of(Material.WOOD).strength(4f).requiresTool()));
@@ -62,22 +63,23 @@ public class ModBlocks {
     public static final Block WARPED_LADDER = registerBlock("warped_ladder", new LadderBlock(FabricBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool()));
 
     public  static final Block GOLD_LANTERN = registerBlock("gold_lantern", new LanternBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool().luminance(10)));
-    public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab", new StairsBlock(Blocks.WHITE_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block BLACK_CONCRETE_SLAB = registerBlock("black_concrete_slab", new StairsBlock(Blocks.BLACK_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block LIGHT_GRAY_CONCRETE_SLAB = registerBlock("light_gray_concrete_slab", new StairsBlock(Blocks.LIGHT_GRAY_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block GRAY_CONCRETE_SLAB = registerBlock("gray_concrete_slab", new StairsBlock(Blocks.GRAY_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block BROWN_CONCRETE_SLAB = registerBlock("brown_concrete_slab", new StairsBlock(Blocks.BROWN_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block RED_CONCRETE_SLAB = registerBlock("red_concrete_slab", new StairsBlock(Blocks.RED_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block ORANGE_CONCRETE_SLAB = registerBlock("orange_concrete_slab", new StairsBlock(Blocks.ORANGE_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block YELLOW_CONCRETE_SLAB = registerBlock("yellow_concrete_slab", new StairsBlock(Blocks.YELLOW_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block LIME_CONCRETE_SLAB = registerBlock("lime_concrete_slab", new StairsBlock(Blocks.LIME_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block GREEN_CONCRETE_SLAB = registerBlock("green_concrete_slab", new StairsBlock(Blocks.GREEN_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block CYAN_CONCRETE_SLAB = registerBlock("cyan_concrete_slab", new StairsBlock(Blocks.CYAN_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block LIGHT_BLUE_CONCRETE_SLAB = registerBlock("light_blue_concrete_slab", new StairsBlock(Blocks.LIGHT_BLUE_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block BLUE_CONCRETE_SLAB = registerBlock("blue_concrete_slab", new StairsBlock(Blocks.PURPLE_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block PURPLE_CONCRETE_SLAB = registerBlock("purple_concrete_slab", new StairsBlock(Blocks.PURPLE_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block MAGENTA_CONCRETE_SLAB = registerBlock("magenta_concrete_slab", new StairsBlock(Blocks.MAGENTA_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
-    public static final Block PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab", new StairsBlock(Blocks.PINK_CONCRETE.getDefaultState(),FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block BLACK_CONCRETE_SLAB = registerBlock("black_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block LIGHT_GRAY_CONCRETE_SLAB = registerBlock("light_gray_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block GRAY_CONCRETE_SLAB = registerBlock("gray_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block BROWN_CONCRETE_SLAB = registerBlock("brown_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block RED_CONCRETE_SLAB = registerBlock("red_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block ORANGE_CONCRETE_SLAB = registerBlock("orange_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block YELLOW_CONCRETE_SLAB = registerBlock("yellow_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block LIME_CONCRETE_SLAB = registerBlock("lime_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block GREEN_CONCRETE_SLAB = registerBlock("green_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block CYAN_CONCRETE_SLAB = registerBlock("cyan_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block LIGHT_BLUE_CONCRETE_SLAB = registerBlock("light_blue_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block BLUE_CONCRETE_SLAB = registerBlock("blue_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block PURPLE_CONCRETE_SLAB = registerBlock("purple_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block MAGENTA_CONCRETE_SLAB = registerBlock("magenta_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
+    public static final Block SCULK_SLAB = registerBlock("sculk_slab", new SlabBlock(FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool()));
 
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
