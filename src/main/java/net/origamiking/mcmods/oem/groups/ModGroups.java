@@ -81,6 +81,8 @@ public class ModGroups {
                 entries.add(ModBlocks.PINK_CONCRETE_SLAB);
                 entries.add(ModBlocks.SCULK_STAIR);
                 entries.add(ModBlocks.SCULK_SLAB);
+                //entries.add(ModBlocks.TINTED_GLASS_PANE);
+                entries.add(ModBlocks.GOLD_CHAIN);
             })
             .build();
     public static void register() {

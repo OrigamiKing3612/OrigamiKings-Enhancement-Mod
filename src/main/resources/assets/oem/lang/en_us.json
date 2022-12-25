@@ -62,7 +62,9 @@
   "block.oem.purple_concrete_slab": "Purple Concrete Slab",
   "block.oem.magenta_concrete_slab": "Magenta Concrete Slab",
   "block.oem.pink_concrete_slab": "Pink Concrete Slab",
-  "block.oem.sculk_slab": "Sculk Slab"
+  "block.oem.sculk_slab": "Sculk Slab",
+
+  "block.oem.gold_chain": "Gold Chain"
 
 
 }

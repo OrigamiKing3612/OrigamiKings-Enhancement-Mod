@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "PSP",
+      "P P",
+      "PSP"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:birch_slab"
+      },
+      "P": {
+        "item": "minecraft:birch_planks"
+      }
+    },
+    "result": {
+      "item": "oem:birch_barrel"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "PSP",
+      "P P",
+      "PSP"
+    ],
+    "key": {
+      "S": {
+        "item": "minecraft:crimson_slab"
+      },
+      "P": {
+        "item": "minecraft:crimson_planks"
+      }
+    },
+    "result": {
+      "item": "oem:crimson_barrel"
+    }
+}

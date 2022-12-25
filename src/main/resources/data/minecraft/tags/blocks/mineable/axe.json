@@ -1,0 +1,32 @@
+{
+  "replace": false,
+  "values": [
+    "oem:oak_barrel",
+    "oem:oak_ladder",
+    "oem:spruce_barrel",
+    "oem:spruce_bookshelf",
+    "oem:spruce_ladder",
+    "oem:birch_barrel",
+    "oem:birch_bookshelf",
+    "oem:birch_ladder",
+    "oem:jungle_barrel",
+    "oem:jungle_bookshelf",
+    "oem:jungle_ladder",
+    "oem:acacia_barrel",
+    "oem:acacia_bookshelf",
+    "oem:acacia_ladder",
+    "oem:dark_oak_barrel",
+    "oem:dark_oak_bookshelf",
+    "oem:dark_oak_ladder",
+    "oem:mangrove_barrel",
+    "oem:mangrove_bookshelf",
+    "oem:mangrove_ladder",
+    "oem:crimson_barrel",
+    "oem:crimson_bookshelf",
+    "oem:crimson_ladder",
+    "oem:warped_barrel",
+    "oem:warped_bookshelf",
+    "oem:warped_ladder"
+
+  ]
+}

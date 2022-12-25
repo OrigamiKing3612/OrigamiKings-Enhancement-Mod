@@ -81,6 +81,9 @@ public class ModBlocks {
     public static final Block PINK_CONCRETE_SLAB = registerBlock("pink_concrete_slab", new SlabBlock(FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool()));
     public static final Block SCULK_SLAB = registerBlock("sculk_slab", new SlabBlock(FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool()));
 
+    //public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane.json", new StainedGlassPaneBlock(FabricBlockSettings.of(Material.GLASS).strength(4f).requiresTool()));
+
+    public static final Block GOLD_CHAIN = registerBlock("gold_chain",new ChainBlock(FabricBlockSettings.of(Material.METAL).strength(4f).requiresTool()));
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
