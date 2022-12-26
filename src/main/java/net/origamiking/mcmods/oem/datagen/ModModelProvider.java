@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.BlockStateModelGenerator;
+import net.minecraft.data.client.BlockStateSupplier;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
 import net.minecraft.item.Item;
@@ -26,10 +27,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MANGROVE_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.CRIMSON_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.WARPED_BOOKSHELF);
-        blockStateModelGenerator.registerLantern(ModBlocks.GOLD_LANTERN);
 
     }
-
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         //itemModelGenerator.register(ModItems.TEST, Models.GENERATED);

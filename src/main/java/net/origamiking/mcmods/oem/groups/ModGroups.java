@@ -1,9 +1,11 @@
 package net.origamiking.mcmods.oem.groups;
 
+import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.Blocks;
+import net.minecraft.client.render.RenderLayer;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -83,6 +85,40 @@ public class ModGroups {
                 entries.add(ModBlocks.SCULK_SLAB);
                 //entries.add(ModBlocks.TINTED_GLASS_PANE);
                 entries.add(ModBlocks.GOLD_CHAIN);
+                entries.add(ModBlocks.GLASS_STAIR);
+                entries.add(ModBlocks.GLASS_SLAB);
+                entries.add(ModBlocks.WHITE_GLASS_STAIR);
+                entries.add(ModBlocks.WHITE_GLASS_SLAB);
+                entries.add(ModBlocks.LIGHT_GRAY_GLASS_SLAB);
+                entries.add(ModBlocks.LIGHT_GRAY_GLASS_STAIR);
+                entries.add(ModBlocks.GRAY_GLASS_SLAB);
+                entries.add(ModBlocks.GRAY_GLASS_STAIR);
+                entries.add(ModBlocks.BLACK_GLASS_SLAB);
+                entries.add(ModBlocks.BLACK_GLASS_STAIR);
+                entries.add(ModBlocks.BROWN_GLASS_SLAB);
+                entries.add(ModBlocks.BROWN_GLASS_STAIR);
+                entries.add(ModBlocks.RED_GLASS_SLAB);
+                entries.add(ModBlocks.RED_GLASS_STAIR);
+                entries.add(ModBlocks.ORANGE_GLASS_SLAB);
+                entries.add(ModBlocks.ORANGE_GLASS_STAIR);
+                entries.add(ModBlocks.YELLOW_GLASS_SLAB);
+                entries.add(ModBlocks.YELLOW_GLASS_STAIR);
+                entries.add(ModBlocks.LIME_GLASS_SLAB);
+                entries.add(ModBlocks.LIME_GLASS_STAIR);
+                entries.add(ModBlocks.GREEN_GLASS_SLAB);
+                entries.add(ModBlocks.GREEN_GLASS_STAIR);
+                entries.add(ModBlocks.CYAN_GLASS_SLAB);
+                entries.add(ModBlocks.CYAN_GLASS_STAIR);
+                entries.add(ModBlocks.LIGHT_BLUE_GLASS_SLAB);
+                entries.add(ModBlocks.LIGHT_BLUE_GLASS_STAIR);
+                entries.add(ModBlocks.BLUE_GLASS_SLAB);
+                entries.add(ModBlocks.BLUE_GLASS_STAIR);
+                entries.add(ModBlocks.PURPLE_GLASS_SLAB);
+                entries.add(ModBlocks.PURPLE_GLASS_STAIR);
+                entries.add(ModBlocks.MAGENTA_GLASS_SLAB);
+                entries.add(ModBlocks.MAGENTA_GLASS_STAIR);
+                entries.add(ModBlocks.PINK_GLASS_SLAB);
+                entries.add(ModBlocks.PINK_GLASS_STAIR);
             })
             .build();
     public static void register() {
