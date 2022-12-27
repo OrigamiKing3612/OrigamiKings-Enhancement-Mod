@@ -3,16 +3,18 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:glass"
+      "item": "minecraft:gold_nugget"
+    },
+    "C": {
+      "item": "minecraft:candle"
     }
   },
   "pattern": [
-    "#  ",
-    "## ",
+    "###",
+    "#C#",
     "###"
   ],
   "result": {
-    "count": 4,
-    "item": "oem:glass_stairs"
+    "item": "oem:gold_lantern"
   }
 }
