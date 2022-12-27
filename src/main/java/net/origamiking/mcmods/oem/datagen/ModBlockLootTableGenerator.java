@@ -126,6 +126,11 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(ModBlocksGlass.GLASS_STAIR);
         addDrop(ModBlocksServerSpecific.CAVERNS_BLOCK_ONE);
         addDrop(ModBlocksServerSpecific.CAVERNS_BLOCK_TWO);
+        addDrop(ModBlocksServerSpecific.CAVERNS_BLOCK_THREE);
+        addDrop(ModBlocksServerSpecific.CAVERNS_BLOCK_FOUR);
+        addDrop(ModBlocksServerSpecific.CAVERNS_BLOCK_FIVE);
+        addDrop(ModBlocksServerSpecific.CAVERNS_BLOCK_SIX);
+        addDrop(ModBlocksServerSpecific.GOLD_LANTERN);
 
     }
 }

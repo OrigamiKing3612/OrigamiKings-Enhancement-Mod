@@ -139,6 +139,7 @@ public class ModGroups {
                 entries.add(ModBlocksServerSpecific.CAVERNS_BLOCK_THREE);
                 entries.add(ModBlocksServerSpecific.CAVERNS_BLOCK_FOUR);
                 entries.add(ModBlocksServerSpecific.CAVERNS_BLOCK_FIVE);
+                entries.add(ModBlocksServerSpecific.CAVERNS_BLOCK_SIX);
             }).build();
     public static void register() {
         OemMain.LOGGER.info("Registering Groups");

@@ -34,6 +34,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocksServerSpecific.CAVERNS_BLOCK_THREE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocksServerSpecific.CAVERNS_BLOCK_FOUR);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocksServerSpecific.CAVERNS_BLOCK_FIVE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocksServerSpecific.CAVERNS_BLOCK_SIX);
 
     }
     @Override

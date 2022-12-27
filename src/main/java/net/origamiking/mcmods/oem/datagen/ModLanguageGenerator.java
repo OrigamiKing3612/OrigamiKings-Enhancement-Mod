@@ -52,7 +52,7 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
         translationBuilder.add(ModBlocksGlass.MAGENTA_GLASS_STAIR, "Magenta Glass Stair");
         translationBuilder.add(ModBlocksGlass.PINK_GLASS_SLAB, "Pink Glass Slab");
         translationBuilder.add(ModBlocksGlass.PINK_GLASS_STAIR, "Pink Glass Stair");*/
-        translationBuilder.add(ModBlocksServerSpecific.GOLD_LANTERN, "Gold Lantern");
+        //translationBuilder.add(ModBlocksServerSpecific.GOLD_LANTERN, "Gold Lantern");
 
 
 
