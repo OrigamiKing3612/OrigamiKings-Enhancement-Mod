@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-
+    "oem:snow_block_slab",
+    "oem:snow_block_stairs"
   ]
 }

@@ -10,7 +10,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
 
-public class ModBlocksGlass {
+public class GlassBlocks {
     public static final Block GLASS_STAIR = registerBlock("glass_stairs", new StairsBlock(Blocks.GLASS.getDefaultState(), FabricBlockSettings.of(Material.GLASS).strength(0.3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.GLASS)));
     public static final Block GLASS_SLAB = registerBlock("glass_slab", new SlabBlock(FabricBlockSettings.of(Material.GLASS).strength(0.3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.GLASS)));
     public static final Block WHITE_GLASS_STAIR = registerBlock("white_glass_stairs", new StairsBlock(Blocks.GLASS.getDefaultState(), FabricBlockSettings.of(Material.GLASS).strength(0.3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.GLASS)));
@@ -45,6 +45,8 @@ public class ModBlocksGlass {
     public static final Block MAGENTA_GLASS_STAIR = registerBlock("magenta_glass_stairs", new StairsBlock(Blocks.GLASS.getDefaultState(), FabricBlockSettings.of(Material.GLASS).strength(0.3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.GLASS)));
     public static final Block PINK_GLASS_SLAB = registerBlock("pink_glass_slab", new SlabBlock(FabricBlockSettings.of(Material.GLASS).strength(0.3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.GLASS)));
     public static final Block PINK_GLASS_STAIR = registerBlock("pink_glass_stairs", new StairsBlock(Blocks.GLASS.getDefaultState(), FabricBlockSettings.of(Material.GLASS).strength(0.3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.GLASS)));
+
+
 
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));

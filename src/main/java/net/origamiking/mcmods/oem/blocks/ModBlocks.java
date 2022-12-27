@@ -1,23 +1,22 @@
 package net.origamiking.mcmods.oem.blocks;
 
-import com.sun.source.tree.LambdaExpressionTree;
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
-import net.origamiking.mcmods.oem.blocks.concrete.ModBlocksConcreteSlabs;
-import net.origamiking.mcmods.oem.blocks.concrete.ModBlocksConcreteStairs;
-import net.origamiking.mcmods.oem.blocks.glass.ModBlocksGlass;
-import net.origamiking.mcmods.oem.blocks.sculk.ModBlocksSculk;
-import net.origamiking.mcmods.oem.blocks.server_specific.ModBlocksServerSpecific;
-import net.origamiking.mcmods.oem.blocks.wood.barrel.ModBlocksBarrels;
-import net.origamiking.mcmods.oem.blocks.wood.bookshelf.ModBlocksBookshelf;
-import net.origamiking.mcmods.oem.blocks.wood.ladder.ModBlocksLadder;
+import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
+import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
+import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
+import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
+import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
+import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
+import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.barrel.BarrelBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.bookshelf.BookshelfBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.ladder.LadderBlocks;
 
 
 public class ModBlocks {
@@ -31,14 +30,16 @@ public class ModBlocks {
         return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, name), block);
     }
     public static void register() {
-        ModBlocksGlass.getGlassBlocks();
-        ModBlocksConcreteSlabs.getConcreteBlocks();
-        ModBlocksConcreteStairs.getConcreteStairs();
-        ModBlocksSculk.getSculkBlocks();
-        ModBlocksBarrels.getBarrels();
-        ModBlocksLadder.getLadders();
-        ModBlocksBookshelf.getBookshelfs();
-        ModBlocksServerSpecific.getServerSpecific();
+        GlassBlocks.getGlassBlocks();
+        ConcreteSlabs.getConcreteBlocks();
+        ConcreteStairs.getConcreteStairs();
+        SculkBlocks.getSculkBlocks();
+        BarrelBlocks.getBarrels();
+        LadderBlocks.getLadders();
+        BookshelfBlocks.getBookshelfs();
+        ServerSpecificBlocks.getServerSpecific();
+        AmethystBlocks.getAmethyst();
+        RandomBlocks.getRandomBlocks();
         OemMain.LOGGER.info("Registering Blocks for OEM");
     }
 }

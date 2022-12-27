@@ -66,6 +66,18 @@
     "oem:purple_glass_slab",
     "oem:pink_glass_stairs",
     "oem:pink_glass_slab",
-    "oem:gold_lantern"
+    "oem:gold_lantern",
+    "oem:amethyst_block_stairs",
+    "oem:amethyst_block_slab",
+    "oem:calcite_stairs",
+    "oem:calcite_slab",
+    "oem:tuff_slab",
+    "oem:tuff_stairs",
+    "oem:smooth_basalt_slab",
+    "oem:smooth_basalt_stairs",
+    "oem:netherraack_slab",
+    "oem:netherrack_stairs",
+    "oem:dripstone_block_slab",
+    "oem:dripstone_block_stairs"
   ]
 }
