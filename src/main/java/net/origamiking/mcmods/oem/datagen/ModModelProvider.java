@@ -4,7 +4,14 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.bookshelf.BookshelfBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -14,14 +21,14 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
        // blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TEST);
-        blockStateModelGenerator.registerSimpleCubeAll(BookshelfBlocks.SPRUCE_BOOKSHELF);
-        blockStateModelGenerator.registerSimpleCubeAll(BookshelfBlocks.BIRCH_BOOKSHELF);
-        blockStateModelGenerator.registerSimpleCubeAll(BookshelfBlocks.JUNGLE_BOOKSHELF);
-        blockStateModelGenerator.registerSimpleCubeAll(BookshelfBlocks.ACACIA_BOOKSHELF);
-        blockStateModelGenerator.registerSimpleCubeAll(BookshelfBlocks.DARK_OAK_BOOKSHELF);
-        blockStateModelGenerator.registerSimpleCubeAll(BookshelfBlocks.MANGROVE_BOOKSHELF);
-        blockStateModelGenerator.registerSimpleCubeAll(BookshelfBlocks.CRIMSON_BOOKSHELF);
-        blockStateModelGenerator.registerSimpleCubeAll(BookshelfBlocks.WARPED_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(SpruceWoodBlocks.SPRUCE_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(BirchWoodBlocks.BIRCH_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(JungleWoodBlocks.JUNGLE_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(AcaciaWoodBlocks.ACACIA_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(DarkOakWoodBlocks.DARK_OAK_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(MangroveWoodBlocks.MANGROVE_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(CrimsonWoodBlocks.CRIMSON_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(WarpedWoodBlocks.WARPED_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
         blockStateModelGenerator.registerSimpleCubeAll(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
         blockStateModelGenerator.registerSimpleCubeAll(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);

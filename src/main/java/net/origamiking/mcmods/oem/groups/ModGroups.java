@@ -15,41 +15,48 @@ import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.barrel.BarrelBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.bookshelf.BookshelfBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.ladder.LadderBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 
 public class ModGroups {
     private static final ItemGroup OEM_GROUP = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group"))
             .displayName(Text.literal("OrigamiKing's Enchancement Mod"))
-            .icon(() -> new ItemStack(BarrelBlocks.SPRUCE_BARREL))
+            .icon(() -> new ItemStack(SpruceWoodBlocks.SPRUCE_BARREL))
             .entries((enabledFeatures, entries, operatorEnabled) -> {
-                entries.add(BarrelBlocks.OAK_BARREL);
+                entries.add(OakWoodBlocks.OAK_BARREL);
                 entries.add(Blocks.BOOKSHELF);
                 entries.add(LadderBlocks.OAK_LADDER);
-                entries.add(BarrelBlocks.SPRUCE_BARREL);
-                entries.add(BookshelfBlocks.SPRUCE_BOOKSHELF);
+                entries.add(SpruceWoodBlocks.SPRUCE_BARREL);
+                entries.add(SpruceWoodBlocks.SPRUCE_BOOKSHELF);
                 entries.add(LadderBlocks.SPRUCE_LADDER);
-                entries.add(BarrelBlocks.BIRCH_BARREL);
-                entries.add(BookshelfBlocks.BIRCH_BOOKSHELF);
+                entries.add(BirchWoodBlocks.BIRCH_BARREL);
+                entries.add(BirchWoodBlocks.BIRCH_BOOKSHELF);
                 entries.add(LadderBlocks.BIRCH_LADDER);
-                entries.add(BarrelBlocks.JUNGLE_BARREL);
-                entries.add(BookshelfBlocks.JUNGLE_BOOKSHELF);
+                entries.add(JungleWoodBlocks.JUNGLE_BARREL);
+                entries.add(JungleWoodBlocks.JUNGLE_BOOKSHELF);
                 entries.add(LadderBlocks.JUNGLE_LADDER);
-                entries.add(BarrelBlocks.ACACIA_BARREL);
-                entries.add(BookshelfBlocks.ACACIA_BOOKSHELF);
+                entries.add(AcaciaWoodBlocks.ACACIA_BARREL);
+                entries.add(AcaciaWoodBlocks.ACACIA_BOOKSHELF);
                 entries.add(LadderBlocks.ACACIA_LADDER);
-                entries.add(BarrelBlocks.DARK_OAK_BARREL);
-                entries.add(BookshelfBlocks.DARK_OAK_BOOKSHELF);
+                entries.add(DarkOakWoodBlocks.DARK_OAK_BARREL);
+                entries.add(DarkOakWoodBlocks.DARK_OAK_BOOKSHELF);
                 entries.add(LadderBlocks.DARK_OAK_LADDER);
-                entries.add(BarrelBlocks.MANGROVE_BARREL);
-                entries.add(BookshelfBlocks.MANGROVE_BOOKSHELF);
+                entries.add(MangroveWoodBlocks.MANGROVE_BARREL);
+                entries.add(MangroveWoodBlocks.MANGROVE_BOOKSHELF);
                 entries.add(LadderBlocks.MANGROVE_LADDER);
-                entries.add(BarrelBlocks.CRIMSON_BARREL);
-                entries.add(BookshelfBlocks.CRIMSON_BOOKSHELF);
+                entries.add(CrimsonWoodBlocks.CRIMSON_BARREL);
+                entries.add(CrimsonWoodBlocks.CRIMSON_BOOKSHELF);
                 entries.add(LadderBlocks.CRIMSON_LADDER);
-                entries.add(BarrelBlocks.WARPED_BARREL);
-                entries.add(BookshelfBlocks.WARPED_BOOKSHELF);
+                entries.add(WarpedWoodBlocks.WARPED_BARREL);
+                entries.add(WarpedWoodBlocks.WARPED_BOOKSHELF);
                 entries.add(LadderBlocks.WARPED_LADDER);
                 entries.add(ConcreteStairs.WHITE_CONCRETE_STAIR);
                 entries.add(ConcreteSlabs.WHITE_CONCRETE_SLAB);

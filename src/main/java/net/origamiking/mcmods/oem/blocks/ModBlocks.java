@@ -14,9 +14,16 @@ import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.barrel.BarrelBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.bookshelf.BookshelfBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.ladder.LadderBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 
 
 public class ModBlocks {
@@ -34,12 +41,20 @@ public class ModBlocks {
         ConcreteSlabs.getConcreteBlocks();
         ConcreteStairs.getConcreteStairs();
         SculkBlocks.getSculkBlocks();
-        BarrelBlocks.getBarrels();
         LadderBlocks.getLadders();
-        BookshelfBlocks.getBookshelfs();
         ServerSpecificBlocks.getServerSpecific();
         AmethystBlocks.getAmethyst();
         RandomBlocks.getRandomBlocks();
+        //geting wood blocks
+        OakWoodBlocks.getOakBlocks();
+        SpruceWoodBlocks.getSpruceBlocks();
+        BirchWoodBlocks.getBirchBlocks();
+        JungleWoodBlocks.getJungleBlocks();
+        AcaciaWoodBlocks.getAcaciaBlocks();
+        DarkOakWoodBlocks.getDarkOakBlocks();
+        MangroveWoodBlocks.getMangroveBlocks();
+        CrimsonWoodBlocks.getCrimsonBlocks();
+        WarpedWoodBlocks.getWarpedBlocks();
         OemMain.LOGGER.info("Registering Blocks for OEM");
     }
 }
