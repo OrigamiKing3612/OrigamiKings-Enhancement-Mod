@@ -2,7 +2,6 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
-import net.minecraft.entity.ai.brain.task.PrepareRamTask;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
@@ -15,11 +14,12 @@ import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.ladder.LadderBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+
+import javax.tools.StandardJavaFileManager;
 
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     public ModBlockLootTableGenerator(FabricDataOutput dataOutput) {
@@ -63,29 +63,29 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(SculkBlocks.SCULK_STAIR);
         addDrop(SculkBlocks.SCULK_SLAB);
         addDrop(OakWoodBlocks.OAK_BARREL);
-        addDrop(LadderBlocks.OAK_LADDER);
+        addDrop(OakWoodBlocks.OAK_LADDER);
         addDrop(SpruceWoodBlocks.SPRUCE_BARREL);
-        addDrop(LadderBlocks.SPRUCE_LADDER);
+        addDrop(SpruceWoodBlocks.SPRUCE_LADDER);
         addDrop(SpruceWoodBlocks.SPRUCE_BOOKSHELF);
-        addDrop(LadderBlocks.BIRCH_LADDER);
+        addDrop(BirchWoodBlocks.BIRCH_LADDER);
         addDrop(BirchWoodBlocks.BIRCH_BARREL);
         addDrop(BirchWoodBlocks.BIRCH_BOOKSHELF);
-        addDrop(LadderBlocks.JUNGLE_LADDER);
+        addDrop(JungleWoodBlocks.JUNGLE_LADDER);
         addDrop(JungleWoodBlocks.JUNGLE_BOOKSHELF);
         addDrop(JungleWoodBlocks.JUNGLE_BARREL);
-        addDrop(LadderBlocks.ACACIA_LADDER);
+        addDrop(AcaciaWoodBlocks.ACACIA_LADDER);
         addDrop(AcaciaWoodBlocks.ACACIA_BOOKSHELF);
         addDrop(AcaciaWoodBlocks.ACACIA_BARREL);
-        addDrop(LadderBlocks.DARK_OAK_LADDER);
+        addDrop(DarkOakWoodBlocks.DARK_OAK_LADDER);
         addDrop(DarkOakWoodBlocks.DARK_OAK_BOOKSHELF);
         addDrop(DarkOakWoodBlocks.DARK_OAK_BARREL);
-        addDrop(LadderBlocks.MANGROVE_LADDER);
+        addDrop(MangroveWoodBlocks.MANGROVE_LADDER);
         addDrop(MangroveWoodBlocks.MANGROVE_BARREL);
         addDrop(MangroveWoodBlocks.MANGROVE_BOOKSHELF);
-        addDrop(LadderBlocks.CRIMSON_LADDER);
+        addDrop(CrimsonWoodBlocks.CRIMSON_LADDER);
         addDrop(CrimsonWoodBlocks.CRIMSON_BARREL);
         addDrop(CrimsonWoodBlocks.CRIMSON_BOOKSHELF);
-        addDrop(LadderBlocks.WARPED_LADDER);
+        addDrop(WarpedWoodBlocks.WARPED_LADDER);
         addDrop(WarpedWoodBlocks.WARPED_BARREL);
         addDrop(WarpedWoodBlocks.WARPED_BOOKSHELF);
         addDrop(ServerSpecificBlocks.GOLD_CHAIN);

@@ -59,12 +59,12 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
         translationBuilder.add(RandomBlocks.TUFF_STAIRS, "Tuff Stairs");
         translationBuilder.add(RandomBlocks.SMOOTH_BASALT_SLAB, "Smooth Basalt Slab");
         translationBuilder.add(RandomBlocks.SMOOTH_BASALT_STAIRS, "Smooth Basalt Stairs");*/
-        translationBuilder.add(RandomBlocks.NETHERRACK_SLAB, "Netherrack Slab");
+        /*translationBuilder.add(RandomBlocks.NETHERRACK_SLAB, "Netherrack Slab");
         translationBuilder.add(RandomBlocks.NETHERRACK_STAIRS, "Netherrack Stairs");
         translationBuilder.add(RandomBlocks.DRIPSTONE_SLAB, "Dripstone Slab");
         translationBuilder.add(RandomBlocks.DRIPSTONE_STAIRS, "Dripstone Stairs");
         translationBuilder.add(RandomBlocks.SNOW_SLAB, "Snow Slab");
-        translationBuilder.add(RandomBlocks.SNOW_STAIRS, "Snow Stairs");
+        translationBuilder.add(RandomBlocks.SNOW_STAIRS, "Snow Stairs");*/
 
 
 
