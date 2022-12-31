@@ -4,18 +4,18 @@
   "version": "${version}",
 
   "name": "OrigamiKingsEnhancementMod",
-  "description": "",
+  "description": "An enhancement mod for minecraft and my server",
   "authors": [
     "OrigamiKing3612"
   ],
   "contact": {
     "homepage": "https://github.com/OrigamiKing1236/OrigamiKings-Enhancement-Mod",
-    "sources": "",
+    "sources": "https://github.com/OrigamiKing1236/OrigamiKings-Enhancement-Mod",
     "website": "https://github.com/OrigamiKing1236/OrigamiKings-Enhancement-Mod"
   },
 
   "license": "Apache-2.0",
-  "icon": "",
+  "icon": "assets/oem/icon.png",
 
   "environment": "*",
   "entrypoints": {
