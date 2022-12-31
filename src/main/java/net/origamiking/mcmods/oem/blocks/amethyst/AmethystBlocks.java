@@ -13,6 +13,7 @@ import net.origamiking.mcmods.oem.OemMain;
 public class AmethystBlocks {
     public static final Block AMETHYST_STAIR = registerBlock("amethyst_block_stairs", new StairsBlock(Blocks.AMETHYST_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.AMETHYST).strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block AMETHYST_SLAB = registerBlock("amethyst_block_slab", new SlabBlock(FabricBlockSettings.of(Material.AMETHYST).strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+    public static final Block AMETHYST_WALL = registerBlock("amethyst_block_wall", new WallBlock(FabricBlockSettings.of(Material.AMETHYST).strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }

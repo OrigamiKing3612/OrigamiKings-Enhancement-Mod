@@ -144,6 +144,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(RandomBlocks.NETHERRACK_STAIRS);
         addDrop(RandomBlocks.SNOW_SLAB);
         addDrop(RandomBlocks.SNOW_STAIRS);
+        addDrop(AmethystBlocks.AMETHYST_WALL);
 
     }
 }

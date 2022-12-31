@@ -130,6 +130,7 @@ public class ModGroups {
                 entries.add(GlassBlocks.PINK_GLASS_STAIR);
                 entries.add(AmethystBlocks.AMETHYST_SLAB);
                 entries.add(AmethystBlocks.AMETHYST_STAIR);
+                entries.add(AmethystBlocks.AMETHYST_WALL);
                 entries.add(RandomBlocks.CALSITE_STAIRS);
                 entries.add(RandomBlocks.CALSITE_SLAB);
                 entries.add(RandomBlocks.TUFF_SLAB);

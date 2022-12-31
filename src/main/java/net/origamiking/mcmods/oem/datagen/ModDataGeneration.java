@@ -2,9 +2,6 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import net.origamiking.mcmods.oem.datagen.ModModelProvider;
-
-import static net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator.*;
 
 public class ModDataGeneration implements DataGeneratorEntrypoint {
     @Override
@@ -14,5 +11,7 @@ public class ModDataGeneration implements DataGeneratorEntrypoint {
         pack.addProvider(ModBlockLootTableGenerator::new);
         pack.addProvider(ModRecpieGenerator::new);
         pack.addProvider(ModLanguageGenerator::new);
+        //pack.addProvider(ModItemTagProvider::new);
+        //pack.addProvider(ModBlockTagProvider::new);
     }
 }

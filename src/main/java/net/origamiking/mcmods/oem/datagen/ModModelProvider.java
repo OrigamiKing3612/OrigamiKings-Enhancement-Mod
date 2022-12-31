@@ -3,6 +3,7 @@ package net.origamiking.mcmods.oem.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
+import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
@@ -35,6 +36,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR);
         blockStateModelGenerator.registerSimpleCubeAll(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
         blockStateModelGenerator.registerSimpleCubeAll(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
+        //blockStateModelGenerator.registerWallPlant(AmethystBlocks.AMETHYST_WALL);
+
+
 
 
     }
