@@ -25,6 +25,8 @@ import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 
+import java.util.Random;
+
 public class ModGroups {
     private static final ItemGroup OEM_GROUP = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group"))
             .displayName(Text.literal("OrigamiKing's Enchancement Mod"))
@@ -133,16 +135,22 @@ public class ModGroups {
                 entries.add(AmethystBlocks.AMETHYST_WALL);
                 entries.add(RandomBlocks.CALSITE_STAIRS);
                 entries.add(RandomBlocks.CALSITE_SLAB);
+                entries.add(RandomBlocks.CALSITE_WALL);
                 entries.add(RandomBlocks.TUFF_SLAB);
                 entries.add(RandomBlocks.TUFF_STAIRS);
+                entries.add(RandomBlocks.TUFF_WALL);
                 entries.add(RandomBlocks.SMOOTH_BASALT_SLAB);
                 entries.add(RandomBlocks.SMOOTH_BASALT_STAIRS);
+                entries.add(RandomBlocks.SMOOTH_BASALT_WALL);
                 entries.add(RandomBlocks.NETHERRACK_SLAB);
                 entries.add(RandomBlocks.NETHERRACK_STAIRS);
+                entries.add(RandomBlocks.NETHERRACK_WALL);
                 entries.add(RandomBlocks.DRIPSTONE_SLAB);
                 entries.add(RandomBlocks.DRIPSTONE_STAIRS);
+                entries.add(RandomBlocks.DRIPSTONE_WALL);
                 entries.add(RandomBlocks.SNOW_SLAB);
                 entries.add(RandomBlocks.SNOW_STAIRS);
+                entries.add(RandomBlocks.SNOW_WALL);
             })
             .build();
     private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))

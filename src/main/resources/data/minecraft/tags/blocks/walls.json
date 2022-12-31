@@ -1,6 +1,12 @@
 {
   "replace": false,
   "values": [
-    "oem:amethyst_block_wall"
+    "oem:amethyst_block_wall",
+    "oem:calcite_wall",
+    "oem:tuff_wall",
+    "oem:smooth_basalt_wall",
+    "oem:netherrack_wall",
+    "oem:dripstone_block_wall",
+    "oem:snow_block_wall"
   ]
 }
