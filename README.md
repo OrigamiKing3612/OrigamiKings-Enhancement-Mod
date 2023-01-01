@@ -7,3 +7,4 @@ Some things this mod adds are:
 3. Varents of barrels, bookshelves, and ladders
 4. Glass Stairs and Slabs
 5. More to come
+<img width="851" alt="inventory_1" src="https://user-images.githubusercontent.com/115757805/210160699-c984b0f4-4b5d-4b7f-86ec-e97d7a7ac0fb.png">
