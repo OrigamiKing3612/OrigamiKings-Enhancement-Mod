@@ -5,6 +5,8 @@ import net.origamiking.mcmods.oem.blocks.ModBlocks;
 import net.origamiking.mcmods.oem.commands.ModCommands;
 import net.origamiking.mcmods.oem.groups.ModGroups;
 import net.origamiking.mcmods.oem.items.ModItems;
+import net.origamiking.mcmods.oem.painting.ModPaintings;
+import net.origamiking.mcmods.oem.sounds.ModSounds;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 public class OemMain implements ModInitializer {
@@ -17,5 +19,7 @@ public class OemMain implements ModInitializer {
 		ModItems.register();
 		ModGroups.register();
 		ModCommands.register();
+		ModSounds.register();
+		ModPaintings.register();
 	}
 }

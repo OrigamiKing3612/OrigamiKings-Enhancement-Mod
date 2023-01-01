@@ -1,0 +1,8 @@
+{
+  "cow_sound_new": {
+    "subtitle": "subtitles.oem.my_sound",
+    "sounds": [
+      "oem:cow_sound_new"
+    ]
+  }
+}
