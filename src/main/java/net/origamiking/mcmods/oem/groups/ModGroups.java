@@ -29,7 +29,7 @@ import java.util.Random;
 
 public class ModGroups {
     private static final ItemGroup OEM_GROUP = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group"))
-            .displayName(Text.literal("OrigamiKing's Enchancement Mod"))
+            .displayName(Text.literal("OrigamiKing's Enhancement Mod"))
             .icon(() -> new ItemStack(SpruceWoodBlocks.SPRUCE_BARREL))
             .entries((enabledFeatures, entries, operatorEnabled) -> {
                 entries.add(OakWoodBlocks.OAK_BARREL);
