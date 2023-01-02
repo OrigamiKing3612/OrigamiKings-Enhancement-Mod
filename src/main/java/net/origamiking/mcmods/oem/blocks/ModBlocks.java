@@ -10,7 +10,9 @@ import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
+import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
+import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
@@ -28,7 +30,7 @@ import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 public class ModBlocks {
 
     //public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane", new StainedGlassPaneBlock(FabricBlockSettings.of(Material.GLASS).strength(4f).requiresTool().sounds(BlockSoundGroup.GLASS)));
-    private static Item registerBlockItem(String name, Block block) {
+    public static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
     private static Block registerBlock(String name, Block block) {
@@ -53,6 +55,8 @@ public class ModBlocks {
         MangroveWoodBlocks.getMangroveBlocks();
         CrimsonWoodBlocks.getCrimsonBlocks();
         WarpedWoodBlocks.getWarpedBlocks();
+        //CopperBlocks.getCopperBlocks();
+        GoldBlocks.getGoldBlocks();
         OemMain.LOGGER.info("Registering Blocks for OEM");
     }
 }

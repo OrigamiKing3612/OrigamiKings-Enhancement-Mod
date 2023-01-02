@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:item/generated",
+    "textures": {
+      "layer0": "oem:block/gold/bars/gold_bars"
+    }
+}

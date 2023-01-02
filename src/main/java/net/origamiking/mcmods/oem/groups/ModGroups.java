@@ -11,7 +11,9 @@ import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
+import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
+import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
@@ -96,6 +98,7 @@ public class ModGroups {
                 //entries.add(ModBlocks.TINTED_GLASS_PANE);
                 entries.add(ServerSpecificBlocks.GOLD_CHAIN);
                 entries.add(ServerSpecificBlocks.GOLD_LANTERN);
+                entries.add(GoldBlocks.GOLD_BARS);
                 entries.add(GlassBlocks.GLASS_STAIR);
                 entries.add(GlassBlocks.GLASS_SLAB);
                 entries.add(GlassBlocks.WHITE_GLASS_STAIR);
@@ -151,6 +154,7 @@ public class ModGroups {
                 entries.add(RandomBlocks.SNOW_SLAB);
                 entries.add(RandomBlocks.SNOW_STAIRS);
                 entries.add(RandomBlocks.SNOW_WALL);
+                //entries.add(CopperBlocks.COPPER_BARS);
             })
             .build();
     private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))
