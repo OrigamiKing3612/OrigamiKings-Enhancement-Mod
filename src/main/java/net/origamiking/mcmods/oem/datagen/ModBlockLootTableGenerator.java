@@ -1,10 +1,12 @@
 package net.origamiking.mcmods.oem.datagen;
 
+import it.unimi.dsi.fastutil.chars.CharBinaryOperator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
+import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
@@ -151,6 +153,16 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(RandomBlocks.NETHERRACK_WALL);
         addDrop(RandomBlocks.DRIPSTONE_WALL);
         addDrop(RandomBlocks.SNOW_WALL);
+        addDrop(CopperBlocks.COPPER_CHAIN);
+        addDrop(CopperBlocks.COPPER_BARS);
+        addDrop(CopperBlocks.WEATHERED_COPPER_BARS);
+        addDrop(CopperBlocks.EXPOSED_COPPER_BARS);
+        addDrop(CopperBlocks.OXIDIZED_COPPER_BARS);
+        addDrop(CopperBlocks.COPPER_LANTERN);
+        addDrop(CopperBlocks.COPPER_PRESSURE_PLATE);
+        addDrop(CopperBlocks.EXPOSED_COPPER_CHAIN);
+        addDrop(CopperBlocks.WEATHERED_COPPER_CHAIN);
+        addDrop(CopperBlocks.OXIDIZED_COPPER_CHAIN);
 
     }
 }

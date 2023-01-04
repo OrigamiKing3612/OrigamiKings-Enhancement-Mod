@@ -26,14 +26,14 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
-
-import java.util.Random;
+import net.origamiking.mcmods.oem.items.ModItems;
 
 public class ModGroups {
     private static final ItemGroup OEM_GROUP = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group"))
             .displayName(Text.literal("OrigamiKing's Enhancement Mod"))
             .icon(() -> new ItemStack(SpruceWoodBlocks.SPRUCE_BARREL))
             .entries((enabledFeatures, entries, operatorEnabled) -> {
+                //wood vars
                 entries.add(OakWoodBlocks.OAK_BARREL);
                 entries.add(Blocks.BOOKSHELF);
                 entries.add(OakWoodBlocks.OAK_LADDER);
@@ -61,6 +61,7 @@ public class ModGroups {
                 entries.add(WarpedWoodBlocks.WARPED_BARREL);
                 entries.add(WarpedWoodBlocks.WARPED_BOOKSHELF);
                 entries.add(WarpedWoodBlocks.WARPED_LADDER);
+                //concrete
                 entries.add(ConcreteStairs.WHITE_CONCRETE_STAIR);
                 entries.add(ConcreteSlabs.WHITE_CONCRETE_SLAB);
                 entries.add(ConcreteStairs.LIGHT_GRAY_CONCRETE_STAIR);
@@ -93,12 +94,11 @@ public class ModGroups {
                 entries.add(ConcreteSlabs.MAGENTA_CONCRETE_SLAB);
                 entries.add(ConcreteStairs.PINK_CONCRETE_STAIR);
                 entries.add(ConcreteSlabs.PINK_CONCRETE_SLAB);
+                //sculk
                 entries.add(SculkBlocks.SCULK_STAIR);
                 entries.add(SculkBlocks.SCULK_SLAB);
                 //entries.add(ModBlocks.TINTED_GLASS_PANE);
-                entries.add(ServerSpecificBlocks.GOLD_CHAIN);
-                entries.add(ServerSpecificBlocks.GOLD_LANTERN);
-                entries.add(GoldBlocks.GOLD_BARS);
+                //Glass
                 entries.add(GlassBlocks.GLASS_STAIR);
                 entries.add(GlassBlocks.GLASS_SLAB);
                 entries.add(GlassBlocks.WHITE_GLASS_STAIR);
@@ -133,6 +133,7 @@ public class ModGroups {
                 entries.add(GlassBlocks.MAGENTA_GLASS_STAIR);
                 entries.add(GlassBlocks.PINK_GLASS_SLAB);
                 entries.add(GlassBlocks.PINK_GLASS_STAIR);
+                //other
                 entries.add(AmethystBlocks.AMETHYST_SLAB);
                 entries.add(AmethystBlocks.AMETHYST_STAIR);
                 entries.add(AmethystBlocks.AMETHYST_WALL);
@@ -154,7 +155,23 @@ public class ModGroups {
                 entries.add(RandomBlocks.SNOW_SLAB);
                 entries.add(RandomBlocks.SNOW_STAIRS);
                 entries.add(RandomBlocks.SNOW_WALL);
-                //entries.add(CopperBlocks.COPPER_BARS);
+                //gold
+                entries.add(ServerSpecificBlocks.GOLD_CHAIN);
+                entries.add(ServerSpecificBlocks.GOLD_LANTERN);
+                entries.add(GoldBlocks.GOLD_BARS);
+                //copper
+                entries.add(ModItems.COPPER_NUGGET);
+                entries.add(CopperBlocks.COPPER_CHAIN);
+                entries.add(CopperBlocks.EXPOSED_COPPER_CHAIN);
+                entries.add(CopperBlocks.WEATHERED_COPPER_CHAIN);
+                entries.add(CopperBlocks.OXIDIZED_COPPER_CHAIN);
+                entries.add(CopperBlocks.COPPER_LANTERN);
+                entries.add(CopperBlocks.COPPER_BARS);
+                entries.add(CopperBlocks.EXPOSED_COPPER_BARS);
+                entries.add(CopperBlocks.WEATHERED_COPPER_BARS);
+                entries.add(CopperBlocks.OXIDIZED_COPPER_BARS);
+                entries.add(CopperBlocks.COPPER_PRESSURE_PLATE);
+
             })
             .build();
     private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))

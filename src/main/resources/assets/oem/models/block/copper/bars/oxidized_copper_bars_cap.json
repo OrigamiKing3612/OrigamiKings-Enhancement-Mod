@@ -1,0 +1,9 @@
+{
+    "parent": "block/iron_bars_cap",
+    "textures": {
+        "texture": "oem:block/copper/bars/oxidized_copper_bars",
+        "particle": "oem:block/copper/bars/oxidized_copper_bars",
+        "bars": "oem:block/copper/bars/oxidized_copper_bars",
+        "edge": "oem:block/copper/bars/oxidized_copper_bars"
+    }
+}

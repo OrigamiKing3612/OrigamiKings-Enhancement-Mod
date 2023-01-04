@@ -1,0 +1,9 @@
+{
+    "parent": "block/iron_bars_post_ends",
+    "textures": {
+        "texture": "oem:block/copper/bars/exposed_copper_bars",
+        "particle": "oem:block/copper/bars/exposed_copper_bars",
+        "bars": "oem:block/copper/bars/exposed_copper_bars",
+        "edge": "oem:block/copper/bars/exposed_copper_bars"
+    }
+}

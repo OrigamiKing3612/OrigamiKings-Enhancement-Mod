@@ -4,7 +4,10 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.entity.ai.brain.task.PrepareRamTask;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
+import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
+import net.origamiking.mcmods.oem.items.ModItems;
+import org.apache.http.cookie.Cookie;
 
 import java.nio.file.Path;
 
@@ -66,6 +69,23 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
         translationBuilder.add(RandomBlocks.SNOW_SLAB, "Snow Slab");
         translationBuilder.add(RandomBlocks.SNOW_STAIRS, "Snow Stairs");*/
         //translationBuilder.add(AmethystBlocks.AMETHYST_WALL, "Amethyst Wall");
+        /*translationBuilder.add(RandomBlocks.CALSITE_WALL, "Calcite Wall");
+        translationBuilder.add(RandomBlocks.TUFF_WALL, "Tuff Wall");
+        translationBuilder.add(RandomBlocks.SMOOTH_BASALT_WALL, "Smooth Basalt Wall");
+        translationBuilder.add(RandomBlocks.NETHERRACK_WALL, "Netherrack Wall");
+        translationBuilder.add(RandomBlocks.DRIPSTONE_WALL, "Dripstone Block Wall");
+        translationBuilder.add(RandomBlocks.SNOW_WALL, "Snow Block Wall");*/
+        /*translationBuilder.add(CopperBlocks.COPPER_PRESSURE_PLATE, "Copper Pressure Plate");
+        translationBuilder.add(CopperBlocks.COPPER_CHAIN, "Copper Chain");
+        translationBuilder.add(CopperBlocks.COPPER_LANTERN, "Copper Lantern");
+        translationBuilder.add(CopperBlocks.COPPER_BARS, "Copper Bars");*/
+        /*translationBuilder.add(ModItems.COPPER_NUGGET, "Copper Nugget");
+        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_CHAIN, "Exposed Copper Chain");
+        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_CHAIN, "Weathered Copper Chain");
+        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_CHAIN, "Oxidized Copper Chain");*/
+        /*translationBuilder.add(CopperBlocks.EXPOSED_COPPER_BARS, "Exposed Copper Bars");
+        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_BARS, "Weathered Copper Bars");
+        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_BARS, "Oxidized Copper Bars");*/
 
 
 

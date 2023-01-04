@@ -55,7 +55,7 @@ public class ModBlocks {
         MangroveWoodBlocks.getMangroveBlocks();
         CrimsonWoodBlocks.getCrimsonBlocks();
         WarpedWoodBlocks.getWarpedBlocks();
-        //CopperBlocks.getCopperBlocks();
+        CopperBlocks.getCopperBlocks();
         GoldBlocks.getGoldBlocks();
         OemMain.LOGGER.info("Registering Blocks for OEM");
     }
