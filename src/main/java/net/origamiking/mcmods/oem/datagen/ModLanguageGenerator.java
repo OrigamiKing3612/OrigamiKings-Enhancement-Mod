@@ -86,6 +86,13 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
         /*translationBuilder.add(CopperBlocks.EXPOSED_COPPER_BARS, "Exposed Copper Bars");
         translationBuilder.add(CopperBlocks.WEATHERED_COPPER_BARS, "Weathered Copper Bars");
         translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_BARS, "Oxidized Copper Bars");*/
+        //translationBuilder.add(CopperBlocks.EXPOSED_COPPER_PRESSURE_PLATE, "Exposed Copper Pressure Plate");
+        //translationBuilder.add(CopperBlocks.WEATHERED_COPPER_PRESSURE_PLATE, "Weathered Copper Pressure Plate");
+        //translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_PRESSURE_PLATE, "Oxidized Copper Pressure Plate");
+        /*translationBuilder.add(CopperBlocks.COPPER_BUTTON, "Copper Button");
+        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_BUTTON, "Exposed Copper Button");
+        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_BUTTON, "Weathered Copper Button");
+        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_BUTTON, "Oxidized Copper Button");*/
 
 
 

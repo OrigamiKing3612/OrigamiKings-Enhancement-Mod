@@ -171,6 +171,13 @@ public class ModGroups {
                 entries.add(CopperBlocks.WEATHERED_COPPER_BARS);
                 entries.add(CopperBlocks.OXIDIZED_COPPER_BARS);
                 entries.add(CopperBlocks.COPPER_PRESSURE_PLATE);
+                entries.add(CopperBlocks.EXPOSED_COPPER_PRESSURE_PLATE);
+                entries.add(CopperBlocks.WEATHERED_COPPER_PRESSURE_PLATE);
+                entries.add(CopperBlocks.OXIDIZED_COPPER_PRESSURE_PLATE);
+                entries.add(CopperBlocks.COPPER_BUTTON);
+                entries.add(CopperBlocks.EXPOSED_COPPER_BUTTON);
+                entries.add(CopperBlocks.WEATHERED_COPPER_BUTTON);
+                entries.add(CopperBlocks.OXIDIZED_COPPER_BUTTON);
 
             })
             .build();

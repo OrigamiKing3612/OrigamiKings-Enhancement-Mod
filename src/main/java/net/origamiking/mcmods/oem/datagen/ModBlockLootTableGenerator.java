@@ -163,6 +163,13 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(CopperBlocks.EXPOSED_COPPER_CHAIN);
         addDrop(CopperBlocks.WEATHERED_COPPER_CHAIN);
         addDrop(CopperBlocks.OXIDIZED_COPPER_CHAIN);
+        addDrop(CopperBlocks.EXPOSED_COPPER_PRESSURE_PLATE);
+        addDrop(CopperBlocks.WEATHERED_COPPER_PRESSURE_PLATE);
+        addDrop(CopperBlocks.OXIDIZED_COPPER_PRESSURE_PLATE);
+        addDrop(CopperBlocks.COPPER_BUTTON);
+        addDrop(CopperBlocks.EXPOSED_COPPER_BUTTON);
+        addDrop(CopperBlocks.WEATHERED_COPPER_BUTTON);
+        addDrop(CopperBlocks.OXIDIZED_COPPER_BUTTON);
 
     }
 }
