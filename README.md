@@ -14,6 +14,7 @@ Some things this mod adds are:
 <img width="851" alt="inventory_3" src="https://user-images.githubusercontent.com/115757805/210160710-e925d575-df36-4e55-90d9-49e8a721dd9d.png">
 <img width="845" alt="stairs" src="https://user-images.githubusercontent.com/115757805/210160717-6108a5e1-7df3-4ddd-901a-03366b7682e4.png">
 
-0.1.3 update 
-The Copper Update!
+**0.1.3 update** 
+
+# The Copper Update!
 ![Copper_Update](https://user-images.githubusercontent.com/115757805/210614211-5d0b2092-9ec6-4f8f-b320-1823c527b3d4.png)
