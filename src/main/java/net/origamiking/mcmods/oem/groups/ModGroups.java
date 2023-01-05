@@ -2,12 +2,13 @@ package net.origamiking.mcmods.oem.groups;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.block.Blocks;
-import net.minecraft.client.render.entity.model.RabbitEntityModel;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
+import net.origamiking.mcmods.oem.armor.ArmorRegistry;
+import net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
@@ -178,6 +179,11 @@ public class ModGroups {
                 entries.add(CopperBlocks.EXPOSED_COPPER_BUTTON);
                 entries.add(CopperBlocks.WEATHERED_COPPER_BUTTON);
                 entries.add(CopperBlocks.OXIDIZED_COPPER_BUTTON);
+                entries.add(CopperArmorMaterial.getCopperArmor.COPPER_HELMET);
+                entries.add(CopperArmorMaterial.getCopperArmor.COPPER_CHESTPLATE);
+                entries.add(CopperArmorMaterial.getCopperArmor.COPPER_LEGGINGS);
+                entries.add(CopperArmorMaterial.getCopperArmor.COPPER_BOOTS);
+                //entries.add(VikingArmorMaterial.getVikingArmor.VIKING_HELMET);
 
             })
             .build();
@@ -185,12 +191,15 @@ public class ModGroups {
             .displayName(Text.literal("mc.origamiking.net specific"))
             .icon(() -> new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE))
             .entries((enabledFeatures, entries, operatorEnabled) -> {
-                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
-                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
-                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
-                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR);
-                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
-                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
+                if (operatorEnabled) {
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
+                    entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
+                }
             }).build();
     public static void register() {
         OemMain.LOGGER.info("Registering Groups");

@@ -3,6 +3,8 @@ package net.origamiking.mcmods.oem.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.minecraft.entity.ai.brain.task.PrepareRamTask;
+import net.origamiking.mcmods.oem.armor.ArmorRegistry;
+import net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
@@ -93,6 +95,11 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
         translationBuilder.add(CopperBlocks.EXPOSED_COPPER_BUTTON, "Exposed Copper Button");
         translationBuilder.add(CopperBlocks.WEATHERED_COPPER_BUTTON, "Weathered Copper Button");
         translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_BUTTON, "Oxidized Copper Button");*/
+        /*translationBuilder.add(ArmorRegistry.VIKING_ARMOR_HELMET, "Viking Helmet");
+        translationBuilder.add(CopperArmorMaterial.getCopperArmor.COPPER_HELMET, "Copper Helmet");
+        translationBuilder.add(CopperArmorMaterial.getCopperArmor.COPPER_CHESTPLATE, "Copper Chest Plate");
+        translationBuilder.add(CopperArmorMaterial.getCopperArmor.COPPER_LEGGINGS, "Copper Leggings");
+        translationBuilder.add(CopperArmorMaterial.getCopperArmor.COPPER_BOOTS, "Copper Boots");*/
 
 
 

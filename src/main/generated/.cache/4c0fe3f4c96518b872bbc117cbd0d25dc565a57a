@@ -1,4 +1,4 @@
-// 1.19.3	2023-01-04T13:07:45.706314	OrigamiKingsEnhancementMod/Block Loot Tables
+// 1.19.3	2023-01-05T10:52:02.836829	OrigamiKingsEnhancementMod/Block Loot Tables
 b2646058b5608308c0ac21ba7a80aace8225cc47 data/oem/loot_tables/blocks/acacia_bookshelf.json
 b63719ff51f165582e18da21799028bc5301056e data/oem/loot_tables/blocks/purple_glass_slab.json
 641c842947328186f16a80dbce61211507bdb50e data/oem/loot_tables/blocks/gray_glass_slab.json
@@ -10,16 +10,16 @@ cc8300db2a06de6e8d34bc6d30657edcbe5c15a9 data/oem/loot_tables/blocks/tuff_stairs
 c27ce3f9bd544c37954e20aec4b4e89ce801bcab data/oem/loot_tables/blocks/light_blue_concrete_stairs.json
 799089f7521c94c076b1113d1835d4a1b1314486 data/oem/loot_tables/blocks/jungle_barrel.json
 6a3504af44c0105fb9a2d64d43b836af861a9448 data/oem/loot_tables/blocks/dripstone_block_slab.json
-81fdedafb884a6a165a1c1335ffc38c8ad744d23 data/oem/loot_tables/blocks/cyan_glass_stairs.json
 2effce84adf025e46610c62aefe0d90b9448ea44 data/oem/loot_tables/blocks/white_concrete_stairs.json
+81fdedafb884a6a165a1c1335ffc38c8ad744d23 data/oem/loot_tables/blocks/cyan_glass_stairs.json
 c761b94a0202580402ec2c9cacecaf20e4fa07a8 data/oem/loot_tables/blocks/dark_oak_barrel.json
 a3bf9340a56e22663422a7ba40803841769408b5 data/oem/loot_tables/blocks/warped_barrel.json
 299bc6dcc3e35df658aa261e1fa810a7db5139d4 data/oem/loot_tables/blocks/black_glass_stairs.json
 78a9c764bf338b1a0ab549861f7d525020c20a64 data/oem/loot_tables/blocks/black_glass_slab.json
 356b4c1c5c9bfe358fe56e122725232406304b73 data/oem/loot_tables/blocks/crimson_barrel.json
 4fa9679b1fa1c4c221702685a710e19c8d02cde9 data/oem/loot_tables/blocks/magenta_concrete_stairs.json
-816b72cf4c2b3b943b1e13b0d4408e3177ee26e6 data/oem/loot_tables/blocks/acacia_ladder.json
 1982b6427b3d372c1f8a3b1856de249e4c7fdee6 data/oem/loot_tables/blocks/red_concrete_stairs.json
+816b72cf4c2b3b943b1e13b0d4408e3177ee26e6 data/oem/loot_tables/blocks/acacia_ladder.json
 cf60d373c8f692159722ceea104bf1a0b20cbf1c data/oem/loot_tables/blocks/red_glass_stairs.json
 102f85a10a36d8b597c9437350e471c95a695ba4 data/oem/loot_tables/blocks/light_blue_glass_slab.json
 80e7339089e59414875d9d99f300f1379751254a data/oem/loot_tables/blocks/smooth_basalt_wall.json
@@ -65,8 +65,8 @@ a11306dfaaa9641941767eec8e1c9d5902e2723d data/oem/loot_tables/blocks/spruce_barr
 30b73afaee43f08c0b06ecdf89f6d77b76c2276d data/oem/loot_tables/blocks/light_gray_concrete_stairs.json
 05f3e88fce28f22e2849156357a5bd5c36ed5f28 data/oem/loot_tables/blocks/yellow_concrete_slab.json
 000ed313bf8c35ccd1ba425bcf3d774d0aff2199 data/oem/loot_tables/blocks/caverns_block_one.json
-80778575fb33a96d53e899d57bc17372d2180386 data/oem/loot_tables/blocks/magenta_glass_slab.json
 12a2037fa472e8ff4c709e09d9f327caecd612ad data/oem/loot_tables/blocks/lime_glass_slab.json
+80778575fb33a96d53e899d57bc17372d2180386 data/oem/loot_tables/blocks/magenta_glass_slab.json
 41a04f61944f5d065815b33d8b443f08fc8a6511 data/oem/loot_tables/blocks/light_blue_concrete_slab.json
 245ea58ac6ac54ace35719ed613ceb03df599fd0 data/oem/loot_tables/blocks/orange_concrete_stairs.json
 050d739b3d6a3a627cbf46116a5b3f1cbbe74e04 data/oem/loot_tables/blocks/exposed_copper_pressure_plate.json
