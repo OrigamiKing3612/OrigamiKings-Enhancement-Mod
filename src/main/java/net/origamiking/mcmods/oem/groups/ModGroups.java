@@ -15,6 +15,7 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
@@ -27,6 +28,8 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.items.ModItems;
 
 public class ModGroups {
@@ -134,6 +137,13 @@ public class ModGroups {
                 entries.add(GlassBlocks.MAGENTA_GLASS_STAIR);
                 entries.add(GlassBlocks.PINK_GLASS_SLAB);
                 entries.add(GlassBlocks.PINK_GLASS_STAIR);
+                //wool
+                entries.add(WhiteWool.WHITE_WOOL_SLAB);
+                entries.add(WhiteWool.WHITE_WOOL_STAIRS);
+                entries.add(WhiteWool.WHITE_WOOL_WALL);
+                entries.add(LightGrayWool.LIGHT_GRAY_WOOL_SLAB);
+                entries.add(LightGrayWool.LIGHT_GRAY_WOOL_STAIRS);
+                entries.add(LightGrayWool.LIGHT_GRAY_WOOL_WALL);
                 //other
                 entries.add(AmethystBlocks.AMETHYST_SLAB);
                 entries.add(AmethystBlocks.AMETHYST_STAIR);
@@ -156,6 +166,13 @@ public class ModGroups {
                 entries.add(RandomBlocks.SNOW_SLAB);
                 entries.add(RandomBlocks.SNOW_STAIRS);
                 entries.add(RandomBlocks.SNOW_WALL);
+//                entries.add(LeafStairs.OAK_LEAVES_STAIRS);
+//                entries.add(LeafStairs.SPRUCE_LEAVES_STAIRS);
+//                entries.add(LeafStairs.BIRCH_LEAVES_STAIRS);
+//                entries.add(LeafStairs.JUNGLE_LEAVES_STAIRS);
+//                entries.add(LeafStairs.ACACIA_LEAVES_STAIRS);
+//                entries.add(LeafStairs.DARK_OAK_LEAVES_STAIRS);
+//                entries.add(LeafStairs.MANGROVE_LEAVES_STAIRS);
                 //gold
                 entries.add(ServerSpecificBlocks.GOLD_CHAIN);
                 entries.add(ServerSpecificBlocks.GOLD_LANTERN);
@@ -184,6 +201,7 @@ public class ModGroups {
                 entries.add(CopperArmorMaterial.getCopperArmor.COPPER_LEGGINGS);
                 entries.add(CopperArmorMaterial.getCopperArmor.COPPER_BOOTS);
                 //entries.add(VikingArmorMaterial.getVikingArmor.VIKING_HELMET);
+
 
             })
             .build();

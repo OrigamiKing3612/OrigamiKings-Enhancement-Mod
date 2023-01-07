@@ -7,6 +7,8 @@
     "oem:smooth_basalt_wall",
     "oem:netherrack_wall",
     "oem:dripstone_block_wall",
-    "oem:snow_block_wall"
+    "oem:snow_block_wall",
+    "oem:white_wool_wall",
+    "oem:light_gray_wool_wall"
   ]
 }

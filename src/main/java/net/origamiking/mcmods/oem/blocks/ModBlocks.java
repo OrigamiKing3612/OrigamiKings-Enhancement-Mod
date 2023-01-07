@@ -25,15 +25,16 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 
 
 public class ModBlocks {
-
     //public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane", new StainedGlassPaneBlock(FabricBlockSettings.of(Material.GLASS).strength(4f).requiresTool().sounds(BlockSoundGroup.GLASS)));
     public static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
-    private static Block registerBlock(String name, Block block) {
+    public static Block registerBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, name), block);
     }
@@ -57,6 +58,16 @@ public class ModBlocks {
         WarpedWoodBlocks.getWarpedBlocks();
         CopperBlocks.getCopperBlocks();
         GoldBlocks.getGoldBlocks();
+        //wool
+        WhiteWool.getWhiteWool();
+        LightGrayWool.getLightGrayWool();
+
+
+        //geting leaf blocks
+//        LeafStairs.getLeafStairs();
+//        LeafSlabs.getLeafSlabs();
+//        LeafWalls.getLeafWalls();
+//        LeaveCarpets.getLeafCarpets();
         OemMain.LOGGER.info("Registering Blocks for OEM");
     }
 }

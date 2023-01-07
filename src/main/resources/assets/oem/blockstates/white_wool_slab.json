@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oem:block/wool/white_wool_slab"
+    },
+    "type=double": {
+      "model": "minecraft:block/white_wool"
+    },
+    "type=top": {
+      "model": "oem:block/wool/white_wool_slab_top"
+    }
+  }
+}

@@ -17,5 +17,10 @@ public class ModItemTagProvider extends FabricTagProvider<Item> {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup arg) {
 
+
+
+
+
+
     }
 }

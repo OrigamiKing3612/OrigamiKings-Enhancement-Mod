@@ -20,6 +20,8 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 
 import javax.tools.StandardJavaFileManager;
 
@@ -170,6 +172,12 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(CopperBlocks.EXPOSED_COPPER_BUTTON);
         addDrop(CopperBlocks.WEATHERED_COPPER_BUTTON);
         addDrop(CopperBlocks.OXIDIZED_COPPER_BUTTON);
+        addDrop(WhiteWool.WHITE_WOOL_STAIRS);
+        addDrop(WhiteWool.WHITE_WOOL_WALL);
+        addDrop(WhiteWool.WHITE_WOOL_SLAB);
+        addDrop(LightGrayWool.LIGHT_GRAY_WOOL_STAIRS);
+        addDrop(LightGrayWool.LIGHT_GRAY_WOOL_WALL);
+        addDrop(LightGrayWool.LIGHT_GRAY_WOOL_SLAB);
 
     }
 }
