@@ -28,6 +28,9 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
+import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
+import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
 import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.items.ModItems;
@@ -144,6 +147,15 @@ public class ModGroups {
                 entries.add(LightGrayWool.LIGHT_GRAY_WOOL_SLAB);
                 entries.add(LightGrayWool.LIGHT_GRAY_WOOL_STAIRS);
                 entries.add(LightGrayWool.LIGHT_GRAY_WOOL_WALL);
+                entries.add(GrayWool.GRAY_WOOL_SLAB);
+                entries.add(GrayWool.GRAY_WOOL_STAIRS);
+                entries.add(GrayWool.GRAY_WOOL_WALL);
+                entries.add(BlackWool.BLACK_WOOL_SLAB);
+                entries.add(BlackWool.BLACK_WOOL_STAIRS);
+                entries.add(BlackWool.BLACK_WOOL_WALL);
+                entries.add(BrownWool.BROWN_WOOL_SLAB);
+                entries.add(BrownWool.BROWN_WOOL_STAIRS);
+                entries.add(BrownWool.BROWN_WOOL_WALL);
                 //other
                 entries.add(AmethystBlocks.AMETHYST_SLAB);
                 entries.add(AmethystBlocks.AMETHYST_STAIR);

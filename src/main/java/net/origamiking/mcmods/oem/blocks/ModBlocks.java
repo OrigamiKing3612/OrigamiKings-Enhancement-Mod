@@ -1,10 +1,12 @@
 package net.origamiking.mcmods.oem.blocks;
 
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
@@ -25,12 +27,16 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
+import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
+import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
 import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 
 
 public class ModBlocks {
     //public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane", new StainedGlassPaneBlock(FabricBlockSettings.of(Material.GLASS).strength(4f).requiresTool().sounds(BlockSoundGroup.GLASS)));
+    //public static final Block H = registerBlock("h", new SnowBlock(FabricBlockSettings.of(Material.SNOW_LAYER).ticksRandomly().strength(0.1f).requiresTool().sounds(BlockSoundGroup.SNOW).blockVision((state, world, pos) -> state.get(SnowBlock.LAYERS) >= 8)));
     public static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
@@ -61,6 +67,9 @@ public class ModBlocks {
         //wool
         WhiteWool.getWhiteWool();
         LightGrayWool.getLightGrayWool();
+        GrayWool.getGrayWool();
+        BlackWool.getBlackWool();
+        BrownWool.getBrownWool();
 
 
         //geting leaf blocks

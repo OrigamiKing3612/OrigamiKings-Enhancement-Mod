@@ -11,4 +11,5 @@ public class LightGrayWool extends ModBlocks {
     public static final Block LIGHT_GRAY_WOOL_WALL = registerBlock("light_gray_wool_wall", new WallBlock(FabricBlockSettings.of(Material.WOOL).strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
     public static void getLightGrayWool() {}
+
 }

@@ -20,6 +20,9 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
+import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
+import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
 import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 
@@ -178,6 +181,15 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(LightGrayWool.LIGHT_GRAY_WOOL_STAIRS);
         addDrop(LightGrayWool.LIGHT_GRAY_WOOL_WALL);
         addDrop(LightGrayWool.LIGHT_GRAY_WOOL_SLAB);
+        addDrop(GrayWool.GRAY_WOOL_STAIRS);
+        addDrop(GrayWool.GRAY_WOOL_WALL);
+        addDrop(GrayWool.GRAY_WOOL_SLAB);
+        addDrop(BlackWool.BLACK_WOOL_STAIRS);
+        addDrop(BlackWool.BLACK_WOOL_WALL);
+        addDrop(BlackWool.BLACK_WOOL_SLAB);
+        addDrop(BrownWool.BROWN_WOOL_STAIRS);
+        addDrop(BrownWool.BROWN_WOOL_WALL);
+        addDrop(BrownWool.BROWN_WOOL_SLAB);
 
     }
 }
