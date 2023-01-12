@@ -26,10 +26,18 @@ import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
+import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
+import net.origamiking.mcmods.oem.blocks.wool.cyan.CyanWool;
 import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.green.GreenWool;
 import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.lightblue.LightBlueWool;
+import net.origamiking.mcmods.oem.blocks.wool.lime.LimeWool;
+import net.origamiking.mcmods.oem.blocks.wool.magenta.MagentaWool;
 import net.origamiking.mcmods.oem.blocks.wool.orange.OrangeWool;
+import net.origamiking.mcmods.oem.blocks.wool.pink.PinkWool;
+import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
@@ -72,8 +80,16 @@ public class ModBlocks {
         BlackWool.getBlackWool();
         BrownWool.getBrownWool();
         RedWool.getRedWool();
-        OrangeWool.getOrangeWool();// do all models blocks starting purple
+        OrangeWool.getOrangeWool();
         YellowWool.getYellowWool();
+        LimeWool.getLimeWool();
+        GreenWool.getGreenWool();
+        CyanWool.getCyanWool();
+        LightBlueWool.getLightBlueWool();
+        BlueWool.getBlueWool();
+        PurpleWool.getPurpleWool();
+        MagentaWool.getMagentaWool();
+        PinkWool.getPinkWool();
 
         //geting leaf blocks
 //        LeafStairs.getLeafStairs();

@@ -1,6 +1,5 @@
 package net.origamiking.mcmods.oem.datagen;
 
-import it.unimi.dsi.fastutil.chars.CharBinaryOperator;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
@@ -21,15 +20,21 @@ import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
+import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
+import net.origamiking.mcmods.oem.blocks.wool.cyan.CyanWool;
 import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.green.GreenWool;
 import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.lightblue.LightBlueWool;
+import net.origamiking.mcmods.oem.blocks.wool.lime.LimeWool;
+import net.origamiking.mcmods.oem.blocks.wool.magenta.MagentaWool;
 import net.origamiking.mcmods.oem.blocks.wool.orange.OrangeWool;
+import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
 
-import javax.tools.StandardJavaFileManager;
 
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     public ModBlockLootTableGenerator(FabricDataOutput dataOutput) {
@@ -204,6 +209,27 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(YellowWool.YELLOW_WOOL_STAIRS);
         addDrop(YellowWool.YELLOW_WOOL_WALL);
         addDrop(YellowWool.YELLOW_WOOL_SLAB);
+        addDrop(LimeWool.LIME_WOOL_STAIRS);
+        addDrop(LimeWool.LIME_WOOL_WALL);
+        addDrop(LimeWool.LIME_WOOL_SLAB);
+        addDrop(GreenWool.GREEN_WOOL_STAIRS);
+        addDrop(GreenWool.GREEN_WOOL_WALL);
+        addDrop(GreenWool.GREEN_WOOL_SLAB);
+        addDrop(CyanWool.CYAN_WOOL_STAIRS);
+        addDrop(CyanWool.CYAN_WOOL_WALL);
+        addDrop(CyanWool.CYAN_WOOL_SLAB);
+        addDrop(LightBlueWool.LIGHT_BLUE_WOOL_STAIRS);
+        addDrop(LightBlueWool.LIGHT_BLUE_WOOL_WALL);
+        addDrop(LightBlueWool.LIGHT_BLUE_WOOL_SLAB);
+        addDrop(BlueWool.BLUE_WOOL_STAIRS);
+        addDrop(BlueWool.BLUE_WOOL_WALL);
+        addDrop(BlueWool.BLUE_WOOL_SLAB);
+        addDrop(PurpleWool.PURPLE_WOOL_STAIRS);
+        addDrop(PurpleWool.PURPLE_WOOL_WALL);
+        addDrop(PurpleWool.PURPLE_WOOL_SLAB);
+        addDrop(MagentaWool.MAGENTA_WOOL_STAIRS);
+        addDrop(MagentaWool.MAGENTA_WOOL_WALL);
+        addDrop(MagentaWool.MAGENTA_WOOL_SLAB);
 
     }
 }

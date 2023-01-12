@@ -2,13 +2,10 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.block.AmethystBlock;
-import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -21,12 +18,20 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
+import net.origamiking.mcmods.oem.blocks.wool.cyan.CyanWool;
 import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.green.GreenWool;
 import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.lime.LimeWool;
 import net.origamiking.mcmods.oem.blocks.wool.orange.OrangeWool;
 import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
+import net.origamiking.mcmods.oem.blocks.wool.lightblue.LightBlueWool;
+import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
+import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
+import net.origamiking.mcmods.oem.blocks.wool.magenta.MagentaWool;
+import net.origamiking.mcmods.oem.blocks.wool.pink.PinkWool;
 import net.origamiking.mcmods.oem.items.ModItems;
 
 import java.util.function.Consumer;
@@ -147,8 +152,30 @@ public class ModRecpieGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, YellowWool.YELLOW_WOOL_SLAB, Blocks.YELLOW_WOOL, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, YellowWool.YELLOW_WOOL_STAIRS,Blocks.YELLOW_WOOL);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, YellowWool.YELLOW_WOOL_WALL, Blocks.YELLOW_WOOL);
-
-
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LimeWool.LIME_WOOL_SLAB, Blocks.LIME_WOOL, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LimeWool.LIME_WOOL_STAIRS,Blocks.LIME_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LimeWool.LIME_WOOL_WALL, Blocks.LIME_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GreenWool.GREEN_WOOL_SLAB, Blocks.GREEN_WOOL, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GreenWool.GREEN_WOOL_STAIRS,Blocks.GREEN_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GreenWool.GREEN_WOOL_WALL, Blocks.GREEN_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CyanWool.CYAN_WOOL_SLAB, Blocks.CYAN_WOOL, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CyanWool.CYAN_WOOL_STAIRS,Blocks.CYAN_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CyanWool.CYAN_WOOL_WALL, Blocks.CYAN_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LightBlueWool.LIGHT_BLUE_WOOL_SLAB, Blocks.LIGHT_BLUE_WOOL, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LightBlueWool.LIGHT_BLUE_WOOL_STAIRS,Blocks.LIGHT_BLUE_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LightBlueWool.LIGHT_BLUE_WOOL_WALL, Blocks.LIGHT_BLUE_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlueWool.BLUE_WOOL_SLAB, Blocks.BLUE_WOOL, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlueWool.BLUE_WOOL_STAIRS,Blocks.BLUE_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BlueWool.BLUE_WOOL_WALL, Blocks.BLUE_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, PurpleWool.PURPLE_WOOL_SLAB, Blocks.PURPLE_WOOL, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, PurpleWool.PURPLE_WOOL_STAIRS,Blocks.PURPLE_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, PurpleWool.PURPLE_WOOL_WALL, Blocks.PURPLE_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MagentaWool.MAGENTA_WOOL_SLAB, Blocks.MAGENTA_WOOL, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MagentaWool.MAGENTA_WOOL_STAIRS,Blocks.MAGENTA_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MagentaWool.MAGENTA_WOOL_WALL, Blocks.MAGENTA_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, PinkWool.PINK_WOOL_SLAB, Blocks.PINK_WOOL, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, PinkWool.PINK_WOOL_STAIRS,Blocks.PINK_WOOL);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, PinkWool.PINK_WOOL_WALL, Blocks.PINK_WOOL);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, 2)
                 .pattern("   ").pattern("   ").pattern("###").input('#', Items.COPPER_INGOT)
