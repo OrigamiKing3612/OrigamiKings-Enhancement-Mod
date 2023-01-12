@@ -24,7 +24,10 @@ import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
 import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
 import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.orange.OrangeWool;
+import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
+import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
 
 import javax.tools.StandardJavaFileManager;
 
@@ -175,6 +178,8 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(CopperBlocks.EXPOSED_COPPER_BUTTON);
         addDrop(CopperBlocks.WEATHERED_COPPER_BUTTON);
         addDrop(CopperBlocks.OXIDIZED_COPPER_BUTTON);
+        addDrop(CopperBlocks.COPPER_DOOR);
+        addDrop(CopperBlocks.COPPER_TRAPDOOR);
         addDrop(WhiteWool.WHITE_WOOL_STAIRS);
         addDrop(WhiteWool.WHITE_WOOL_WALL);
         addDrop(WhiteWool.WHITE_WOOL_SLAB);
@@ -190,6 +195,15 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(BrownWool.BROWN_WOOL_STAIRS);
         addDrop(BrownWool.BROWN_WOOL_WALL);
         addDrop(BrownWool.BROWN_WOOL_SLAB);
+        addDrop(RedWool.RED_WOOL_STAIRS);
+        addDrop(RedWool.RED_WOOL_WALL);
+        addDrop(RedWool.RED_WOOL_SLAB);
+        addDrop(OrangeWool.ORANGE_WOOL_STAIRS);
+        addDrop(OrangeWool.ORANGE_WOOL_WALL);
+        addDrop(OrangeWool.ORANGE_WOOL_SLAB);
+        addDrop(YellowWool.YELLOW_WOOL_STAIRS);
+        addDrop(YellowWool.YELLOW_WOOL_WALL);
+        addDrop(YellowWool.YELLOW_WOOL_SLAB);
 
     }
 }

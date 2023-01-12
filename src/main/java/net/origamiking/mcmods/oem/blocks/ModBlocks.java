@@ -1,12 +1,10 @@
 package net.origamiking.mcmods.oem.blocks;
 
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
@@ -31,7 +29,10 @@ import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
 import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
 import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
+import net.origamiking.mcmods.oem.blocks.wool.orange.OrangeWool;
+import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
+import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
 
 
 public class ModBlocks {
@@ -70,7 +71,9 @@ public class ModBlocks {
         GrayWool.getGrayWool();
         BlackWool.getBlackWool();
         BrownWool.getBrownWool();
-
+        RedWool.getRedWool();
+        OrangeWool.getOrangeWool();// do all models blocks starting purple
+        YellowWool.getYellowWool();
 
         //geting leaf blocks
 //        LeafStairs.getLeafStairs();

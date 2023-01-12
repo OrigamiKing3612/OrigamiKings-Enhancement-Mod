@@ -38,6 +38,14 @@
     "minecraft": "~1.19",
     "java": ">=17"
   },
+  "jars": [
+    {
+      "file": "jars/geckolib-fabric-1.19.3-4.0.3.jar"
+    },
+    {
+      "file": "jars/fabric-api-0.69.1+1.19.3.jar"
+    }
+  ],
   "suggests": {
   }
 }
