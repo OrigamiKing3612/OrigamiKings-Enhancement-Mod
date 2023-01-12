@@ -6,7 +6,9 @@ Some things this mod adds are:
 2. Gold and Copper bars
 3. Varents of barrels, bookshelves, and ladders
 4. Glass Stairs and Slabs
-5. More to come
+5. Leaf stairs and slabs
+6. Other blocks for my server
+7. More to come
 
 # Some in-game pictures
 <img width="854" alt="inventory_2" src="https://user-images.githubusercontent.com/115757805/210160707-97237606-c2b9-4a08-b353-7d5b59d5bfd2.png">
