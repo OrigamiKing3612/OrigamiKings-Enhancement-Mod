@@ -13,6 +13,19 @@
     "oem:gray_wool_wall",
     "oem:black_wool_wall",
     "oem:brown_wool_wall",
-    "oem:red_wool_wall"
+    "oem:red_wool_wall",
+    "oem:orange_wool_wall",
+    "oem:yellow_wool_wall",
+    "oem:lime_wool_wall",
+    "oem:green_wool_wall",
+    "oem:cyan_wool_wall",
+    "oem:light_blue_wool_wall",
+    "oem:blue_wool_wall",
+    "oem:purple_wool_wall",
+    "oem:magenta_wool_wall",
+    "oem:pink_wool_wall"
+
+
+
   ]
 }

@@ -13,6 +13,10 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
@@ -92,10 +96,11 @@ public class ModBlocks {
         PinkWool.getPinkWool();
 
         //geting leaf blocks
-//        LeafStairs.getLeafStairs();
-//        LeafSlabs.getLeafSlabs();
-//        LeafWalls.getLeafWalls();
-//        LeaveCarpets.getLeafCarpets();
+        LeafStairs.getLeafStairs();
+        LeafSlabs.getLeafSlabs();
+        LeafWalls.getLeafWalls();
+        LeafCarpets.getLeafCarpets();
+
         OemMain.LOGGER.info("Registering Blocks for OEM");
     }
 }

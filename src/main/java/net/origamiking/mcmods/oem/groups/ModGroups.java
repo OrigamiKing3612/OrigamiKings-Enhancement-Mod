@@ -15,6 +15,7 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
@@ -229,6 +230,13 @@ public class ModGroups {
                 entries.add(LeafStairs.ACACIA_LEAVES_STAIRS);
                 entries.add(LeafStairs.DARK_OAK_LEAVES_STAIRS);
                 entries.add(LeafStairs.MANGROVE_LEAVES_STAIRS);
+                entries.add(LeafSlabs.OAK_LEAVES_SLAB);
+                entries.add(LeafSlabs.SPRUCE_LEAVES_SLAB);
+                entries.add(LeafSlabs.BIRCH_LEAVES_SLAB);
+                entries.add(LeafSlabs.JUNGLE_LEAVES_SLAB);
+                entries.add(LeafSlabs.ACACIA_LEAVES_SLAB);
+                entries.add(LeafSlabs.DARK_OAK_LEAVES_SLAB);
+                entries.add(LeafSlabs.MANGROVE_LEAVES_SLAB);
                 //gold
                 entries.add(ServerSpecificBlocks.GOLD_CHAIN);
                 entries.add(ServerSpecificBlocks.GOLD_LANTERN);

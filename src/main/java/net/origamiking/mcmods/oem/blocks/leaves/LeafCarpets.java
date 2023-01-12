@@ -2,7 +2,7 @@ package net.origamiking.mcmods.oem.blocks.leaves;
 
 import net.origamiking.mcmods.oem.blocks.ModBlocks;
 
-public class LeaveCarpets extends ModBlocks {
+public class LeafCarpets extends ModBlocks {
 
 
 
