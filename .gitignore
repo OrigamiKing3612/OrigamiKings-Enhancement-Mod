@@ -33,7 +33,7 @@ bin/
 run/
 /remappedSrc/
 /src/main/generated/.cache
-
+/.gradle
 
 # java
 
