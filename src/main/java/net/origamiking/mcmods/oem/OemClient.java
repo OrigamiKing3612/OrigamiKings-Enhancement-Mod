@@ -90,7 +90,6 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.GLASS_SLAB, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.GLASS_STAIR, RenderLayer.getTranslucent());
 
-
       //leaf cutout
       BlockRenderLayerMap.INSTANCE.putBlock(LeafStairs.OAK_LEAVES_STAIRS, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafStairs.SPRUCE_LEAVES_STAIRS, RenderLayer.getCutout());

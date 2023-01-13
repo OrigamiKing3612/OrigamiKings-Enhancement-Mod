@@ -1,5 +1,5 @@
 {
-  "parent": "more_slabs_stairs_and_walls:block/leaves_outer_stairs",
+  "parent": "oem:block/leaves_outer_stairs",
   "textures": {
     "bottom": "minecraft:block/acacia_leaves",
     "side": "minecraft:block/acacia_leaves",
