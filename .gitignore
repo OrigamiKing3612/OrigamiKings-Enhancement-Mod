@@ -31,6 +31,9 @@ bin/
 # fabric
 
 run/
+/remappedSrc/
+/src/main/generated/.cache
+
 
 # java
 
