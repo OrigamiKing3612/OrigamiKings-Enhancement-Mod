@@ -34,6 +34,7 @@ run/
 /remappedSrc/
 /src/main/generated/.cache
 /.gradle
+/.gradle/
 
 # java
 
