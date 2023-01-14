@@ -2,25 +2,6 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
-import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
-import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
-import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
-import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
-import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
-import net.origamiking.mcmods.oem.blocks.wool.cyan.CyanWool;
-import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
-import net.origamiking.mcmods.oem.blocks.wool.green.GreenWool;
-import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
-import net.origamiking.mcmods.oem.blocks.wool.lightblue.LightBlueWool;
-import net.origamiking.mcmods.oem.blocks.wool.lime.LimeWool;
-import net.origamiking.mcmods.oem.blocks.wool.magenta.MagentaWool;
-import net.origamiking.mcmods.oem.blocks.wool.orange.OrangeWool;
-import net.origamiking.mcmods.oem.blocks.wool.pink.PinkWool;
-import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
-import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
-import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
-import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
 
 import java.nio.file.Path;
 
@@ -87,12 +68,12 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(LeafStairs.DARK_OAK_LEAVES_STAIRS, "Dark oak Leaf Stairs");
 //        translationBuilder.add(LeafStairs.MANGROVE_LEAVES_STAIRS, "Mangrove Leaf Stairs");
 //        translationBuilder.add(LeafSlabs.OAK_LEAVES_SLAB, "Oak Leaf Stairs");
-//        translationBuilder.add(LeafSlabs.SPRUCE_LEAVES_SLAB, "Spruce Leaf Stairs");
-//        translationBuilder.add(LeafSlabs.BIRCH_LEAVES_SLAB, "Birch Leaf Stairs");
-//        translationBuilder.add(LeafSlabs.JUNGLE_LEAVES_SLAB, "Jungle Leaf Stairs");
-//        translationBuilder.add(LeafSlabs.ACACIA_LEAVES_SLAB, "Acacia Leaf Stairs");
-//        translationBuilder.add(LeafSlabs.DARK_OAK_LEAVES_SLAB, "Dark oak Leaf Stairs");
-//        translationBuilder.add(LeafSlabs.MANGROVE_LEAVES_SLAB, "Mangrove Leaf Stairs");
+//        translationBuilder.add(LeafSlabs.SPRUCE_LEAVES_SLAB, "Spruce Leaf Slab");
+//        translationBuilder.add(LeafSlabs.BIRCH_LEAVES_SLAB, "Birch Leaf Slab");
+//        translationBuilder.add(LeafSlabs.JUNGLE_LEAVES_SLAB, "Jungle Leaf Slab");
+//        translationBuilder.add(LeafSlabs.ACACIA_LEAVES_SLAB, "Acacia Leaf Slab");
+//        translationBuilder.add(LeafSlabs.DARK_OAK_LEAVES_SLAB, "Dark oak Leaf Slab");
+//        translationBuilder.add(LeafSlabs.MANGROVE_LEAVES_SLAB, "Mangrove Leaf Slab");
 
 
         try {
