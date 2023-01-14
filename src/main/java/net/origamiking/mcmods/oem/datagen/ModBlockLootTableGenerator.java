@@ -7,6 +7,8 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
@@ -230,6 +232,18 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(MagentaWool.MAGENTA_WOOL_STAIRS);
         addDrop(MagentaWool.MAGENTA_WOOL_WALL);
         addDrop(MagentaWool.MAGENTA_WOOL_SLAB);
+        addDropWithSilkTouch(LeafStairs.OAK_LEAVES_STAIRS);
+        addDropWithSilkTouch(LeafStairs.SPRUCE_LEAVES_STAIRS);
+        addDropWithSilkTouch(LeafStairs.BIRCH_LEAVES_STAIRS);
+        addDropWithSilkTouch(LeafStairs.ACACIA_LEAVES_STAIRS);
+        addDropWithSilkTouch(LeafStairs.JUNGLE_LEAVES_STAIRS);
+        addDropWithSilkTouch(LeafStairs.MANGROVE_LEAVES_STAIRS);
+        addDropWithSilkTouch(LeafSlabs.OAK_LEAVES_SLAB);
+        addDropWithSilkTouch(LeafSlabs.SPRUCE_LEAVES_SLAB);
+        addDropWithSilkTouch(LeafSlabs.BIRCH_LEAVES_SLAB);
+        addDropWithSilkTouch(LeafSlabs.ACACIA_LEAVES_SLAB);
+        addDropWithSilkTouch(LeafSlabs.JUNGLE_LEAVES_SLAB);
+        addDropWithSilkTouch(LeafSlabs.MANGROVE_LEAVES_SLAB);
 
     }
 }

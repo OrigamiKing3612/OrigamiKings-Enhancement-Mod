@@ -78,7 +78,10 @@
     "oem:netherrack_slab",
     "oem:netherrack_stairs",
     "oem:dripstone_block_slab",
-    "oem:dripstone_block_stairs"
+    "oem:dripstone_block_stairs",
+    "oem:snow_block_slab",
+    "oem:snow_block_stairs",
+    "oem:snow_block_wall"
 
 
   ]

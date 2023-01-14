@@ -81,8 +81,6 @@
     "oem:dripstone_block_stairs",
     "oem:snow_block_slab",
     "oem:snow_block_stairs",
-    "oem:snow_block_wall",
-    "oem:copper_bars"
-    //copper
+    "oem:snow_block_wall"
   ]
 }
