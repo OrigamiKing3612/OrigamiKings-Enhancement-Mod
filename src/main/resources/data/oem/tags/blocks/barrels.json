@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "oem:oak_barrel",
+    "oem:spruce_barrel",
+    "oem:birch_barrel",
+    "oem:acacia_barrel",
+    "oem:jungle_barrel",
+    "oem:dark_oak_barrel",
+    "oem:mangrove_barrel"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:spruce_leaves"
+  },
+  "result": "oem:spruce_leaves_slab"
+}

@@ -3,6 +3,8 @@ package net.origamiking.mcmods.oem.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
@@ -77,6 +79,20 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(PinkWool.PINK_WOOL_SLAB, "Pink Wool Slab");
 //        translationBuilder.add(PinkWool.PINK_WOOL_STAIRS, "Pink Wool Stairs");
 //        translationBuilder.add(PinkWool.PINK_WOOL_WALL, "Pink Wool Wall");
+//        translationBuilder.add(LeafStairs.OAK_LEAVES_STAIRS, "Oak Leaf Stairs");
+//        translationBuilder.add(LeafStairs.SPRUCE_LEAVES_STAIRS, "Spruce Leaf Stairs");
+//        translationBuilder.add(LeafStairs.BIRCH_LEAVES_STAIRS, "Birch Leaf Stairs");
+//        translationBuilder.add(LeafStairs.ACACIA_LEAVES_STAIRS, "Acacia Leaf Stairs");
+//        translationBuilder.add(LeafStairs.JUNGLE_LEAVES_STAIRS, "Jungle Leaf Stairs");
+//        translationBuilder.add(LeafStairs.DARK_OAK_LEAVES_STAIRS, "Dark oak Leaf Stairs");
+//        translationBuilder.add(LeafStairs.MANGROVE_LEAVES_STAIRS, "Mangrove Leaf Stairs");
+//        translationBuilder.add(LeafSlabs.OAK_LEAVES_SLAB, "Oak Leaf Stairs");
+//        translationBuilder.add(LeafSlabs.SPRUCE_LEAVES_SLAB, "Spruce Leaf Stairs");
+//        translationBuilder.add(LeafSlabs.BIRCH_LEAVES_SLAB, "Birch Leaf Stairs");
+//        translationBuilder.add(LeafSlabs.JUNGLE_LEAVES_SLAB, "Jungle Leaf Stairs");
+//        translationBuilder.add(LeafSlabs.ACACIA_LEAVES_SLAB, "Acacia Leaf Stairs");
+//        translationBuilder.add(LeafSlabs.DARK_OAK_LEAVES_SLAB, "Dark oak Leaf Stairs");
+//        translationBuilder.add(LeafSlabs.MANGROVE_LEAVES_SLAB, "Mangrove Leaf Stairs");
 
 
         try {

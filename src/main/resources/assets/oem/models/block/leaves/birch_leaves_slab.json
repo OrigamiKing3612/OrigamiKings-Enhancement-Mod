@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/slab",
+  "parent": "oem:block/leaves_slab",
   "textures": {
     "bottom": "minecraft:block/birch_leaves",
     "side": "minecraft:block/birch_leaves",
