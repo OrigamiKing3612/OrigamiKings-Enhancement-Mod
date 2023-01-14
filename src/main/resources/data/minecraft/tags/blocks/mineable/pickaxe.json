@@ -81,6 +81,25 @@
     "oem:dripstone_block_stairs",
     "oem:snow_block_slab",
     "oem:snow_block_stairs",
-    "oem:snow_block_wall"
+    "oem:snow_block_wall",
+    "oem:copper_bars",
+    "oem:exposed_copper_bars",
+    "oem:weathered_copper_bars",
+    "oem:oxidized_copper_bars",
+    "oem:copper_chain",
+    "oem:exposed_copper_chain",
+    "oem:weathered_copper_chain",
+    "oem:oxidized_copper_chain",
+    "oem:copper_lantern",
+    "oem:copper_pressure_plate",
+    "oem:exposed_copper_pressure_plate",
+    "oem:weathered_copper_pressure_plate",
+    "oem:oxidized_copper_pressure_plate",
+    "oem:copper_button",
+    "oem:exposed_copper_button",
+    "oem:weathered_copper_button",
+    "oem:oxidized_copper_button",
+    "oem:copper_door",
+    "oem:copper_trapdoor"
   ]
 }
