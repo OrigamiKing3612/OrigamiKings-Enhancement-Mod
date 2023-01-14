@@ -2,6 +2,20 @@
   "replace": false,
   "values": [
     "oem:sculk_stairs",
-    "oem:sculk_slab"
+    "oem:sculk_slab",
+    "oem:jungle_leaves_stairs",
+    "oem:oak_leaves_stairs",
+    "oem:spruce_leaves_stairs",
+    "oem:dark_oak_leaves_stairs",
+    "oem:acacia_leaves_stairs",
+    "oem:birch_leaves_stairs",
+    "oem:mangrove_leaves_stairs",
+    "oem:jungle_leaves_slab",
+    "oem:oak_leaves_slab",
+    "oem:spruce_leaves_slab",
+    "oem:dark_oak_leaves_slab",
+    "oem:acacia_leaves_slab",
+    "oem:birch_leaves_slab",
+    "oem:mangrove_leaves_slab"
   ]
 }
