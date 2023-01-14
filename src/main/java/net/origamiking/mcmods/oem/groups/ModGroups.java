@@ -224,18 +224,18 @@ public class ModGroups {
                 entries.add(RandomBlocks.SNOW_STAIRS);
                 entries.add(RandomBlocks.SNOW_WALL);
                 entries.add(LeafStairs.OAK_LEAVES_STAIRS);
-                entries.add(LeafStairs.SPRUCE_LEAVES_STAIRS);
-                entries.add(LeafStairs.BIRCH_LEAVES_STAIRS);
-                entries.add(LeafStairs.JUNGLE_LEAVES_STAIRS);
-                entries.add(LeafStairs.ACACIA_LEAVES_STAIRS);
-                entries.add(LeafStairs.DARK_OAK_LEAVES_STAIRS);
-                entries.add(LeafStairs.MANGROVE_LEAVES_STAIRS);
                 entries.add(LeafSlabs.OAK_LEAVES_SLAB);
+                entries.add(LeafStairs.SPRUCE_LEAVES_STAIRS);
                 entries.add(LeafSlabs.SPRUCE_LEAVES_SLAB);
+                entries.add(LeafStairs.BIRCH_LEAVES_STAIRS);
                 entries.add(LeafSlabs.BIRCH_LEAVES_SLAB);
+                entries.add(LeafStairs.JUNGLE_LEAVES_STAIRS);
                 entries.add(LeafSlabs.JUNGLE_LEAVES_SLAB);
+                entries.add(LeafStairs.ACACIA_LEAVES_STAIRS);
                 entries.add(LeafSlabs.ACACIA_LEAVES_SLAB);
+                entries.add(LeafStairs.DARK_OAK_LEAVES_STAIRS);
                 entries.add(LeafSlabs.DARK_OAK_LEAVES_SLAB);
+                entries.add(LeafStairs.MANGROVE_LEAVES_STAIRS);
                 entries.add(LeafSlabs.MANGROVE_LEAVES_SLAB);
                 //gold
                 entries.add(ServerSpecificBlocks.GOLD_CHAIN);
