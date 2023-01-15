@@ -23,8 +23,14 @@
     "oem:blue_wool_wall",
     "oem:purple_wool_wall",
     "oem:magenta_wool_wall",
-    "oem:pink_wool_wall"
-
+    "oem:pink_wool_wall",
+    "oem:oak_leaves_wall",
+    "oem:spruce_leaves_wall",
+    "oem:birch_leaves_wall",
+    "oem:acacia_leaves_wall",
+    "oem:jungle_leaves_wall",
+    "oem:dark_oak_leaves_wall",
+    "oem:mangrove_leaves_wall"
 
 
   ]

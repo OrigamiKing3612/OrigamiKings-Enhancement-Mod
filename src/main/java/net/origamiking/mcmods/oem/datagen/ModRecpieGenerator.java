@@ -16,6 +16,7 @@ import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
@@ -177,13 +178,20 @@ public class ModRecpieGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, PinkWool.PINK_WOOL_SLAB, Blocks.PINK_WOOL, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, PinkWool.PINK_WOOL_STAIRS,Blocks.PINK_WOOL);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, PinkWool.PINK_WOOL_WALL, Blocks.PINK_WOOL);
-        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.OAK_LEAVES_SLAB, Blocks.OAK_LEAVES);
-        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.SPRUCE_LEAVES_SLAB, Blocks.SPRUCE_LEAVES);
-        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.BIRCH_LEAVES_SLAB, Blocks.BIRCH_LEAVES);
-        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.JUNGLE_LEAVES_SLAB, Blocks.JUNGLE_LEAVES);
-        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.ACACIA_LEAVES_SLAB, Blocks.ACACIA_LEAVES);
-        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.DARK_OAK_LEAVES_SLAB, Blocks.DARK_OAK_LEAVES);
-        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.MANGROVE_LEAVES_SLAB, Blocks.MANGROVE_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.OAK_LEAVES_SLAB, Blocks.OAK_LEAVES,2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.SPRUCE_LEAVES_SLAB, Blocks.SPRUCE_LEAVES,2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.BIRCH_LEAVES_SLAB, Blocks.BIRCH_LEAVES,2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.JUNGLE_LEAVES_SLAB, Blocks.JUNGLE_LEAVES,2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.ACACIA_LEAVES_SLAB, Blocks.ACACIA_LEAVES,2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.DARK_OAK_LEAVES_SLAB, Blocks.DARK_OAK_LEAVES,2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafSlabs.MANGROVE_LEAVES_SLAB, Blocks.MANGROVE_LEAVES,2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafWalls.OAK_LEAVES_WALL, Blocks.OAK_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafWalls.SPRUCE_LEAVES_WALL, Blocks.SPRUCE_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafWalls.BIRCH_LEAVES_WALL, Blocks.BIRCH_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafWalls.JUNGLE_LEAVES_WALL, Blocks.JUNGLE_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafWalls.ACACIA_LEAVES_WALL, Blocks.ACACIA_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafWalls.DARK_OAK_LEAVES_WALL, Blocks.DARK_OAK_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafWalls.MANGROVE_LEAVES_WALL, Blocks.MANGROVE_LEAVES);
 
 
 

@@ -13,6 +13,15 @@
     "oem:dark_oak_leaves_slab",
     "oem:acacia_leaves_slab",
     "oem:birch_leaves_slab",
-    "oem:mangrove_leaves_slab"
+    "oem:mangrove_leaves_slab",
+    "oem:oak_leaves_wall",
+    "oem:spruce_leaves_wall",
+    "oem:birch_leaves_wall",
+    "oem:acacia_leaves_wall",
+    "oem:jungle_leaves_wall",
+    "oem:dark_oak_leaves_wall",
+    "oem:mangrove_leaves_wall",
+    "oem:dark_oak_leaves_slab",
+    "oem:dark_oak_leaves_stairs"
   ]
 }

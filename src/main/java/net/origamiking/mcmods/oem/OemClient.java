@@ -106,23 +106,30 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.JUNGLE_LEAVES_SLAB, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.DARK_OAK_LEAVES_SLAB, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.MANGROVE_LEAVES_SLAB, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.OAK_LEAVES_WALL, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.SPRUCE_LEAVES_WALL, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.BIRCH_LEAVES_WALL, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.ACACIA_LEAVES_WALL, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.JUNGLE_LEAVES_WALL, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.DARK_OAK_LEAVES_WALL, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.MANGROVE_LEAVES_WALL, RenderLayer.getCutout());
       //leaf blocks
-      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.OAK_LEAVES_STAIRS, LeafSlabs.OAK_LEAVES_SLAB);
-      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getSpruceColor(), LeafStairs.SPRUCE_LEAVES_STAIRS, LeafSlabs.SPRUCE_LEAVES_SLAB);
-      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getBirchColor(), LeafStairs.BIRCH_LEAVES_STAIRS, LeafSlabs.BIRCH_LEAVES_SLAB);
-      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.ACACIA_LEAVES_STAIRS, LeafSlabs.ACACIA_LEAVES_SLAB);
-      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.JUNGLE_LEAVES_STAIRS, LeafSlabs.JUNGLE_LEAVES_SLAB);
-      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.DARK_OAK_LEAVES_STAIRS, LeafSlabs.DARK_OAK_LEAVES_SLAB);
-      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getMangroveColor(), LeafStairs.MANGROVE_LEAVES_STAIRS, LeafSlabs.MANGROVE_LEAVES_SLAB);
+      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.OAK_LEAVES_STAIRS, LeafSlabs.OAK_LEAVES_SLAB, LeafWalls.OAK_LEAVES_WALL);
+      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getSpruceColor(), LeafStairs.SPRUCE_LEAVES_STAIRS, LeafSlabs.SPRUCE_LEAVES_SLAB, LeafWalls.SPRUCE_LEAVES_WALL);
+      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getBirchColor(), LeafStairs.BIRCH_LEAVES_STAIRS, LeafSlabs.BIRCH_LEAVES_SLAB, LeafWalls.BIRCH_LEAVES_WALL);
+      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.ACACIA_LEAVES_STAIRS, LeafSlabs.ACACIA_LEAVES_SLAB, LeafWalls.ACACIA_LEAVES_WALL);
+      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.JUNGLE_LEAVES_STAIRS, LeafSlabs.JUNGLE_LEAVES_SLAB, LeafWalls.JUNGLE_LEAVES_WALL);
+      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.DARK_OAK_LEAVES_STAIRS, LeafSlabs.DARK_OAK_LEAVES_SLAB, LeafWalls.DARK_OAK_LEAVES_WALL);
+      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getMangroveColor(), LeafStairs.MANGROVE_LEAVES_STAIRS, LeafSlabs.MANGROVE_LEAVES_SLAB, LeafWalls.MANGROVE_LEAVES_WALL);
 
       //leaf items
-      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.OAK_LEAVES_STAIRS, LeafSlabs.OAK_LEAVES_SLAB);
-      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getSpruceColor(), LeafStairs.SPRUCE_LEAVES_STAIRS, LeafSlabs.SPRUCE_LEAVES_SLAB);
-      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getBirchColor(), LeafStairs.BIRCH_LEAVES_STAIRS, LeafSlabs.BIRCH_LEAVES_SLAB);
-      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.ACACIA_LEAVES_STAIRS, LeafSlabs.ACACIA_LEAVES_SLAB);
-      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.JUNGLE_LEAVES_STAIRS, LeafSlabs.JUNGLE_LEAVES_SLAB);
-      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.DARK_OAK_LEAVES_STAIRS, LeafSlabs.DARK_OAK_LEAVES_SLAB);
-      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getMangroveColor(), LeafStairs.MANGROVE_LEAVES_STAIRS, LeafSlabs.MANGROVE_LEAVES_SLAB);
+      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.OAK_LEAVES_STAIRS, LeafSlabs.OAK_LEAVES_SLAB, LeafWalls.OAK_LEAVES_WALL);
+      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getSpruceColor(), LeafStairs.SPRUCE_LEAVES_STAIRS, LeafSlabs.SPRUCE_LEAVES_SLAB, LeafWalls.SPRUCE_LEAVES_WALL);
+      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getBirchColor(), LeafStairs.BIRCH_LEAVES_STAIRS, LeafSlabs.BIRCH_LEAVES_SLAB, LeafWalls.BIRCH_LEAVES_WALL);
+      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.ACACIA_LEAVES_STAIRS, LeafSlabs.ACACIA_LEAVES_SLAB, LeafWalls.ACACIA_LEAVES_WALL);
+      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.JUNGLE_LEAVES_STAIRS, LeafSlabs.JUNGLE_LEAVES_SLAB, LeafWalls.JUNGLE_LEAVES_WALL);
+      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.DARK_OAK_LEAVES_STAIRS, LeafSlabs.DARK_OAK_LEAVES_SLAB, LeafWalls.DARK_OAK_LEAVES_WALL);
+      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getMangroveColor(), LeafStairs.MANGROVE_LEAVES_STAIRS, LeafSlabs.MANGROVE_LEAVES_SLAB, LeafWalls.MANGROVE_LEAVES_WALL);
 
 
    }

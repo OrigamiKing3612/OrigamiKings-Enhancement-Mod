@@ -1,0 +1,6 @@
+{
+  "parent": "oem:block/leaves_wall_inventory",
+  "textures": {
+    "wall": "minecraft:block/acacia_leaves"
+  }
+}

@@ -2,6 +2,7 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 
 import java.nio.file.Path;
 
@@ -67,13 +68,13 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(LeafStairs.JUNGLE_LEAVES_STAIRS, "Jungle Leaf Stairs");
 //        translationBuilder.add(LeafStairs.DARK_OAK_LEAVES_STAIRS, "Dark oak Leaf Stairs");
 //        translationBuilder.add(LeafStairs.MANGROVE_LEAVES_STAIRS, "Mangrove Leaf Stairs");
-//        translationBuilder.add(LeafSlabs.OAK_LEAVES_SLAB, "Oak Leaf Stairs");
-//        translationBuilder.add(LeafSlabs.SPRUCE_LEAVES_SLAB, "Spruce Leaf Slab");
-//        translationBuilder.add(LeafSlabs.BIRCH_LEAVES_SLAB, "Birch Leaf Slab");
-//        translationBuilder.add(LeafSlabs.JUNGLE_LEAVES_SLAB, "Jungle Leaf Slab");
-//        translationBuilder.add(LeafSlabs.ACACIA_LEAVES_SLAB, "Acacia Leaf Slab");
-//        translationBuilder.add(LeafSlabs.DARK_OAK_LEAVES_SLAB, "Dark oak Leaf Slab");
-//        translationBuilder.add(LeafSlabs.MANGROVE_LEAVES_SLAB, "Mangrove Leaf Slab");
+        translationBuilder.add(LeafWalls.OAK_LEAVES_WALL, "Oak Leaf Wall");
+        translationBuilder.add(LeafWalls.SPRUCE_LEAVES_WALL, "Spruce Leaf Wall");
+        translationBuilder.add(LeafWalls.BIRCH_LEAVES_WALL, "Birch Leaf Wall");
+        translationBuilder.add(LeafWalls.JUNGLE_LEAVES_WALL, "Jungle Leaf Wall");
+        translationBuilder.add(LeafWalls.ACACIA_LEAVES_WALL, "Acacia Leaf Wall");
+        translationBuilder.add(LeafWalls.DARK_OAK_LEAVES_WALL, "Dark oak Leaf Wall");
+        translationBuilder.add(LeafWalls.MANGROVE_LEAVES_WALL, "Mangrove Leaf Wall");
 
 
         try {

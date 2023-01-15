@@ -5,8 +5,11 @@ add mineral blocks stair slabs and walls
 finish tags
 finish leaf stuff
 Azalea tree stuff (This comes later)
+vertical slabs/stairs (This comes later) add stone_brick_vertical_stairs and oak_wood_vertical_stairs(planks and log)
 
 fix glass rendering
 fix recipe bugs
 test all blocks
 clean up code
+
+
