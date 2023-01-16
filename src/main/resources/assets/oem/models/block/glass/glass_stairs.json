@@ -1,5 +1,5 @@
 {
-  "parent": "oem:block/glass/glass_models/glass/glass_stairs_outer",
+  "parent": "oem:block/glass/glass_models/glass/glass_stairs",
   "textures": {
     "bottom": "minecraft:block/glass",
     "front": "oem:block/glass_slab_side",

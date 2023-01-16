@@ -1,7 +1,7 @@
 {
 	"textures": {
 		"side": "oem:block/glass_stair_side",
-		"bottom": "minecraft:block/glass",
+		"bottom": "block/glass",
 		"front": "oem:block/glass_slab_side",
 		"top": "oem:block/glass_stair_small",
 		"particle": "#bottom"

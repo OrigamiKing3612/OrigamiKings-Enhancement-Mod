@@ -1,8 +1,9 @@
 {
-  "parent": "minecraft:block/inner_stairs",
+  "parent": "oem:block/glass/glass_models/glass/glass_stairs_inner",
   "textures": {
     "bottom": "minecraft:block/glass",
-    "side": "minecraft:block/glass",
-    "top": "minecraft:block/glass"
+    "front": "oem:block/glass_slab_side",
+    "side": "oem:block/glass_stair_side",
+    "top": "oem:block/glass_stair_small"
   }
 }
