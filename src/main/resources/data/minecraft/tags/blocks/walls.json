@@ -30,7 +30,23 @@
     "oem:acacia_leaves_wall",
     "oem:jungle_leaves_wall",
     "oem:dark_oak_leaves_wall",
-    "oem:mangrove_leaves_wall"
+    "oem:mangrove_leaves_wall",
+    "oem:white_concrete_wall",
+    "oem:light_gray_concrete_wall",
+    "oem:gray_concrete_wall",
+    "oem:black_concrete_wall",
+    "oem:brown_concrete_wall",
+    "oem:red_concrete_wall",
+    "oem:orange_concrete_wall",
+    "oem:yellow_concrete_wall",
+    "oem:lime_concrete_wall",
+    "oem:green_concrete_wall",
+    "oem:cyan_concrete_wall",
+    "oem:light_blue_concrete_wall",
+    "oem:blue_concrete_wall",
+    "oem:purple_concrete_wall",
+    "oem:magenta_concrete_wall",
+    "oem:pink_concrete_wall"
 
 
   ]

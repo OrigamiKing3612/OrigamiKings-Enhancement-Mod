@@ -2,7 +2,7 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
+import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 
 import java.nio.file.Path;
 
@@ -68,13 +68,37 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(LeafStairs.JUNGLE_LEAVES_STAIRS, "Jungle Leaf Stairs");
 //        translationBuilder.add(LeafStairs.DARK_OAK_LEAVES_STAIRS, "Dark oak Leaf Stairs");
 //        translationBuilder.add(LeafStairs.MANGROVE_LEAVES_STAIRS, "Mangrove Leaf Stairs");
-        translationBuilder.add(LeafWalls.OAK_LEAVES_WALL, "Oak Leaf Wall");
-        translationBuilder.add(LeafWalls.SPRUCE_LEAVES_WALL, "Spruce Leaf Wall");
-        translationBuilder.add(LeafWalls.BIRCH_LEAVES_WALL, "Birch Leaf Wall");
-        translationBuilder.add(LeafWalls.JUNGLE_LEAVES_WALL, "Jungle Leaf Wall");
-        translationBuilder.add(LeafWalls.ACACIA_LEAVES_WALL, "Acacia Leaf Wall");
-        translationBuilder.add(LeafWalls.DARK_OAK_LEAVES_WALL, "Dark oak Leaf Wall");
-        translationBuilder.add(LeafWalls.MANGROVE_LEAVES_WALL, "Mangrove Leaf Wall");
+//        translationBuilder.add(LeafWalls.OAK_LEAVES_WALL, "Oak Leaf Wall");
+//        translationBuilder.add(LeafWalls.SPRUCE_LEAVES_WALL, "Spruce Leaf Wall");
+//        translationBuilder.add(LeafWalls.BIRCH_LEAVES_WALL, "Birch Leaf Wall");
+//        translationBuilder.add(LeafWalls.JUNGLE_LEAVES_WALL, "Jungle Leaf Wall");
+//        translationBuilder.add(LeafWalls.ACACIA_LEAVES_WALL, "Acacia Leaf Wall");
+//        translationBuilder.add(LeafWalls.DARK_OAK_LEAVES_WALL, "Dark oak Leaf Wall");
+//        translationBuilder.add(LeafWalls.MANGROVE_LEAVES_WALL, "Mangrove Leaf Wall");
+//        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_DOOR, "Exposed Copper Door");
+//        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_TRAPDOOR, "Exposed Copper Trapdoor");
+//        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_DOOR, "Weathered Copper Door");
+//        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_TRAPDOOR, "Weathered Copper Trapdoor");
+//        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_DOOR,"Oxidized Copper Door");
+//        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_TRAPDOOR, "Oxidized Copper Trapdoor");
+//        translationBuilder.add(GoldBlocks.GOLD_BARS, "Gold Bars");
+//        translationBuilder.add("item.oem.viking_helmet","Viking Helmet");
+//        translationBuilder.add(ConcreteWalls.WHITE_CONCRETE_WALL, "White Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.LIGHT_GRAY_CONCRETE_WALL,"Light Gray Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.GRAY_CONCRETE_WALL,"Gray Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.BLACK_CONCRETE_WALL,"Black Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.BROWN_CONCRETE_WALL,"Brown Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.RED_CONCRETE_WALL,"Red Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.ORANGE_CONCRETE_WALL,"Orange Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.YELLOW_CONCRETE_WALL,"Yellow Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.LIME_CONCRETE_WALL,"Lime Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.GREEN_CONCRETE_WALL,"Green Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.CYAN_CONCRETE_WALL,"Cyan Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.LIGHT_BLUE_CONCRETE_WALL,"Light Blue Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.BLUE_CONCRETE_WALL,"Blue Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.PURPLE_CONCRETE_WALL,"Purple Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.MAGENTA_CONCRETE_WALL,"Mangenta Concrete Wall");
+//        translationBuilder.add(ConcreteWalls.PINK_CONCRETE_WALL,"Pink Concrete Wall");
 
 
         try {

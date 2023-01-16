@@ -10,6 +10,7 @@ import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
+import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
@@ -59,8 +60,9 @@ public class ModBlocks {
     }
     public static void register() {
         GlassBlocks.getGlassBlocks();
-        ConcreteSlabs.getConcreteBlocks();
+        ConcreteSlabs.getConcreteSlabs();
         ConcreteStairs.getConcreteStairs();
+        ConcreteWalls.getConcreteWalls();
         SculkBlocks.getSculkBlocks();
         ServerSpecificBlocks.getServerSpecific();
         AmethystBlocks.getAmethyst();

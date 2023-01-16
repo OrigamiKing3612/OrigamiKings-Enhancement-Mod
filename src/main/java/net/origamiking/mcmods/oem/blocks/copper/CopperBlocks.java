@@ -11,7 +11,7 @@ import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
 
-public class CopperBlocks {//ALL NEED BLOCKSTATE AND MODEL FILES but copper plate
+public class CopperBlocks {
     public static final Block COPPER_BARS = registerBlock("copper_bars", new PaneBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(4f).nonOpaque().sounds(BlockSoundGroup.COPPER)));
     public static final Block EXPOSED_COPPER_BARS = registerBlock("exposed_copper_bars", new PaneBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(4f).nonOpaque().sounds(BlockSoundGroup.COPPER)));
     public static final Block WEATHERED_COPPER_BARS = registerBlock("weathered_copper_bars", new PaneBlock(FabricBlockSettings.of(Material.METAL).requiresTool().strength(4f).nonOpaque().sounds(BlockSoundGroup.COPPER)));
@@ -29,8 +29,14 @@ public class CopperBlocks {//ALL NEED BLOCKSTATE AND MODEL FILES but copper plat
     public static final Block EXPOSED_COPPER_BUTTON = registerBlock("exposed_copper_button", new ButtonBlock(FabricBlockSettings.of(Material.METAL).noCollision().strength(0.5f).sounds(BlockSoundGroup.COPPER).requiresTool(), 30, false, SoundEvents.BLOCK_STONE_BUTTON_CLICK_OFF, SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON));
     public static final Block WEATHERED_COPPER_BUTTON = registerBlock("weathered_copper_button", new ButtonBlock(FabricBlockSettings.of(Material.METAL).noCollision().strength(0.5f).sounds(BlockSoundGroup.COPPER).requiresTool(), 30, false, SoundEvents.BLOCK_STONE_BUTTON_CLICK_OFF, SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON));
     public static final Block OXIDIZED_COPPER_BUTTON = registerBlock("oxidized_copper_button", new ButtonBlock(FabricBlockSettings.of(Material.METAL).noCollision().strength(0.5f).sounds(BlockSoundGroup.COPPER).requiresTool(), 30, false, SoundEvents.BLOCK_STONE_BUTTON_CLICK_OFF, SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON));
-    public static final Block COPPER_DOOR = registerBlock("copper_door", new DoorBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).sounds(BlockSoundGroup.COPPER).requiresTool(), SoundEvents.BLOCK_IRON_DOOR_CLOSE, SoundEvents.BLOCK_IRON_DOOR_OPEN));
-    public static final Block COPPER_TRAPDOOR = registerBlock("copper_trapdoor", new TrapdoorBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).sounds(BlockSoundGroup.COPPER).requiresTool(), SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN));
+    public static final Block COPPER_DOOR = registerBlock("copper_door", new DoorBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque(), SoundEvents.BLOCK_IRON_DOOR_CLOSE, SoundEvents.BLOCK_IRON_DOOR_OPEN));
+    public static final Block COPPER_TRAPDOOR = registerBlock("copper_trapdoor", new TrapdoorBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque(), SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN));
+    public static final Block EXPOSED_COPPER_DOOR = registerBlock("exposed_copper_door", new DoorBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque(), SoundEvents.BLOCK_IRON_DOOR_CLOSE, SoundEvents.BLOCK_IRON_DOOR_OPEN));
+    public static final Block EXPOSED_COPPER_TRAPDOOR = registerBlock("exposed_copper_trapdoor", new TrapdoorBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque(), SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN));
+    public static final Block WEATHERED_COPPER_DOOR = registerBlock("weathered_copper_door", new DoorBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque(), SoundEvents.BLOCK_IRON_DOOR_CLOSE, SoundEvents.BLOCK_IRON_DOOR_OPEN));
+    public static final Block WEATHERED_COPPER_TRAPDOOR = registerBlock("weathered_copper_trapdoor", new TrapdoorBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque(), SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN));
+    public static final Block OXIDIZED_COPPER_DOOR = registerBlock("oxidized_copper_door", new DoorBlock(FabricBlockSettings.of(Material.METAL).strength(4.0f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque(), SoundEvents.BLOCK_IRON_DOOR_CLOSE, SoundEvents.BLOCK_IRON_DOOR_OPEN));
+    public static final Block OXIDIZED_COPPER_TRAPDOOR = registerBlock("oxidized_copper_trapdoor", new TrapdoorBlock(FabricBlockSettings.of(Material.METAL).strength(0.5f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque(), SoundEvents.BLOCK_IRON_TRAPDOOR_CLOSE, SoundEvents.BLOCK_IRON_TRAPDOOR_OPEN));
 
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));

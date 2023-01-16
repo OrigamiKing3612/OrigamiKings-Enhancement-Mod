@@ -36,5 +36,5 @@ public class ConcreteSlabs {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, name), block);
     }
-    public static void getConcreteBlocks() {}
+    public static void getConcreteSlabs() {}
 }

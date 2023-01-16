@@ -5,8 +5,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
+import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
+import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
@@ -33,6 +35,7 @@ import net.origamiking.mcmods.oem.blocks.wool.lightblue.LightBlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.lime.LimeWool;
 import net.origamiking.mcmods.oem.blocks.wool.magenta.MagentaWool;
 import net.origamiking.mcmods.oem.blocks.wool.orange.OrangeWool;
+import net.origamiking.mcmods.oem.blocks.wool.pink.PinkWool;
 import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
@@ -251,6 +254,33 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(LeafWalls.ACACIA_LEAVES_WALL);
         addDropWithSilkTouch(LeafWalls.JUNGLE_LEAVES_WALL);
         addDropWithSilkTouch(LeafWalls.MANGROVE_LEAVES_WALL);
+        addDrop(CopperBlocks.EXPOSED_COPPER_DOOR);
+        addDrop(CopperBlocks.EXPOSED_COPPER_TRAPDOOR);
+        addDrop(CopperBlocks.WEATHERED_COPPER_DOOR);
+        addDrop(CopperBlocks.WEATHERED_COPPER_TRAPDOOR);
+        addDrop(CopperBlocks.OXIDIZED_COPPER_DOOR);
+        addDrop(CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
+        addDrop(ConcreteWalls.WHITE_CONCRETE_WALL);
+        addDrop(ConcreteWalls.LIGHT_GRAY_CONCRETE_WALL);
+        addDrop(ConcreteWalls.GRAY_CONCRETE_WALL);
+        addDrop(ConcreteWalls.BLACK_CONCRETE_WALL);
+        addDrop(ConcreteWalls.BROWN_CONCRETE_WALL);
+        addDrop(ConcreteWalls.RED_CONCRETE_WALL);
+        addDrop(ConcreteWalls.ORANGE_CONCRETE_WALL);
+        addDrop(ConcreteWalls.YELLOW_CONCRETE_WALL);
+        addDrop(ConcreteWalls.LIME_CONCRETE_WALL);
+        addDrop(ConcreteWalls.GREEN_CONCRETE_WALL);
+        addDrop(ConcreteWalls.CYAN_CONCRETE_WALL);
+        addDrop(ConcreteWalls.LIGHT_BLUE_CONCRETE_WALL);
+        addDrop(ConcreteWalls.BLUE_CONCRETE_WALL);
+        addDrop(ConcreteWalls.PURPLE_CONCRETE_WALL);
+        addDrop(ConcreteWalls.MAGENTA_CONCRETE_WALL);
+        addDrop(ConcreteWalls.PINK_CONCRETE_WALL);
+        addDrop(GoldBlocks.GOLD_BARS);
+        addDrop(PinkWool.PINK_WOOL_STAIRS);
+        addDrop(PinkWool.PINK_WOOL_SLAB);
+        addDrop(PinkWool.PINK_WOOL_WALL);
+
 
     }
 }

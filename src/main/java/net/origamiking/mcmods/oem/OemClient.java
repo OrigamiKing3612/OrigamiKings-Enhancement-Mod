@@ -39,9 +39,15 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.WEATHERED_COPPER_BARS, RenderLayer.getTranslucent());
-      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.OXIDIZED_COPPER_BARS, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.OXIDIZED_COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_DOOR, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_TRAPDOOR, RenderLayer.getCutoutMipped());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_TRAPDOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_TRAPDOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.WEATHERED_COPPER_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.WEATHERED_COPPER_TRAPDOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.OXIDIZED_COPPER_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.OXIDIZED_COPPER_TRAPDOOR, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(OakWoodBlocks.OAK_LADDER, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(SpruceWoodBlocks.SPRUCE_LADDER, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(BirchWoodBlocks.BIRCH_LADDER, RenderLayer.getCutout());
@@ -130,7 +136,6 @@ public class OemClient implements ClientModInitializer {
       ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.JUNGLE_LEAVES_STAIRS, LeafSlabs.JUNGLE_LEAVES_SLAB, LeafWalls.JUNGLE_LEAVES_WALL);
       ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.DARK_OAK_LEAVES_STAIRS, LeafSlabs.DARK_OAK_LEAVES_SLAB, LeafWalls.DARK_OAK_LEAVES_WALL);
       ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getMangroveColor(), LeafStairs.MANGROVE_LEAVES_STAIRS, LeafSlabs.MANGROVE_LEAVES_SLAB, LeafWalls.MANGROVE_LEAVES_WALL);
-
 
    }
 }
