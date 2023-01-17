@@ -1,4 +1,4 @@
-// 1.19.3	2023-01-16T12:23:07.072298	OrigamiKingsEnhancementMod/Block Loot Tables
+// 1.19.3	2023-01-17T17:02:16.797861	OrigamiKingsEnhancementMod/Block Loot Tables
 a6bceb4d07f97012b64e5fa810d70e86153ab271 data/oem/loot_tables/blocks/magenta_wool_stairs.json
 b2646058b5608308c0ac21ba7a80aace8225cc47 data/oem/loot_tables/blocks/acacia_bookshelf.json
 9e877f88c708b7139d35f72ddfb63e0b44311292 data/oem/loot_tables/blocks/orange_wool_wall.json
@@ -63,8 +63,8 @@ cab9f98c6e7e55ace719f8ced6683e333934692b data/oem/loot_tables/blocks/lime_glass_
 41a04f61944f5d065815b33d8b443f08fc8a6511 data/oem/loot_tables/blocks/light_blue_concrete_slab.json
 050d739b3d6a3a627cbf46116a5b3f1cbbe74e04 data/oem/loot_tables/blocks/exposed_copper_pressure_plate.json
 af40d0806c18e2095a996e8a355fd5d550f11fb9 data/oem/loot_tables/blocks/cyan_wool_wall.json
-42c9422e88bf3f26e462bf773eb368ac78405cfe data/oem/loot_tables/blocks/glass_stairs.json
 17ff9ac2579add11c9a89a18a0cad722727be48f data/oem/loot_tables/blocks/calcite_slab.json
+42c9422e88bf3f26e462bf773eb368ac78405cfe data/oem/loot_tables/blocks/glass_stairs.json
 a5009027fb631422235de8b6fdbac5c4048896c1 data/oem/loot_tables/blocks/copper_bars.json
 f543735c2e5109e93f612f1c46af5fa039be7141 data/oem/loot_tables/blocks/light_blue_concrete_wall.json
 46d9c5d957468aac408617ecfefe1847def56cd0 data/oem/loot_tables/blocks/acacia_leaves_slab.json
@@ -172,8 +172,8 @@ a11306dfaaa9641941767eec8e1c9d5902e2723d data/oem/loot_tables/blocks/spruce_barr
 05f3e88fce28f22e2849156357a5bd5c36ed5f28 data/oem/loot_tables/blocks/yellow_concrete_slab.json
 245ea58ac6ac54ace35719ed613ceb03df599fd0 data/oem/loot_tables/blocks/orange_concrete_stairs.json
 8e31823acecb7937ae99210698d8cb22c2f0ac38 data/oem/loot_tables/blocks/birch_leaves_slab.json
-953cb1f3bc2439ce79c2ca97e8f3aa36ce0770e8 data/oem/loot_tables/blocks/blue_concrete_stairs.json
 b640de6ef26b56ba89ed18bfdb2e071c16be6f6b data/oem/loot_tables/blocks/green_concrete_slab.json
+953cb1f3bc2439ce79c2ca97e8f3aa36ce0770e8 data/oem/loot_tables/blocks/blue_concrete_stairs.json
 9bdd6720f135c729041a6913dd351fc1130f0719 data/oem/loot_tables/blocks/spruce_bookshelf.json
 11cbbd46ed7a7fe58abe3c69f6172c88a5385a71 data/oem/loot_tables/blocks/oak_leaves_stairs.json
 dddae17d3caf652da2768e63882ed7912fe83409 data/oem/loot_tables/blocks/birch_ladder.json

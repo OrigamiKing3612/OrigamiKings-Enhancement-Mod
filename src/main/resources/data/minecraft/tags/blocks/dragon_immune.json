@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "oem:caverns_block_one",
+    "oem:caverns_block_two",
+    "oem:caverns_block_three",
+    "oem:caverns_block_four",
+    "oem:caverns_block_five",
+    "oem:caverns_block_six"
+  ]
+}
