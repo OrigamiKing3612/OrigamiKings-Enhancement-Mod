@@ -280,6 +280,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(PinkWool.PINK_WOOL_STAIRS);
         addDrop(PinkWool.PINK_WOOL_SLAB);
         addDrop(PinkWool.PINK_WOOL_WALL);
+        addDrop(SculkBlocks.SCULK_WALL);
 
 
     }

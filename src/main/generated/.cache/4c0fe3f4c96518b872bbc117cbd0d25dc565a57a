@@ -1,4 +1,4 @@
-// 1.19.3	2023-01-17T17:02:16.797861	OrigamiKingsEnhancementMod/Block Loot Tables
+// 1.19.3	2023-01-17T17:18:47.497391	OrigamiKingsEnhancementMod/Block Loot Tables
 a6bceb4d07f97012b64e5fa810d70e86153ab271 data/oem/loot_tables/blocks/magenta_wool_stairs.json
 b2646058b5608308c0ac21ba7a80aace8225cc47 data/oem/loot_tables/blocks/acacia_bookshelf.json
 9e877f88c708b7139d35f72ddfb63e0b44311292 data/oem/loot_tables/blocks/orange_wool_wall.json
@@ -152,9 +152,9 @@ b98b8d3842ea0efed6686f68b4e434b62b6bf771 data/oem/loot_tables/blocks/oxidized_co
 35b345ab72602d405740560ffbac523e4c0aa970 data/oem/loot_tables/blocks/blue_glass_stairs.json
 4f83a8078bf0323884876f8cc1b1e07a63259259 data/oem/loot_tables/blocks/spruce_ladder.json
 f3241beaab4151335734c0aeb10de5ef03f9d318 data/oem/loot_tables/blocks/light_blue_glass_stairs.json
-758b22ef182fc9032400ac6a2c3f0c7d55feec4e data/oem/loot_tables/blocks/gray_wool_stairs.json
-defbbc34489bbaf1fa77727c6d67aec895b17743 data/oem/loot_tables/blocks/lime_wool_wall.json
 02c80453944d06847a40064ad8c0089a62f67da6 data/oem/loot_tables/blocks/pink_glass_stairs.json
+defbbc34489bbaf1fa77727c6d67aec895b17743 data/oem/loot_tables/blocks/lime_wool_wall.json
+758b22ef182fc9032400ac6a2c3f0c7d55feec4e data/oem/loot_tables/blocks/gray_wool_stairs.json
 e5459564fc22758b0d8f5c928597f76f5e45c855 data/oem/loot_tables/blocks/weathered_copper_pressure_plate.json
 90e684c2bf2f896b2d4be3933ee9f32b3636013a data/oem/loot_tables/blocks/oxidized_copper_door.json
 e042fc98e7deafad785a2b5ce28416968cc2f7ca data/oem/loot_tables/blocks/cyan_wool_stairs.json
@@ -210,6 +210,7 @@ ab823fdd7474e12f63d6040c0e42f11767486ec6 data/oem/loot_tables/blocks/orange_wool
 9278d4323de24f491fcba775b14746a87cc0188c data/oem/loot_tables/blocks/brown_concrete_stairs.json
 688c15171b782629f552f419341d297a06036adf data/oem/loot_tables/blocks/pink_concrete_slab.json
 4f99cca7d4f7c717210ac87d4899702405b71ee4 data/oem/loot_tables/blocks/gray_concrete_slab.json
+4bfc0aa6d0a60eaab411a82577a90a49805b80f9 data/oem/loot_tables/blocks/sculk_wall.json
 36f3b73c647bed8776bbab4c18c61b94992718b6 data/oem/loot_tables/blocks/lime_concrete_wall.json
 c43d2b6fa379ad8acb74bbffcd0971b2f630e656 data/oem/loot_tables/blocks/black_wool_wall.json
 0e7e8e7c0ef80ce8065b8e4c030e2aec9eb9f177 data/oem/loot_tables/blocks/brown_wool_wall.json

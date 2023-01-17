@@ -241,6 +241,7 @@ public class ModGroups {
                 //sculk
                 entries.add(SculkBlocks.SCULK_STAIR);
                 entries.add(SculkBlocks.SCULK_SLAB);
+                entries.add(SculkBlocks.SCULK_WALL);
                 //leaves
                 entries.add(LeafStairs.OAK_LEAVES_STAIRS);
                 entries.add(LeafSlabs.OAK_LEAVES_SLAB);

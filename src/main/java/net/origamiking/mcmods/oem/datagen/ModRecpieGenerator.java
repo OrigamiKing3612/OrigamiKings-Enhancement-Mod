@@ -221,6 +221,7 @@ public class ModRecpieGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteWalls.PURPLE_CONCRETE_WALL, Blocks.PURPLE_CONCRETE);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteWalls.MAGENTA_CONCRETE_WALL, Blocks.MAGENTA_CONCRETE);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteWalls.PINK_CONCRETE_WALL, Blocks.PINK_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SculkBlocks.SCULK_WALL, Blocks.SCULK);
 
 
 
