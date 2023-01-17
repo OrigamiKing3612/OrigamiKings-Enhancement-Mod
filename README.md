@@ -28,5 +28,4 @@ Some things this mod adds are:
 
 # The Wool Update!
 ![Wool Update](https://user-images.githubusercontent.com/115757805/212448757-af449257-c2ed-4da4-8f9f-72f96e01b4c5.png)
-![LEAVES](https://user-images.githubusercontent.com/115757805/212568287-c2d2adce-0be6-4a62-a957-71127874605a.png)
-
+![update](https://user-images.githubusercontent.com/115757805/213037711-4d6492d4-21f5-459f-a713-659a47a290cf.png)
