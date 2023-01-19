@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 
 import java.nio.file.Path;
 
@@ -101,6 +102,8 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(ConcreteWalls.MAGENTA_CONCRETE_WALL,"Mangenta Concrete Wall");
 //        translationBuilder.add(ConcreteWalls.PINK_CONCRETE_WALL,"Pink Concrete Wall");
 //        translationBuilder.add(SculkBlocks.SCULK_WALL,"Sculk Wall");
+//        translationBuilder.add(StoneVSlabs.STONE_VERTICAL_SLAB, "Stone Vertical Slab");
+//        translationBuilder.add(StoneVSlabs.COBBLESTONE_VERTICAL_SLAB, "Cobbletone Vertical Slab");
 
 
         try {

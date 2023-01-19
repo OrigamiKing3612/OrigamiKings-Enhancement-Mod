@@ -26,7 +26,16 @@
     "oem:crimson_ladder",
     "oem:warped_barrel",
     "oem:warped_bookshelf",
-    "oem:warped_ladder"
+    "oem:warped_ladder",
+    "oem:vertical_oak_slab",
+    "oem:vertical_spruce_slab",
+    "oem:vertical_birch_slab",
+    "oem:vertical_jungle_slab",
+    "oem:vertical_acacia_slab",
+    "oem:vertical_dark_oak_slab",
+    "oem:vertical_mangrove_slab",
+    "oem:vertical_crimson_slab",
+    "oem:vertical_warped_slab"
 
   ]
 }

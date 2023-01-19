@@ -1,0 +1,12 @@
+{
+	"parent": "oem:block/vertical_slab",
+	"textures": {
+		"north": "#top",
+		"up": "#side",
+		"east": "#side",
+		"south": "#bottom",
+		"west": "#side",
+		"down": "#side",
+		"particle": "#side"
+	}
+}

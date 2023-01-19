@@ -4,6 +4,8 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.*;
 import net.minecraft.registry.tag.BlockTags;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
