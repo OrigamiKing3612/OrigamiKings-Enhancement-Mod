@@ -162,7 +162,8 @@
     "oem:vertical_polished_blackstone_brick_slab",
     "oem:vertical_end_stone_brick_slab",
     "oem:vertical_quartz_slab",
-    "oem:vertical_smooth_quartz_slab"
+    "oem:vertical_smooth_quartz_slab",
+    "oem:vertical_white_concrete_slab"
 
   ]
 }

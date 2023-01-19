@@ -22,6 +22,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
@@ -377,6 +378,7 @@ public class ModGroups {
                 entries.add(WoodVSlabs.VERTICAL_MANGROVE_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_CRIMSON_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_WARPED_SLAB);
+                entries.add(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB);
             }).build();
     public static void register() {
         OemMain.LOGGER.info("Registering Groups");

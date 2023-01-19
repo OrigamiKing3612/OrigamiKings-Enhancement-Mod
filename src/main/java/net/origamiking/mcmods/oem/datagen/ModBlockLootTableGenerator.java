@@ -15,6 +15,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
@@ -337,6 +338,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(WoodVSlabs.VERTICAL_MANGROVE_SLAB);
         addDrop(WoodVSlabs.VERTICAL_CRIMSON_SLAB);
         addDrop(WoodVSlabs.VERTICAL_WARPED_SLAB);
+        addDrop(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB);
 
 
     }
