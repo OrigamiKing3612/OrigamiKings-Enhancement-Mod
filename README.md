@@ -28,6 +28,5 @@ Some things this mod adds are:
 
 **0.1.4 update**
 
-# The Wool Update!
-![Wool Update](https://user-images.githubusercontent.com/115757805/212448757-af449257-c2ed-4da4-8f9f-72f96e01b4c5.png)
-![update](https://user-images.githubusercontent.com/115757805/213037711-4d6492d4-21f5-459f-a713-659a47a290cf.png)
+# The Vertical Slabs Update!
+
