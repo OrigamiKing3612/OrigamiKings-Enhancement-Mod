@@ -26,15 +26,8 @@ import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 
 public class OemClient implements ClientModInitializer {
-   //public static final EntityModelLayer MODEL_NEW_COW_ENTITY_LAYER = new EntityModelLayer(new Identifier("oem", "new_cow_entity"), "main");
    @Override
    public void onInitializeClient() {
-      //EntityRendererRegistry.register(NewCowEntity.NEW_COW_ENTITY, (context) -> {
-      //           return new NewCowEntityRenderer(context);
-      //       });
-
-
-      //EntityModelLayerRegistry.registerModelLayer(MODEL_NEW_COW_ENTITY_LAYER, NewCowEntityModel::getTexturedModelData);
       BlockRenderLayerMap.INSTANCE.putBlock(GoldBlocks.GOLD_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_BARS, RenderLayer.getTranslucent());
