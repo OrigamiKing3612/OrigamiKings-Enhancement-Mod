@@ -2,11 +2,7 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
-import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
+
 
 import java.nio.file.Path;
 
@@ -156,7 +152,22 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(WoodVSlabs.VERTICAL_MANGROVE_SLAB, "Mangrove Plank Vertical Slab");
 //        translationBuilder.add(WoodVSlabs.VERTICAL_CRIMSON_SLAB, "Crimson Plank Vertical Slab");
 //        translationBuilder.add(WoodVSlabs.VERTICAL_WARPED_SLAB, "Warped Plank Vertical Slab");
-        translationBuilder.add(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB, "White Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB, "White Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.LIGHT_GRAY_CONCRETE_VERTICAL_SLAB, "Light Gray Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.GRAY_CONCRETE_VERTICAL_SLAB, "Gray Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.BLACK_CONCRETE_VERTICAL_SLAB, "Black Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.BROWN_CONCRETE_VERTICAL_SLAB, "Brown Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.RED_CONCRETE_VERTICAL_SLAB, "Red Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.ORANGE_CONCRETE_VERTICAL_SLAB, "Orange Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.YELLOW_CONCRETE_VERTICAL_SLAB,"Yellow Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.LIME_CONCRETE_VERTICAL_SLAB, "Lime Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.GREEN_CONCRETE_VERTICAL_SLAB, "Green Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.CYAN_CONCRETE_VERTICAL_SLAB,"Cyan Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.LIGHT_BLUE_CONCRETE_VERTICAL_SLAB,"Light Blue Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.BLUE_CONCRETE_VERTICAL_SLAB,"Blue Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB, "Purple Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB, "Magenta Concrete Vertical Slab");
+//        translationBuilder.add(ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB, "Pink Concrete Vertical Slab");
 
 
         try {

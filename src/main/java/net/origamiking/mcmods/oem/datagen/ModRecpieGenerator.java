@@ -3,7 +3,6 @@ package net.origamiking.mcmods.oem.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
-import net.minecraft.block.SculkBlock;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
@@ -16,7 +15,6 @@ import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
-import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
@@ -278,6 +276,21 @@ public class ModRecpieGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_CRIMSON_SLAB, Blocks.CRIMSON_PLANKS);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_WARPED_SLAB, Blocks.WARPED_PLANKS);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB, Blocks.WHITE_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.LIGHT_GRAY_CONCRETE_VERTICAL_SLAB, Blocks.LIGHT_GRAY_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.GRAY_CONCRETE_VERTICAL_SLAB, Blocks. GRAY_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.BLACK_CONCRETE_VERTICAL_SLAB, Blocks.BLACK_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.BROWN_CONCRETE_VERTICAL_SLAB, Blocks.BROWN_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.RED_CONCRETE_VERTICAL_SLAB, Blocks.RED_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.ORANGE_CONCRETE_VERTICAL_SLAB, Blocks.ORANGE_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.YELLOW_CONCRETE_VERTICAL_SLAB, Blocks.YELLOW_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.LIME_CONCRETE_VERTICAL_SLAB, Blocks.LIME_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.GREEN_CONCRETE_VERTICAL_SLAB, Blocks.GREEN_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.CYAN_CONCRETE_VERTICAL_SLAB, Blocks.CYAN_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.LIGHT_BLUE_CONCRETE_VERTICAL_SLAB, Blocks.LIGHT_BLUE_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.BLUE_CONCRETE_VERTICAL_SLAB, Blocks.BLUE_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB, Blocks.PURPLE_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB, Blocks.MAGENTA_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB, Blocks.PINK_CONCRETE);
 
 
 

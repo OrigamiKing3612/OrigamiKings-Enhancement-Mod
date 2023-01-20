@@ -219,7 +219,22 @@
     "oem:vertical_mangrove_slab",
     "oem:vertical_crimson_slab",
     "oem:vertical_warped_slab",
-    "oem:vertical_white_concrete_slab"
+    "oem:vertical_white_concrete_slab",
+    "oem:vertical_light_gray_concrete_slab",
+    "oem:vertical_gray_concrete_slab",
+    "oem:vertical_black_concrete_slab",
+    "oem:vertical_brown_concrete_slab",
+    "oem:vertical_red_concrete_slab",
+    "oem:vertical_orange_concrete_slab",
+    "oem:vertical_yellow_concrete_slab",
+    "oem:vertical_lime_concrete_slab",
+    "oem:vertical_green_concrete_slab",
+    "oem:vertical_cyan_concrete_slab",
+    "oem:vertical_light_blue_concrete_slab",
+    "oem:vertical_blue_concrete_slab",
+    "oem:vertical_purple_concrete_slab",
+    "oem:vertical_magenta_concrete_slab",
+    "oem:vertical_pink_concrete_slab"
 
 
 

@@ -363,6 +363,21 @@ public class ModGroups {
                 entries.add(WoodVSlabs.VERTICAL_CRIMSON_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_WARPED_SLAB);
                 entries.add(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.LIGHT_GRAY_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.GRAY_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.BLACK_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.BROWN_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.RED_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.ORANGE_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.YELLOW_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.LIME_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.GREEN_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.CYAN_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.LIGHT_BLUE_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.BLUE_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB);
+                entries.add(ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB);
             }).build();
 
     private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))

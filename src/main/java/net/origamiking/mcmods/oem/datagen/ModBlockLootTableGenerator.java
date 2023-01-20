@@ -339,6 +339,21 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(WoodVSlabs.VERTICAL_CRIMSON_SLAB);
         addDrop(WoodVSlabs.VERTICAL_WARPED_SLAB);
         addDrop(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.LIGHT_GRAY_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.GRAY_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.BLACK_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.BROWN_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.RED_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.ORANGE_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.YELLOW_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.LIME_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.GREEN_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.CYAN_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.LIGHT_BLUE_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.BLUE_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB);
+        addDrop(ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB);
 
 
     }
