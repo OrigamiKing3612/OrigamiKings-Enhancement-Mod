@@ -305,23 +305,7 @@ public class ModGroups {
                 //entries.add(VikingArmorMaterial.getVikingArmor.VIKING_HELMET);
 
 
-            })
-            .build();
-    private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))
-            .displayName(Text.literal("mc.origamiking.net specific"))
-            .icon(() -> new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE))
-            .entries((enabledFeatures, entries, operatorEnabled) -> {
-                if (operatorEnabled) {
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
-                    entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
-                }
             }).build();
-
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
             .displayName(Text.literal("Oem Vertical Slabs"))
             .icon(()-> new ItemStack(StoneVSlabs.STONE_VERTICAL_SLAB))
@@ -380,6 +364,23 @@ public class ModGroups {
                 entries.add(WoodVSlabs.VERTICAL_WARPED_SLAB);
                 entries.add(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB);
             }).build();
+
+    private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))
+            .displayName(Text.literal("mc.origamiking.net specific"))
+            .icon(() -> new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE))
+            .entries((enabledFeatures, entries, operatorEnabled) -> {
+                if (operatorEnabled) {
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
+                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
+                    entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
+                }
+            }).build();
+
+
     public static void register() {
         OemMain.LOGGER.info("Registering Groups");
     }
