@@ -372,6 +372,8 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB);
         addDropWithSilkTouch(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB);
         addDropWithSilkTouch(GlassVSlabs.GLASS_VERTICAL_SLAB);
+//        addDrop(RandomBlocks.BLACKSTONE_FURNACE);
+//        addDrop(RandomBlocks.DEEPSLATE_FURNACE);
 
 
     }

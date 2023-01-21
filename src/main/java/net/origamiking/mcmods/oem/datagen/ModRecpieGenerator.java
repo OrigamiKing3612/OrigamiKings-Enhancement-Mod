@@ -309,6 +309,9 @@ public class ModRecpieGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB, Blocks.MAGENTA_STAINED_GLASS);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.PINK_GLASS_VERTICAL_SLAB, Blocks.PINK_STAINED_GLASS);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GLASS_VERTICAL_SLAB, Blocks.GLASS);
+//        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.BLACKSTONE_FURNACE, Blocks.BLACKSTONE);
+//        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.DEEPSLATE_FURNACE, Blocks.COBBLED_DEEPSLATE);
+
 
 
 

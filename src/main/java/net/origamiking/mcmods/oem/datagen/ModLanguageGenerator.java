@@ -2,6 +2,7 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 
 
@@ -186,6 +187,8 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB, "Magenta Glass Vertical Slab");
 //        translationBuilder.add(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB, "Pink Glass Vertical Slab");
 //        translationBuilder.add(GlassVSlabs.GLASS_VERTICAL_SLAB, "Glass Vertical Slab");
+//        translationBuilder.add(RandomBlocks.BLACKSTONE_FURNACE, "Blackstone Furnace");
+//        translationBuilder.add(RandomBlocks.DEEPSLATE_FURNACE, "Deepslate Furnace");
 
 
         try {

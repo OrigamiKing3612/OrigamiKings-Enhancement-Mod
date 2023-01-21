@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.*;
 import net.minecraft.registry.tag.BlockTags;
+import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 
