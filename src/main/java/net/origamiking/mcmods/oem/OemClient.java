@@ -15,6 +15,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
@@ -89,6 +90,23 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.PINK_GLASS_STAIR, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.GLASS_SLAB, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.GLASS_STAIR, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.WHITE_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.LIGHT_GRAY_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.GRAY_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.BLACK_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.BROWN_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.RED_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.ORANGE_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.YELLOW_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.LIME_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.GREEN_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.CYAN_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.LIGHT_BLUE_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.BLUE_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.PURPLE_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB, RenderLayer.getTranslucent());
 
       //leaf cutout
       BlockRenderLayerMap.INSTANCE.putBlock(LeafStairs.OAK_LEAVES_STAIRS, RenderLayer.getCutout());

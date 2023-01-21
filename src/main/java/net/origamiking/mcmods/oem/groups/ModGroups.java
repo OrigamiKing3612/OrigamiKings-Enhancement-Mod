@@ -23,6 +23,7 @@ import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
@@ -378,6 +379,23 @@ public class ModGroups {
                 entries.add(ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB);
                 entries.add(ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB);
                 entries.add(ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.WHITE_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.LIGHT_GRAY_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.GRAY_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.BLACK_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.BROWN_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.RED_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.ORANGE_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.YELLOW_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.LIME_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.GREEN_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.CYAN_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.LIGHT_BLUE_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.BLUE_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.PURPLE_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB);
+                entries.add(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB);
             }).build();
 
     private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))

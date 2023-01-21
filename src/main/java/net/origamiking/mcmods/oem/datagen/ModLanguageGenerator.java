@@ -2,6 +2,7 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 
 
 import java.nio.file.Path;
@@ -168,6 +169,23 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB, "Purple Concrete Vertical Slab");
 //        translationBuilder.add(ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB, "Magenta Concrete Vertical Slab");
 //        translationBuilder.add(ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB, "Pink Concrete Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.WHITE_GLASS_VERTICAL_SLAB, "White Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.LIGHT_GRAY_GLASS_VERTICAL_SLAB, "Light Gray Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.GRAY_GLASS_VERTICAL_SLAB, "Gray Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.BLACK_GLASS_VERTICAL_SLAB, "Black Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.BROWN_GLASS_VERTICAL_SLAB, "Brown Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.RED_GLASS_VERTICAL_SLAB, "Red Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.ORANGE_GLASS_VERTICAL_SLAB, "Orange Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.YELLOW_GLASS_VERTICAL_SLAB, "Yellow Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.LIME_GLASS_VERTICAL_SLAB, "Lime Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.GREEN_GLASS_VERTICAL_SLAB, "Green Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.CYAN_GLASS_VERTICAL_SLAB, "Cyan Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.LIGHT_BLUE_GLASS_VERTICAL_SLAB, "Light Blue Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.BLUE_GLASS_VERTICAL_SLAB, "Blue Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.PURPLE_GLASS_VERTICAL_SLAB, "Purple Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB, "Magenta Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB, "Pink Glass Vertical Slab");
+//        translationBuilder.add(GlassVSlabs.GLASS_VERTICAL_SLAB, "Glass Vertical Slab");
 
 
         try {

@@ -234,7 +234,24 @@
     "oem:vertical_blue_concrete_slab",
     "oem:vertical_purple_concrete_slab",
     "oem:vertical_magenta_concrete_slab",
-    "oem:vertical_pink_concrete_slab"
+    "oem:vertical_pink_concrete_slab",
+    "oem:vertical_white_glass_slab",
+    "oem:vertical_light_gray_glass_slab",
+    "oem:vertical_gray_glass_slab",
+    "oem:vertical_black_glass_slab",
+    "oem:vertical_brown_glass_slab",
+    "oem:vertical_red_glass_slab",
+    "oem:vertical_orange_glass_slab",
+    "oem:vertical_yellow_glass_slab",
+    "oem:vertical_lime_glass_slab",
+    "oem:vertical_green_glass_slab",
+    "oem:vertical_cyan_glass_slab",
+    "oem:vertical_light_blue_glass_slab",
+    "oem:vertical_blue_glass_slab",
+    "oem:vertical_purple_glass_slab",
+    "oem:vertical_magenta_glass_slab",
+    "oem:vertical_pink_glass_slab",
+    "oem:vertical_glass_slab"
 
 
 

@@ -21,6 +21,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
@@ -291,6 +292,23 @@ public class ModRecpieGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB, Blocks.PURPLE_CONCRETE);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB, Blocks.MAGENTA_CONCRETE);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB, Blocks.PINK_CONCRETE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.WHITE_GLASS_VERTICAL_SLAB, Blocks.WHITE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.LIGHT_GRAY_GLASS_VERTICAL_SLAB, Blocks.LIGHT_GRAY_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GRAY_GLASS_VERTICAL_SLAB, Blocks.GRAY_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.BLACK_GLASS_VERTICAL_SLAB, Blocks.BLACK_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.BROWN_GLASS_VERTICAL_SLAB, Blocks.BROWN_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.RED_GLASS_VERTICAL_SLAB, Blocks.RED_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.ORANGE_GLASS_VERTICAL_SLAB, Blocks.ORANGE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.YELLOW_GLASS_VERTICAL_SLAB, Blocks.YELLOW_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.LIME_GLASS_VERTICAL_SLAB, Blocks.LIME_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GREEN_GLASS_VERTICAL_SLAB, Blocks.GREEN_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.CYAN_GLASS_VERTICAL_SLAB, Blocks.CYAN_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.LIGHT_BLUE_GLASS_VERTICAL_SLAB, Blocks.LIGHT_BLUE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.BLUE_GLASS_VERTICAL_SLAB, Blocks.BLUE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.PURPLE_GLASS_VERTICAL_SLAB, Blocks.PURPLE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB, Blocks.MAGENTA_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.PINK_GLASS_VERTICAL_SLAB, Blocks.PINK_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GLASS_VERTICAL_SLAB, Blocks.GLASS);
 
 
 
