@@ -1,0 +1,6 @@
+{
+  "parent": "oem:block/boombox_template",
+  "textures": {
+      "all": "oem:block/boombox"
+  }
+}

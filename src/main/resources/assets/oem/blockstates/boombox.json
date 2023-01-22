@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oem:block/boombox",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=east": {
+      "model": "oem:block/boombox",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "oem:block/boombox",
+      "uvlock": true
+    },
+    "facing=west": {
+      "model": "oem:block/boombox",
+      "y": 90,
+      "uvlock": true
+    }
+  }
+}
