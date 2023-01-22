@@ -2,8 +2,6 @@ package net.origamiking.mcmods.oem.blocks.custom;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntity;
-import net.minecraft.block.entity.BlockEntityTicker;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.block.entity.JukeboxBlockEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.ItemEntity;
@@ -29,9 +27,11 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.event.GameEvent;
-import org.jetbrains.annotations.Nullable;
+
+import javax.annotation.Nullable;
 
 public class BoomboxBlock extends HorizontalFacingBlock {
+
     public BoomboxBlock(Settings settings) {
         super(settings);
     }

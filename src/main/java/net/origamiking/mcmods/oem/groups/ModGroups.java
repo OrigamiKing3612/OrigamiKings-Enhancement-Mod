@@ -410,7 +410,7 @@ public class ModGroups {
                     entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
                     entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
                     entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
-                    entries.add(ServerSpecificBlocks.BOOMBOX);
+                    //entries.add(ServerSpecificBlocks.BOOMBOX);
                 }
             }).build();
 

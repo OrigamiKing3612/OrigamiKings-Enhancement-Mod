@@ -20,7 +20,7 @@ public class ServerSpecificBlocks {
     public static final Block CAVERNS_BLOCK_FOUR = registerBlock("caverns_block_four", new Block(FabricBlockSettings.of(Material.AMETHYST).strength(4f).requiresTool().luminance(15).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block CAVERNS_BLOCK_FIVE = registerBlock("caverns_block_five", new Block(FabricBlockSettings.of(Material.AMETHYST).strength(4f).requiresTool().luminance(15).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block CAVERNS_BLOCK_SIX = registerBlock("caverns_block_six", new Block(FabricBlockSettings.of(Material.AMETHYST).strength(4f).requiresTool().luminance(15).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-    public static final Block BOOMBOX = registerBlock("boombox", new BoomboxBlock(FabricBlockSettings.copyOf(Blocks.JUKEBOX)));
+    //public static final Block BOOMBOX = registerBlock("boombox", new BoomboxBlock(FabricBlockSettings.copyOf(Blocks.JUKEBOX)));
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
