@@ -44,6 +44,7 @@ import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
+import org.apache.logging.log4j.core.jmx.Server;
 
 
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
@@ -374,6 +375,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(GlassVSlabs.GLASS_VERTICAL_SLAB);
 //        addDrop(RandomBlocks.BLACKSTONE_FURNACE);
 //        addDrop(RandomBlocks.DEEPSLATE_FURNACE);
+        addDrop(ServerSpecificBlocks.PRIM);
 
 
     }
