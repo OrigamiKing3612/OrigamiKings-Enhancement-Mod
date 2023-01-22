@@ -30,7 +30,7 @@ import net.minecraft.world.event.GameEvent;
 
 import javax.annotation.Nullable;
 
-public class BoomboxBlock extends HorizontalFacingBlock {
+public class BoomboxBlock extends Block/* extends HorizontalFacingBlock*/ {
 
     public BoomboxBlock(Settings settings) {
         super(settings);
@@ -44,23 +44,21 @@ public class BoomboxBlock extends HorizontalFacingBlock {
         }
 
     }
-    public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext ctx) {
-
-        // changes hitbox depending on block state
-
-        Direction dir = state.get(FACING);
-        if (dir == Direction.NORTH) {
-            return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.5f);
-        } else if (dir == Direction.SOUTH) {
-            return VoxelShapes.cuboid(0.0f, 0.0f, 0.5f, 1.0f, 1.0f, 1.0f);
-        } else if (dir == Direction.EAST) {
-            return VoxelShapes.cuboid(0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
-        } else if (dir == Direction.WEST) {
-            return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 0.5f, 1.0f, 1.0f);
-        }
-        return VoxelShapes.fullCube();
-
-    }
+   public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext ctx) {
+       // changes hitbox depending on block stat
+//       Direction dir = state.get(FACING);
+//       if (dir == Direction.NORTH) {
+//           return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.5f);
+//       } else if (dir == Direction.SOUTH) {
+//           return VoxelShapes.cuboid(0.0f, 0.0f, 0.5f, 1.0f, 1.0f, 1.0f);
+//       } else if (dir == Direction.EAST) {
+//           return VoxelShapes.cuboid(0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
+//       } else if (dir == Direction.WEST) {
+//           return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 0.5f, 1.0f, 1.0f);
+//       }
+        return VoxelShapes.cuboid()
+       return VoxelShapes.fullCube()
+//   }
 
     public ActionResult onUse(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
         if ((Boolean)state.get(HAS_RECORD)) {
