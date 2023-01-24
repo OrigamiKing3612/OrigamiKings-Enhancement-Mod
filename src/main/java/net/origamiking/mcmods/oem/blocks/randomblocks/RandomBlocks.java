@@ -34,7 +34,8 @@ public class RandomBlocks {
     public static final Block SNOW_STAIRS = registerBlock("snow_block_stairs", new StairsBlock(Blocks.SNOW_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.SNOW)));
     public static final Block SNOW_SLAB = registerBlock("snow_block_slab", new SlabBlock(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(4f).requiresTool().sounds(BlockSoundGroup.SNOW)));
     public static final Block SNOW_WALL = registerBlock("snow_block_wall", new WallBlock(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(4f).requiresTool().sounds(BlockSoundGroup.SNOW)));
-
+//    public static final Block BLACKSTONE_FURNACE = registerBlock("blackstone_furnace", new FurnaceBlock(FabricBlockSettings.copyOf(Blocks.FURNACE)));
+//    public static final Block DEEPSLATE_FURNACE = registerBlock("deepslate_furnace", new FurnaceBlock(FabricBlockSettings.copyOf(Blocks.FURNACE)));
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
