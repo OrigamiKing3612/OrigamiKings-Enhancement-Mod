@@ -35,7 +35,7 @@
   "depends": {
     "fabricloader": ">=0.14.10",
     "fabric-api": "*",
-    "minecraft": "~1.19",
+    "minecraft": "~1.19.3",
     "java": ">=17"
   },
   "jars": [
@@ -43,7 +43,7 @@
       "file": "jars/geckolib-fabric-1.19.3-4.0.3.jar"
     },
     {
-      "file": "jars/fabric-api-0.69.1+1.19.3.jar"
+      "file": "jars/fabric-api-0.73.0+1.19.3.jar"
     }
   ],
   "suggests": {
