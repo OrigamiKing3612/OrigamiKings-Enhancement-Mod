@@ -1,4 +1,4 @@
-//package net.origamiking.mcmods.oem.blocks.custom;
+package net.origamiking.mcmods.oem.blocks.custom;//package net.origamiking.mcmods.oem.blocks.custom;
 //
 //import net.minecraft.block.*;
 //import net.minecraft.block.entity.BlockEntity;

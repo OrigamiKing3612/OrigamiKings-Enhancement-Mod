@@ -77,9 +77,8 @@ public final class VikingArmorItem extends ArmorItem implements GeoItem {
             // This is the entity that is currently wearing/holding the item
             Entity entity = state.getData(DataTickets.ENTITY);
 
-            // We'll just have ArmorStands always animate, so we can return here
-            if (entity instanceof ArmorStandEntity)
-                return PlayState.CONTINUE;
+//            if (entity instanceof ArmorStandEntity)
+//                return PlayState.STOP;
 
             // For this example, we only want the animation to play if the entity is wearing all pieces of the armor
             // Let's collect the armor pieces the entity is currently wearing
@@ -98,10 +97,10 @@ public final class VikingArmorItem extends ArmorItem implements GeoItem {
                     //ItemRegistry.GECKO_ARMOR_BOOTS,
                     //ItemRegistry.GECKO_ARMOR_LEGGINGS,
                     //ItemRegistry.GECKO_ARMOR_CHESTPLATE,
-                    ItemRegistry.GECKO_ARMOR_HELMET));
+                    ArmorRegistry.VIKING_ARMOR_HELMET));
 
             // Play the animation if the full set is being worn, otherwise stop
-            return isFullSet ? PlayState.CONTINUE : PlayState.STOP;
+            return isFullSet ? PlayState.STOP : PlayState.STOP;
         }));
     }
 

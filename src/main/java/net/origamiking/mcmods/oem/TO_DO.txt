@@ -1,16 +1,17 @@
                                                                                                                         Add walls to concrete
-finish wool layers
+                                                                                finish wool layers(Later)
                                                                                                                         copper doors and trapdoors
-                                                                            add mineral blocks stair slabs and walls
-finish tags
+                                                                                add mineral blocks stair slabs and walls
+                                                                                                                        finish tags
                                                                                                                         finish leaf stuff
-Azalea tree stuff (This comes later)
-vertical slabs/stairs (This comes later) add stone_brick_vertical_stairs and oak_wood_vertical_stairs(planks and log)
-woodcutter
+                                                                                Azalea tree stuff (This comes later)
+                                                                                vertical slabs/stairs (This comes later) add stone_brick_vertical_stairs and oak_wood_vertical_stairs(planks and log)
+                                                                                woodcutter(Later)
 
-fix glass rendering
+                                                                                                                        fix glass rendering
                                                                                                                         fix recipe bugs
                                                                                                                         test all blocks
 clean up code
 
 
+                                                                                                                        vertical slabs

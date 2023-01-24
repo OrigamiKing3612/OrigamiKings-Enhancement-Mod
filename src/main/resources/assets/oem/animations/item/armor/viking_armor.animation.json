@@ -3,6 +3,26 @@
 	"animations": {
 		"animation.model.new": {
 			"loop": true
+		},
+		"animation.model.idle": {
+			"loop": true,
+			"bones": {
+				"bipedHead": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"misc.idle": {
+			"loop": true,
+			"bones": {
+				"bipedHead": {
+					"position": {
+						"vector": [0, 0, 0]
+					}
+				}
+			}
 		}
 	},
 	"geckolib_format_version": 2
