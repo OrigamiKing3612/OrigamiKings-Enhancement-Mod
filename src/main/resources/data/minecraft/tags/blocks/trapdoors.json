@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "oem:copper_trapdoor",
-    "oem:exposed_copper_trapdoor",
-    "oem:weathered_copper_trapdoor",
-    "oem:exposed_copper_trapdoor"
-  ]
-}

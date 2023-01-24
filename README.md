@@ -15,19 +15,18 @@ Some things this mod adds are:
 <p>
 
 # Some in-game pictures
-![inventory_1](https://user-images.githubusercontent.com/115757805/213038218-649a8ee7-0855-48d7-97d2-dfaf86772f17.png)
-![inventory_2](https://user-images.githubusercontent.com/115757805/213038236-045d926f-e3e1-4587-84f2-ee2a93098de3.png)
-![inventory_3](https://user-images.githubusercontent.com/115757805/213038245-b36f5985-46a3-4331-a6e9-cc56a7fbad10.png)
-![inventory_4](https://user-images.githubusercontent.com/115757805/213038255-b4ef17ce-686a-4cfd-8f65-cac9fddeff2f.png)
-![inventory_5](https://user-images.githubusercontent.com/115757805/213038261-5a34e3f6-a1c4-4bd1-a75c-d84eee13514f.png)
-![inventory_6](https://user-images.githubusercontent.com/115757805/213038265-24d4d5d8-9bce-44f0-a681-5bf3533667f1.png)
+![inventory_1](https://user-images.githubusercontent.com/115757805/212568621-a4716b83-c793-494e-9381-ee2a4cf24321.png)
+![inventory_2](https://user-images.githubusercontent.com/115757805/212568626-db96d748-dc6a-4a2b-9624-2d6e5ab86894.png)
+![inventory_3](https://user-images.githubusercontent.com/115757805/212568637-bc665892-64e5-4d25-a83f-dc653e531716.png)
+![inventory_4](https://user-images.githubusercontent.com/115757805/212568644-41d954e8-0abe-4397-a261-f0e150758842.png)
+![inventory_5](https://user-images.githubusercontent.com/115757805/212568652-4fa9dcb4-17cd-4de7-8572-5a38716659eb.png)
 
-  
 </p>
 </details
 
-**0.1.5 update**
+**0.1.4 update**
 
-# The Vertical Slabs Update!
-![update](https://user-images.githubusercontent.com/115757805/213569734-29a6c2df-4e5f-48b1-9447-3f6d78634ebf.png)
+# The Wool Update!
+![Wool Update](https://user-images.githubusercontent.com/115757805/212448757-af449257-c2ed-4da4-8f9f-72f96e01b4c5.png)
+![LEAVES](https://user-images.githubusercontent.com/115757805/212568287-c2d2adce-0be6-4a62-a957-71127874605a.png)
 

@@ -14,7 +14,6 @@ public class SculkBlocks {
     public static final Block SCULK_STAIR = registerBlock("sculk_stairs", new StairsBlock(Blocks.SCULK.getDefaultState(),FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool().sounds(BlockSoundGroup.SCULK)));
 
     public static final Block SCULK_SLAB = registerBlock("sculk_slab", new SlabBlock(FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool().sounds(BlockSoundGroup.SCULK)));
-    public static final Block SCULK_WALL = registerBlock("sculk_wall", new WallBlock(FabricBlockSettings.of(Material.SCULK).strength(4f).requiresTool().sounds(BlockSoundGroup.SCULK)));
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }

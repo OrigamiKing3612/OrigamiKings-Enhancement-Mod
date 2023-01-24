@@ -22,9 +22,6 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
@@ -134,7 +131,7 @@ public class ModGroups {
                 entries.add(ConcreteStairs.PINK_CONCRETE_STAIR);
                 entries.add(ConcreteSlabs.PINK_CONCRETE_SLAB);
                 entries.add(ConcreteWalls.PINK_CONCRETE_WALL);
-                //entries.add(entries.add(StoneVSlabs.TINTED_GLASS_PANE);
+                //entries.add(ModBlocks.TINTED_GLASS_PANE);
                 //Glass
                 entries.add(GlassBlocks.GLASS_STAIR);
                 entries.add(GlassBlocks.GLASS_SLAB);
@@ -244,7 +241,6 @@ public class ModGroups {
                 //sculk
                 entries.add(SculkBlocks.SCULK_STAIR);
                 entries.add(SculkBlocks.SCULK_SLAB);
-                entries.add(SculkBlocks.SCULK_WALL);
                 //leaves
                 entries.add(LeafStairs.OAK_LEAVES_STAIRS);
                 entries.add(LeafSlabs.OAK_LEAVES_SLAB);
@@ -305,81 +301,8 @@ public class ModGroups {
                 //entries.add(VikingArmorMaterial.getVikingArmor.VIKING_HELMET);
 
 
-            }).build();
-    public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
-            .displayName(Text.literal("Oem Vertical Slabs"))
-            .icon(()-> new ItemStack(StoneVSlabs.STONE_VERTICAL_SLAB))
-            .entries((enabledFeatures, entries, operatorEnabled) -> {
-                entries.add(StoneVSlabs.STONE_VERTICAL_SLAB);
-                entries.add(StoneVSlabs.COBBLESTONE_VERTICAL_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_MOSSY_COBBLESTONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_SMOOTH_STONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_STONE_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_MOSSY_STONE_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_GRANITE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_POLISHED_GRANITE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_DIORITE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_POLISHED_DIORITE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_ANDESITE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_POLISHED_ANDESITE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_COBBLED_DEEPSLATE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_POLISHED_DEEPSLATE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_DEEPSLATE_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_DEEPSLATE_TILE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_MUD_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_SANDSTONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_SMOOTH_SANDSTONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_CUT_SANDSTONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_RED_SANDSTONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_SMOOTH_RED_SANDSTONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_CUT_RED_SANDSTONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_PRISMARINE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_PRISMARINE_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_DARK_PRISMARINE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_NETHER_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_RED_NETHER_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_BLACKSTONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_POLISHED_BLACKSTONE_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_POLISHED_BLACKSTONE_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_ENDSTONE_BRICK_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_QUARTZ_SLAB);
-                entries.add(StoneVSlabs.VERTICAL_SMOOTH_QUARTZ_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_EXPOSED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WEATHERED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_OXIDIZED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WAXED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_OAK_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_SPRUCE_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_BIRCH_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_JUNGLE_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_ACACIA_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_DARK_OAK_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_MANGROVE_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_CRIMSON_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_WARPED_SLAB);
-                entries.add(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.LIGHT_GRAY_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.GRAY_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.BLACK_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.BROWN_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.RED_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.ORANGE_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.YELLOW_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.LIME_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.GREEN_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.CYAN_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.LIGHT_BLUE_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.BLUE_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB);
-                entries.add(ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB);
-            }).build();
-
+            })
+            .build();
     private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))
             .displayName(Text.literal("mc.origamiking.net specific"))
             .icon(() -> new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE))
@@ -394,8 +317,6 @@ public class ModGroups {
                     entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
                 }
             }).build();
-
-
     public static void register() {
         OemMain.LOGGER.info("Registering Groups");
     }

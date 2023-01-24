@@ -21,7 +21,6 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.ModVericalSlabs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
@@ -50,6 +49,8 @@ import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
 
 
 public class ModBlocks {
+    //public static final Block TINTED_GLASS_PANE = registerBlock("tinted_glass_pane", new StainedGlassPaneBlock(FabricBlockSettings.of(Material.GLASS).strength(4f).requiresTool().sounds(BlockSoundGroup.GLASS)));
+    //public static final Block H = registerBlock("h", new SnowBlock(FabricBlockSettings.of(Material.SNOW_LAYER).ticksRandomly().strength(0.1f).requiresTool().sounds(BlockSoundGroup.SNOW).blockVision((state, world, pos) -> state.get(SnowBlock.LAYERS) >= 8)));
     public static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
@@ -101,8 +102,6 @@ public class ModBlocks {
         LeafSlabs.getLeafSlabs();
         LeafWalls.getLeafWalls();
         LeafCarpets.getLeafCarpets();
-
-        ModVericalSlabs.registerVerticalSlabs();
 
         OemMain.LOGGER.info("Registering Blocks for OEM");
     }
