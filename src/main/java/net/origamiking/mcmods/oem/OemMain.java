@@ -15,6 +15,9 @@ public class OemMain implements ModInitializer {
 	public static final String MOD_ID = "oem";
 	public static final String VERSION = "Your version is: 0.1.5c-1.19.3";
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
+
+	//TODO add oak v stairs
+	//TODO loot tables ect v stairs
 	@Override
 	public void onInitialize() {
 		ModBlocks.register();

@@ -8,6 +8,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
+import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
 
 public class ModVerticalStairs {
     public static Item registerBlockItem(String name, Block block) {
@@ -17,8 +18,8 @@ public class ModVerticalStairs {
         registerBlockItem(type, block);
         return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, type), block);
     }
-    //TODO oak_vertical_stairs
     public static void registerVerticalStairs() {
         StoneVStairs.get();
+        WoodVStairs.get();
     }
 }
