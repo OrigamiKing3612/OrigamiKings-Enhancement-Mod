@@ -26,6 +26,7 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
+import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
@@ -412,6 +413,7 @@ public class ModGroups {
                     entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
                     //entries.add(ServerSpecificBlocks.BOOMBOX);
                     entries.add(ServerSpecificBlocks.PRIM);
+                    entries.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
                 }
             }).build();
 
