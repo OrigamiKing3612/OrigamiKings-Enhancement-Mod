@@ -17,7 +17,7 @@ public class ModVerticalStairs {
         registerBlockItem(type, block);
         return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, type), block);
     }
-    //TODO stone_brick_vertical_stairs, oak_vertical_stairs
+    //TODO oak_vertical_stairs
     public static void registerVerticalStairs() {
         StoneVStairs.get();
     }
