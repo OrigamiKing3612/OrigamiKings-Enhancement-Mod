@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:red_stained_glass"
-  },
-  "result": "oem:vertical_red_glass_slab"
-}

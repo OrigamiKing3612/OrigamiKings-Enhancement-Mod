@@ -1,8 +1,23 @@
 {
   "variants": {
-    "facing=north": { "model": "oem:block/prim", "uvlock": true },
-    "facing=east":  { "model": "oem:block/prim", "y":  90, "uvlock": true },
-    "facing=south": { "model": "oem:block/prim", "y": 180, "uvlock": true },
-    "facing=west":  { "model": "oem:block/prim", "y": 270, "uvlock": true }
+    "facing=north": {
+      "model": "oem:block/prim",
+      "uvlock": true
+    },
+    "facing=east":  {
+      "model": "oem:block/prim",
+      "y":  90,
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "oem:block/prim",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=west":  {
+      "model": "oem:block/prim",
+      "y": 270,
+      "uvlock": true
+    }
   }
 }

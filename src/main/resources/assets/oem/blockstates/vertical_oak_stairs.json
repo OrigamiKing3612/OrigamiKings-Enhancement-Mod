@@ -1,0 +1,23 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "oem:block/vertical_stairs/vertical_oak_stairs",
+      "y": 180,
+      "uvlock": true
+    },
+    "facing=east": {
+      "model": "oem:block/vertical_stairs/vertical_oak_stairs",
+      "y": 270,
+      "uvlock": true
+    },
+    "facing=south": {
+      "model": "oem:block/vertical_stairs/vertical_oak_stairs",
+      "uvlock": true
+    },
+    "facing=west": {
+      "model": "oem:block/vertical_stairs/vertical_oak_stairs",
+      "y": 90,
+      "uvlock": true
+    }
+  }
+}

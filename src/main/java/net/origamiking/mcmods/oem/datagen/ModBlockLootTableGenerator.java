@@ -19,6 +19,8 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
+import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
+import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
@@ -376,6 +378,8 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
 //        addDrop(RandomBlocks.BLACKSTONE_FURNACE);
 //        addDrop(RandomBlocks.DEEPSLATE_FURNACE);
         addDrop(ServerSpecificBlocks.PRIM);
+        addDrop(WoodVStairs.OAK_VERTICAL_STAIRS);
+        addDrop(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
 
 
     }

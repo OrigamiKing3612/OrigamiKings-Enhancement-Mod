@@ -7,6 +7,8 @@ import net.minecraft.registry.tag.BlockTags;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
+import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
+import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
 
 
 import java.util.concurrent.CompletableFuture;
@@ -20,8 +22,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup registries) {
-//        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-//        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS, WoodVStairs.OAK_VERTICAL_STAIRS);
+        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS, WoodVStairs.OAK_VERTICAL_STAIRS);
 //        getOrCreateTagBuilder(BlockTags.WALLS)
 //        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
 //        getOrCreateTagBuilder(BlockTags.DRAGON_IMMUNE)

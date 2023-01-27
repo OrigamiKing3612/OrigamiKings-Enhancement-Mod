@@ -5,6 +5,9 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
+import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
+import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
 
 
 import java.nio.file.Path;
@@ -190,7 +193,9 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(GlassVSlabs.GLASS_VERTICAL_SLAB, "Glass Vertical Slab");
 //        translationBuilder.add(RandomBlocks.BLACKSTONE_FURNACE, "Blackstone Furnace");
 //        translationBuilder.add(RandomBlocks.DEEPSLATE_FURNACE, "Deepslate Furnace");
-        translationBuilder.add(ServerSpecificBlocks.PRIM, "Pwim");
+//        translationBuilder.add(ServerSpecificBlocks.PRIM, "Pwim");
+        translationBuilder.add(WoodVStairs.OAK_VERTICAL_STAIRS, "Oak Vertical Stairs");
+        translationBuilder.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS, "Stone Brick Vertical Stairs");
 
 
         try {

@@ -195,7 +195,9 @@
     "oem:vertical_purple_glass_slab",
     "oem:vertical_magenta_glass_slab",
     "oem:vertical_pink_glass_slab",
-    "oem:vertical_glass_slab"
+    "oem:vertical_glass_slab",
+    "oem:vertical_stone_brick_stairs",
+    "oem:vertical_oak_stairs"
 
 
   ]

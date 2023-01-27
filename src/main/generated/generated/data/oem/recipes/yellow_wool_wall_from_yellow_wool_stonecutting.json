@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:yellow_wool"
-  },
-  "result": "oem:yellow_wool_wall"
-}
