@@ -416,6 +416,7 @@ public class ModGroups {
                     entries.add(ServerSpecificBlocks.PRIM);
                     entries.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
                     entries.add(WoodVStairs.OAK_VERTICAL_STAIRS);
+                    entries.add(ModItems.FUT_GUN);
                 }
             }).build();
 
