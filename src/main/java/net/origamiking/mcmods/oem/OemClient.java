@@ -3,11 +3,10 @@ package net.origamiking.mcmods.oem;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import net.minecraft.block.Block;
-import net.minecraft.client.color.block.BlockColorProvider;
-import net.minecraft.client.color.world.BiomeColors;
+import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.render.RenderLayer;
+import net.minecraft.client.render.entity.FlyingItemEntityRenderer;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
@@ -25,10 +24,13 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.items.ModItems;
 
 public class OemClient implements ClientModInitializer {
    @Override
    public void onInitializeClient() {
+      EntityRendererRegistry.register(ModItems.FutureGunArrowEntityType, (context) ->
+              new FlyingItemEntityRenderer(context));
       BlockRenderLayerMap.INSTANCE.putBlock(GoldBlocks.GOLD_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_BARS, RenderLayer.getTranslucent());
