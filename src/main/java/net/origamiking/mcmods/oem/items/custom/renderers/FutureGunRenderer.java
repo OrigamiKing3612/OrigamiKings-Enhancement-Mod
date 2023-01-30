@@ -1,8 +1,8 @@
-package net.origamiking.mcmods.oem.blocks.custom.renderers;
+package net.origamiking.mcmods.oem.items.custom.renderers;
 
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
-import net.origamiking.mcmods.oem.blocks.custom.FutureGunItem;
+import net.origamiking.mcmods.oem.items.custom.FutureGunItem;
 import software.bernie.geckolib.model.DefaultedItemGeoModel;
 import software.bernie.geckolib.renderer.GeoItemRenderer;
 

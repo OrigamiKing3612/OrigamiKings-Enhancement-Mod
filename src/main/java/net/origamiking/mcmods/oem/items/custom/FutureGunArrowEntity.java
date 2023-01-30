@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.blocks.custom;
+package net.origamiking.mcmods.oem.items.custom;
 
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
@@ -39,7 +39,7 @@ public class FutureGunArrowEntity extends ThrownItemEntity {
         entity.damage(DamageSource.thrownProjectile(this, this.getOwner()), (float) i); // deals damage
 
         if (entity instanceof LivingEntity livingEntity) { // checks if entity is an instance of LivingEntity (meaning it is not a boat or minecart)
-            livingEntity.addStatusEffect((new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 3, 10000))); // applies a status effect
+            livingEntity.addStatusEffect((new StatusEffectInstance(StatusEffects.SLOWNESS, 200 * 3, 255))); // applies a status effect
         }
     }
 

@@ -13,8 +13,8 @@ import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.armor.ArmorRegistry;
 import net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial;
 import net.origamiking.mcmods.oem.armor.materials.VikingArmorMaterial;
-import net.origamiking.mcmods.oem.blocks.custom.FutureGunArrowEntity;
-import net.origamiking.mcmods.oem.blocks.custom.FutureGunItem;
+import net.origamiking.mcmods.oem.items.custom.FutureGunArrowEntity;
+import net.origamiking.mcmods.oem.items.custom.FutureGunItem;
 
 public class ModItems {
     public static final Item COPPER_NUGGET = registerItem("copper_nugget", new Item(new FabricItemSettings()));

@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.blocks.custom;
+package net.origamiking.mcmods.oem.items.custom;
 
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.entity.player.PlayerEntity;
@@ -11,7 +11,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
-import net.origamiking.mcmods.oem.blocks.custom.renderers.FutureGunRenderer;
+import net.origamiking.mcmods.oem.items.custom.renderers.*;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.SingletonGeoAnimatable;
 import software.bernie.geckolib.animatable.client.RenderProvider;
@@ -26,8 +26,8 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class FutureGunItem extends Item implements GeoItem {
-    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
+    public final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+    public final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 
     public FutureGunItem() {
         super(new Settings().maxCount(1).maxDamage(201));
@@ -41,8 +41,7 @@ public class FutureGunItem extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            private final FutureGunRenderer renderer = new FutureGunRenderer();
-
+            public final FutureGunRenderer renderer = new FutureGunRenderer();
             @Override
             public BuiltinModelItemRenderer getCustomRenderer() {
                 return this.renderer;
@@ -143,9 +142,9 @@ public class FutureGunItem extends Item implements GeoItem {
         }
 
         user.incrementStat(Stats.USED.getOrCreateStat(this));
-        if (!user.getAbilities().creativeMode) {
-            itemStack.decrement(1); // decrements itemStack if user is not in creative mode
-        }
+//        if (!user.getAbilities().creativeMode) {
+//            itemStack.decrement(1); // decrements itemStack if user is not in creative mode
+//        }
 
         return TypedActionResult.success(itemStack, world.isClient());
     }
