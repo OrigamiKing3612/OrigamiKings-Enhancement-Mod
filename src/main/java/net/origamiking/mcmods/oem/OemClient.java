@@ -29,8 +29,8 @@ import net.origamiking.mcmods.oem.items.ModItems;
 public class OemClient implements ClientModInitializer {
    @Override
    public void onInitializeClient() {
-      EntityRendererRegistry.register(ModItems.FutureGunArrowEntityType, (context) ->
-              new FlyingItemEntityRenderer(context));
+      EntityRendererRegistry.register(ModItems.FutureGunArrowEntityType, FlyingItemEntityRenderer::new);
+
       BlockRenderLayerMap.INSTANCE.putBlock(GoldBlocks.GOLD_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_BARS, RenderLayer.getTranslucent());
