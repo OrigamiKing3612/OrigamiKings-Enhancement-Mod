@@ -46,8 +46,8 @@ import net.origamiking.mcmods.oem.items.ModItems;
 
 import java.util.function.Consumer;
 
-public class ModRecpieGenerator extends FabricRecipeProvider {
-    public ModRecpieGenerator(FabricDataOutput output) {
+public class ModRecipeGenerator extends FabricRecipeProvider {
+    public ModRecipeGenerator(FabricDataOutput output) {
         super(output);
     }
     public static CraftingRecipeJsonBuilder createButtonRecipe(RecipeCategory category, ItemConvertible output, Ingredient input) {

@@ -33,7 +33,7 @@ public class ModItems {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), item);
     }
     public static void register() {
-        Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, "packed_snowball"), FUTURE_GUN_ARROW);
+        Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, "fut_gun_arrow"), FUTURE_GUN_ARROW);
 
         CopperArmorMaterial.getCopperArmor.register();
         VikingArmorMaterial.getVikingArmor.register();
