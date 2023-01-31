@@ -194,8 +194,8 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(RandomBlocks.BLACKSTONE_FURNACE, "Blackstone Furnace");
 //        translationBuilder.add(RandomBlocks.DEEPSLATE_FURNACE, "Deepslate Furnace");
 //        translationBuilder.add(ServerSpecificBlocks.PRIM, "Pwim");
-        translationBuilder.add(WoodVStairs.OAK_VERTICAL_STAIRS, "Oak Vertical Stairs");
-        translationBuilder.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS, "Stone Brick Vertical Stairs");
+//        translationBuilder.add(WoodVStairs.OAK_VERTICAL_STAIRS, "Oak Vertical Stairs");
+//        translationBuilder.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS, "Stone Brick Vertical Stairs");
 
 
         try {

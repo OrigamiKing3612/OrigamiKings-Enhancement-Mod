@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:exposed_copper"
+    }
+  },
+  "pattern": [
+    "   ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "oem:exposed_copper_button"
+  }
+}

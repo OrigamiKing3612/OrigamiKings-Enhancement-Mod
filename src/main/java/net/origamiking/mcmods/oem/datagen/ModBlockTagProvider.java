@@ -22,8 +22,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup registries) {
-        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE).add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS, WoodVStairs.OAK_VERTICAL_STAIRS);
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS, WoodVStairs.OAK_VERTICAL_STAIRS);
+//        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
+//        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
 //        getOrCreateTagBuilder(BlockTags.WALLS)
 //        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
 //        getOrCreateTagBuilder(BlockTags.DRAGON_IMMUNE)

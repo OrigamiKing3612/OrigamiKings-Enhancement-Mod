@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "minecraft:oxidized_copper"
+    }
+  },
+  "pattern": [
+    "   ",
+    " # ",
+    " # "
+  ],
+  "result": {
+    "item": "oem:oxidized_copper_button"
+  }
+}
