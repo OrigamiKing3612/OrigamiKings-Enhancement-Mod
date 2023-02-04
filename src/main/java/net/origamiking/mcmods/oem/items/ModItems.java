@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
-import net.minecraft.item.ArrowItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -15,6 +14,7 @@ import net.origamiking.mcmods.oem.armor.ArmorRegistry;
 import net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial;
 import net.origamiking.mcmods.oem.armor.materials.VikingArmorMaterial;
 import net.origamiking.mcmods.oem.items.custom.FutureGunArrowEntity;
+import net.origamiking.mcmods.oem.items.custom.FutureGunArrowEntityItem;
 import net.origamiking.mcmods.oem.items.custom.FutureGunItem;
 
 public class ModItems {
@@ -29,7 +29,7 @@ public class ModItems {
                     .build());
 
 
-    public static final Item FUTURE_GUN_ARROW = registerItem("fut_gun_arrow", new ArrowItem(new Item.Settings()));
+    public static final Item FUTURE_GUN_ARROW = registerItem("fut_gun_arrow", new FutureGunArrowEntityItem(new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

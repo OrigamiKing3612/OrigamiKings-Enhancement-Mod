@@ -2,7 +2,6 @@ package net.origamiking.mcmods.oem.items.custom.renderers;
 
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.ProjectileEntityRenderer;
-import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.items.custom.FutureGunArrowEntity;
 
