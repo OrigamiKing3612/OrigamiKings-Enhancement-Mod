@@ -417,7 +417,7 @@ public class ModGroups {
                     entries.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
                     entries.add(WoodVStairs.OAK_VERTICAL_STAIRS);
                     entries.add(ModItems.FUT_GUN);
-                    entries.add(ModItems.FUTURE_GUN_ARROW);
+//                    entries.add(ModItems.FUTURE_GUN_ARROW);
                 }
             }).build();
 

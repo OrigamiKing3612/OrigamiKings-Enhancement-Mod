@@ -7,30 +7,20 @@ import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.BlazeEntity;
-import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
-import net.minecraft.item.Item;
+import net.minecraft.entity.projectile.PersistentProjectileEntity;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.hit.EntityHitResult;
 import net.minecraft.util.hit.HitResult;
 import net.minecraft.world.World;
 import net.origamiking.mcmods.oem.items.ModItems;
 
-public class FutureGunArrowEntity extends ThrownItemEntity {
+public class FutureGunArrowEntity extends PersistentProjectileEntity {
+    public FutureGunArrowEntity(EntityType<? extends FutureGunArrowEntity> entityType, World world) {super(entityType, world);}
     public FutureGunArrowEntity(World world, LivingEntity owner) {
         super(ModItems.FutureGunArrowEntityType, owner, world);
     }
 
-    public FutureGunArrowEntity(World world, double x, double y, double z) {
-        super(ModItems.FutureGunArrowEntityType, x, y, z, world);
-    }
 
-    public FutureGunArrowEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
-        super(entityType, world);
-    }
-
-    @Override
-    protected Item getDefaultItem() {
-        return ModItems.FUTURE_GUN_ARROW;
-    }
 
     protected void onEntityHit(EntityHitResult entityHitResult) { // called on entity hit.
         super.onEntityHit(entityHitResult);
@@ -43,12 +33,16 @@ public class FutureGunArrowEntity extends ThrownItemEntity {
         }
     }
 
+    @Override
+    protected ItemStack asItemStack() {
+        return new ItemStack(ModItems.FUTURE_GUN_ARROW);
+    }
+
     protected void onCollision(HitResult hitResult) { // called on collision with a block
         super.onCollision(hitResult);
         if (!this.world.isClient) { // checks if the world is client
             this.world.sendEntityStatus(this, (byte) 3); // particle?
             this.kill(); // kills the projectile
         }
-
     }
 }

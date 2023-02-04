@@ -1,9 +1,11 @@
 package net.origamiking.mcmods.oem.items.custom;
 
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
+import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraft.server.world.ServerWorld;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.stat.Stats;
@@ -71,33 +73,32 @@ public class FutureGunItem extends Item implements GeoItem {
 //    }
 
     // Fire an arrow and play the animation when releasing the mouse button
-//    @Override
-//    public void onStoppedUsing(ItemStack stack, World level, LivingEntity shooter, int ticksRemaining) {
-//        if (shooter instanceof PlayerEntity player) {
-//            if (stack.getDamage() >= stack.getMaxDamage() - 1)
-//                return;
-//
-//            // Add a cooldown so you can't fire rapidly
+    public void onStoppedUsing(ItemStack stack, World level, LivingEntity shooter, int ticksRemaining) {
+        if (shooter instanceof PlayerEntity player) {
+            if (stack.getDamage() >= stack.getMaxDamage() - 1)
+                return;
+
+            // Add a cooldown, so you can't fire rapidly
 //            player.getItemCooldownManager().set(this, 5);
-//
-//            if (!level.isClient) {
-//                ArrowEntity arrow = new ArrowEntity(level, player);
-//                arrow.age = 35;
-//
-//                arrow.setVelocity(player, player.getPitch(), player.getYaw(), 0, 1, 1);
-//                arrow.setDamage(2.5);
-//                arrow.hasNoGravity();
-//
-//                stack.damage(1, shooter, p -> p.sendToolBreakStatus(shooter.getActiveHand()));
-//                level.spawnEntity(arrow);
-//
-//                // Trigger our animation
-//                // We could trigger this outside of the client-side check if only wanted the animation to play for the shooter
-//                // But we'll fire it on the server so all nearby players can see it
-//                triggerAnim(player, GeoItem.getOrAssignId(stack, (ServerWorld)level), "shoot_controller", "shoot");
-//            }
-//        }
-//    }
+
+            if (!level.isClient) {
+                FutureGunArrowEntity arrow = new FutureGunArrowEntity(level, player);
+                arrow.age = 35;
+
+                arrow.setVelocity(player, player.getPitch(), player.getYaw(), 0, 1, 1);
+                arrow.setDamage(2.5);
+                arrow.hasNoGravity();
+
+                stack.damage(1, shooter, p -> p.sendToolBreakStatus(shooter.getActiveHand()));
+                level.spawnEntity(arrow);
+
+                // Trigger our animation
+                // We could trigger this outside of the client-side check if only wanted the animation to play for the shooter
+                // But we'll fire it on the server so all nearby players can see it
+                triggerAnim(player, GeoItem.getOrAssignId(stack, (ServerWorld)level), "shoot_controller", "shoot");
+            }
+        }
+    }
 
     // Use vanilla animation to 'pull back' the pistol while charging it
     @Override
@@ -135,10 +136,10 @@ public class FutureGunItem extends Item implements GeoItem {
 		user.getItemCooldownManager().set(this, 5);
 		*/
         if (!world.isClient) {
-            FutureGunArrowEntity arrowEntity = new FutureGunArrowEntity(world, user);
-            arrowEntity.setItem(itemStack);
-            arrowEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 0F);
-            world.spawnEntity(arrowEntity); // spawns entity
+            FutureGunArrowEntity futureGunArrowEntity = new FutureGunArrowEntity(world, user);
+//            arrowEntity.setItem(itemStack);
+            futureGunArrowEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 0F);
+            world.spawnEntity(futureGunArrowEntity); // spawns entity
         }
 
         user.incrementStat(Stats.USED.getOrCreateStat(this));

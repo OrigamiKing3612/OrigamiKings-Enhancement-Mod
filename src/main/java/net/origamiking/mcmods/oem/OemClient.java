@@ -25,11 +25,12 @@ import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oem.items.ModItems;
+import net.origamiking.mcmods.oem.items.custom.renderers.FutureGunArrowEntityRenderer;
 
 public class OemClient implements ClientModInitializer {
    @Override
    public void onInitializeClient() {
-      EntityRendererRegistry.register(ModItems.FutureGunArrowEntityType, FlyingItemEntityRenderer::new);
+      EntityRendererRegistry.register(ModItems.FutureGunArrowEntityType, FutureGunArrowEntityRenderer::new);
 
       BlockRenderLayerMap.INSTANCE.putBlock(GoldBlocks.GOLD_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_BARS, RenderLayer.getTranslucent());

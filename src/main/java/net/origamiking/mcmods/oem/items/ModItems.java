@@ -5,6 +5,7 @@ import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.minecraft.entity.EntityDimensions;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
+import net.minecraft.item.ArrowItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -19,8 +20,6 @@ import net.origamiking.mcmods.oem.items.custom.FutureGunItem;
 public class ModItems {
     public static final Item COPPER_NUGGET = registerItem("copper_nugget", new Item(new FabricItemSettings()));
     public static final Item FUT_GUN = registerItem("fut_gun", new FutureGunItem());
-    public static final Item FUTURE_GUN_ARROW = new FutureGunItem();
-
     public static final EntityType<FutureGunArrowEntity> FutureGunArrowEntityType = Registry.register(
             Registries.ENTITY_TYPE,
             new Identifier(OemMain.MOD_ID, "fut_gun_arrow"),
@@ -29,12 +28,14 @@ public class ModItems {
                     .trackRangeBlocks(4).trackedUpdateRate(10) // necessary for all thrown projectiles
                     .build());
 
+
+    public static final Item FUTURE_GUN_ARROW = registerItem("fut_gun_arrow", new ArrowItem(new Item.Settings()));
+
+
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), item);
     }
     public static void register() {
-        Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, "fut_gun_arrow"), FUTURE_GUN_ARROW);
-
         CopperArmorMaterial.getCopperArmor.register();
         VikingArmorMaterial.getVikingArmor.register();
         ArmorRegistry.getArmor();
