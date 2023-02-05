@@ -7,6 +7,7 @@ import net.origamiking.mcmods.oem.groups.ModGroups;
 import net.origamiking.mcmods.oem.items.ModItems;
 import net.origamiking.mcmods.oem.painting.ModPaintings;
 import net.origamiking.mcmods.oem.sounds.ModSounds;
+import net.origamiking.mcmods.oem.util.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import software.bernie.example.GeckoLibMod;
@@ -26,5 +27,6 @@ public class OemMain implements ModInitializer {
 		ModCommands.register();
 		ModSounds.register();
 		ModPaintings.register();
+		Utils.register();
 	}
 }
