@@ -6,14 +6,11 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.sound.SoundCategory;
-import net.minecraft.sound.SoundEvents;
-import net.minecraft.stat.Stats;
 import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
-import net.origamiking.mcmods.oem.items.custom.renderers.*;
+import net.origamiking.mcmods.oem.items.custom.renderers.FutureGunRenderer;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.SingletonGeoAnimatable;
 import software.bernie.geckolib.animatable.client.RenderProvider;
@@ -28,8 +25,8 @@ import java.util.function.Consumer;
 import java.util.function.Supplier;
 
 public class FutureGunItem extends Item implements GeoItem {
-    public final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
-    public final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
+    private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
+    private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 
     public FutureGunItem() {
         super(new Settings().maxCount(1).maxDamage(201));
@@ -43,7 +40,8 @@ public class FutureGunItem extends Item implements GeoItem {
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            public final FutureGunRenderer renderer = new FutureGunRenderer();
+            private final FutureGunRenderer renderer = new FutureGunRenderer();
+
             @Override
             public BuiltinModelItemRenderer getCustomRenderer() {
                 return this.renderer;
@@ -65,20 +63,21 @@ public class FutureGunItem extends Item implements GeoItem {
     }
 
     // Start "using" the item once clicked
-//    @Override
-//    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
-//        player.setCurrentHand(hand);
-//
-//        return TypedActionResult.consume(player.getStackInHand(hand));
-//    }
+    @Override
+    public TypedActionResult<ItemStack> use(World world, PlayerEntity player, Hand hand) {
+        player.setCurrentHand(hand);
+
+        return TypedActionResult.consume(player.getStackInHand(hand));
+    }
 
     // Fire an arrow and play the animation when releasing the mouse button
+    @Override
     public void onStoppedUsing(ItemStack stack, World level, LivingEntity shooter, int ticksRemaining) {
         if (shooter instanceof PlayerEntity player) {
             if (stack.getDamage() >= stack.getMaxDamage() - 1)
                 return;
 
-            // Add a cooldown, so you can't fire rapidly
+            // Add a cooldown so you can't fire rapidly
 //            player.getItemCooldownManager().set(this, 5);
 
             if (!level.isClient) {
@@ -128,25 +127,5 @@ public class FutureGunItem extends Item implements GeoItem {
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return this.cache;
-    }
-    public TypedActionResult<ItemStack> use(World world, PlayerEntity user, Hand hand) {
-        ItemStack itemStack = user.getStackInHand(hand); // creates a new ItemStack instance of the user's itemStack in-hand
-        world.playSound(null, user.getX(), user.getY(), user.getZ(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.NEUTRAL, 0.5F, 1F); // plays a globalSoundEvent
-		/*
-		user.getItemCooldownManager().set(this, 5);
-		*/
-        if (!world.isClient) {
-            FutureGunArrowEntity futureGunArrowEntity = new FutureGunArrowEntity(world, user);
-//            arrowEntity.setItem(itemStack);
-            futureGunArrowEntity.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 0F);
-            world.spawnEntity(futureGunArrowEntity); // spawns entity
-        }
-
-        user.incrementStat(Stats.USED.getOrCreateStat(this));
-//        if (!user.getAbilities().creativeMode) {
-//            itemStack.decrement(1); // decrements itemStack if user is not in creative mode
-//        }
-
-        return TypedActionResult.success(itemStack, world.isClient());
     }
 }
