@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "textures": {
+    "bottom": "oem:block/azalea_barrel_bottom",
+    "side": "oem:block/azalea_barrel_side",
+    "top": "oem:block/azalea_barrel_top_open"
+  }
+}

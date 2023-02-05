@@ -8,6 +8,7 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
+import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 
 
 import java.nio.file.Path;
@@ -196,6 +197,20 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(ServerSpecificBlocks.PRIM, "Pwim");
 //        translationBuilder.add(WoodVStairs.OAK_VERTICAL_STAIRS, "Oak Vertical Stairs");
 //        translationBuilder.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS, "Stone Brick Vertical Stairs");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_LADDER, "Azalea Ladder");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_BARREL, "Azalea Barrel");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_BOOKSHELF, "Azalea Bookshelf");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_LOG, "Azalea Log");
+//        translationBuilder.add(AzaleaWoodBlocks.STRIPPED_AZALEA_LOG, "Stripped Azalea Log");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_WOOD, "Azalea Wood");
+//        translationBuilder.add(AzaleaWoodBlocks.STRIPPED_AZALEA_WOOD, "Stripped Azalea Wood");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_PLANKS, "Azalea Planks");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_STAIR, "Azalea Stairs");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_SLAB, "Azalea Slab");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_FENCE, "Azalea Fence");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_FENCE_GATE, "Azalea Fence Gate");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_DOOR, "Azalea Door");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_TRAPDOOR, "Azalea Trapdoor");
 
 
         try {
