@@ -1,16 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "key": {
-    "#": {
-      "item": "minecraft:weathered_copper"
-    }
-  },
-  "pattern": [
-    "   ",
-    " # ",
-    " # "
-  ],
+  "ingredients": [],
   "result": {
     "item": "oem:weathered_copper_button"
   }

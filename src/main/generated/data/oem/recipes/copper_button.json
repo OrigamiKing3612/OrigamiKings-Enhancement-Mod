@@ -1,16 +1,7 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "key": {
-    "#": {
-      "item": "minecraft:copper_block"
-    }
-  },
-  "pattern": [
-    "   ",
-    " # ",
-    " # "
-  ],
+  "ingredients": [],
   "result": {
     "item": "oem:copper_button"
   }
