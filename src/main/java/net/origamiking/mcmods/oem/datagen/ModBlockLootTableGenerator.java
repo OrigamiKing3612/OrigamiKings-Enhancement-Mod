@@ -22,6 +22,7 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
@@ -380,6 +381,20 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ServerSpecificBlocks.PRIM);
         addDrop(WoodVStairs.OAK_VERTICAL_STAIRS);
         addDrop(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
+        addDrop(AzaleaWoodBlocks.AZALEA_LADDER);
+        addDrop(AzaleaWoodBlocks.AZALEA_BARREL);
+        addDrop(AzaleaWoodBlocks.AZALEA_BOOKSHELF);
+        addDrop(AzaleaWoodBlocks.AZALEA_LOG);
+        addDrop(AzaleaWoodBlocks.STRIPPED_AZALEA_LOG);
+        addDrop(AzaleaWoodBlocks.AZALEA_WOOD);
+        addDrop(AzaleaWoodBlocks.STRIPPED_AZALEA_WOOD);
+        addDrop(AzaleaWoodBlocks.AZALEA_PLANKS);
+        addDrop(AzaleaWoodBlocks.AZALEA_STAIR);
+        addDrop(AzaleaWoodBlocks.AZALEA_SLAB);
+        addDrop(AzaleaWoodBlocks.AZALEA_FENCE);
+        addDrop(AzaleaWoodBlocks.AZALEA_FENCE_GATE);
+        addDrop(AzaleaWoodBlocks.AZALEA_DOOR);
+        addDrop(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
 
 
     }

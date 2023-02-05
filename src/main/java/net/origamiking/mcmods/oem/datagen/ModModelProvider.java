@@ -12,6 +12,7 @@ import net.minecraft.util.math.Direction;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
@@ -40,6 +41,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerSimpleCubeAll(MangroveWoodBlocks.MANGROVE_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(CrimsonWoodBlocks.CRIMSON_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(WarpedWoodBlocks.WARPED_BOOKSHELF);
+        blockStateModelGenerator.registerSimpleCubeAll(AzaleaWoodBlocks.AZALEA_BOOKSHELF);
+        blockStateModelGenerator.registerRotatable(AzaleaWoodBlocks.AZALEA_WOOD);
+        blockStateModelGenerator.registerRotatable(AzaleaWoodBlocks.STRIPPED_AZALEA_WOOD);
         blockStateModelGenerator.registerSimpleCubeAll(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
         blockStateModelGenerator.registerSimpleCubeAll(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
         blockStateModelGenerator.registerSimpleCubeAll(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
@@ -49,11 +53,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(CopperBlocks.EXPOSED_COPPER_DOOR);
         blockStateModelGenerator.registerDoor(CopperBlocks.WEATHERED_COPPER_DOOR);
         blockStateModelGenerator.registerDoor(CopperBlocks.OXIDIZED_COPPER_DOOR);
+        blockStateModelGenerator.registerDoor(AzaleaWoodBlocks.AZALEA_DOOR);
         blockStateModelGenerator.registerTrapdoor(CopperBlocks.EXPOSED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(CopperBlocks.WEATHERED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
-        //blockStateModelGenerator.registerWallPlant(AmethystBlocks.AMETHYST_WALL);
-
+        blockStateModelGenerator.registerTrapdoor(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
 //        blockStateModelGenerator.blockStateCollector.accept(createStairsBlockState(block.getStairsBlock(), inner, stairs, outer, false));
 
 

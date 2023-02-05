@@ -24,6 +24,7 @@ import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.ModVericalSlabs;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.ModVerticalStairs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
@@ -69,6 +70,7 @@ public class ModBlocks {
         RandomBlocks.getRandomBlocks();
         //geting wood blocks
         OakWoodBlocks.getOakBlocks();
+        AzaleaWoodBlocks.getAzaleaBlocks();
         SpruceWoodBlocks.getSpruceBlocks();
         BirchWoodBlocks.getBirchBlocks();
         JungleWoodBlocks.getJungleBlocks();

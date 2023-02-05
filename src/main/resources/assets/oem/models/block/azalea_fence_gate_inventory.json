@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/fence_gate_inventory",
+    "textures": {
+      "wall": "oem:block/azalea_planks"
+    }
+  }

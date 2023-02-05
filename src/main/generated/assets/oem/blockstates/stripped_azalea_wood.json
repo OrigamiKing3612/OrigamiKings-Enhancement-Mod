@@ -1,0 +1,21 @@
+{
+  "variants": {
+    "": [
+      {
+        "model": "oem:block/stripped_azalea_wood"
+      },
+      {
+        "model": "oem:block/stripped_azalea_wood",
+        "y": 90
+      },
+      {
+        "model": "oem:block/stripped_azalea_wood",
+        "y": 180
+      },
+      {
+        "model": "oem:block/stripped_azalea_wood",
+        "y": 270
+      }
+    ]
+  }
+}

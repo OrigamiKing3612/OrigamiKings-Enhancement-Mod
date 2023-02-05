@@ -29,6 +29,7 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
@@ -305,8 +306,20 @@ public class ModGroups {
                 entries.add(CopperArmorMaterial.getCopperArmor.COPPER_CHESTPLATE);
                 entries.add(CopperArmorMaterial.getCopperArmor.COPPER_LEGGINGS);
                 entries.add(CopperArmorMaterial.getCopperArmor.COPPER_BOOTS);
-                //entries.add(VikingArmorMaterial.getVikingArmor.VIKING_HELMET);
-
+                entries.add(AzaleaWoodBlocks.AZALEA_LADDER);
+                entries.add(AzaleaWoodBlocks.AZALEA_BARREL);
+                entries.add(AzaleaWoodBlocks.AZALEA_BOOKSHELF);
+                entries.add(AzaleaWoodBlocks.AZALEA_LOG);
+                entries.add(AzaleaWoodBlocks.STRIPPED_AZALEA_LOG);
+                entries.add(AzaleaWoodBlocks.AZALEA_WOOD);
+                entries.add(AzaleaWoodBlocks.STRIPPED_AZALEA_WOOD);
+                entries.add(AzaleaWoodBlocks.AZALEA_PLANKS);
+                entries.add(AzaleaWoodBlocks.AZALEA_STAIR);
+                entries.add(AzaleaWoodBlocks.AZALEA_SLAB);
+                entries.add(AzaleaWoodBlocks.AZALEA_FENCE);
+                entries.add(AzaleaWoodBlocks.AZALEA_FENCE_GATE);
+                entries.add(AzaleaWoodBlocks.AZALEA_DOOR);
+                entries.add(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
 
             }).build();
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))

@@ -1,0 +1,8 @@
+{
+    "parent": "minecraft:block/cube_column_horizontal",
+    "textures": {
+      "end": "oem:block/azalea_log_top",
+      "side": "oem:block/azalea_log"
+    }
+  }
+  
