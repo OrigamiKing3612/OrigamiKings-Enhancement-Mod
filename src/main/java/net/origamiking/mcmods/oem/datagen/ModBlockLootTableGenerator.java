@@ -376,8 +376,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB);
         addDropWithSilkTouch(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB);
         addDropWithSilkTouch(GlassVSlabs.GLASS_VERTICAL_SLAB);
-//        addDrop(RandomBlocks.BLACKSTONE_FURNACE);
-//        addDrop(RandomBlocks.DEEPSLATE_FURNACE);
         addDrop(ServerSpecificBlocks.PRIM);
         addDrop(WoodVStairs.OAK_VERTICAL_STAIRS);
         addDrop(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
@@ -395,7 +393,8 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(AzaleaWoodBlocks.AZALEA_FENCE_GATE);
         addDrop(AzaleaWoodBlocks.AZALEA_DOOR);
         addDrop(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
-
+        addDrop(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE);
+        addDrop(AzaleaWoodBlocks.AZALEA_BUTTON);
 
     }
 }

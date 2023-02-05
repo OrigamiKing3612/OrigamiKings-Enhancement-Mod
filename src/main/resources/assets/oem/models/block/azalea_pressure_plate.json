@@ -1,5 +1,5 @@
 {
-  "parent": "block/button",
+  "parent": "minecraft:block/pressure_plate_up",
   "textures": {
     "texture": "oem:block/azalea_planks"
   }

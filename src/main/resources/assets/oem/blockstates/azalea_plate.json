@@ -1,6 +1,0 @@
-{
-    "variants": {
-      "powered=false": { "model": "oem:block/azalea_plate" },
-      "powered=true": { "model": "oem:block/azalea_plate_down" }
-    }
-  }

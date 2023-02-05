@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "oem:block/azalea_pressure_plate"
+    },
+    "powered=true": {
+      "model": "oem:block/azalea_pressure_plate_down"
+    }
+  }
+}

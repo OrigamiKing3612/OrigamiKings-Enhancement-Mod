@@ -211,6 +211,8 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(AzaleaWoodBlocks.AZALEA_FENCE_GATE, "Azalea Fence Gate");
 //        translationBuilder.add(AzaleaWoodBlocks.AZALEA_DOOR, "Azalea Door");
 //        translationBuilder.add(AzaleaWoodBlocks.AZALEA_TRAPDOOR, "Azalea Trapdoor");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE, "Azalea Pressure Plate");
+///        translationBuilder.add(AzaleaWoodBlocks.AZALEA_BUTTON, "Azalea Button");
 
 
         try {

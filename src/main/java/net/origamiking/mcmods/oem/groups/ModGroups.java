@@ -320,6 +320,8 @@ public class ModGroups {
                 entries.add(AzaleaWoodBlocks.AZALEA_FENCE_GATE);
                 entries.add(AzaleaWoodBlocks.AZALEA_DOOR);
                 entries.add(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
+                entries.add(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE);
+                entries.add(AzaleaWoodBlocks.AZALEA_BUTTON);
 
             }).build();
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))

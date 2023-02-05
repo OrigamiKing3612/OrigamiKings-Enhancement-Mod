@@ -4,6 +4,7 @@ import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.enums.BlockHalf;
 import net.minecraft.data.client.*;
 import net.minecraft.state.property.Properties;
@@ -59,6 +60,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
 //        blockStateModelGenerator.blockStateCollector.accept(createStairsBlockState(block.getStairsBlock(), inner, stairs, outer, false));
+//        blockStateModelGenerator.registerPressurePlate(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE, Blocks.OAK_PRESSURE_PLATE);
 
 
     }
