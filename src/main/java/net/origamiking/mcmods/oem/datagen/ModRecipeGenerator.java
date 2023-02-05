@@ -22,6 +22,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
+import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
@@ -67,6 +68,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     }
     public static void offerVerticalSlabRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
         createVerticalSlab(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
+    }
+    public static CraftingRecipeJsonBuilder createDoor(RecipeCategory category, ItemConvertible output, Ingredient input) {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 6).input('#', input).pattern("## ").pattern("## ").pattern("## ");
+    }
+    public static void offerDoorRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
+        createDoor(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
     }
 
     @Override
@@ -568,9 +575,16 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GLASS_VERTICAL_SLAB, Blocks.GLASS);
 //        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.BLACKSTONE_FURNACE, Blocks.BLACKSTONE);
 //        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.DEEPSLATE_FURNACE, Blocks.COBBLED_DEEPSLATE);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.IRON_BAR_DOOR, Blocks.IRON_BLOCK, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.GOLD_BAR_DOOR, Blocks.GOLD_BLOCK, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.COPPER_BAR_DOOR, Blocks.COPPER_BLOCK, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR, Blocks.EXPOSED_COPPER, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR, Blocks.WEATHERED_COPPER, 2);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR, Blocks.OXIDIZED_COPPER, 2);
 
-
-
+        offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.IRON_BAR_DOOR, Items.IRON_INGOT);
+        offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.GOLD_BAR_DOOR, Items.GOLD_INGOT);
+        offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.COPPER_BAR_DOOR, Items.COPPER_INGOT);
 
 
 
