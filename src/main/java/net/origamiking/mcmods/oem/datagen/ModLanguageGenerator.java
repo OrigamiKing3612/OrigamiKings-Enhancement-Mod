@@ -213,6 +213,13 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(AzaleaWoodBlocks.AZALEA_TRAPDOOR, "Azalea Trapdoor");
 //        translationBuilder.add(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE, "Azalea Pressure Plate");
 ///        translationBuilder.add(AzaleaWoodBlocks.AZALEA_BUTTON, "Azalea Button");
+//        translationBuilder.add(ServerSpecificBlocks.IRON_BAR_DOOR, "Iron Bar Door");
+//        translationBuilder.add(ServerSpecificBlocks.COPPER_BAR_DOOR, "Copper Bar Door");
+//        translationBuilder.add(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR, "Exposed Copper Bar Door");
+//        translationBuilder.add(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR, "Weather Copper Bar Door");
+//        translationBuilder.add(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR, "Oxidized Copper Bar Door");
+//        translationBuilder.add(ServerSpecificBlocks.GOLD_BAR_DOOR, "Gold Bar Door");
+
 
 
         try {

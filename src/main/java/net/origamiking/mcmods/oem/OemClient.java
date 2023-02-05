@@ -40,6 +40,12 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.OXIDIZED_COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(AzaleaWoodBlocks.AZALEA_DOOR, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(AzaleaWoodBlocks.AZALEA_TRAPDOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.IRON_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.GOLD_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.COPPER_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_DOOR, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_TRAPDOOR, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_DOOR, RenderLayer.getCutout());

@@ -197,7 +197,13 @@
     "oem:vertical_pink_glass_slab",
     "oem:vertical_glass_slab",
     "oem:vertical_stone_brick_stairs",
-    "oem:vertical_oak_stairs"
+    "oem:vertical_oak_stairs",
+    "oem:iron_bar_door",
+    "oem:gold_bar_door",
+    "oem:copper_bar_door",
+    "oem:exposed_copper_bar_door",
+    "oem:weathered_copper_bar_door",
+    "oem:oxidized_copper_bar_door"
 
 
   ]

@@ -395,6 +395,12 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
         addDrop(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE);
         addDrop(AzaleaWoodBlocks.AZALEA_BUTTON);
+        addDrop(ServerSpecificBlocks.IRON_BAR_DOOR);
+        addDrop(ServerSpecificBlocks.GOLD_BAR_DOOR);
+        addDrop(ServerSpecificBlocks.COPPER_BAR_DOOR);
+        addDrop(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
+        addDrop(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
+        addDrop(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
 
     }
 }

@@ -33,7 +33,6 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
-        // blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.TEST);
         blockStateModelGenerator.registerSimpleCubeAll(SpruceWoodBlocks.SPRUCE_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(BirchWoodBlocks.BIRCH_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(JungleWoodBlocks.JUNGLE_BOOKSHELF);
@@ -59,6 +58,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(CopperBlocks.WEATHERED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
+        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.IRON_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.GOLD_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.COPPER_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
 //        blockStateModelGenerator.blockStateCollector.accept(createStairsBlockState(block.getStairsBlock(), inner, stairs, outer, false));
 //        blockStateModelGenerator.registerPressurePlate(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE, Blocks.OAK_PRESSURE_PLATE);
 

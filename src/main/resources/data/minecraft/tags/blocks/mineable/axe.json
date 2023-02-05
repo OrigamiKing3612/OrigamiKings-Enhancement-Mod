@@ -35,7 +35,23 @@
     "oem:vertical_dark_oak_slab",
     "oem:vertical_mangrove_slab",
     "oem:vertical_crimson_slab",
-    "oem:vertical_warped_slab"
+    "oem:vertical_warped_slab",
+    "oem:azalea_ladder",
+    "oem:azalea_barrel",
+    "oem:azalea_bookshelf",
+    "oem:azalea_log",
+    "oem:stripped_azalea_log",
+    "oem:azalea_wood",
+    "oem:stripped_azalea_wood",
+    "oem:azalea_planks",
+    "oem:azalea_plank_stair",
+    "oem:azalea_plank_slab",
+    "oem:azalea_fence",
+    "oem:azalea_fence_gate",
+    "oem:azalea_door",
+    "oem:azalea_trapdoor",
+    "oem:azalea_pressure_plate",
+    "oem:azalea_button"
 
   ]
 }

@@ -322,6 +322,13 @@ public class ModGroups {
                 entries.add(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
                 entries.add(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE);
                 entries.add(AzaleaWoodBlocks.AZALEA_BUTTON);
+                entries.add(ServerSpecificBlocks.IRON_BAR_DOOR);
+                entries.add(ServerSpecificBlocks.GOLD_BAR_DOOR);
+                entries.add(ServerSpecificBlocks.COPPER_BAR_DOOR);
+                entries.add(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
+                entries.add(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
+                entries.add(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
+
 
             }).build();
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
