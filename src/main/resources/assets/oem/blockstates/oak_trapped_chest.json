@@ -1,0 +1,5 @@
+{
+    "variants": {
+        "": { "model": "oem:block/oak_chest" }
+    }
+}

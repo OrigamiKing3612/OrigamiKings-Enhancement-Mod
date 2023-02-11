@@ -8,7 +8,16 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
 import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
+import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 
 
 import java.nio.file.Path;
@@ -219,6 +228,26 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR, "Weather Copper Bar Door");
 //        translationBuilder.add(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR, "Oxidized Copper Bar Door");
 //        translationBuilder.add(ServerSpecificBlocks.GOLD_BAR_DOOR, "Gold Bar Door");
+//        translationBuilder.add(AcaciaWoodBlocks.ACACIA_CHEST, "Acacia Chest");
+//        translationBuilder.add(AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST, "Acacia Trapped Chest");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_CHEST, "Azalea Chest");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_TRAPPED_CHEST, "Azalea Trapped Chest");
+//        translationBuilder.add(BirchWoodBlocks.BIRCH_CHEST, "Birch Chest");
+//        translationBuilder.add(BirchWoodBlocks.BIRCH_TRAPPED_CHEST, "Birch Trapped Chest");
+//        translationBuilder.add(CrimsonWoodBlocks.CRIMSON_CHEST, "Crimson Chest");
+//        translationBuilder.add(CrimsonWoodBlocks.CRIMSON_TRAPPED_CHEST, "Crimson Trapped Chest");
+//        translationBuilder.add(DarkOakWoodBlocks.DARK_OAK_CHEST, "Dark Oak Chest");
+//        translationBuilder.add(DarkOakWoodBlocks.DARK_OAK_TRAPPED_CHEST, "Dark Oak Trapped Chest");
+//        translationBuilder.add(JungleWoodBlocks.JUNGLE_CHEST, "Jungle Chest");
+//        translationBuilder.add(JungleWoodBlocks.JUNGLE_TRAPPED_CHEST, "Jungle Trapped Chest");
+//        translationBuilder.add(MangroveWoodBlocks.MANGROVE_CHEST, "Mangrove Chest");
+//        translationBuilder.add(MangroveWoodBlocks.MANGROVE_TRAPPED_CHEST, "Mangrove Trapped Chest");
+//        translationBuilder.add(OakWoodBlocks.OAK_CHEST, "Oak Chest");
+//        translationBuilder.add(OakWoodBlocks.OAK_TRAPPED_CHEST, "Oak Trapped Chest");
+//        translationBuilder.add(SpruceWoodBlocks.SPRUCE_CHEST, "Spruce Chest");
+//        translationBuilder.add(SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST, "Spruce Trapped Chest");
+//        translationBuilder.add(WarpedWoodBlocks.WARPED_CHEST, "Warped Chest");
+//        translationBuilder.add(WarpedWoodBlocks.WARPED_TRAPPED_CHEST, "Warped Trapped Chest");
 
 
 

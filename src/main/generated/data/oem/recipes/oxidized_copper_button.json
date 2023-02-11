@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:crafting_shapeless",
-  "category": "building",
-  "ingredients": [],
-  "result": {
-    "item": "oem:oxidized_copper_button"
-  }
-}

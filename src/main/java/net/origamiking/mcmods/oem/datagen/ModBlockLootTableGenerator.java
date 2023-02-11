@@ -401,6 +401,26 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
         addDrop(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
         addDrop(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
+        addDrop(AcaciaWoodBlocks.ACACIA_CHEST);
+        addDrop(AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST);
+        addDrop(AzaleaWoodBlocks.AZALEA_CHEST);
+        addDrop(AzaleaWoodBlocks.AZALEA_TRAPPED_CHEST);
+        addDrop(BirchWoodBlocks.BIRCH_CHEST);
+        addDrop(BirchWoodBlocks.BIRCH_TRAPPED_CHEST);
+        addDrop(CrimsonWoodBlocks.CRIMSON_CHEST);
+        addDrop(CrimsonWoodBlocks.CRIMSON_TRAPPED_CHEST);
+        addDrop(DarkOakWoodBlocks.DARK_OAK_CHEST);
+        addDrop(DarkOakWoodBlocks.DARK_OAK_TRAPPED_CHEST);
+        addDrop(JungleWoodBlocks.JUNGLE_CHEST);
+        addDrop(JungleWoodBlocks.JUNGLE_TRAPPED_CHEST);
+        addDrop(MangroveWoodBlocks.MANGROVE_CHEST);
+        addDrop(MangroveWoodBlocks.MANGROVE_TRAPPED_CHEST);
+        addDrop(OakWoodBlocks.OAK_CHEST);
+        addDrop(OakWoodBlocks.OAK_TRAPPED_CHEST);
+        addDrop(SpruceWoodBlocks.SPRUCE_CHEST);
+        addDrop(SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST);
+        addDrop(WarpedWoodBlocks.WARPED_CHEST);
+        addDrop(WarpedWoodBlocks.WARPED_TRAPPED_CHEST);
 
     }
 }

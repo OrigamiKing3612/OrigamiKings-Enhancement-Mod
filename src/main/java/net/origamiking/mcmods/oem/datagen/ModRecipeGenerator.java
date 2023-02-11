@@ -24,6 +24,16 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
+import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
 import net.origamiking.mcmods.oem.blocks.wool.cyan.CyanWool;
@@ -71,6 +81,18 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     }
     public static void offerDoorRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
         createDoor(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
+    }
+    public static CraftingRecipeJsonBuilder createChest(RecipeCategory category, ItemConvertible output, Ingredient input) {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 1).input('#', input).pattern("###").pattern("# #").pattern("###");
+    }
+    public static void offerChestRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
+        createChest(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
+    }
+    public static CraftingRecipeJsonBuilder createTrappedChest(RecipeCategory category, ItemConvertible output, Ingredient input) {
+        return ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 1).input('#', input).input('T', Items.TRIPWIRE_HOOK).pattern("###").pattern("#T#").pattern("###");
+    }
+    public static void offerTrappedChestRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
+        createTrappedChest(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
     }
 
     @Override
@@ -582,6 +604,27 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.IRON_BAR_DOOR, Items.IRON_INGOT);
         offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.GOLD_BAR_DOOR, Items.GOLD_INGOT);
         offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.COPPER_BAR_DOOR, Items.COPPER_INGOT);
+
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_CHEST, Blocks.ACACIA_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST, Blocks.ACACIA_PLANKS);
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_CHEST, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_TRAPPED_CHEST, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BirchWoodBlocks.BIRCH_CHEST, Blocks.BIRCH_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BirchWoodBlocks.BIRCH_TRAPPED_CHEST, Blocks.BIRCH_PLANKS);
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CrimsonWoodBlocks.CRIMSON_CHEST, Blocks.CRIMSON_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CrimsonWoodBlocks.CRIMSON_TRAPPED_CHEST, Blocks.CRIMSON_PLANKS);
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DarkOakWoodBlocks.DARK_OAK_CHEST, Blocks.DARK_OAK_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DarkOakWoodBlocks.DARK_OAK_TRAPPED_CHEST, Blocks.DARK_OAK_PLANKS);
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, JungleWoodBlocks.JUNGLE_CHEST, Blocks.JUNGLE_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, JungleWoodBlocks.JUNGLE_TRAPPED_CHEST, Blocks.JUNGLE_PLANKS);
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MangroveWoodBlocks.MANGROVE_CHEST, Blocks.MANGROVE_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MangroveWoodBlocks.MANGROVE_TRAPPED_CHEST, Blocks.MANGROVE_PLANKS);
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OakWoodBlocks.OAK_CHEST, Blocks.OAK_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OakWoodBlocks.OAK_TRAPPED_CHEST, Blocks.OAK_PLANKS);
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SpruceWoodBlocks.SPRUCE_CHEST, Blocks.SPRUCE_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST, Blocks.SPRUCE_PLANKS);
+        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WarpedWoodBlocks.WARPED_CHEST, Blocks.WARPED_PLANKS);
+        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WarpedWoodBlocks.WARPED_TRAPPED_CHEST, Blocks.WARPED_PLANKS);
 
 
 

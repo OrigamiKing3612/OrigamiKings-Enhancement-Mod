@@ -328,6 +328,33 @@ public class ModGroups {
                 entries.add(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
                 entries.add(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
                 entries.add(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
+                entries.add(AcaciaWoodBlocks.ACACIA_CHEST);
+                entries.add(AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST);
+                entries.add(AzaleaWoodBlocks.AZALEA_CHEST);
+                entries.add(AzaleaWoodBlocks.AZALEA_TRAPPED_CHEST);
+                entries.add(BirchWoodBlocks.BIRCH_CHEST);
+                entries.add(BirchWoodBlocks.BIRCH_TRAPPED_CHEST);
+                entries.add(CrimsonWoodBlocks.CRIMSON_CHEST);
+                entries.add(CrimsonWoodBlocks.CRIMSON_TRAPPED_CHEST);
+                entries.add(DarkOakWoodBlocks.DARK_OAK_CHEST);
+                entries.add(DarkOakWoodBlocks.DARK_OAK_TRAPPED_CHEST);
+                entries.add(JungleWoodBlocks.JUNGLE_CHEST);
+                entries.add(JungleWoodBlocks.JUNGLE_TRAPPED_CHEST);
+                entries.add(MangroveWoodBlocks.MANGROVE_CHEST);
+                entries.add(MangroveWoodBlocks.MANGROVE_TRAPPED_CHEST);
+                entries.add(OakWoodBlocks.OAK_CHEST);
+                entries.add(OakWoodBlocks.OAK_TRAPPED_CHEST);
+                entries.add(SpruceWoodBlocks.SPRUCE_CHEST);
+                entries.add(SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST);
+                entries.add(WarpedWoodBlocks.WARPED_CHEST);
+                entries.add(WarpedWoodBlocks.WARPED_TRAPPED_CHEST);
+
+
+
+
+
+
+
 
 
             }).build();
