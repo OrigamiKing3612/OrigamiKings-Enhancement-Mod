@@ -22,7 +22,7 @@ Some things this mod adds are:
 ![inventory_5](https://user-images.githubusercontent.com/115757805/212568652-4fa9dcb4-17cd-4de7-8572-5a38716659eb.png)
 
 </p>
-</details
+</details>
 
 **0.1.5 update**
 

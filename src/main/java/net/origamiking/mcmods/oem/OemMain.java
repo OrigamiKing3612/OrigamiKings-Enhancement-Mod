@@ -14,7 +14,7 @@ import org.slf4j.LoggerFactory;
 
 public class OemMain implements ModInitializer {
 	public static final String MOD_ID = "oem";
-	public static final String VERSION = "Your version is: 0.1.6-1.19.3";
+	public static final String VERSION = "Your version is: 0.6.0-1.19.3";
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
 
  	//TODO before 0.6.0 is done do this...
