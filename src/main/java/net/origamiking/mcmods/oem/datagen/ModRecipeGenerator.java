@@ -605,8 +605,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.GOLD_BAR_DOOR, Items.GOLD_INGOT);
         offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.COPPER_BAR_DOOR, Items.COPPER_INGOT);
 
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_CHEST, Blocks.ACACIA_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST, Blocks.ACACIA_PLANKS);
+//        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_CHEST, Blocks.ACACIA_PLANKS);
+//        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST, Blocks.ACACIA_PLANKS);
         offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_CHEST, AzaleaWoodBlocks.AZALEA_PLANKS);
         offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_TRAPPED_CHEST, AzaleaWoodBlocks.AZALEA_PLANKS);
         offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BirchWoodBlocks.BIRCH_CHEST, Blocks.BIRCH_PLANKS);

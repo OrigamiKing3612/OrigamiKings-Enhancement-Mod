@@ -1,8 +1,6 @@
 package net.origamiking.mcmods.oem;
 
 import net.fabricmc.api.ModInitializer;
-import net.fabricmc.fabric.api.object.builder.v1.block.entity.FabricBlockEntityTypeBuilder;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricEntityTypeBuilder;
 import net.origamiking.mcmods.oem.blocks.ModBlocks;
 import net.origamiking.mcmods.oem.commands.ModCommands;
 import net.origamiking.mcmods.oem.groups.ModGroups;
@@ -12,7 +10,7 @@ import net.origamiking.mcmods.oem.sounds.ModSounds;
 import net.origamiking.mcmods.oem.util.Utils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import software.bernie.example.GeckoLibMod;
+//import software.bernie.example.GeckoLibMod;
 
 public class OemMain implements ModInitializer {
 	public static final String MOD_ID = "oem";
