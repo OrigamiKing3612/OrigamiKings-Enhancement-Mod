@@ -22,6 +22,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.CopperVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
@@ -282,6 +283,9 @@ public class ModGroups {
                 entries.add(CopperBlocks.WEATHERED_COPPER_CHAIN);
                 entries.add(CopperBlocks.OXIDIZED_COPPER_CHAIN);
                 entries.add(CopperBlocks.COPPER_LANTERN);
+                entries.add(CopperBlocks.EXPOSED_COPPER_LANTERN);
+                entries.add(CopperBlocks.WEATHERED_COPPER_LANTERN);
+                entries.add(CopperBlocks.OXIDIZED_COPPER_LANTERN);
                 entries.add(CopperBlocks.COPPER_BARS);
                 entries.add(CopperBlocks.EXPOSED_COPPER_BARS);
                 entries.add(CopperBlocks.WEATHERED_COPPER_BARS);
@@ -328,34 +332,26 @@ public class ModGroups {
                 entries.add(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
                 entries.add(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
                 entries.add(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
-                entries.add(AcaciaWoodBlocks.ACACIA_CHEST);
-                entries.add(AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST);
-                entries.add(AzaleaWoodBlocks.AZALEA_CHEST);
-                entries.add(AzaleaWoodBlocks.AZALEA_TRAPPED_CHEST);
-                entries.add(BirchWoodBlocks.BIRCH_CHEST);
-                entries.add(BirchWoodBlocks.BIRCH_TRAPPED_CHEST);
-                entries.add(CrimsonWoodBlocks.CRIMSON_CHEST);
-                entries.add(CrimsonWoodBlocks.CRIMSON_TRAPPED_CHEST);
-                entries.add(DarkOakWoodBlocks.DARK_OAK_CHEST);
-                entries.add(DarkOakWoodBlocks.DARK_OAK_TRAPPED_CHEST);
-                entries.add(JungleWoodBlocks.JUNGLE_CHEST);
-                entries.add(JungleWoodBlocks.JUNGLE_TRAPPED_CHEST);
-                entries.add(MangroveWoodBlocks.MANGROVE_CHEST);
-                entries.add(MangroveWoodBlocks.MANGROVE_TRAPPED_CHEST);
-                entries.add(OakWoodBlocks.OAK_CHEST);
-                entries.add(OakWoodBlocks.OAK_TRAPPED_CHEST);
-                entries.add(SpruceWoodBlocks.SPRUCE_CHEST);
-                entries.add(SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST);
-                entries.add(WarpedWoodBlocks.WARPED_CHEST);
-                entries.add(WarpedWoodBlocks.WARPED_TRAPPED_CHEST);
-
-
-
-
-
-
-
-
+//                entries.add(AcaciaWoodBlocks.ACACIA_CHEST);
+//                entries.add(AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST);
+//                entries.add(AzaleaWoodBlocks.AZALEA_CHEST);
+//                entries.add(AzaleaWoodBlocks.AZALEA_TRAPPED_CHEST);
+//                entries.add(BirchWoodBlocks.BIRCH_CHEST);
+//                entries.add(BirchWoodBlocks.BIRCH_TRAPPED_CHEST);
+//                entries.add(CrimsonWoodBlocks.CRIMSON_CHEST);
+//                entries.add(CrimsonWoodBlocks.CRIMSON_TRAPPED_CHEST);
+//                entries.add(DarkOakWoodBlocks.DARK_OAK_CHEST);
+//                entries.add(DarkOakWoodBlocks.DARK_OAK_TRAPPED_CHEST);
+//                entries.add(JungleWoodBlocks.JUNGLE_CHEST);
+//                entries.add(JungleWoodBlocks.JUNGLE_TRAPPED_CHEST);
+//                entries.add(MangroveWoodBlocks.MANGROVE_CHEST);
+//                entries.add(MangroveWoodBlocks.MANGROVE_TRAPPED_CHEST);
+//                entries.add(OakWoodBlocks.OAK_CHEST);
+//                entries.add(OakWoodBlocks.OAK_TRAPPED_CHEST);
+//                entries.add(SpruceWoodBlocks.SPRUCE_CHEST);
+//                entries.add(SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST);
+//                entries.add(WarpedWoodBlocks.WARPED_CHEST);
+//                entries.add(WarpedWoodBlocks.WARPED_TRAPPED_CHEST);
 
             }).build();
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
@@ -397,14 +393,14 @@ public class ModGroups {
                 entries.add(StoneVSlabs.VERTICAL_ENDSTONE_BRICK_SLAB);
                 entries.add(StoneVSlabs.VERTICAL_QUARTZ_SLAB);
                 entries.add(StoneVSlabs.VERTICAL_SMOOTH_QUARTZ_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_EXPOSED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WEATHERED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_OXIDIZED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WAXED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB);
-//                entries.add(StoneVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB);
+                entries.add(CopperVSlabs.VERTICAL_CUT_COPPER_SLAB);
+                entries.add(CopperVSlabs.VERTICAL_EXPOSED_CUT_COPPER_SLAB);
+                entries.add(CopperVSlabs.VERTICAL_WEATHERED_CUT_COPPER_SLAB);
+                entries.add(CopperVSlabs.VERTICAL_OXIDIZED_CUT_COPPER_SLAB);
+//                entries.add(CopperVSlabs.VERTICAL_WAXED_CUT_COPPER_SLAB);
+//                entries.add(CopperVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB);
+//                entries.add(CopperVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB);
+//                entries.add(CopperVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_OAK_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_SPRUCE_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_BIRCH_SLAB);

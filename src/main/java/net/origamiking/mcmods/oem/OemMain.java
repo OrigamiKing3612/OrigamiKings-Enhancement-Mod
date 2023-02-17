@@ -17,10 +17,9 @@ public class OemMain implements ModInitializer {
 	public static final String VERSION = "Your version is: 0.6.0-1.19.3";
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
 
- 	//TODO before 0.6.0 is done do this...
-	//TODO Make azalea wood in trees
-	//TODO add chest variants
-	//TODO Test everything
+	/** TODO before 0.6.0 comes out... and more
+	 * make copper stuff oxidize
+	 */
 	@Override
 	public void onInitialize() {
 		ModBlocks.register();

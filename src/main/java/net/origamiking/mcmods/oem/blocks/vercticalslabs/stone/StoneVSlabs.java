@@ -45,15 +45,6 @@ public class StoneVSlabs extends ModVericalSlabs {
     public static final Block VERTICAL_POLISHED_BLACKSTONE_SLAB = registerBlock("vertical_polished_blackstone_slab", new VerticalSlabBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_BLACKSTONE).sounds(BlockSoundGroup.STONE)));
     public static final Block VERTICAL_POLISHED_BLACKSTONE_BRICK_SLAB = registerBlock("vertical_polished_blackstone_brick_slab", new VerticalSlabBlock(FabricBlockSettings.copyOf(Blocks.POLISHED_BLACKSTONE_BRICKS).sounds(BlockSoundGroup.STONE)));
 
-//    public static final Block VERTICAL_CUT_COPPER_SLAB = games.enchanted.shared.registerBlocks.registerVerticalCopperSlab("vertical_cut_copper_slab", Oxidizable.OxidationLevel.UNAFFECTED);
-//    public static final Block VERTICAL_EXPOSED_CUT_COPPER_SLAB = games.enchanted.shared.registerBlocks.registerVerticalCopperSlab("vertical_exposed_cut_copper_slab", Oxidizable.OxidationLevel.EXPOSED);
-//    public static final Block VERTICAL_WEATHERED_CUT_COPPER_SLAB = games.enchanted.shared.registerBlocks.registerVerticalCopperSlab("vertical_weathered_cut_copper_slab", Oxidizable.OxidationLevel.WEATHERED);
-//    public static final Block VERTICAL_OXIDIZED_CUT_COPPER_SLAB = games.enchanted.shared.registerBlocks.registerVerticalCopperSlab("vertical_oxidized_cut_copper_slab", Oxidizable.OxidationLevel.OXIDIZED);
-//
-//    public static final Block VERTICAL_WAXED_CUT_COPPER_SLAB = games.enchanted.shared.registerBlocks.registerVerticalCopperSlab("vertical_waxed_cut_copper_slab", Oxidizable.OxidationLevel.UNAFFECTED);
-//    public static final Block VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB = games.enchanted.shared.registerBlocks.registerVerticalCopperSlab("vertical_waxed_exposed_cut_copper_slab", Oxidizable.OxidationLevel.EXPOSED);
-//    public static final Block VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB = games.enchanted.shared.registerBlocks.registerVerticalCopperSlab("vertical_waxed_weathered_cut_copper_slab", Oxidizable.OxidationLevel.WEATHERED);
-//    public static final Block VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB = games.enchanted.shared.registerBlocks.registerVerticalCopperSlab("vertical_waxed_oxidized_cut_copper_slab", Oxidizable.OxidationLevel.OXIDIZED);
 
     public static final Block VERTICAL_MUD_BRICK_SLAB = registerBlock("vertical_mud_brick_slab", new VerticalSlabBlock(FabricBlockSettings.copyOf(Blocks.MUD_BRICKS).sounds(BlockSoundGroup.MUD_BRICKS)));
     public static void get() {}

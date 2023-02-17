@@ -26,5 +26,6 @@ public class ModVericalSlabs {
         WoodVSlabs.get();
         ConcreteVSlabs.get();
         GlassVSlabs.get();
+        CopperVSlabs.get();
     }
 }
