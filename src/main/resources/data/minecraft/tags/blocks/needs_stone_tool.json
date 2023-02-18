@@ -295,9 +295,34 @@
     "oem:spruce_chest",
     "oem:spruce_trapped_chest",
     "oem:warped_chest",
-    "oem:warped_trapped_chest"
-
-
-
+    "oem:warped_trapped_chest",
+    "oem:waxed_copper_bars",
+    "oem:waxed_exposed_copper_bars",
+    "oem:waxed_weathered_copper_bars",
+    "oem:waxed_oxidized_copper_bars",
+    "oem:waxed_copper_chain",
+    "oem:waxed_exposed_copper_chain",
+    "oem:waxed_weathered_copper_chain",
+    "oem:waxed_oxidized_copper_chain",
+    "oem:waxed_copper_lantern",
+    "oem:waxed_exposed_copper_lantern",
+    "oem:waxed_weathered_copper_lantern",
+    "oem:waxed_oxidized_copper_lantern",
+    "oem:waxed_copper_pressure_plate",
+    "oem:waxed_exposed_copper_pressure_plate",
+    "oem:waxed_weathered_copper_pressure_plate",
+    "oem:waxed_oxidized_copper_pressure_plate",
+    "oem:waxed_copper_button",
+    "oem:waxed_exposed_copper_button",
+    "oem:waxed_weathered_copper_button",
+    "oem:waxed_oxidized_copper_button",
+    "oem:waxed_copper_door",
+    "oem:waxed_copper_trapdoor",
+    "oem:waxed_exposed_copper_door",
+    "oem:waxed_exposed_copper_trapdoor",
+    "oem:waxed_weathered_copper_door",
+    "oem:waxed_weathered_copper_trapdoor",
+    "oem:waxed_oxidized_copper_door",
+    "oem:waxed_oxidized_copper_trapdoor"
   ]
 }

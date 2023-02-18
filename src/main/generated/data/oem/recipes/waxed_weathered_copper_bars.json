@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "oem:weathered_copper_bars"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "#  ",
+    "#  "
+  ],
+  "result": {
+    "count": 6,
+    "item": "oem:waxed_weathered_copper_bars"
+  }
+}

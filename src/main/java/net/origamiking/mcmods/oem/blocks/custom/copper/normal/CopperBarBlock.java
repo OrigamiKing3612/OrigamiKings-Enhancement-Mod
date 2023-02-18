@@ -9,5 +9,4 @@ public class CopperBarBlock extends PaneBlock {
         super(settings);
         this.oxidizationLevel = oxidizationLevel;
     }
-
 }

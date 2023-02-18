@@ -1,6 +1,7 @@
 package net.origamiking.mcmods.oem.blocks.copper;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -41,12 +42,17 @@ public class CopperBlocks {
     public static final Block OXIDIZED_COPPER_DOOR = registerCopperBlock("oxidized_copper_door", new OxidizableCopperDoorBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.of(Material.METAL).strength(4.0f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque()));
     public static final Block OXIDIZED_COPPER_TRAPDOOR = registerCopperBlock("oxidized_copper_trapdoor", new OxidizableCopperTrapdoorBlock(Oxidizable.OxidationLevel.OXIDIZED, FabricBlockSettings.of(Material.METAL).strength(0.5f).sounds(BlockSoundGroup.COPPER).requiresTool().nonOpaque()));
 
+
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
-    private static Block registerCopperBlock(String name, Block block) {
+    public static Block registerCopperBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, name), block);
     }
-    public static void getCopperBlocks() {}
+    public static void getCopperBlocks() {
+        WaxedCopperBlocks.get();
+        OtherCopperStuff.pairWaxedAndNotWaxed();
+        OtherCopperStuff.pairTypesofCopper();
+    }
 }

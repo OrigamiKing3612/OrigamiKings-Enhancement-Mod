@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_acacia_planks": {
+    "has_exposed_copper_chain": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:acacia_planks"
+              "oem:exposed_copper_chain"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "oem:acacia_trapped_chest"
+        "recipe": "oem:waxed_exposed_copper_chain"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_acacia_planks",
+      "has_exposed_copper_chain",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "oem:acacia_trapped_chest"
+      "oem:waxed_exposed_copper_chain"
     ]
   }
 }

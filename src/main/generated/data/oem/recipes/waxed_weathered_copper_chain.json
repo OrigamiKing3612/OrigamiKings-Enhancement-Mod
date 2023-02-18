@@ -3,15 +3,16 @@
   "category": "building",
   "key": {
     "#": {
-      "item": "minecraft:acacia_planks"
+      "item": "oem:weathered_copper_chain"
     }
   },
   "pattern": [
-    "###",
-    "# #",
-    "###"
+    "#  ",
+    "#  ",
+    "#  "
   ],
   "result": {
-    "item": "oem:acacia_chest"
+    "count": 6,
+    "item": "oem:waxed_weathered_copper_chain"
   }
 }

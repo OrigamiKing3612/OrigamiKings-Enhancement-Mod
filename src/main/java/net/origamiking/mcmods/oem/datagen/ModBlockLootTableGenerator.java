@@ -7,6 +7,7 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
+import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
@@ -15,6 +16,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.CopperVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
@@ -47,14 +49,10 @@ import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
-import org.apache.logging.log4j.core.jmx.Server;
-
-
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     public ModBlockLootTableGenerator(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
-
     @Override
     public void generate() {
         addDrop(ConcreteStairs.WHITE_CONCRETE_STAIR);
@@ -326,14 +324,14 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(StoneVSlabs.VERTICAL_ENDSTONE_BRICK_SLAB);
         addDrop(StoneVSlabs.VERTICAL_QUARTZ_SLAB);
         addDrop(StoneVSlabs.VERTICAL_SMOOTH_QUARTZ_SLAB);
-//                addDrop(StoneVSlabs.VERTICAL_CUT_COPPER_SLAB);
-//                addDrop(StoneVSlabs.VERTICAL_EXPOSED_CUT_COPPER_SLAB);
-//                addDrop(StoneVSlabs.VERTICAL_WEATHERED_CUT_COPPER_SLAB);
-//                addDrop(StoneVSlabs.VERTICAL_OXIDIZED_CUT_COPPER_SLAB);
-//                addDrop(StoneVSlabs.VERTICAL_WAXED_CUT_COPPER_SLAB);
-//                addDrop(StoneVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB);
-//                addDrop(StoneVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB);
-//                addDrop(StoneVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB);
+        addDrop(CopperVSlabs.VERTICAL_CUT_COPPER_SLAB);
+        addDrop(CopperVSlabs.VERTICAL_EXPOSED_CUT_COPPER_SLAB);
+        addDrop(CopperVSlabs.VERTICAL_WEATHERED_CUT_COPPER_SLAB);
+        addDrop(CopperVSlabs.VERTICAL_OXIDIZED_CUT_COPPER_SLAB);
+        addDrop(CopperVSlabs.VERTICAL_WAXED_CUT_COPPER_SLAB);
+        addDrop(CopperVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB);
+        addDrop(CopperVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB);
+        addDrop(CopperVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB);
         addDrop(WoodVSlabs.VERTICAL_OAK_SLAB);
         addDrop(WoodVSlabs.VERTICAL_SPRUCE_SLAB);
         addDrop(WoodVSlabs.VERTICAL_BIRCH_SLAB);
@@ -421,6 +419,34 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
 //        addDrop(SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST);
 //        addDrop(WarpedWoodBlocks.WARPED_CHEST);
 //        addDrop(WarpedWoodBlocks.WARPED_TRAPPED_CHEST);
+        addDrop(WaxedCopperBlocks.WAXED_COPPER_BARS);
+        addDrop(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BARS);
+        addDrop(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BARS);
+        addDrop(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BARS);
+        addDrop(WaxedCopperBlocks.WAXED_COPPER_CHAIN);
+        addDrop(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN);
+        addDrop(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN);
+        addDrop(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+        addDrop(WaxedCopperBlocks.WAXED_COPPER_LANTERN);
+        addDrop(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN);
+        addDrop(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN);
+        addDrop(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
+        addDrop(WaxedCopperBlocks.WAXED_COPPER_PRESSURE_PLATE);
+        addDrop(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_PRESSURE_PLATE);
+        addDrop(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_PRESSURE_PLATE);
+        addDrop(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_PRESSURE_PLATE);
+        addDrop(WaxedCopperBlocks.WAXED_COPPER_BUTTON);
+        addDrop(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BUTTON);
+        addDrop(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BUTTON);
+        addDrop(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
+        addDrop(WaxedCopperBlocks.WAXED_COPPER_DOOR);
+        addDrop(WaxedCopperBlocks.WAXED_COPPER_TRAPDOOR);
+        addDrop(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_DOOR);
+        addDrop(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR);
+        addDrop(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_DOOR);
+        addDrop(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR);
+        addDrop(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
+        addDrop(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
 
     }
 }

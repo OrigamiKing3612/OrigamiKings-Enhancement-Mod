@@ -14,6 +14,7 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
+import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
@@ -310,6 +311,34 @@ public class ModGroups {
                 entries.add(CopperArmorMaterial.getCopperArmor.COPPER_CHESTPLATE);
                 entries.add(CopperArmorMaterial.getCopperArmor.COPPER_LEGGINGS);
                 entries.add(CopperArmorMaterial.getCopperArmor.COPPER_BOOTS);
+                entries.add(WaxedCopperBlocks.WAXED_COPPER_BARS);
+                entries.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BARS);
+                entries.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BARS);
+                entries.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BARS);
+                entries.add(WaxedCopperBlocks.WAXED_COPPER_CHAIN);
+                entries.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN);
+                entries.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN);
+                entries.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN);
+                entries.add(WaxedCopperBlocks.WAXED_COPPER_LANTERN);
+                entries.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN);
+                entries.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN);
+                entries.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN);
+                entries.add(WaxedCopperBlocks.WAXED_COPPER_PRESSURE_PLATE);
+                entries.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_PRESSURE_PLATE);
+                entries.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_PRESSURE_PLATE);
+                entries.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_PRESSURE_PLATE);
+                entries.add(WaxedCopperBlocks.WAXED_COPPER_BUTTON);
+                entries.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BUTTON);
+                entries.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BUTTON);
+                entries.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BUTTON);
+                entries.add(WaxedCopperBlocks.WAXED_COPPER_DOOR);
+                entries.add(WaxedCopperBlocks.WAXED_COPPER_TRAPDOOR);
+                entries.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_DOOR);
+                entries.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR);
+                entries.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_DOOR);
+                entries.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR);
+                entries.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
+                entries.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
                 entries.add(AzaleaWoodBlocks.AZALEA_LADDER);
                 entries.add(AzaleaWoodBlocks.AZALEA_BARREL);
                 entries.add(AzaleaWoodBlocks.AZALEA_BOOKSHELF);
@@ -352,7 +381,6 @@ public class ModGroups {
 //                entries.add(SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST);
 //                entries.add(WarpedWoodBlocks.WARPED_CHEST);
 //                entries.add(WarpedWoodBlocks.WARPED_TRAPPED_CHEST);
-
             }).build();
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
             .displayName(Text.literal("Oem Vertical Slabs"))

@@ -14,12 +14,12 @@ public class OxidizableCopperPresurePlateBlock extends CopperPresurePlateBlock i
     }
     @Override
     public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-        this.tickDegradation(state, world, pos, random);
+        tickDegradation(state, world, pos, random);
     }
 
     @Override
     public boolean hasRandomTicks(BlockState state) {
-        return Oxidizable.getIncreasedOxidationBlock(state.getBlock()).isPresent();
+        return super.hasRandomTicks(state) || Oxidizable.getIncreasedOxidationBlock(state.getBlock()).isPresent();
     }
 
     @Override

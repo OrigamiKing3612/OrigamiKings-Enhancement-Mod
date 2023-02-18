@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_acacia_planks": {
+    "has_oxidized_copper_trapdoor": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:acacia_planks"
+              "oem:oxidized_copper_trapdoor"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "oem:acacia_chest"
+        "recipe": "oem:waxed_oxidized_copper_trapdoor"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_acacia_planks",
+      "has_oxidized_copper_trapdoor",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "oem:acacia_chest"
+      "oem:waxed_oxidized_copper_trapdoor"
     ]
   }
 }
