@@ -60,7 +60,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         super(output);
     }
     public static ShapelessRecipeJsonBuilder createButtonRecipe(RecipeCategory category, ItemConvertible output, Ingredient input) {
-        return ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 1);
+        return ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 1).input(input);
     }
     public static void offerButtonRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
         createButtonRecipe(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);

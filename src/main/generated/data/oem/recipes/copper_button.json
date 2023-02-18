@@ -1,7 +1,11 @@
 {
   "type": "minecraft:crafting_shapeless",
   "category": "building",
-  "ingredients": [],
+  "ingredients": [
+    {
+      "item": "minecraft:copper_block"
+    }
+  ],
   "result": {
     "item": "oem:copper_button"
   }

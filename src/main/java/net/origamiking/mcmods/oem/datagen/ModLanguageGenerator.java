@@ -2,6 +2,8 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
+import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
@@ -248,6 +250,37 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST, "Spruce Trapped Chest");
 //        translationBuilder.add(WarpedWoodBlocks.WARPED_CHEST, "Warped Chest");
 //        translationBuilder.add(WarpedWoodBlocks.WARPED_TRAPPED_CHEST, "Warped Trapped Chest");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_COPPER_BARS, "Waxed Copper Bars");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BARS, "Waxed Exposed Copper Bars");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BARS, "Waxed Weathered Copper Bars");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BARS, "Waxed Oxidized Copper Bars");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_COPPER_CHAIN, "Waxed Copper Chain");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN, "Waxed Exposed copper chain");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN, "Waxed Weathered Copper Chain");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN, "Waxed Oxidized Copper Chain");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_COPPER_LANTERN, "Waxed Copper Lantern");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN, "Waxed Exposed Copper Lantern");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN, "Waxed Weathered Copper Lantern");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN, "Waxed Oxidized Copper Lantern");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_COPPER_PRESSURE_PLATE, "Waxed Copper Pressure Plate");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_PRESSURE_PLATE, "Waxed Exposed Copper Pressure Plate");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_PRESSURE_PLATE, "Waxed Weathered Copper Pressure Plate");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_PRESSURE_PLATE, "Waxed Oxidized Copper Pressure Plate");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_COPPER_BUTTON, "Waxed Copper Button");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BUTTON, "Waxed Exposed Copper Button");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BUTTON, "Waxed Weathered Copper Button");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BUTTON, "Waxed Oxidized Copper Button");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_COPPER_DOOR, "Waxed Copper Door");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_COPPER_TRAPDOOR, "Waxed Copper Trapdoor");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_DOOR, "Waxed Exposed Copper Door");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR, "Waxed Exposed Copper Trapdoor");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_DOOR, "Waxed Weathered Copper Door");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR, "Waxed Weathered Copper Trapdoor");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR, "Waxed Oxidized Copper Door");
+//        translationBuilder.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR, "Waxed oxidized_Copper Trapdoor");
+        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_LANTERN, "Exposed Copper Lantern");
+        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_LANTERN, "Weathered Copper Lantern");
+        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_LANTERN, "Oxidized Copper Lantern");
 
 
 

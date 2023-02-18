@@ -54,13 +54,16 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(CopperBlocks.EXPOSED_COPPER_DOOR);
         blockStateModelGenerator.registerDoor(CopperBlocks.WEATHERED_COPPER_DOOR);
         blockStateModelGenerator.registerDoor(CopperBlocks.OXIDIZED_COPPER_DOOR);
+        blockStateModelGenerator.registerDoor(WaxedCopperBlocks.WAXED_COPPER_DOOR);
         blockStateModelGenerator.registerDoor(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_DOOR);
         blockStateModelGenerator.registerDoor(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_DOOR);
         blockStateModelGenerator.registerDoor(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
         blockStateModelGenerator.registerDoor(AzaleaWoodBlocks.AZALEA_DOOR);
+        blockStateModelGenerator.registerTrapdoor(CopperBlocks.COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(CopperBlocks.EXPOSED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(CopperBlocks.WEATHERED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
+        blockStateModelGenerator.registerTrapdoor(WaxedCopperBlocks.WAXED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
@@ -71,8 +74,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
-//        blockStateModelGenerator.blockStateCollector.accept(createStairsBlockState(block.getStairsBlock(), inner, stairs, outer, false));
-//        blockStateModelGenerator.registerPressurePlate(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE, Blocks.OAK_PRESSURE_PLATE);
 
 
     }

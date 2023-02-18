@@ -15,9 +15,6 @@
     "issues": "https://github.com/OrigamiKing1236/OrigamiKings-Enhancement-Mod/issues"
 
   },
-  "mixins": [
-    "oem.mixins.json"
-  ],
   "license": "Apache-2.0",
   "icon": "assets/oem/icon.png",
 
