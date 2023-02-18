@@ -278,9 +278,9 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR, "Waxed Weathered Copper Trapdoor");
 //        translationBuilder.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR, "Waxed Oxidized Copper Door");
 //        translationBuilder.add(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR, "Waxed oxidized_Copper Trapdoor");
-        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_LANTERN, "Exposed Copper Lantern");
-        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_LANTERN, "Weathered Copper Lantern");
-        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_LANTERN, "Oxidized Copper Lantern");
+//        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_LANTERN, "Exposed Copper Lantern");
+//        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_LANTERN, "Weathered Copper Lantern");
+//        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_LANTERN, "Oxidized Copper Lantern");
 
 
 
