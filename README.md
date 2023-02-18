@@ -15,11 +15,16 @@ Some things this mod adds are:
 <p>
 
 # Some in-game pictures
-![inventory_1](https://user-images.githubusercontent.com/115757805/212568621-a4716b83-c793-494e-9381-ee2a4cf24321.png)
-![inventory_2](https://user-images.githubusercontent.com/115757805/212568626-db96d748-dc6a-4a2b-9624-2d6e5ab86894.png)
-![inventory_3](https://user-images.githubusercontent.com/115757805/212568637-bc665892-64e5-4d25-a83f-dc653e531716.png)
-![inventory_4](https://user-images.githubusercontent.com/115757805/212568644-41d954e8-0abe-4397-a261-f0e150758842.png)
-![inventory_5](https://user-images.githubusercontent.com/115757805/212568652-4fa9dcb4-17cd-4de7-8572-5a38716659eb.png)
+<img width="1470" alt="1" src="https://user-images.githubusercontent.com/115757805/219882353-c0b0a10c-dee0-4dbf-92e2-8c3920bbe736.png">
+<img width="1470" alt="2" src="https://user-images.githubusercontent.com/115757805/219882361-3ce2a72c-827c-43dd-b28c-1c3bbd720b9b.png">
+<img width="1470" alt="3" src="https://user-images.githubusercontent.com/115757805/219882371-0a783be2-a495-4935-ad6c-15d6368afbba.png">
+<img width="1470" alt="4" src="https://user-images.githubusercontent.com/115757805/219882372-38082301-582e-4a3d-8a15-c2aec2d80447.png">
+<img width="1470" alt="5" src="https://user-images.githubusercontent.com/115757805/219882374-c604ae7a-04c2-4182-aa5b-1938ba73fc1e.png">
+<img width="1470" alt="7" src="https://user-images.githubusercontent.com/115757805/219882381-25733a8e-6c7b-4fdf-8266-04d0a8165aa1.png">
+<img width="1470" alt="6" src="https://user-images.githubusercontent.com/115757805/219882383-8ad77725-dd68-4e8d-9815-c237637e6f43.png">
+
+<img width="1470" alt="v2" src="https://user-images.githubusercontent.com/115757805/219882417-bc09e799-edfc-41df-8d7b-8fb41d331fce.png">
+<img width="1470" alt="v3" src="https://user-images.githubusercontent.com/115757805/219882418-7d258bd8-f392-4197-b967-13b53331335a.png">
 
 </p>
 </details>
