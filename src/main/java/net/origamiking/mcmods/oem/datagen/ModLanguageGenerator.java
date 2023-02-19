@@ -281,7 +281,9 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_LANTERN, "Exposed Copper Lantern");
 //        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_LANTERN, "Weathered Copper Lantern");
 //        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_LANTERN, "Oxidized Copper Lantern");
-
+//        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_LANTERN, "Exposed Copper Lantern");
+//        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_LANTERN, "Weathered Copper Lantern");
+//        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_LANTERN, "Oxidized Copper Lantern");
 
 
         try {
