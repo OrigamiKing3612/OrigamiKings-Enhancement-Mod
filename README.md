@@ -1,6 +1,8 @@
 # OrigamiKings Enhancement mod
 This is a small mod based on enhancing Minecraft
 
+**As of 0.6.0 and greater this mod will now require my [API mod](https://github.com/OrigamiKing3612/Origamikings-API)**
+
 Some things this mod adds are:
 1. Concrete stairs and slabs
 2. Gold and Copper bars
