@@ -32,10 +32,11 @@
 },
 
   "depends": {
-    "fabricloader": ">=0.14.14",
+    "fabricloader": ">=0.14.10",
     "fabric-api": "*",
     "minecraft": "~1.19.3",
-    "java": ">=17"
+    "java": ">=17",
+    "origamikings-api": ">=0.1.0-1.19.3"
   },
   "jars": [
     {
