@@ -1,6 +1,8 @@
 plugins {
 	id 'fabric-loom' version '1.1-SNAPSHOT'
 	id 'maven-publish'
+	id "com.modrinth.minotaur" version "2.+"
+
 }
 
 sourceCompatibility = JavaVersion.VERSION_17
@@ -9,6 +11,7 @@ targetCompatibility = JavaVersion.VERSION_17
 archivesBaseName = project.archives_base_name
 version = project.mod_version
 group = project.maven_group
+
 
 repositories {
 	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
@@ -53,9 +56,10 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Uncomment the following line to enable the deprecated Fabric API modules. 
+	// Uncomment the following line to enable the deprecated Fabric API modules.
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+
 	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.19.3:4.0.3'
 
 	modImplementation "maven.modrinth:P3sjMa3U:${origamikings_api}"
@@ -101,5 +105,28 @@ publishing {
 		// Notice: This block does NOT have the same function as the block in the top level.
 		// The repositories here will be used for publishing your artifact, not for
 		// retrieving dependencies.
+//	}
+//		modrinth {
+//			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//			System.out.println("Enter token");
+//			token = br.readLine();
+////			debugMode = true;
+//			// This is the default. Remember to have the MODRINTH_TOKEN environment variable set or else this will fail, or set it to whatever you want - just make sure it stays private!
+//			projectId = "${project_id}" // This can be the project ID or the slug. Either will work!
+//			versionNumber = "${mod_version}"
+//			// You don't need to set this manually. Will fail if Modrinth has this version already
+//			versionType = "release" // This is the default -- can also be `beta` or `alpha`
+//			uploadFile = remapJar // With Loom, this MUST be set to `remapJar` instead of `jar`!
+//			gameVersions = ['1.19.3'] // Must be an array, even with only one version
+////		loaders = ["fabric"] // Must also be an array - no need to specify this if you're using Loom or ForgeGradle
+//			dependencies { // A special DSL for creating dependencies
+//				// scope.type
+//				// The scope can be `required`, `optional`, `incompatible`, or `embedded`
+//				// The type can either be `project` or `version`
+//				embedded.project "geckolib"
+//				embedded.project "fabric-api" // Creates a new required dependency on Fabric API
+//				embedded.project "origamikings-api"
+//			}
+//		}
 	}
 }

@@ -1,15 +1,8 @@
 package net.origamiking.mcmods.oem.datagen;
 
-import com.google.common.collect.Maps;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.enums.BlockHalf;
 import net.minecraft.data.client.*;
-import net.minecraft.state.property.Properties;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.math.Direction;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
@@ -23,17 +16,13 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oem.items.ModItems;
-import org.jetbrains.annotations.Nullable;
-
-import java.util.Map;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
-
     @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
+    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator/*, BlockStateModelGenerator.BlockTexturePool blockTexturePool*/) {
         blockStateModelGenerator.registerSimpleCubeAll(SpruceWoodBlocks.SPRUCE_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(BirchWoodBlocks.BIRCH_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(JungleWoodBlocks.JUNGLE_BOOKSHELF);
@@ -74,6 +63,7 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
+//        blockTexturePool.stairs();
 
 
     }
