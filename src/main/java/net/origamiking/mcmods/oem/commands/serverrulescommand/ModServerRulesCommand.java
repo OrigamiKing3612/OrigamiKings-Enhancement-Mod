@@ -13,11 +13,11 @@ public class ModServerRulesCommand {
                     ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> {
                         if (handler.getConnection().toString().equals("mc.origamiking.net") || handler.getConnection().toString().equals("192.168.1.234:25500") ) {
                             // The client is connected to the specified server.
-                            context.getSource().sendMessage(Text.literal("rules go here"));
+                            context.getSource().sendMessage(Text.literal("The Rules for mc.origamiking.net:\n1. "));
 //                            return 1;
                         } else {
                             // The client is not connected to the specified server.
-                            context.getSource().sendMessage(Text.literal("Please join the correct server to use this command"));
+                            context.getSource().sendMessage(Text.literal("Please join the correct server to use this command."));
 //                            return 0;
                         }
                     });

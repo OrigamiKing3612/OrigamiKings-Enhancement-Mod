@@ -17,8 +17,9 @@ public class OemMain implements ModInitializer {
 	public static final String VERSION = "Your version is: 0.6.0-1.19.3";
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
 
-	/** TODO before 0.6.0 comes out... and more
-	 * make copper stuff oxidize
+	/** TODO before 0.6.0 comes out...
+	 * Embbed api in to mod,
+	 * Test everything,
 	 */
 	@Override
 	public void onInitialize() {

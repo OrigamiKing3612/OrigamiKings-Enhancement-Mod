@@ -9,6 +9,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
+import net.origamiking.mcmods.oapi.recipe.ModRecipeProvider;
 import net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
@@ -59,50 +60,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     public ModRecipeGenerator(FabricDataOutput output) {
         super(output);
     }
-    public static ShapelessRecipeJsonBuilder createButtonRecipe(RecipeCategory category, ItemConvertible output, Ingredient input) {
-        return ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 1).input(input);
-    }
-    public static void offerButtonRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
-        createButtonRecipe(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
-    }
-    public static CraftingRecipeJsonBuilder createBarRecipe(RecipeCategory category, ItemConvertible output, Ingredient input) {
-        return ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 16).input('#', input).pattern("   ").pattern("###").pattern("###");
-    }
-    public static void offerBarRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
-        createBarRecipe(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
-    }
-    public static CraftingRecipeJsonBuilder createVerticalSlab(RecipeCategory category, ItemConvertible output, Ingredient input) {
-        return ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 6).input('#', input).pattern("#  ").pattern("#  ").pattern("#  ");
-    }
-    public static void offerVerticalSlabRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
-        createVerticalSlab(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
-    }
-    public static CraftingRecipeJsonBuilder createDoor(RecipeCategory category, ItemConvertible output, Ingredient input) {
-        return ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 3).input('#', input).pattern("## ").pattern("## ").pattern("## ");
-    }
-    public static void offerDoorRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
-        createDoor(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
-    }
-    public static CraftingRecipeJsonBuilder createChest(RecipeCategory category, ItemConvertible output, Ingredient input) {
-        return ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 1).input('#', input).pattern("###").pattern("# #").pattern("###");
-    }
-    public static void offerChestRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
-        createChest(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
-    }
-    public static CraftingRecipeJsonBuilder createTrappedChest(RecipeCategory category, ItemConvertible output, Ingredient input) {
-        return ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 1).input('#', input).input('T', Items.TRIPWIRE_HOOK).pattern("###").pattern("#T#").pattern("###");
-    }
-    public static void offerTrappedChestRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
-        createTrappedChest(category, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
-    }
-    public static ShapelessRecipeJsonBuilder createWaxable(ItemConvertible output, Ingredient input) {
-        return ShapelessRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 1).input(input).input(Items.HONEYCOMB);
-    }
-    public static void offerWaxableRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
-        createVerticalSlab(RecipeCategory.BUILDING_BLOCKS, output, Ingredient.ofItems(input)).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter);
-    }
-
-
     @Override
     public void generate(Consumer<RecipeJsonProvider> exporter) {
         RecipeProvider.createStairsRecipe(GlassBlocks.GLASS_STAIR, Ingredient.ofItems(Blocks.GLASS));
@@ -160,18 +117,18 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.SNOW_WALL, Blocks.SNOW_BLOCK);
         RecipeProvider.createStairsRecipe(SculkBlocks.SCULK_STAIR, Ingredient.ofItems(Blocks.SCULK));
         RecipeProvider.createSlabRecipe(RecipeCategory.BUILDING_BLOCKS, SculkBlocks.SCULK_SLAB, Ingredient.ofItems(Blocks.SCULK));
-        offerBarRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_BARS, Blocks.COPPER_BLOCK);
-        offerBarRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.EXPOSED_COPPER_BARS, Blocks.EXPOSED_COPPER);
-        offerBarRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.WEATHERED_COPPER_BARS, Blocks.WEATHERED_COPPER);
-        offerBarRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.OXIDIZED_COPPER_BARS, Blocks.OXIDIZED_COPPER);
+        ModRecipeProvider.offerBarRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_BARS, Blocks.COPPER_BLOCK);
+        ModRecipeProvider.offerBarRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.EXPOSED_COPPER_BARS, Blocks.EXPOSED_COPPER);
+        ModRecipeProvider.offerBarRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.WEATHERED_COPPER_BARS, Blocks.WEATHERED_COPPER);
+        ModRecipeProvider.offerBarRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.OXIDIZED_COPPER_BARS, Blocks.OXIDIZED_COPPER);
         RecipeProvider.createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, Ingredient.ofItems(Blocks.COPPER_BLOCK));
         RecipeProvider.createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.EXPOSED_COPPER_PRESSURE_PLATE, Ingredient.ofItems(Blocks.EXPOSED_COPPER));
         RecipeProvider.createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.WEATHERED_COPPER_PRESSURE_PLATE, Ingredient.ofItems(Blocks.WEATHERED_COPPER));
         RecipeProvider.createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.OXIDIZED_COPPER_PRESSURE_PLATE, Ingredient.ofItems(Blocks.OXIDIZED_COPPER));
-        offerButtonRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_BUTTON, Blocks.COPPER_BLOCK);
-        offerButtonRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.EXPOSED_COPPER_BUTTON, Blocks.EXPOSED_COPPER);
-        offerButtonRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.WEATHERED_COPPER_BUTTON, Blocks.WEATHERED_COPPER);
-        offerButtonRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.OXIDIZED_COPPER_BUTTON, Blocks.OXIDIZED_COPPER);
+        ModRecipeProvider.offerButtonRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_BUTTON, Blocks.COPPER_BLOCK);
+        ModRecipeProvider.offerButtonRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.EXPOSED_COPPER_BUTTON, Blocks.EXPOSED_COPPER);
+        ModRecipeProvider.offerButtonRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.WEATHERED_COPPER_BUTTON, Blocks.WEATHERED_COPPER);
+        ModRecipeProvider.offerButtonRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.OXIDIZED_COPPER_BUTTON, Blocks.OXIDIZED_COPPER);
         RecipeProvider.createDoorRecipe(CopperBlocks.COPPER_DOOR, Ingredient.ofItems(Blocks.COPPER_BLOCK));
         RecipeProvider.createTrapdoorRecipe(CopperBlocks.COPPER_TRAPDOOR, Ingredient.ofItems(Blocks.COPPER_BLOCK));
         RecipeProvider.createStairsRecipe(LeafStairs.OAK_LEAVES_STAIRS, Ingredient.ofItems(Blocks.OAK_LEAVES));
@@ -266,83 +223,83 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteWalls.MAGENTA_CONCRETE_WALL, Blocks.MAGENTA_CONCRETE);
         RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteWalls.PINK_CONCRETE_WALL, Blocks.PINK_CONCRETE);
         RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SculkBlocks.SCULK_WALL, Blocks.SCULK);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.STONE_VERTICAL_SLAB, Blocks.STONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.COBBLESTONE_VERTICAL_SLAB, Blocks.COBBLESTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_MOSSY_COBBLESTONE_SLAB, Blocks.MOSSY_COBBLESTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SMOOTH_STONE_SLAB, Blocks.SMOOTH_STONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_STONE_BRICK_SLAB, Blocks.STONE_BRICKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_MOSSY_STONE_BRICK_SLAB, Blocks.MOSSY_STONE_BRICKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_GRANITE_SLAB, Blocks.GRANITE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_GRANITE_SLAB, Blocks.POLISHED_GRANITE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_DIORITE_SLAB, Blocks.DIORITE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_DIORITE_SLAB, Blocks.POLISHED_DIORITE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_ANDESITE_SLAB, Blocks.ANDESITE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_ANDESITE_SLAB, Blocks.POLISHED_ANDESITE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_COBBLED_DEEPSLATE_SLAB, Blocks.COBBLED_DEEPSLATE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_DEEPSLATE_SLAB, Blocks.POLISHED_DEEPSLATE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_DEEPSLATE_BRICK_SLAB, Blocks.DEEPSLATE_BRICKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_DEEPSLATE_TILE_SLAB, Blocks.DEEPSLATE_TILES);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_BRICK_SLAB, Blocks.BRICKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_MUD_BRICK_SLAB, Blocks.MUD_BRICKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SANDSTONE_SLAB, Blocks.SANDSTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SMOOTH_SANDSTONE_SLAB, Blocks.SMOOTH_SANDSTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_CUT_SANDSTONE_SLAB, Blocks.CUT_SANDSTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_RED_SANDSTONE_SLAB, Blocks.RED_SANDSTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SMOOTH_RED_SANDSTONE_SLAB, Blocks.SMOOTH_RED_SANDSTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_CUT_RED_SANDSTONE_SLAB, Blocks.CUT_RED_SANDSTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_PRISMARINE_SLAB, Blocks.PRISMARINE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_PRISMARINE_BRICK_SLAB, Blocks.PRISMARINE_BRICKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_DARK_PRISMARINE_SLAB, Blocks.DARK_PRISMARINE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_NETHER_BRICK_SLAB, Blocks.NETHER_BRICKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_RED_NETHER_BRICK_SLAB, Blocks.RED_NETHER_BRICKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_BLACKSTONE_SLAB, Blocks.BLACKSTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_BLACKSTONE_SLAB, Blocks.POLISHED_BLACKSTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.POLISHED_BLACKSTONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_ENDSTONE_BRICK_SLAB, Blocks.END_STONE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_QUARTZ_SLAB, Blocks.QUARTZ_BLOCK);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SMOOTH_QUARTZ_SLAB, Blocks.SMOOTH_QUARTZ);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_OAK_SLAB, Blocks.OAK_PLANKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_SPRUCE_SLAB, Blocks.SPRUCE_PLANKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_BIRCH_SLAB, Blocks.BIRCH_PLANKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_JUNGLE_SLAB, Blocks.JUNGLE_PLANKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_ACACIA_SLAB, Blocks.ACACIA_PLANKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_DARK_OAK_SLAB, Blocks.DARK_OAK_PLANKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_MANGROVE_SLAB, Blocks.MANGROVE_PLANKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_CRIMSON_SLAB, Blocks.CRIMSON_PLANKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_WARPED_SLAB, Blocks.WARPED_PLANKS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB, Blocks.WHITE_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.LIGHT_GRAY_CONCRETE_VERTICAL_SLAB, Blocks.LIGHT_GRAY_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.GRAY_CONCRETE_VERTICAL_SLAB, Blocks.GRAY_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.BLACK_CONCRETE_VERTICAL_SLAB, Blocks.BLACK_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.BROWN_CONCRETE_VERTICAL_SLAB, Blocks.BROWN_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.RED_CONCRETE_VERTICAL_SLAB, Blocks.RED_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.ORANGE_CONCRETE_VERTICAL_SLAB, Blocks.ORANGE_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.YELLOW_CONCRETE_VERTICAL_SLAB, Blocks.YELLOW_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.LIME_CONCRETE_VERTICAL_SLAB, Blocks.LIME_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.GREEN_CONCRETE_VERTICAL_SLAB, Blocks.GREEN_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.CYAN_CONCRETE_VERTICAL_SLAB, Blocks.CYAN_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.LIGHT_BLUE_CONCRETE_VERTICAL_SLAB, Blocks.LIGHT_BLUE_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.BLUE_CONCRETE_VERTICAL_SLAB, Blocks.BLUE_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB, Blocks.PURPLE_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB, Blocks.MAGENTA_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB, Blocks.PINK_CONCRETE);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.WHITE_GLASS_VERTICAL_SLAB, Blocks.WHITE_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.LIGHT_GRAY_GLASS_VERTICAL_SLAB, Blocks.LIGHT_GRAY_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GRAY_GLASS_VERTICAL_SLAB, Blocks.GRAY_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.BLACK_GLASS_VERTICAL_SLAB, Blocks.BLACK_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.BROWN_GLASS_VERTICAL_SLAB, Blocks.BROWN_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.RED_GLASS_VERTICAL_SLAB, Blocks.RED_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.ORANGE_GLASS_VERTICAL_SLAB, Blocks.ORANGE_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.YELLOW_GLASS_VERTICAL_SLAB, Blocks.YELLOW_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.LIME_GLASS_VERTICAL_SLAB, Blocks.LIME_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GREEN_GLASS_VERTICAL_SLAB, Blocks.GREEN_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.CYAN_GLASS_VERTICAL_SLAB, Blocks.CYAN_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.LIGHT_BLUE_GLASS_VERTICAL_SLAB, Blocks.LIGHT_BLUE_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.BLUE_GLASS_VERTICAL_SLAB, Blocks.BLUE_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.PURPLE_GLASS_VERTICAL_SLAB, Blocks.PURPLE_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB, Blocks.MAGENTA_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.PINK_GLASS_VERTICAL_SLAB, Blocks.PINK_STAINED_GLASS);
-        offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GLASS_VERTICAL_SLAB, Blocks.GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.STONE_VERTICAL_SLAB, Blocks.STONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.COBBLESTONE_VERTICAL_SLAB, Blocks.COBBLESTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_MOSSY_COBBLESTONE_SLAB, Blocks.MOSSY_COBBLESTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SMOOTH_STONE_SLAB, Blocks.SMOOTH_STONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_STONE_BRICK_SLAB, Blocks.STONE_BRICKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_MOSSY_STONE_BRICK_SLAB, Blocks.MOSSY_STONE_BRICKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_GRANITE_SLAB, Blocks.GRANITE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_GRANITE_SLAB, Blocks.POLISHED_GRANITE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_DIORITE_SLAB, Blocks.DIORITE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_DIORITE_SLAB, Blocks.POLISHED_DIORITE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_ANDESITE_SLAB, Blocks.ANDESITE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_ANDESITE_SLAB, Blocks.POLISHED_ANDESITE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_COBBLED_DEEPSLATE_SLAB, Blocks.COBBLED_DEEPSLATE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_DEEPSLATE_SLAB, Blocks.POLISHED_DEEPSLATE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_DEEPSLATE_BRICK_SLAB, Blocks.DEEPSLATE_BRICKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_DEEPSLATE_TILE_SLAB, Blocks.DEEPSLATE_TILES);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_BRICK_SLAB, Blocks.BRICKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_MUD_BRICK_SLAB, Blocks.MUD_BRICKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SANDSTONE_SLAB, Blocks.SANDSTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SMOOTH_SANDSTONE_SLAB, Blocks.SMOOTH_SANDSTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_CUT_SANDSTONE_SLAB, Blocks.CUT_SANDSTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_RED_SANDSTONE_SLAB, Blocks.RED_SANDSTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SMOOTH_RED_SANDSTONE_SLAB, Blocks.SMOOTH_RED_SANDSTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_CUT_RED_SANDSTONE_SLAB, Blocks.CUT_RED_SANDSTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_PRISMARINE_SLAB, Blocks.PRISMARINE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_PRISMARINE_BRICK_SLAB, Blocks.PRISMARINE_BRICKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_DARK_PRISMARINE_SLAB, Blocks.DARK_PRISMARINE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_NETHER_BRICK_SLAB, Blocks.NETHER_BRICKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_RED_NETHER_BRICK_SLAB, Blocks.RED_NETHER_BRICKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_BLACKSTONE_SLAB, Blocks.BLACKSTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_BLACKSTONE_SLAB, Blocks.POLISHED_BLACKSTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_POLISHED_BLACKSTONE_BRICK_SLAB, Blocks.POLISHED_BLACKSTONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_ENDSTONE_BRICK_SLAB, Blocks.END_STONE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_QUARTZ_SLAB, Blocks.QUARTZ_BLOCK);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, StoneVSlabs.VERTICAL_SMOOTH_QUARTZ_SLAB, Blocks.SMOOTH_QUARTZ);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_OAK_SLAB, Blocks.OAK_PLANKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_SPRUCE_SLAB, Blocks.SPRUCE_PLANKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_BIRCH_SLAB, Blocks.BIRCH_PLANKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_JUNGLE_SLAB, Blocks.JUNGLE_PLANKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_ACACIA_SLAB, Blocks.ACACIA_PLANKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_DARK_OAK_SLAB, Blocks.DARK_OAK_PLANKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_MANGROVE_SLAB, Blocks.MANGROVE_PLANKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_CRIMSON_SLAB, Blocks.CRIMSON_PLANKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_WARPED_SLAB, Blocks.WARPED_PLANKS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB, Blocks.WHITE_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.LIGHT_GRAY_CONCRETE_VERTICAL_SLAB, Blocks.LIGHT_GRAY_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.GRAY_CONCRETE_VERTICAL_SLAB, Blocks.GRAY_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.BLACK_CONCRETE_VERTICAL_SLAB, Blocks.BLACK_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.BROWN_CONCRETE_VERTICAL_SLAB, Blocks.BROWN_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.RED_CONCRETE_VERTICAL_SLAB, Blocks.RED_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.ORANGE_CONCRETE_VERTICAL_SLAB, Blocks.ORANGE_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.YELLOW_CONCRETE_VERTICAL_SLAB, Blocks.YELLOW_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.LIME_CONCRETE_VERTICAL_SLAB, Blocks.LIME_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.GREEN_CONCRETE_VERTICAL_SLAB, Blocks.GREEN_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.CYAN_CONCRETE_VERTICAL_SLAB, Blocks.CYAN_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.LIGHT_BLUE_CONCRETE_VERTICAL_SLAB, Blocks.LIGHT_BLUE_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.BLUE_CONCRETE_VERTICAL_SLAB, Blocks.BLUE_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.PURPLE_CONCRETE_VERTICAL_SLAB, Blocks.PURPLE_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.MAGENTA_CONCRETE_VERTICAL_SLAB, Blocks.MAGENTA_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ConcreteVSlabs.PINK_CONCRETE_VERTICAL_SLAB, Blocks.PINK_CONCRETE);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.WHITE_GLASS_VERTICAL_SLAB, Blocks.WHITE_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.LIGHT_GRAY_GLASS_VERTICAL_SLAB, Blocks.LIGHT_GRAY_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GRAY_GLASS_VERTICAL_SLAB, Blocks.GRAY_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.BLACK_GLASS_VERTICAL_SLAB, Blocks.BLACK_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.BROWN_GLASS_VERTICAL_SLAB, Blocks.BROWN_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.RED_GLASS_VERTICAL_SLAB, Blocks.RED_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.ORANGE_GLASS_VERTICAL_SLAB, Blocks.ORANGE_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.YELLOW_GLASS_VERTICAL_SLAB, Blocks.YELLOW_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.LIME_GLASS_VERTICAL_SLAB, Blocks.LIME_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GREEN_GLASS_VERTICAL_SLAB, Blocks.GREEN_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.CYAN_GLASS_VERTICAL_SLAB, Blocks.CYAN_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.LIGHT_BLUE_GLASS_VERTICAL_SLAB, Blocks.LIGHT_BLUE_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.BLUE_GLASS_VERTICAL_SLAB, Blocks.BLUE_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.PURPLE_GLASS_VERTICAL_SLAB, Blocks.PURPLE_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB, Blocks.MAGENTA_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.PINK_GLASS_VERTICAL_SLAB, Blocks.PINK_STAINED_GLASS);
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassVSlabs.GLASS_VERTICAL_SLAB, Blocks.GLASS);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.GLASS_STAIR, Blocks.GLASS, 1);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.GLASS_SLAB, Blocks.GLASS, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.WHITE_GLASS_STAIR, Blocks.WHITE_STAINED_GLASS, 1);
@@ -609,58 +566,58 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR, Blocks.WEATHERED_COPPER, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR, Blocks.OXIDIZED_COPPER, 2);
 
-        offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.IRON_BAR_DOOR, Items.IRON_INGOT);
-        offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.GOLD_BAR_DOOR, Items.GOLD_INGOT);
-        offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.COPPER_BAR_DOOR, Items.COPPER_INGOT);
+        ModRecipeProvider.offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.IRON_BAR_DOOR, Items.IRON_INGOT);
+        ModRecipeProvider.offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.GOLD_BAR_DOOR, Items.GOLD_INGOT);
+        ModRecipeProvider.offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, ServerSpecificBlocks.COPPER_BAR_DOOR, Items.COPPER_INGOT);
 
 //        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_CHEST, Blocks.ACACIA_PLANKS);
 //        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST, Blocks.ACACIA_PLANKS);
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_CHEST, AzaleaWoodBlocks.AZALEA_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_TRAPPED_CHEST, AzaleaWoodBlocks.AZALEA_PLANKS);
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BirchWoodBlocks.BIRCH_CHEST, Blocks.BIRCH_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BirchWoodBlocks.BIRCH_TRAPPED_CHEST, Blocks.BIRCH_PLANKS);
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CrimsonWoodBlocks.CRIMSON_CHEST, Blocks.CRIMSON_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CrimsonWoodBlocks.CRIMSON_TRAPPED_CHEST, Blocks.CRIMSON_PLANKS);
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DarkOakWoodBlocks.DARK_OAK_CHEST, Blocks.DARK_OAK_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DarkOakWoodBlocks.DARK_OAK_TRAPPED_CHEST, Blocks.DARK_OAK_PLANKS);
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, JungleWoodBlocks.JUNGLE_CHEST, Blocks.JUNGLE_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, JungleWoodBlocks.JUNGLE_TRAPPED_CHEST, Blocks.JUNGLE_PLANKS);
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MangroveWoodBlocks.MANGROVE_CHEST, Blocks.MANGROVE_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MangroveWoodBlocks.MANGROVE_TRAPPED_CHEST, Blocks.MANGROVE_PLANKS);
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OakWoodBlocks.OAK_CHEST, Blocks.OAK_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OakWoodBlocks.OAK_TRAPPED_CHEST, Blocks.OAK_PLANKS);
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SpruceWoodBlocks.SPRUCE_CHEST, Blocks.SPRUCE_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST, Blocks.SPRUCE_PLANKS);
-        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WarpedWoodBlocks.WARPED_CHEST, Blocks.WARPED_PLANKS);
-        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WarpedWoodBlocks.WARPED_TRAPPED_CHEST, Blocks.WARPED_PLANKS);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_BARS, CopperBlocks.COPPER_BARS);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BARS, CopperBlocks.EXPOSED_COPPER_BARS);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BARS, CopperBlocks.WEATHERED_COPPER_BARS);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BARS, CopperBlocks.OXIDIZED_COPPER_BARS);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_CHAIN, CopperBlocks.COPPER_CHAIN);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN, CopperBlocks.EXPOSED_COPPER_CHAIN);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN, CopperBlocks.WEATHERED_COPPER_CHAIN);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN, CopperBlocks.OXIDIZED_COPPER_CHAIN);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_LANTERN, CopperBlocks.COPPER_LANTERN);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN, CopperBlocks.EXPOSED_COPPER_LANTERN);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN, CopperBlocks.WEATHERED_COPPER_LANTERN);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN, CopperBlocks.OXIDIZED_COPPER_LANTERN);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_PRESSURE_PLATE, CopperBlocks.COPPER_PRESSURE_PLATE);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_PRESSURE_PLATE, CopperBlocks.EXPOSED_COPPER_PRESSURE_PLATE);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_PRESSURE_PLATE, CopperBlocks.WEATHERED_COPPER_PRESSURE_PLATE);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_PRESSURE_PLATE, CopperBlocks.OXIDIZED_COPPER_PRESSURE_PLATE);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_BUTTON, CopperBlocks.COPPER_BUTTON);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BUTTON, CopperBlocks.EXPOSED_COPPER_BUTTON);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BUTTON, CopperBlocks.WEATHERED_COPPER_BUTTON);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BUTTON, CopperBlocks.OXIDIZED_COPPER_BUTTON);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_DOOR, CopperBlocks.COPPER_DOOR);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_TRAPDOOR, CopperBlocks.COPPER_TRAPDOOR);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_DOOR, CopperBlocks.EXPOSED_COPPER_DOOR);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR, CopperBlocks.EXPOSED_COPPER_TRAPDOOR);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_DOOR, CopperBlocks.WEATHERED_COPPER_DOOR);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR, CopperBlocks.WEATHERED_COPPER_TRAPDOOR);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR, CopperBlocks.OXIDIZED_COPPER_DOOR);
-        offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR, CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
+        ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_CHEST, AzaleaWoodBlocks.AZALEA_PLANKS);
+        ModRecipeProvider.offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_TRAPPED_CHEST, AzaleaWoodBlocks.AZALEA_PLANKS);
+        ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BirchWoodBlocks.BIRCH_CHEST, Blocks.BIRCH_PLANKS);
+        ModRecipeProvider.offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BirchWoodBlocks.BIRCH_TRAPPED_CHEST, Blocks.BIRCH_PLANKS);
+        ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CrimsonWoodBlocks.CRIMSON_CHEST, Blocks.CRIMSON_PLANKS);
+        ModRecipeProvider.offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CrimsonWoodBlocks.CRIMSON_TRAPPED_CHEST, Blocks.CRIMSON_PLANKS);
+        ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DarkOakWoodBlocks.DARK_OAK_CHEST, Blocks.DARK_OAK_PLANKS);
+        ModRecipeProvider.offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DarkOakWoodBlocks.DARK_OAK_TRAPPED_CHEST, Blocks.DARK_OAK_PLANKS);
+        ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, JungleWoodBlocks.JUNGLE_CHEST, Blocks.JUNGLE_PLANKS);
+        ModRecipeProvider.offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, JungleWoodBlocks.JUNGLE_TRAPPED_CHEST, Blocks.JUNGLE_PLANKS);
+        ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MangroveWoodBlocks.MANGROVE_CHEST, Blocks.MANGROVE_PLANKS);
+        ModRecipeProvider.offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MangroveWoodBlocks.MANGROVE_TRAPPED_CHEST, Blocks.MANGROVE_PLANKS);
+        ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OakWoodBlocks.OAK_CHEST, Blocks.OAK_PLANKS);
+        ModRecipeProvider.offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OakWoodBlocks.OAK_TRAPPED_CHEST, Blocks.OAK_PLANKS);
+        ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SpruceWoodBlocks.SPRUCE_CHEST, Blocks.SPRUCE_PLANKS);
+        ModRecipeProvider.offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SpruceWoodBlocks.SPRUCE_TRAPPED_CHEST, Blocks.SPRUCE_PLANKS);
+        ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WarpedWoodBlocks.WARPED_CHEST, Blocks.WARPED_PLANKS);
+        ModRecipeProvider.offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WarpedWoodBlocks.WARPED_TRAPPED_CHEST, Blocks.WARPED_PLANKS);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_BARS, CopperBlocks.COPPER_BARS);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BARS, CopperBlocks.EXPOSED_COPPER_BARS);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BARS, CopperBlocks.WEATHERED_COPPER_BARS);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BARS, CopperBlocks.OXIDIZED_COPPER_BARS);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_CHAIN, CopperBlocks.COPPER_CHAIN);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_CHAIN, CopperBlocks.EXPOSED_COPPER_CHAIN);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_CHAIN, CopperBlocks.WEATHERED_COPPER_CHAIN);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_CHAIN, CopperBlocks.OXIDIZED_COPPER_CHAIN);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_LANTERN, CopperBlocks.COPPER_LANTERN);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN, CopperBlocks.EXPOSED_COPPER_LANTERN);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN, CopperBlocks.WEATHERED_COPPER_LANTERN);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN, CopperBlocks.OXIDIZED_COPPER_LANTERN);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_PRESSURE_PLATE, CopperBlocks.COPPER_PRESSURE_PLATE);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_PRESSURE_PLATE, CopperBlocks.EXPOSED_COPPER_PRESSURE_PLATE);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_PRESSURE_PLATE, CopperBlocks.WEATHERED_COPPER_PRESSURE_PLATE);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_PRESSURE_PLATE, CopperBlocks.OXIDIZED_COPPER_PRESSURE_PLATE);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_BUTTON, CopperBlocks.COPPER_BUTTON);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BUTTON, CopperBlocks.EXPOSED_COPPER_BUTTON);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BUTTON, CopperBlocks.WEATHERED_COPPER_BUTTON);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BUTTON, CopperBlocks.OXIDIZED_COPPER_BUTTON);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_DOOR, CopperBlocks.COPPER_DOOR);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_TRAPDOOR, CopperBlocks.COPPER_TRAPDOOR);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_DOOR, CopperBlocks.EXPOSED_COPPER_DOOR);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_TRAPDOOR, CopperBlocks.EXPOSED_COPPER_TRAPDOOR);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_DOOR, CopperBlocks.WEATHERED_COPPER_DOOR);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR, CopperBlocks.WEATHERED_COPPER_TRAPDOOR);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR, CopperBlocks.OXIDIZED_COPPER_DOOR);
+        ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR, CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, 2)
                 .pattern("   ").pattern("   ").pattern("###").input('#', Items.COPPER_INGOT)
