@@ -9,7 +9,7 @@
     "OrigamiKing3612"
   ],
   "contact": {
-    "homepage": "mods.origamiking.net",
+    "homepage": "mods.origamiking.net/oem",
     "sources": "https://github.com/OrigamiKing1236/OrigamiKings-Enhancement-Mod",
     "website": "mods.origamiking.net",
     "issues": "https://github.com/OrigamiKing1236/OrigamiKings-Enhancement-Mod/issues"
@@ -47,5 +47,21 @@
     }
   ],
   "suggests": {
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.website": "mods.origamiking.net"
+      },
+      "badges": [],
+      "parent": {
+        "id": "oem",
+        "name": "OrigamiKings Enhancement Mod",
+        "description": "An enhancement mod for minecraft and my server",
+        "icon": "assets/oem/icon.png",
+        "badges": []
+      },
+      "update_checker": false
+    }
   }
 }
