@@ -9,7 +9,7 @@ import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
-import net.origamiking.mcmods.oapi.recipe.ModRecipeProvider;
+import net.origamiking.mcmods.oapi.recipes.ModRecipeProvider;
 import net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
