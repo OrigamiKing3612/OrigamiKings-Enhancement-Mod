@@ -63,7 +63,6 @@ public class ModGroups {
             .displayName(Text.literal("OrigamiKing's Enhancement Mod"))
             .icon(() -> new ItemStack(SpruceWoodBlocks.SPRUCE_BARREL))
             .entries((enabledFeatures, entries, operatorEnabled) -> {
-                //wood vars
                 entries.add(OakWoodBlocks.OAK_BARREL);
                 entries.add(Blocks.BOOKSHELF);
                 entries.add(OakWoodBlocks.OAK_LADDER);
@@ -425,10 +424,10 @@ public class ModGroups {
                 entries.add(CopperVSlabs.VERTICAL_EXPOSED_CUT_COPPER_SLAB);
                 entries.add(CopperVSlabs.VERTICAL_WEATHERED_CUT_COPPER_SLAB);
                 entries.add(CopperVSlabs.VERTICAL_OXIDIZED_CUT_COPPER_SLAB);
-//                entries.add(CopperVSlabs.VERTICAL_WAXED_CUT_COPPER_SLAB);
-//                entries.add(CopperVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB);
-//                entries.add(CopperVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB);
-//                entries.add(CopperVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB);
+                entries.add(CopperVSlabs.VERTICAL_WAXED_CUT_COPPER_SLAB);
+                entries.add(CopperVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB);
+                entries.add(CopperVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB);
+                entries.add(CopperVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_OAK_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_SPRUCE_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_BIRCH_SLAB);
@@ -472,7 +471,6 @@ public class ModGroups {
                 entries.add(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB);
                 entries.add(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB);
             }).build();
-
     private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))
             .displayName(Text.literal("mc.origamiking.net specific"))
             .icon(() -> new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE))
@@ -492,9 +490,7 @@ public class ModGroups {
                     entries.add(ModItems.FUT_GUN);
                 }
             }).build();
-
-
     public static void register() {
-        OemMain.LOGGER.info("Registering Groups");
+        OemMain.LOGGER.info("Registering Groups for OEM");
     }
 }

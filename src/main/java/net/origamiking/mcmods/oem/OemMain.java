@@ -18,8 +18,9 @@ public class OemMain implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
 
 	/** TODO before 0.6.0 comes out...
-	 * Embbed api in to mod,
 	 * Test everything,
+	 * clean up code
+	 * add some more blocks
 	 */
 	@Override
 	public void onInitialize() {
