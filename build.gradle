@@ -113,7 +113,7 @@ publishing {
 		versionNumber = "${mod_version}"
 		versionType = "${version_type}"
 		uploadFile = remapJar // With Loom, this MUST be set to `remapJar`
-		gameVersions = ['1.19.3'] // Must be an array, even with only one version
+		gameVersions = ["${gameVersions}"] // Must be an array, even with only one version
 		dependencies {
 			// scope.type
 			// The scope can be `required`, `optional`, `incompatible`, or `embedded`
