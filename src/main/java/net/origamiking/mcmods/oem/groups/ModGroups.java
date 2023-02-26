@@ -141,10 +141,10 @@ public class ModGroups {
                 entries.add(ConcreteWalls.PINK_CONCRETE_WALL);
                 //entries.add(entries.add(StoneVSlabs.TINTED_GLASS_PANE);
                 //Glass
-                entries.add(GlassBlocks.GLASS_STAIR);
                 entries.add(GlassBlocks.GLASS_SLAB);
-                entries.add(GlassBlocks.WHITE_GLASS_STAIR);
+                entries.add(GlassBlocks.GLASS_STAIR);
                 entries.add(GlassBlocks.WHITE_GLASS_SLAB);
+                entries.add(GlassBlocks.WHITE_GLASS_STAIR);
                 entries.add(GlassBlocks.LIGHT_GRAY_GLASS_SLAB);
                 entries.add(GlassBlocks.LIGHT_GRAY_GLASS_STAIR);
                 entries.add(GlassBlocks.GRAY_GLASS_SLAB);
