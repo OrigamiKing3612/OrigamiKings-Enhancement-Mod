@@ -3,7 +3,6 @@ package net.origamiking.mcmods.oem.items.custom;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.BlazeEntity;
@@ -15,11 +14,11 @@ import net.minecraft.world.World;
 
 public class FutureGunArrowEntity extends PersistentProjectileEntity {
     public FutureGunArrowEntity(EntityType<? extends FutureGunArrowEntity> entityType, World world) {
-        super((EntityType<? extends PersistentProjectileEntity>)entityType, world);
+        super(entityType, world);
     }
-    public FutureGunArrowEntity(World world, double x, double y, double z) {
-        super(EntityType.ARROW, x, y, z, world);
-    }
+//    public FutureGunArrowEntity(World world, double x, double y, double z) {
+//        super(EntityType.ARROW, x, y, z, world);
+//    }
 
     public FutureGunArrowEntity(World world, LivingEntity owner) {
         super(EntityType.ARROW, owner, world);
@@ -33,7 +32,7 @@ public class FutureGunArrowEntity extends PersistentProjectileEntity {
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity(); // sets a new Entity instance as the EntityHitResult (victim)
         int i = entity instanceof BlazeEntity ? 3 : 0; // sets i to 3 if the Entity instance is an instance of BlazeEntity
-        entity.damage(DamageSource.thrownProjectile(this, this.getOwner()), (float)i); // deals damage
+        entity.damage(world.getDamageSources().arrow(this, this.getOwner()), (float)i); // deals damage
 
         if (entity instanceof LivingEntity livingEntity) { // checks if entity is an instance of LivingEntity (meaning it is not a boat or minecart)
             livingEntity.addStatusEffect((new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 255))); // applies a status effect

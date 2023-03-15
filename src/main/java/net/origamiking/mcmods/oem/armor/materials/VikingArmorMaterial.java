@@ -1,6 +1,6 @@
 package net.origamiking.mcmods.oem.armor.materials;
 
-import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
@@ -12,13 +12,13 @@ public class VikingArmorMaterial implements ArmorMaterial {
     private static final int[] PROTECTION_VALUES = new int[] {2, 3, 4, 2};
 
     @Override
-    public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getEntitySlotId()] * 6;
+    public int getDurability(ArmorItem.Type type) {
+        return BASE_DURABILITY[type.ordinal()] * 6;
     }
 
     @Override
-    public int getProtectionAmount(EquipmentSlot slot) {
-        return PROTECTION_VALUES[slot.getEntitySlotId()];
+    public int getProtection(ArmorItem.Type type) {
+        return PROTECTION_VALUES[type.ordinal()];
     }
 
     @Override
@@ -64,7 +64,7 @@ public class VikingArmorMaterial implements ArmorMaterial {
 //                Registry.register(Registries.ITEM, new Identifier("oem", "copper_chestplate"), COPPER_CHESTPLATE);
 //                Registry.register(Registries.ITEM, new Identifier("oem", "copper_leggings"), COPPER_LEGGINGS);
 //                Registry.register(Registries.ITEM, new Identifier("oem", "copper_boots"), COPPER_BOOTS);
-            };
-        };
+            }
+        }
     }
 

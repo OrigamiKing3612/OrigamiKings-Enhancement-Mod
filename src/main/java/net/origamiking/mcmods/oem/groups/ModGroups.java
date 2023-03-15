@@ -62,7 +62,7 @@ public class ModGroups {
     private static final ItemGroup OEM_GROUP = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group"))
             .displayName(Text.literal("OrigamiKing's Enhancement Mod"))
             .icon(() -> new ItemStack(SpruceWoodBlocks.SPRUCE_BARREL))
-            .entries((enabledFeatures, entries, operatorEnabled) -> {
+            .entries((context, entries) -> {
                 entries.add(OakWoodBlocks.OAK_BARREL);
                 entries.add(Blocks.BOOKSHELF);
                 entries.add(OakWoodBlocks.OAK_LADDER);
@@ -384,7 +384,7 @@ public class ModGroups {
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
             .displayName(Text.literal("Oem Vertical Slabs"))
             .icon(()-> new ItemStack(StoneVSlabs.STONE_VERTICAL_SLAB))
-            .entries((enabledFeatures, entries, operatorEnabled) -> {
+            .entries((context, entries) -> {
                 entries.add(StoneVSlabs.STONE_VERTICAL_SLAB);
                 entries.add(StoneVSlabs.COBBLESTONE_VERTICAL_SLAB);
                 entries.add(StoneVSlabs.VERTICAL_MOSSY_COBBLESTONE_SLAB);
@@ -474,8 +474,8 @@ public class ModGroups {
     private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))
             .displayName(Text.literal("mc.origamiking.net specific"))
             .icon(() -> new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE))
-            .entries((enabledFeatures, entries, operatorEnabled) -> {
-                if (operatorEnabled) {
+            .entries((context, entries) -> {
+                if (context.hasPermissions()) {
                     entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
                     entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
                     entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
