@@ -5,7 +5,7 @@ import net.origamiking.mcmods.oem.commands.serverrulescommand.ModServerRulesComm
 import net.origamiking.mcmods.oem.commands.versioncommand.ModVersionCommand;
 public class ModCommands {
     public static void register() {
-        ModVersionCommand.getcommand();
+        ModVersionCommand.getVersionCommand();
         ModServerRulesCommand.getCommand();
     }
 }
