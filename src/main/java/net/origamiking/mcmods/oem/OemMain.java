@@ -19,9 +19,7 @@ public class OemMain implements ModInitializer {
 	public static final String VERSION = "Your version is: 0.6.0-1.19.4";
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
 
-	/** Before 0.6.0 comes out
-	 * 1. add oapi to jars
-	 * 2. update to 1.19.4
+	/** Before 0.7.0 comes out
 	 */
 	@Override
 	public void onInitialize() {
