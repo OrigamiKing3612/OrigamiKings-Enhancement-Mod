@@ -32,18 +32,18 @@
 },
 
   "depends": {
-    "fabricloader": ">=0.14.10",
+    "fabricloader": ">=0.14.17",
     "fabric-api": "*",
-    "minecraft": "~1.19.3",
+    "minecraft": "~1.19.4",
     "java": ">=17",
     "origamikings-api": ">=0.1.0-1.19.3"
   },
   "jars": [
     {
-      "file": "jars/geckolib-fabric-1.19.3-4.0.3.jar"
+      "file": "jars/geckolib-fabric-1.19.4-4.1.0.jar"
     },
     {
-      "file": "jars/fabric-api-0.74.0+1.19.3.jar"
+      "file": "jars/fabric-api-0.76.0+1.19.4.jar"
     }
   ],
   "suggests": {
@@ -51,7 +51,7 @@
   "custom": {
     "modmenu": {
       "links": {
-        "modmenu.website": "mods.origamiking.net",
+        "modmenu.website": "https://mods.origamiking.net",
         "modmenu.modrinth": "https://modrinth.com/mod/origamikings-enhancement-mod"
       },
       "badges": [],

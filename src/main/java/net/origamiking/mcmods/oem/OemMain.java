@@ -1,8 +1,10 @@
 package net.origamiking.mcmods.oem;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.loader.api.FabricLoader;
 import net.origamiking.mcmods.oem.blocks.ModBlocks;
 import net.origamiking.mcmods.oem.commands.ModCommands;
+import net.origamiking.mcmods.oem.extra.ExtraStuff;
 import net.origamiking.mcmods.oem.groups.ModGroups;
 import net.origamiking.mcmods.oem.items.ModItems;
 import net.origamiking.mcmods.oem.painting.ModPaintings;
@@ -14,17 +16,18 @@ import org.slf4j.LoggerFactory;
 
 public class OemMain implements ModInitializer {
 	public static final String MOD_ID = "oem";
-	public static final String VERSION = "Your version is: 0.6.0-1.19.3";
+	public static final String VERSION = "Your version is: 0.6.0-1.19.4";
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
 
 	/** Before 0.6.0 comes out
-	 * 1. Test everything
-	 * 2. clean up code
-	 * 3. add oapi to jars
-	 * 4. update to 1.19.4
+	 * 1. add oapi to jars
+	 * 2. update to 1.19.4
 	 */
 	@Override
 	public void onInitialize() {
+		if (FabricLoader.getInstance().isModLoaded("oem-extra")) {
+			ExtraStuff.registerExtraStuff();
+		}
 		ModBlocks.register();
 		ModItems.register();
 		ModGroups.register();
