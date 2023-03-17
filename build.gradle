@@ -121,6 +121,7 @@ publishing {
 			embedded.project "fabric-api"
 			embedded.project "origamikings-api"
 		}
+		changelog = "${changelog}"
 	}
 	//end
 }
