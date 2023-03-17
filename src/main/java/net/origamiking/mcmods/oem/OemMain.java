@@ -20,6 +20,7 @@ public class OemMain implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
 
 	/** Before 0.7.0 comes out
+	 *
 	 */
 	@Override
 	public void onInitialize() {
