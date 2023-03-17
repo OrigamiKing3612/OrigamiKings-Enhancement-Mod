@@ -33,8 +33,7 @@ Some things this mod adds are:
 </p>
 </details>
 
-**0.1.5 update**
+# The 0.6.0 Update!
+![update](https://user-images.githubusercontent.com/115757805/225779971-eaca0714-d15c-464f-8bf2-bf842ce5f5af.png)
 
-# The Vertical Slabs Update!
-![update](https://user-images.githubusercontent.com/115757805/213569734-29a6c2df-4e5f-48b1-9447-3f6d78634ebf.png)
 
