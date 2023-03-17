@@ -89,9 +89,9 @@
   "block.oem.dark_oak_bookshelf": "Dark Oak Bookshelf",
   "block.oem.dark_oak_chest": "Dark Oak Chest",
   "block.oem.dark_oak_ladder": "Dark Oak Ladder",
-  "block.oem.dark_oak_leaves_slab": "Dark oak Leaf Slab",
-  "block.oem.dark_oak_leaves_stairs": "Dark oak Leaf Stairs",
-  "block.oem.dark_oak_leaves_wall": "Dark oak Leaf Wall",
+  "block.oem.dark_oak_leaves_slab": "Dark Oak Leaf Slab",
+  "block.oem.dark_oak_leaves_stairs": "Dark Oak Leaf Stairs",
+  "block.oem.dark_oak_leaves_wall": "Dark Oak Leaf Wall",
   "block.oem.dark_oak_trapped_chest": "Dark Oak Trapped Chest",
   "block.oem.deepslate_furnace": "Deepslate Furnace",
   "block.oem.dripstone_block_slab": "Dripstone Slab",
@@ -391,6 +391,6 @@
   "item.oem.copper_leggings": "Copper Leggings",
   "item.oem.copper_nugget": "Copper Nugget",
   "item.oem.fut_gun": "Future Gun",
-  "item.oem.viking_armor": "Viking_Armor Helmet",
+  "item.oem.viking_armor": "Viking Armor Helmet",
   "item.oem.viking_helmet": "Viking Helmet"
 }
