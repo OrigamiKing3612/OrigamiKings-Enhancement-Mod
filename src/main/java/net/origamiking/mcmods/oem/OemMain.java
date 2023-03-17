@@ -24,9 +24,6 @@ public class OemMain implements ModInitializer {
 	 */
 	@Override
 	public void onInitialize() {
-		if (FabricLoader.getInstance().isModLoaded("oem-extra")) {
-			ExtraStuff.registerExtraStuff();
-		}
 		ModBlocks.register();
 		ModItems.register();
 		ModGroups.register();
@@ -34,5 +31,8 @@ public class OemMain implements ModInitializer {
 		ModSounds.register();
 		ModPaintings.register();
 		Utils.register();
+		if (FabricLoader.getInstance().isModLoaded("oem-extra")) {
+			ExtraStuff.registerExtraStuff();
+		}
 	}
 }
