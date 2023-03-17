@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.blocks.vercticalslabs;
+package net.origamiking.mcmods.oem.blocks.vercticalslabs.copper;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.registry.OxidizableBlocksRegistry;
@@ -7,6 +7,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.Oxidizable;
 import net.origamiking.mcmods.oem.blocks.custom.VerticalSlabBlock;
 import net.origamiking.mcmods.oem.blocks.custom.copper.oxidiziable.OxidizableCopperVerticalSlab;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.ModVericalSlabs;
 
 public class CopperVSlabs extends ModVericalSlabs {
     public static final Block VERTICAL_CUT_COPPER_SLAB = registerBlock("vertical_cut_copper_slab", new OxidizableCopperVerticalSlab(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.copyOf(Blocks.COPPER_BLOCK)));

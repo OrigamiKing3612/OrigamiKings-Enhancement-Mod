@@ -15,13 +15,11 @@ import net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial;
 import net.origamiking.mcmods.oem.armor.materials.VikingArmorMaterial;
 import net.origamiking.mcmods.oem.items.custom.FutureGunArrowEntity;
 import net.origamiking.mcmods.oem.items.custom.FutureGunItem;
-//import net.origamiking.mcmods.oem.entity.ModBoatEntity;
-
-//import net.origamiking.mcmods.oem.items.custom.ModBoatItem;
+import static net.origamiking.mcmods.oapi.items.ItemsUtils.registerItem;
 
 public class ModItems {
-    public static final Item COPPER_NUGGET = registerItem("copper_nugget", new Item(new FabricItemSettings()));
-    public static final Item FUT_GUN = registerItem("fut_gun", new FutureGunItem());
+    public static final Item COPPER_NUGGET = registerItem(OemMain.MOD_ID,"copper_nugget", new Item(new FabricItemSettings()));
+    public static final Item FUT_GUN = registerItem(OemMain.MOD_ID,"fut_gun", new FutureGunItem());
     public static final EntityType<FutureGunArrowEntity> FutureGunArrowEntityType = Registry.register(
             Registries.ENTITY_TYPE,
             new Identifier(OemMain.MOD_ID, "fut_gun_arrow"),
@@ -35,10 +33,6 @@ public class ModItems {
 //    public static final Item AZALEA_BOAT_ITEM = registerItem("azalea_boat", new ModBoatItem(false, ModBoatEntity.Type.AZALEA, new Item.Settings().maxCount(1)));
 //    public static final Item AZALEA_CHEST_BOAT = registerItem("azalea_chest_boat", new ModBoatItem(true, ModBoatEntity.Type.AZALEA, new Item.Settings().maxCount(1)));
 
-
-    private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), item);
-    }
     public static void register() {
         CopperArmorMaterial.getCopperArmor.register();
         VikingArmorMaterial.getVikingArmor.register();
