@@ -14,5 +14,6 @@
   "result": {
     "count": 16,
     "item": "oem:oxidized_copper_bars"
-  }
+  },
+  "show_notification": true
 }

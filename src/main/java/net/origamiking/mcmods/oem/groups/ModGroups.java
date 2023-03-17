@@ -7,7 +7,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
-import net.origamiking.mcmods.oem.armor.ArmorRegistry;
 import net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
@@ -22,14 +21,11 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
-import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.copper.CopperVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
-import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
-import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
@@ -273,8 +269,8 @@ public class ModGroups {
                 entries.add(LeafSlabs.MANGROVE_LEAVES_SLAB);
                 entries.add(LeafWalls.MANGROVE_LEAVES_WALL);
                 //gold
-                entries.add(ServerSpecificBlocks.GOLD_CHAIN);
-                entries.add(ServerSpecificBlocks.GOLD_LANTERN);
+                entries.add(GoldBlocks.GOLD_CHAIN);
+                entries.add(GoldBlocks.GOLD_LANTERN);
                 entries.add(GoldBlocks.GOLD_BARS);
                 //copper
                 entries.add(ModItems.COPPER_NUGGET);
@@ -354,12 +350,12 @@ public class ModGroups {
                 entries.add(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
                 entries.add(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE);
                 entries.add(AzaleaWoodBlocks.AZALEA_BUTTON);
-                entries.add(ServerSpecificBlocks.IRON_BAR_DOOR);
-                entries.add(ServerSpecificBlocks.GOLD_BAR_DOOR);
-                entries.add(ServerSpecificBlocks.COPPER_BAR_DOOR);
-                entries.add(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
-                entries.add(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
-                entries.add(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
+                entries.add(RandomBlocks.IRON_BAR_DOOR);
+                entries.add(RandomBlocks.GOLD_BAR_DOOR);
+                entries.add(RandomBlocks.COPPER_BAR_DOOR);
+                entries.add(RandomBlocks.EXPOSED_COPPER_BAR_DOOR);
+                entries.add(RandomBlocks.WEATHERED_COPPER_BAR_DOOR);
+                entries.add(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR);
 //                entries.add(AcaciaWoodBlocks.ACACIA_CHEST);
 //                entries.add(AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST);
 //                entries.add(AzaleaWoodBlocks.AZALEA_CHEST);
@@ -471,25 +467,25 @@ public class ModGroups {
                 entries.add(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB);
                 entries.add(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB);
             }).build();
-    private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))
-            .displayName(Text.literal("mc.origamiking.net specific"))
-            .icon(() -> new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE))
-            .entries((context, entries) -> {
-                if (context.hasPermissions()) {
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
-                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
-                    entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
-                    //entries.add(ServerSpecificBlocks.BOOMBOX);
-                    entries.add(ServerSpecificBlocks.PRIM);
-                    entries.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
-                    entries.add(WoodVStairs.OAK_VERTICAL_STAIRS);
-                    entries.add(ModItems.FUT_GUN);
-                }
-            }).build();
+//    private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))
+//            .displayName(Text.literal("mc.origamiking.net specific"))
+//            .icon(() -> new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE))
+//            .entries((context, entries) -> {
+//                if (context.hasPermissions()) {
+////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
+////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
+////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
+////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR);
+////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
+////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
+////                    entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
+////                    //entries.add(ServerSpecificBlocks.BOOMBOX);
+////                    entries.add(ServerSpecificBlocks.PRIM);
+////                    entries.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
+////                    entries.add(WoodVStairs.OAK_VERTICAL_STAIRS);
+////                    entries.add(ModItems.FUT_GUN);
+//                }
+//            }).build();
     public static void register() {
         OemMain.LOGGER.info("Registering Groups for OEM");
     }

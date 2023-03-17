@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "oem:mangrove_trapped_chest"
-  }
+  },
+  "show_notification": true
 }

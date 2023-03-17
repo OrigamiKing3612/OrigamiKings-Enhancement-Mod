@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "oem:birch_chest"
-  }
+  },
+  "show_notification": true
 }

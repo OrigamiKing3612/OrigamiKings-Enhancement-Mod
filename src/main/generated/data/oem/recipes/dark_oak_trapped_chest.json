@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "oem:dark_oak_trapped_chest"
-  }
+  },
+  "show_notification": true
 }

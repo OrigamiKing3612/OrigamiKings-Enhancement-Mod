@@ -13,5 +13,6 @@
   "result": {
     "count": 6,
     "item": "oem:sculk_wall"
-  }
+  },
+  "show_notification": true
 }

@@ -5,7 +5,8 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
-import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
+import net.origamiking.mcmods.oem.extra.blocks.serverspecific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
@@ -57,12 +58,12 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerTrapdoor(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
         blockStateModelGenerator.registerTrapdoor(AzaleaWoodBlocks.AZALEA_TRAPDOOR);
-        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.IRON_BAR_DOOR);
-        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.GOLD_BAR_DOOR);
-        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.COPPER_BAR_DOOR);
-        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR);
-        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR);
-        blockStateModelGenerator.registerDoor(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(RandomBlocks.IRON_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(RandomBlocks.GOLD_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(RandomBlocks.COPPER_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(RandomBlocks.EXPOSED_COPPER_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(RandomBlocks.WEATHERED_COPPER_BAR_DOOR);
+        blockStateModelGenerator.registerDoor(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR);
 //        blockTexturePool.stairs();
 
 

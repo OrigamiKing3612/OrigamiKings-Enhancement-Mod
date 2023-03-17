@@ -20,9 +20,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
-import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.ModVericalSlabs;
-import net.origamiking.mcmods.oem.blocks.verticalstairs.ModVerticalStairs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
@@ -65,7 +63,7 @@ public class ModBlocks {
         ConcreteStairs.getConcreteStairs();
         ConcreteWalls.getConcreteWalls();
         SculkBlocks.getSculkBlocks();
-        ServerSpecificBlocks.getServerSpecific();
+
         AmethystBlocks.getAmethyst();
         RandomBlocks.getRandomBlocks();
         //geting wood blocks
@@ -106,7 +104,6 @@ public class ModBlocks {
         LeafCarpets.getLeafCarpets();
 
         ModVericalSlabs.registerVerticalSlabs();
-        ModVerticalStairs.registerVerticalStairs();
 
         OemMain.LOGGER.info("Registering Blocks for OEM");
     }

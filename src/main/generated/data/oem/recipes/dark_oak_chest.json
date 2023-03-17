@@ -13,5 +13,6 @@
   ],
   "result": {
     "item": "oem:dark_oak_chest"
-  }
+  },
+  "show_notification": true
 }

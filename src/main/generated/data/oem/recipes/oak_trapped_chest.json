@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "oem:oak_trapped_chest"
-  }
+  },
+  "show_notification": true
 }

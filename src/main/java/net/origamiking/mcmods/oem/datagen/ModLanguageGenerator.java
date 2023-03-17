@@ -2,27 +2,54 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
-import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
-import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
-import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
-import net.origamiking.mcmods.oem.blocks.verticalstairs.stone.StoneVStairs;
-import net.origamiking.mcmods.oem.blocks.verticalstairs.wood.WoodVStairs;
-import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.armor.ArmorRegistry;
+//import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
+//import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
+//import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
+//import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
+//import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
+//import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
+//import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
+//import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
+//import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
+//import net.origamiking.mcmods.oem.blocks.vercticalslabs.copper.CopperVSlabs;
+//import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
+//import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
+//import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
+//import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+//import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
+//import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
+//import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
+//import net.origamiking.mcmods.oem.blocks.wool.cyan.CyanWool;
+//import net.origamiking.mcmods.oem.blocks.wool.gray.GrayWool;
+//import net.origamiking.mcmods.oem.blocks.wool.green.GreenWool;
+//import net.origamiking.mcmods.oem.blocks.wool.light_gray.LightGrayWool;
+//import net.origamiking.mcmods.oem.blocks.wool.lightblue.LightBlueWool;
+//import net.origamiking.mcmods.oem.blocks.wool.lime.LimeWool;
+//import net.origamiking.mcmods.oem.blocks.wool.magenta.MagentaWool;
+//import net.origamiking.mcmods.oem.blocks.wool.orange.OrangeWool;
+//import net.origamiking.mcmods.oem.blocks.wool.pink.PinkWool;
+//import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
+//import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
+//import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
+//import net.origamiking.mcmods.oem.extra.blocks.serverspecific.ServerSpecificBlocks;
+//import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.stone.StoneVStairs;
+//import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.wood.WoodVStairs;
+import net.origamiking.mcmods.oem.extra.items.ModExtraItems;
 
 
 import java.nio.file.Path;
+
+import static net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool.*;
 
 public class ModLanguageGenerator extends FabricLanguageProvider {
     protected ModLanguageGenerator(FabricDataOutput dataOutput) {
@@ -31,9 +58,9 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 
     @Override
     public void generateTranslations(TranslationBuilder translationBuilder) {
-//        translationBuilder.add(WhiteWool.WHITE_WOOL_SLAB, "White Wool Slab");
-//        translationBuilder.add(WhiteWool.WHITE_WOOL_STAIRS, "White Wool Stairs");
-//        translationBuilder.add(WhiteWool.WHITE_WOOL_WALL, "White Wool Wall");
+//        translationBuilder.add(WHITE_WOOL_SLAB, "White Wool Slab");
+//        translationBuilder.add(WHITE_WOOL_STAIRS, "White Wool Stairs");
+//        translationBuilder.add(WHITE_WOOL_WALL, "White Wool Wall");
 //        translationBuilder.add(LightGrayWool.LIGHT_GRAY_WOOL_SLAB, "Light Gray Wool Slab");
 //        translationBuilder.add(LightGrayWool.LIGHT_GRAY_WOOL_STAIRS, "Light Gray Wool Stairs");
 //        translationBuilder.add(LightGrayWool.LIGHT_GRAY_WOOL_WALL, "Light Gray Wool Wall");
@@ -100,7 +127,6 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_DOOR,"Oxidized Copper Door");
 //        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_TRAPDOOR, "Oxidized Copper Trapdoor");
 //        translationBuilder.add(GoldBlocks.GOLD_BARS, "Gold Bars");
-//        translationBuilder.add("item.oem.viking_helmet","Viking Helmet");
 //        translationBuilder.add(ConcreteWalls.WHITE_CONCRETE_WALL, "White Concrete Wall");
 //        translationBuilder.add(ConcreteWalls.LIGHT_GRAY_CONCRETE_WALL,"Light Gray Concrete Wall");
 //        translationBuilder.add(ConcreteWalls.GRAY_CONCRETE_WALL,"Gray Concrete Wall");
@@ -153,14 +179,14 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(StoneVSlabs.VERTICAL_ENDSTONE_BRICK_SLAB, "Endstone Brick Vertical Slab");
 //        translationBuilder.add(StoneVSlabs.VERTICAL_QUARTZ_SLAB, "Quartz Vertical Slab");
 //        translationBuilder.add(StoneVSlabs.VERTICAL_SMOOTH_QUARTZ_SLAB, "Smooth Quartz Vertical Slab");
-//                translationBuilder.add(StoneVSlabs.VERTICAL_CUT_COPPER_SLAB, "");
-//                translationBuilder.add(StoneVSlabs.VERTICAL_EXPOSED_CUT_COPPER_SLAB, "");
-//                translationBuilder.add(StoneVSlabs.VERTICAL_WEATHERED_CUT_COPPER_SLAB, "");
-//                translationBuilder.add(StoneVSlabs.VERTICAL_OXIDIZED_CUT_COPPER_SLAB, "");
-//                translationBuilder.add(StoneVSlabs.VERTICAL_WAXED_CUT_COPPER_SLAB, "");
-//                translationBuilder.add(StoneVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB, "");
-//                translationBuilder.add(StoneVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB, "");
-//                translationBuilder.add(StoneVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB, "");
+//        translationBuilder.add(CopperVSlabs.VERTICAL_CUT_COPPER_SLAB, "VERTICAL_CUT_COPPER_SLAB");
+//        translationBuilder.add(CopperVSlabs.VERTICAL_EXPOSED_CUT_COPPER_SLAB, "Vertical Exposed Cut Copper Slab");
+//        translationBuilder.add(CopperVSlabs.VERTICAL_WEATHERED_CUT_COPPER_SLAB, "Vertical Weathered Cut Copper Slab");
+//        translationBuilder.add(CopperVSlabs.VERTICAL_OXIDIZED_CUT_COPPER_SLAB, "Vertical Oxidized Cut Copper Slab");
+//        translationBuilder.add(CopperVSlabs.VERTICAL_WAXED_CUT_COPPER_SLAB, "Vertical Waxed Cut Copper Slab");
+//        translationBuilder.add(CopperVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB, "Vertical Waxed Exposed Cut Copper Slab");
+//        translationBuilder.add(CopperVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB, "Vertical Waxed Weathered Cut Copper Slab");
+//        translationBuilder.add(CopperVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB, "Vertical Waxed Oxidized Cut Copper Slab");
 //        translationBuilder.add(WoodVSlabs.VERTICAL_OAK_SLAB, "Oak Plank Vertical Slab");
 //        translationBuilder.add(WoodVSlabs.VERTICAL_SPRUCE_SLAB, "Spruce Plank Vertical Slab");
 //        translationBuilder.add(WoodVSlabs.VERTICAL_BIRCH_SLAB, "Brich Plank Vertical Slab");
@@ -203,8 +229,6 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB, "Magenta Glass Vertical Slab");
 //        translationBuilder.add(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB, "Pink Glass Vertical Slab");
 //        translationBuilder.add(GlassVSlabs.GLASS_VERTICAL_SLAB, "Glass Vertical Slab");
-//        translationBuilder.add(RandomBlocks.BLACKSTONE_FURNACE, "Blackstone Furnace");
-//        translationBuilder.add(RandomBlocks.DEEPSLATE_FURNACE, "Deepslate Furnace");
 //        translationBuilder.add(ServerSpecificBlocks.PRIM, "Pwim");
 //        translationBuilder.add(WoodVStairs.OAK_VERTICAL_STAIRS, "Oak Vertical Stairs");
 //        translationBuilder.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS, "Stone Brick Vertical Stairs");
@@ -223,13 +247,13 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(AzaleaWoodBlocks.AZALEA_DOOR, "Azalea Door");
 //        translationBuilder.add(AzaleaWoodBlocks.AZALEA_TRAPDOOR, "Azalea Trapdoor");
 //        translationBuilder.add(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE, "Azalea Pressure Plate");
-///        translationBuilder.add(AzaleaWoodBlocks.AZALEA_BUTTON, "Azalea Button");
-//        translationBuilder.add(ServerSpecificBlocks.IRON_BAR_DOOR, "Iron Bar Door");
-//        translationBuilder.add(ServerSpecificBlocks.COPPER_BAR_DOOR, "Copper Bar Door");
-//        translationBuilder.add(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR, "Exposed Copper Bar Door");
-//        translationBuilder.add(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR, "Weather Copper Bar Door");
-//        translationBuilder.add(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR, "Oxidized Copper Bar Door");
-//        translationBuilder.add(ServerSpecificBlocks.GOLD_BAR_DOOR, "Gold Bar Door");
+//        translationBuilder.add(AzaleaWoodBlocks.AZALEA_BUTTON, "Azalea Button");
+//        translationBuilder.add(RandomBlocks.IRON_BAR_DOOR, "Iron Bar Door");
+//        translationBuilder.add(RandomBlocks.COPPER_BAR_DOOR, "Copper Bar Door");
+//        translationBuilder.add(RandomBlocks.EXPOSED_COPPER_BAR_DOOR, "Exposed Copper Bar Door");
+//        translationBuilder.add(RandomBlocks.WEATHERED_COPPER_BAR_DOOR, "Weather Copper Bar Door");
+//        translationBuilder.add(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR, "Oxidized Copper Bar Door");
+//        translationBuilder.add(RandomBlocks.GOLD_BAR_DOOR, "Gold Bar Door");
 //        translationBuilder.add(AcaciaWoodBlocks.ACACIA_CHEST, "Acacia Chest");
 //        translationBuilder.add(AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST, "Acacia Trapped Chest");
 //        translationBuilder.add(AzaleaWoodBlocks.AZALEA_CHEST, "Azalea Chest");
@@ -284,6 +308,8 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(CopperBlocks.EXPOSED_COPPER_LANTERN, "Exposed Copper Lantern");
 //        translationBuilder.add(CopperBlocks.WEATHERED_COPPER_LANTERN, "Weathered Copper Lantern");
 //        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_LANTERN, "Oxidized Copper Lantern");
+//        translationBuilder.add(ModExtraItems.FUT_GUN, "Future Gun");
+//        translationBuilder.add(ArmorRegistry.VIKING_ARMOR_HELMET, "Viking_Armor Helmet");
 
 
         try {

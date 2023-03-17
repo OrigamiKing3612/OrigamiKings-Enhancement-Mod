@@ -16,5 +16,6 @@
   ],
   "result": {
     "item": "oem:jungle_trapped_chest"
-  }
+  },
+  "show_notification": true
 }

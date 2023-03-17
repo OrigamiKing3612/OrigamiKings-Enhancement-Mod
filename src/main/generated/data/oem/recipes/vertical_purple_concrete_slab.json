@@ -14,5 +14,6 @@
   "result": {
     "count": 6,
     "item": "oem:vertical_purple_concrete_slab"
-  }
+  },
+  "show_notification": true
 }

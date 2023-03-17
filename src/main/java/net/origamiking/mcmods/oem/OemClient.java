@@ -3,11 +3,8 @@ package net.origamiking.mcmods.oem;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
-import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
 import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.render.RenderLayer;
-import net.minecraft.client.render.block.entity.ChestBlockEntityRenderer;
-import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
@@ -15,7 +12,7 @@ import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
-import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
@@ -27,7 +24,6 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
-import net.origamiking.mcmods.oem.items.ModItems;
 
 public class OemClient implements ClientModInitializer {
    @Override
@@ -43,12 +39,12 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(AzaleaWoodBlocks.AZALEA_DOOR, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(AzaleaWoodBlocks.AZALEA_TRAPDOOR, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.IRON_BAR_DOOR, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.GOLD_BAR_DOOR, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.COPPER_BAR_DOOR, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.EXPOSED_COPPER_BAR_DOOR, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.WEATHERED_COPPER_BAR_DOOR, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.OXIDIZED_COPPER_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(RandomBlocks.IRON_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(RandomBlocks.GOLD_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(RandomBlocks.COPPER_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(RandomBlocks.EXPOSED_COPPER_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(RandomBlocks.WEATHERED_COPPER_BAR_DOOR, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_DOOR, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_TRAPDOOR, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_DOOR, RenderLayer.getCutout());
@@ -75,7 +71,7 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(MangroveWoodBlocks.MANGROVE_LADDER, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CrimsonWoodBlocks.CRIMSON_LADDER, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(WarpedWoodBlocks.WARPED_LADDER, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(ServerSpecificBlocks.GOLD_CHAIN, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(GoldBlocks.GOLD_CHAIN, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_CHAIN, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.WEATHERED_COPPER_CHAIN, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_CHAIN, RenderLayer.getCutout());

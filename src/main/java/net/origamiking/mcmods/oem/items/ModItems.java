@@ -19,7 +19,7 @@ import static net.origamiking.mcmods.oapi.items.ItemsUtils.registerItem;
 
 public class ModItems {
     public static final Item COPPER_NUGGET = registerItem(OemMain.MOD_ID,"copper_nugget", new Item(new FabricItemSettings()));
-    public static final Item FUT_GUN = registerItem(OemMain.MOD_ID,"fut_gun", new FutureGunItem());
+
     public static final EntityType<FutureGunArrowEntity> FutureGunArrowEntityType = Registry.register(
             Registries.ENTITY_TYPE,
             new Identifier(OemMain.MOD_ID, "fut_gun_arrow"),
@@ -35,7 +35,5 @@ public class ModItems {
 
     public static void register() {
         CopperArmorMaterial.getCopperArmor.register();
-        VikingArmorMaterial.getVikingArmor.register();
-        ArmorRegistry.getArmor();
     }
 }

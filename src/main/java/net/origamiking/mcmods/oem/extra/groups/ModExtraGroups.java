@@ -6,15 +6,30 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
-import net.origamiking.mcmods.oem.blocks.server_specific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.armor.ArmorRegistry;
+import net.origamiking.mcmods.oem.extra.blocks.serverspecific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.stone.StoneVStairs;
+import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.wood.WoodVStairs;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
+import net.origamiking.mcmods.oem.extra.items.ModExtraItems;
 
 public class ModExtraGroups {
     private static final ItemGroup OEM_EXTRA_GROUP = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_extra_group"))
             .displayName(Text.literal("OEM Extra"))
             .icon(() -> new ItemStack(SpruceWoodBlocks.SPRUCE_BARREL))
             .entries((context, entries) -> {
+                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
+                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
+                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
+                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR);
+                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
+                entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
+                entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
+                //entries.add(ServerSpecificBlocks.BOOMBOX);
                 entries.add(ServerSpecificBlocks.PRIM);
+                entries.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
+                entries.add(WoodVStairs.OAK_VERTICAL_STAIRS);
+                entries.add(ModExtraItems.FUT_GUN);
              }).build();
 
     public static void register() {
