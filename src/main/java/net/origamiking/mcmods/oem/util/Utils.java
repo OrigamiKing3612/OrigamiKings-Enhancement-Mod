@@ -5,5 +5,4 @@ public class Utils {
         ModStrippableBlocks.registerStrippables();
         ModFlammableBlocks.registerFlammableBlocks();
     }
-
 }

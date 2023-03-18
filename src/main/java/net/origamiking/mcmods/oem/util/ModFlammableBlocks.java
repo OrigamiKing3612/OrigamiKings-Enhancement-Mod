@@ -5,7 +5,7 @@ import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 
 public class ModFlammableBlocks {
     public static void registerFlammableBlocks() {
-        FlammableBlockRegistry registry= FlammableBlockRegistry.getDefaultInstance();
+        FlammableBlockRegistry registry = FlammableBlockRegistry.getDefaultInstance();
         registry.add(AzaleaWoodBlocks.AZALEA_LADDER,5, 5);
         registry.add(AzaleaWoodBlocks.AZALEA_BARREL,5, 5);
         registry.add(AzaleaWoodBlocks.AZALEA_BOOKSHELF,5, 5);
@@ -22,6 +22,5 @@ public class ModFlammableBlocks {
         registry.add(AzaleaWoodBlocks.AZALEA_TRAPDOOR,5, 5);
         registry.add(AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE,5, 5);
         registry.add(AzaleaWoodBlocks.AZALEA_BUTTON,5, 5);
-
     }
 }
