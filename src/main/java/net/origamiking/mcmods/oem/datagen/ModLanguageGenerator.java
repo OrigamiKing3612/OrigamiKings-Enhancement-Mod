@@ -2,7 +2,6 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
-import net.origamiking.mcmods.oem.armor.ArmorRegistry;
 //import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 //import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 //import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
@@ -44,7 +43,7 @@ import net.origamiking.mcmods.oem.armor.ArmorRegistry;
 //import net.origamiking.mcmods.oem.extra.blocks.serverspecific.ServerSpecificBlocks;
 //import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.stone.StoneVStairs;
 //import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.wood.WoodVStairs;
-import net.origamiking.mcmods.oem.extra.items.ModExtraItems;
+//import net.origamiking.mcmods.oem.extra.items.ModExtraItems;
 
 
 import java.nio.file.Path;

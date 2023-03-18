@@ -566,7 +566,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ModRecipeProvider.offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.IRON_BAR_DOOR, Items.IRON_INGOT);
         ModRecipeProvider.offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.GOLD_BAR_DOOR, Items.GOLD_INGOT);
         ModRecipeProvider.offerDoorRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.COPPER_BAR_DOOR, Items.COPPER_INGOT);
-
 //        offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_CHEST, Blocks.ACACIA_PLANKS);
 //        offerTrappedChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_TRAPPED_CHEST, Blocks.ACACIA_PLANKS);
         ModRecipeProvider.offerChestRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_CHEST, AzaleaWoodBlocks.AZALEA_PLANKS);

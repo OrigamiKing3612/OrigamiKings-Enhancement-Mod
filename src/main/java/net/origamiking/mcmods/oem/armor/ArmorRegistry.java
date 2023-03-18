@@ -11,7 +11,6 @@ import net.origamiking.mcmods.oem.armor.materials.VikingArmorMaterial;
 public class ArmorRegistry {
     public static final VikingArmorItem VIKING_ARMOR_HELMET = registerItem("viking_armor", new VikingArmorItem(VikingArmorMaterial.getVikingArmor.VIKING_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings()));
 
-
     public static <I extends Item> I registerItem(String name, I item) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), item);
     }

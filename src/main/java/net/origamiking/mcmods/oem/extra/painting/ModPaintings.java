@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.painting;
+package net.origamiking.mcmods.oem.extra.painting;
 
 import net.minecraft.entity.decoration.painting.PaintingVariant;
 import net.minecraft.registry.Registries;
@@ -12,9 +12,5 @@ public class ModPaintings {
     private static PaintingVariant registerPainting(String name, PaintingVariant paintingVariant) {
         return Registry.register(Registries.PAINTING_VARIANT, new Identifier(OemMain.MOD_ID, name), paintingVariant);
     }
-
-
-
-
     public static void register() {}
 }

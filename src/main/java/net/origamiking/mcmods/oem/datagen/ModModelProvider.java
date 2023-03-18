@@ -23,7 +23,7 @@ public class ModModelProvider extends FabricModelProvider {
         super(output);
     }
     @Override
-    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator/*, BlockStateModelGenerator.BlockTexturePool blockTexturePool*/) {
+    public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(SpruceWoodBlocks.SPRUCE_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(BirchWoodBlocks.BIRCH_BOOKSHELF);
         blockStateModelGenerator.registerSimpleCubeAll(JungleWoodBlocks.JUNGLE_BOOKSHELF);
@@ -64,13 +64,11 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(RandomBlocks.EXPOSED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(RandomBlocks.WEATHERED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR);
-//        blockTexturePool.stairs();
 
 
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
-        //itemModelGenerator.register(ModItems.TEST, Models.GENERATED);
         itemModelGenerator.register(ModItems.COPPER_NUGGET, Models.GENERATED);
     }
 }
