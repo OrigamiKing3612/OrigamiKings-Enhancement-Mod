@@ -67,7 +67,7 @@ public class CopperArmorMaterial implements ArmorMaterial {
                 Registry.register(Registries.ITEM, new Identifier("oem", "copper_chestplate"), COPPER_CHESTPLATE);
                 Registry.register(Registries.ITEM, new Identifier("oem", "copper_leggings"), COPPER_LEGGINGS);
                 Registry.register(Registries.ITEM, new Identifier("oem", "copper_boots"), COPPER_BOOTS);
-            };
-        };
+            }
+        }
     }
 
