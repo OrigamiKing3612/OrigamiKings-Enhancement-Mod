@@ -21,6 +21,7 @@ public class OemMain implements ModInitializer {
 	 * <p>1. Clean up everything</p>
 	 * <p>2. Update the commands to use oapi CommandUtils</p>
 	 * <p>3. Get textures for things that don't have them</p>
+	 * <p>4. Add LOGGER when things get registered</p>
 	 */
 	@Override
 	public void onInitialize() {
