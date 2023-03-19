@@ -11,7 +11,7 @@ import net.origamiking.mcmods.oem.extra.painting.ModPaintings;
 
 public class ExtraStuff {
     public static void registerExtraStuff() {
-        OemMain.LOGGER.info("Adding Extra Items to " + OemMain.NAME);
+        OemMain.LOGGER.info("Registering Extra Stuff for " + OemMain.NAME);
 
         ServerSpecificBlocks.getServerSpecific();
         ModExtraGroups.register();

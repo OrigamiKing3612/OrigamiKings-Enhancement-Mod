@@ -18,6 +18,6 @@ public class ServerSpecificBlocks {
     public static final Block PRIM = registerBlock(OemMain.MOD_ID, "prim", new PrimBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).noCollision().nonOpaque().breakInstantly()));
 
     public static void getServerSpecific() {
-        OemMain.LOGGER.info("Registering Extra Blocks for " + OemMain.NAME);
+        OemMain.LOGGER.info("Registering Server Specific Blocks for " + OemMain.NAME);
     }
 }
