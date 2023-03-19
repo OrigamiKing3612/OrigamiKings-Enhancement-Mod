@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.extra.painting;
+package net.origamiking.mcmods.oemextra.extra.painting;
 
 import net.minecraft.entity.decoration.painting.PaintingVariant;
 import net.minecraft.registry.Registries;

@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.extra.blocks.serverspecific;
+package net.origamiking.mcmods.oemextra.extra.blocks.serverspecific;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;

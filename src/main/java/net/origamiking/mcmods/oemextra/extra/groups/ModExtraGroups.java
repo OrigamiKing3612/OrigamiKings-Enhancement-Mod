@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.extra.groups;
+package net.origamiking.mcmods.oemextra.extra.groups;
 
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.minecraft.item.ItemGroup;
@@ -7,11 +7,11 @@ import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.armor.ArmorRegistry;
-import net.origamiking.mcmods.oem.extra.blocks.serverspecific.ServerSpecificBlocks;
-import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.stone.StoneVStairs;
-import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.wood.WoodVStairs;
+import net.origamiking.mcmods.oemextra.extra.blocks.serverspecific.ServerSpecificBlocks;
+import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.stone.StoneVStairs;
+import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.wood.WoodVStairs;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
-import net.origamiking.mcmods.oem.extra.items.ModExtraItems;
+import net.origamiking.mcmods.oemextra.extra.items.ModExtraItems;
 
 public class ModExtraGroups {
     private static final ItemGroup OEM_EXTRA_GROUP = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_extra_group"))

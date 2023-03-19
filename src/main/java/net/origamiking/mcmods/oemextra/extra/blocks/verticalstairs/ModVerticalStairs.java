@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.extra.blocks.verticalstairs;
+package net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.BlockItem;
@@ -7,8 +7,8 @@ import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
-import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.stone.StoneVStairs;
-import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.wood.WoodVStairs;
+import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.stone.StoneVStairs;
+import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.wood.WoodVStairs;
 
 public class ModVerticalStairs {
     public static Item registerBlockItem(String name, Block block) {

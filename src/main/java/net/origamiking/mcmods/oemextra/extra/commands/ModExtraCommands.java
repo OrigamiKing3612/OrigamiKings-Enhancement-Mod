@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.extra.commands;
+package net.origamiking.mcmods.oemextra.extra.commands;
 
 import net.origamiking.mcmods.oapi.commands.CommandsUtil;
 import net.origamiking.mcmods.oem.OemMain;

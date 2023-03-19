@@ -40,10 +40,10 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 //import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 //import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 //import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
-//import net.origamiking.mcmods.oem.extra.blocks.serverspecific.ServerSpecificBlocks;
-//import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.stone.StoneVStairs;
-//import net.origamiking.mcmods.oem.extra.blocks.verticalstairs.wood.WoodVStairs;
-//import net.origamiking.mcmods.oem.extra.items.ModExtraItems;
+//import net.origamiking.mcmods.oemextra.extra.blocks.serverspecific.ServerSpecificBlocks;
+//import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.stone.StoneVStairs;
+//import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.wood.WoodVStairs;
+//import net.origamiking.mcmods.oemextra.extra.items.ModExtraItems;
 
 
 import java.nio.file.Path;

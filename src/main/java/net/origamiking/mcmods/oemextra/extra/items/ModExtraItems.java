@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.extra.items;
+package net.origamiking.mcmods.oemextra.extra.items;
 
 import net.minecraft.item.Item;
 import net.origamiking.mcmods.oem.OemMain;
