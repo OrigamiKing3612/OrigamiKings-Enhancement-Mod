@@ -12,5 +12,7 @@ public class ModPaintings {
     private static PaintingVariant registerPainting(String name, PaintingVariant paintingVariant) {
         return Registry.register(Registries.PAINTING_VARIANT, new Identifier(OemMain.MOD_ID, name), paintingVariant);
     }
-    public static void register() {}
+    public static void register() {
+        OemMain.LOGGER.info("Registering Extra Paintings for " + OemMain.NAME);
+    }
 }

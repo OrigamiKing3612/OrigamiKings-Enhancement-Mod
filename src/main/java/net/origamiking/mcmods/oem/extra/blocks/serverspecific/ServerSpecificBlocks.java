@@ -17,5 +17,7 @@ public class ServerSpecificBlocks {
     public static final Block CAVERNS_BLOCK_SIX = registerBlock(OemMain.MOD_ID, "caverns_block_six", new Block(FabricBlockSettings.of(Material.AMETHYST).strength(4f).requiresTool().luminance(15).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block PRIM = registerBlock(OemMain.MOD_ID, "prim", new PrimBlock(FabricBlockSettings.copyOf(Blocks.WHITE_WOOL).noCollision().nonOpaque().breakInstantly()));
 
-    public static void getServerSpecific() {}
+    public static void getServerSpecific() {
+        OemMain.LOGGER.info("Registering Extra Blocks for " + OemMain.NAME);
+    }
 }

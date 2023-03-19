@@ -487,6 +487,6 @@ public class ModGroups {
 //                }
 //            }).build();
     public static void register() {
-        OemMain.LOGGER.info("Registering Groups for OEM");
+        OemMain.LOGGER.info("Registering Groups for " + OemMain.NAME);
     }
 }

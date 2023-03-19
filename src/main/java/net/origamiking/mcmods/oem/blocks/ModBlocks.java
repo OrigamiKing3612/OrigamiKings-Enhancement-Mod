@@ -105,7 +105,7 @@ public class ModBlocks {
 
         ModVericalSlabs.registerVerticalSlabs();
 
-        OemMain.LOGGER.info("Registering Blocks for OEM");
+        OemMain.LOGGER.info("Registering Blocks for " + OemMain.NAME);
     }
 }
 

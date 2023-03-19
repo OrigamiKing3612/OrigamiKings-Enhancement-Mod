@@ -19,6 +19,7 @@ public class ModVerticalStairs {
         return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, type), block);
     }
     public static void registerVerticalStairs() {
+        OemMain.LOGGER.info("Registering Vertical Stairs for " + OemMain.NAME);
         StoneVStairs.get();
         WoodVStairs.get();
     }

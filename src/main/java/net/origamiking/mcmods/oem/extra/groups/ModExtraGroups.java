@@ -33,6 +33,6 @@ public class ModExtraGroups {
              }).build();
 
     public static void register() {
-        OemMain.LOGGER.info("Registering Extra Group for OEM");
+        OemMain.LOGGER.info("Registering Extra Group for " + OemMain.NAME);
     }
 }

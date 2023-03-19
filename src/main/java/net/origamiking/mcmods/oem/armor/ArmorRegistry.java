@@ -15,6 +15,6 @@ public class ArmorRegistry {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), item);
     }
     public static void getArmor() {
-
+        OemMain.LOGGER.info("Registering Extra Armor for " + OemMain.NAME);
     }
 }

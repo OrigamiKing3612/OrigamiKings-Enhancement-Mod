@@ -26,5 +26,6 @@ public class ModItems {
                     .build());
     public static void register() {
         CopperArmorMaterial.getCopperArmor.register();
+        OemMain.LOGGER.info("Registering Items for " + OemMain.NAME );
     }
 }

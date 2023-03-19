@@ -15,13 +15,12 @@ import org.slf4j.LoggerFactory;
 public class OemMain implements ModInitializer {
 	public static final String MOD_ID = "oem";
 	public static final String VERSION = "Your version is: 1.0.0-1.19.4";
+	public static final String NAME = "OEM-1.0.0-1.19.4";
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
 
 	/** Before 1.0.0 comes out
 	 * <p>1. Clean up everything</p>
-	 * <p>2. Update the commands to use oapi CommandUtils</p>
-	 * <p>3. Get textures for things that don't have them</p>
-	 * <p>4. Add LOGGER when things get registered</p>
+	 * <p>2. Get textures for things that don't have them</p>
 	 */
 	@Override
 	public void onInitialize() {
