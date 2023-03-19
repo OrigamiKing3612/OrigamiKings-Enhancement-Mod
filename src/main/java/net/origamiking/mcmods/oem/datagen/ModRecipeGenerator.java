@@ -128,6 +128,10 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ModRecipeProvider.offerButtonRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.OXIDIZED_COPPER_BUTTON, Blocks.OXIDIZED_COPPER);
         RecipeProvider.createDoorRecipe(CopperBlocks.COPPER_DOOR, Ingredient.ofItems(Blocks.COPPER_BLOCK));
         RecipeProvider.createTrapdoorRecipe(CopperBlocks.COPPER_TRAPDOOR, Ingredient.ofItems(Blocks.COPPER_BLOCK));
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_LANTERN, Blocks.COPPER_BLOCK);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.EXPOSED_COPPER_LANTERN, Blocks.EXPOSED_COPPER);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.WEATHERED_COPPER_LANTERN, Blocks.WEATHERED_COPPER);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.OXIDIZED_COPPER_LANTERN, Blocks.OXIDIZED_COPPER);
         RecipeProvider.createStairsRecipe(LeafStairs.OAK_LEAVES_STAIRS, Ingredient.ofItems(Blocks.OAK_LEAVES));
         RecipeProvider.createStairsRecipe(LeafStairs.SPRUCE_LEAVES_STAIRS, Ingredient.ofItems(Blocks.SPRUCE_LEAVES));
         RecipeProvider.createStairsRecipe(LeafStairs.BIRCH_LEAVES_STAIRS, Ingredient.ofItems(Blocks.BIRCH_LEAVES));
@@ -615,32 +619,11 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ModRecipeProvider.offerWaxableRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR, CopperBlocks.OXIDIZED_COPPER_DOOR);
         ModRecipeProvider.offerWaxableRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR, CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
 
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, 2)
                 .pattern("   ").pattern("   ").pattern("###").input('#', Items.COPPER_INGOT)
                 .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT), RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(CopperBlocks.COPPER_PRESSURE_PLATE)));
 
-//        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, Items.COPPER_INGOT, 1)
-//                .pattern("###").pattern("###").pattern("###").input('#', ModItems.COPPER_NUGGET)
-//                .criterion(RecipeProvider.hasItem(ModItems.COPPER_NUGGET), RecipeProvider.conditionsFromItem(ModItems.COPPER_NUGGET))
-//                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModItems.COPPER_NUGGET)));
-//        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, ModBlocksServerSpecific.GOLD_LANTERN, 1)
-//                .pattern("###")
-//                .pattern("###")
-//                .pattern("###")
-//                .input('#', Items.GOLD_NUGGET)
-//                .criterion(RecipeProvider.hasItem(Blocks.GLASS), RecipeProvider.conditionsFromItem(Blocks.GLASS))
-//                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(ModBlocksGlass.GLASS_STAIR)));
-//        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, GoldBlocks.GOLD_BARS, 16)
-//                .pattern("###")
-//                .pattern("###")
-//                .pattern("   ")
-//                .input('#', Items.GOLD_INGOT)
-//                .criterion(RecipeProvider.hasItem(Items.GOLD_INGOT), RecipeProvider.conditionsFromItem(Items.GOLD_INGOT))
-//                .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(GoldBlocks.GOLD_BARS)));
-//    }
-//    public static CraftingRecipeJsonBuilder RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS,ItemConvertible output, Ingredient input) {
-//        return ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, output, 6).input('#', input).pattern("   ").pattern("###").pattern("###");
-//    }
     }
 }
