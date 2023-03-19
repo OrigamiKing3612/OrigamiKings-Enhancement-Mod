@@ -16,7 +16,7 @@ import net.origamiking.mcmods.oemextra.extra.items.ModExtraItems;
 public class ModExtraGroups {
     private static final ItemGroup OEM_EXTRA_GROUP = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_extra_group"))
             .displayName(Text.literal("OEM Extra"))
-            .icon(() -> new ItemStack(SpruceWoodBlocks.SPRUCE_BARREL))
+            .icon(() -> new ItemStack(ArmorRegistry.VIKING_ARMOR_HELMET))
             .entries((context, entries) -> {
                 entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
                 entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);

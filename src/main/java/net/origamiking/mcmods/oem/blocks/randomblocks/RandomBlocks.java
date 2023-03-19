@@ -37,8 +37,6 @@ public class RandomBlocks {
     public static final Block SNOW_STAIRS = registerBlock(id, "snow_block_stairs", new StairsBlock(Blocks.SNOW_BLOCK.getDefaultState(), FabricBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.SNOW)));
     public static final Block SNOW_SLAB = registerBlock(id, "snow_block_slab", new SlabBlock(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(4f).requiresTool().sounds(BlockSoundGroup.SNOW)));
     public static final Block SNOW_WALL = registerBlock(id, "snow_block_wall", new WallBlock(FabricBlockSettings.of(Material.SNOW_BLOCK).strength(4f).requiresTool().sounds(BlockSoundGroup.SNOW)));
-//    public static final Block BLACKSTONE_FURNACE = registerBlock(id, "blackstone_furnace", new FurnaceBlock(FabricBlockSettings.copyOf(Blocks.FURNACE)));
-//    public static final Block DEEPSLATE_FURNACE = registerBlock(id, "deepslate_furnace", new FurnaceBlock(FabricBlockSettings.copyOf(Blocks.FURNACE)));
     public static final Block IRON_BAR_DOOR = registerBlock(OemMain.MOD_ID, "iron_bar_door", new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
     public static final Block GOLD_BAR_DOOR = registerBlock(OemMain.MOD_ID, "gold_bar_door", new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
     public static final Block COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "copper_bar_door", new DoorBlock(FabricBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
