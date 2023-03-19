@@ -19,8 +19,7 @@ public class OemMain implements ModInitializer {
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
 
 	/** Before 1.0.0 comes out
-	 * <p>1. Clean up everything</p>
-	 * <p>2. Get textures for things that don't have them</p>
+	 * READY
 	 */
 	@Override
 	public void onInitialize() {
