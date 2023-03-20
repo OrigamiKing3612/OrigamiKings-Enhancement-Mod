@@ -121,7 +121,7 @@ publishing {
 			embedded.project "fabric-api"
 			embedded.project "origamikings-api"
 		}
-		changelog = "${changelog}"
+		changelog = "Fixed bugs. First Prerelease before 1.0.0"
 	}
 	//end
 }
