@@ -17,12 +17,11 @@ public class OemMain implements ModInitializer {
 	public static final String VERSION = "Your version is: 1.0.0-1.19.4";
 	public static final String NAME = "OEM-1.0.0-1.19.4";
 	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
-
-	/** Before 1.0.0 comes out
-	 * READY
-	 */
 	@Override
 	public void onInitialize() {
+		Main();
+	}
+	public static void Main() {
 		ModBlocks.register();
 		ModItems.register();
 		ModGroups.register();
