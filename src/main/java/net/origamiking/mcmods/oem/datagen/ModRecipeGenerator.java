@@ -618,7 +618,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ModRecipeProvider.offerWaxableRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR, CopperBlocks.WEATHERED_COPPER_TRAPDOOR);
         ModRecipeProvider.offerWaxableRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR, CopperBlocks.OXIDIZED_COPPER_DOOR);
         ModRecipeProvider.offerWaxableRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR, CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
-
+        ModRecipeProvider.offerLanternRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_LANTERN, Items.COPPER_INGOT);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, 2)
                 .pattern("   ").pattern("   ").pattern("###").input('#', Items.COPPER_INGOT)
