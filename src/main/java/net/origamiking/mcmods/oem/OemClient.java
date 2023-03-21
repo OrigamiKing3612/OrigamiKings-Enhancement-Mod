@@ -31,6 +31,7 @@ import net.origamiking.mcmods.oemextra.extra.OemExtraMain;
 public class OemClient implements ClientModInitializer {
    @Override
    public void onInitializeClient() {
+
       BlockRenderLayerMap.INSTANCE.putBlock(GoldBlocks.GOLD_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_BARS, RenderLayer.getTranslucent());

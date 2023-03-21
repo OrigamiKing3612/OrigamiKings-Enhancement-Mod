@@ -28,6 +28,7 @@ repositories {
 	}
 }
 
+
 def dataOutput = 'src/main/generated'
 
 loom {
@@ -69,6 +70,20 @@ processResources {
 
 	filesMatching("fabric.mod.json") {
 		expand "version": project.version
+	}
+}
+
+jar {
+	manifest {
+		attributes([
+				"Specification-Title"     : "OrigamiKings Enhancement Mod",
+				"Specification-Vendor"    : "OrigamiKing",
+				"Specification-Version"   : "1",
+				"Implementation-Title"    : project.name,
+				"Implementation-Version"  : mod_version,
+				"Implementation-Vendor"   : "OrigamiKing",
+				"Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+		])
 	}
 }
 
