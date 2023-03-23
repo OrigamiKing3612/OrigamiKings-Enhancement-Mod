@@ -121,7 +121,7 @@ publishing {
 		// retrieving dependencies.
 	}
 	modrinth {
-		debugMode = true
+		debugMode = false
 		token = System.getenv("MODRINTH_TOKEN")
 		projectId = "${project_id}"
 		versionNumber = "${mod_version}"
@@ -136,7 +136,7 @@ publishing {
 			embedded.project "fabric-api"
 			embedded.project "origamikings-api"
 		}
-		changelog = "Fixed bugs. First Prerelease before 1.0.0"
+		changelog = "Fixed bugs. Made azalea wood in azalea trees and fixed the create new world screen. Second Prerelease before 1.0.0"
 	}
 	//end
 }
