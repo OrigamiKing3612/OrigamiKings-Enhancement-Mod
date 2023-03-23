@@ -6,7 +6,9 @@
   "mixins": [
 
   ],
-  "client": [],
+  "client": [
+      "CreateWorldScreenMixin"
+  ],
   "server": [],
   "injectors": {
     "defaultRequire": 1
