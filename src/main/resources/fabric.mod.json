@@ -29,7 +29,9 @@
       "net.origamiking.mcmods.oem.OemClient"
     ]
 },
-
+  "mixins": [
+    "oem.mixins.json"
+  ],
   "depends": {
     "fabricloader": ">=0.14.17",
     "fabric-api": "*",
