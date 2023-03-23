@@ -3,7 +3,7 @@ package net.origamiking.mcmods.oem.oldworldscreen;
 import net.minecraft.text.Text;
 import net.minecraft.util.math.ColorHelper;
 
-public class Constants {
+public class VariablesForOldWorldScreen {
 
     public static final Text WORLD_NAME_LABEL = Text.translatable("selectWorld.enterName");
     public static final Text WORLD_DIRECTORY_NAME_LABEL = Text.translatable("selectWorld.resultFolder");

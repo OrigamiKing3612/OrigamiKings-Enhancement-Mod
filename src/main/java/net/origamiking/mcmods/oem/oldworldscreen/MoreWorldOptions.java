@@ -15,7 +15,7 @@ import net.minecraft.client.util.math.MatrixStack;
 import java.util.ArrayList;
 import java.util.List;
 
-import static net.origamiking.mcmods.oem.oldworldscreen.Constants.*;
+import static net.origamiking.mcmods.oem.oldworldscreen.VariablesForOldWorldScreen.*;
 
 
 public class MoreWorldOptions {

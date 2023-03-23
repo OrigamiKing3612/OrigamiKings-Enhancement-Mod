@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.Shadow;
 
 import java.util.List;
 
-import static net.origamiking.mcmods.oem.oldworldscreen.Constants.*;
+import static net.origamiking.mcmods.oem.oldworldscreen.VariablesForOldWorldScreen.*;
 
 @Mixin(CreateWorldScreen.class)
 public abstract class CreateWorldScreenMixin extends Screen {
