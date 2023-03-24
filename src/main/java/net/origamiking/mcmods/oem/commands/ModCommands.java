@@ -6,5 +6,7 @@ public class ModCommands {
     public static void register() {
         OemMain.LOGGER.info("Registering Commands for " + OemMain.NAME);
         CommandsUtil.makeVersionCommand(OemMain.MOD_ID, OemMain.VERSION);
+        CommandsUtil.linkReturnCommand(OemMain.MOD_ID + "-website", "https://modrinth.com/mod/origamikings-enhancement-mod", "To Website");
+        CommandsUtil.linkReturnCommand(OemMain.MOD_ID + "-issues", "https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues", "To Issues Page");
     }
 }
