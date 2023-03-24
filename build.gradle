@@ -126,7 +126,7 @@ publishing {
 		projectId = "${project_id}"
 		versionNumber = "${mod_version}"
 		versionType = "${version_type}"
-		uploadFile = remapJar // With Loom, this MUST be set to `remapJar`
+		uploadFile = remapJar
 		gameVersions = ['1.19.4'] // Must be an array, even with only one version
 		dependencies {
 			// scope.type
@@ -136,7 +136,7 @@ publishing {
 			embedded.project "fabric-api"
 			embedded.project "origamikings-api"
 		}
-		changelog = "Fixed bugs. Made azalea wood in azalea trees and fixed the create new world screen. Second Prerelease before 1.0.0"
+		changelog = "Version 1.0.0: Fixed bugs. Made azalea wood in azalea trees and fixed the create new world screen. Full release of OEM!"
 	}
 	//end
 }
