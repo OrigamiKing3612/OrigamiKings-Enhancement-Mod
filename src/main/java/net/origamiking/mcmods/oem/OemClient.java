@@ -26,7 +26,6 @@ import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oemextra.extra.OemExtraClient;
-import net.origamiking.mcmods.oemextra.extra.OemExtraMain;
 
 public class OemClient implements ClientModInitializer {
    @Override

@@ -8,8 +8,5 @@ import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.ModVerticalSt
 
 public class StoneVStairs extends ModVerticalStairs {
     public static final Block STONE_BRICK_VERTICAL_STAIRS = registerBlock("vertical_stone_brick_stairs", new VerticalStairsBlock(FabricBlockSettings.copyOf(Blocks.STONE_BRICKS)));
-
-
-
     public static void get() {}
 }

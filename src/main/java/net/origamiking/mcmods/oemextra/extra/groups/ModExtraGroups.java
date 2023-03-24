@@ -10,7 +10,6 @@ import net.origamiking.mcmods.oem.armor.ArmorRegistry;
 import net.origamiking.mcmods.oemextra.extra.blocks.serverspecific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.stone.StoneVStairs;
 import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.wood.WoodVStairs;
-import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oemextra.extra.items.ModExtraItems;
 
 public class ModExtraGroups {

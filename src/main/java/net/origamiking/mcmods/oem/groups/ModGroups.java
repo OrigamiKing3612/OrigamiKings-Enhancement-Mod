@@ -446,25 +446,6 @@ public class ModGroups {
                 entries.add(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB);
                 entries.add(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB);
             }).build();
-//    private static final ItemGroup OEM_GROUP2 = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_group2"))
-//            .displayName(Text.literal("mc.origamiking.net specific"))
-//            .icon(() -> new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE))
-//            .entries((context, entries) -> {
-//                if (context.hasPermissions()) {
-////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_ONE);
-////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_TWO);
-////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_THREE);
-////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR);
-////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
-////                    entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
-////                    entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
-////                    //entries.add(ServerSpecificBlocks.BOOMBOX);
-////                    entries.add(ServerSpecificBlocks.PRIM);
-////                    entries.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
-////                    entries.add(WoodVStairs.OAK_VERTICAL_STAIRS);
-////                    entries.add(ModItems.FUT_GUN);
-//                }
-//            }).build();
     public static void register() {
         OemMain.LOGGER.info("Registering Groups for " + OemMain.NAME);
     }
