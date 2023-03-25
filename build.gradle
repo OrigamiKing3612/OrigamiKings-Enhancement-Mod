@@ -136,7 +136,7 @@ publishing {
 			embedded.project "fabric-api"
 			embedded.project "origamikings-api"
 		}
-		changelog = "Version 1.0.0: Fixed bugs. Made azalea wood in azalea trees and fixed the create new world screen. Full release of OEM!"
+		changelog = "Version 1.0.1: Fixed fixed major bug"
 	}
 	//end
 }
