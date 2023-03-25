@@ -10,6 +10,7 @@ import net.minecraft.registry.Registry;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
+import net.origamiking.mcmods.oapi.items.OrigamiItemSettings;
 
 public class CopperArmorMaterial implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] {13, 15, 16, 11};
@@ -57,10 +58,10 @@ public class CopperArmorMaterial implements ArmorMaterial {
     public class getCopperArmor {
         public static final ArmorMaterial COPPER_ARMOR_MATERIAL = new CopperArmorMaterial();
         // If you made a new material, this is where you would note it.
-        public static final Item COPPER_HELMET = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new Item.Settings());
-        public static final Item COPPER_CHESTPLATE = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings());
-        public static final Item COPPER_LEGGINGS = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new Item.Settings());
-        public static final Item COPPER_BOOTS = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new Item.Settings());
+        public static final Item COPPER_HELMET = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new OrigamiItemSettings());
+        public static final Item COPPER_CHESTPLATE = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new OrigamiItemSettings());
+        public static final Item COPPER_LEGGINGS = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, new OrigamiItemSettings());
+        public static final Item COPPER_BOOTS = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, new OrigamiItemSettings());
 
         public static void register() {
                 Registry.register(Registries.ITEM, new Identifier("oem", "copper_helmet"), COPPER_HELMET);
