@@ -4,12 +4,15 @@
   "key": {
     "#": {
       "item": "minecraft:copper_ingot"
+    },
+    "T": {
+      "item": "minecraft:torch"
     }
   },
   "pattern": [
-    "#  ",
-    "#  ",
-    "#  "
+    "###",
+    "#T#",
+    "###"
   ],
   "result": {
     "count": 6,

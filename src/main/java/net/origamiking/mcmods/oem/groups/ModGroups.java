@@ -445,6 +445,24 @@ public class ModGroups {
                 entries.add(GlassVSlabs.PURPLE_GLASS_VERTICAL_SLAB);
                 entries.add(GlassVSlabs.MAGENTA_GLASS_VERTICAL_SLAB);
                 entries.add(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB);
+
+                entries.add(GlassBlocks.GLASS_WALL);
+                entries.add(GlassBlocks.WHITE_GLASS_WALL);
+                entries.add(GlassBlocks.LIGHT_GRAY_GLASS_WALL);
+                entries.add(GlassBlocks.GRAY_GLASS_WALL);
+                entries.add(GlassBlocks.BLACK_GLASS_WALL);
+                entries.add(GlassBlocks.BROWN_GLASS_WALL);
+                entries.add(GlassBlocks.RED_GLASS_WALL);
+                entries.add(GlassBlocks.ORANGE_GLASS_WALL);
+                entries.add(GlassBlocks.YELLOW_GLASS_WALL);
+                entries.add(GlassBlocks.LIME_GLASS_WALL);
+                entries.add(GlassBlocks.GREEN_GLASS_WALL);
+                entries.add(GlassBlocks.CYAN_GLASS_WALL);
+                entries.add(GlassBlocks.LIGHT_BLUE_GLASS_WALL);
+                entries.add(GlassBlocks.BLUE_GLASS_WALL);
+                entries.add(GlassBlocks.PURPLE_GLASS_WALL);
+                entries.add(GlassBlocks.MAGENTA_GLASS_WALL);
+                entries.add(GlassBlocks.PINK_GLASS_WALL);
             }).build();
     public static void register() {
         OemMain.LOGGER.info("Registering Groups for " + OemMain.NAME);

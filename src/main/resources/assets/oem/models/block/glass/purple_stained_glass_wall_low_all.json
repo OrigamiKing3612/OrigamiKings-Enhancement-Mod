@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "oem:block/glass/glass_wall_low_all",
+	"textures": {
+		"wall": "oem:block/purple_stained_glass_wall",
+		"particle": "block/purple_stained_glass"
+	}
+}

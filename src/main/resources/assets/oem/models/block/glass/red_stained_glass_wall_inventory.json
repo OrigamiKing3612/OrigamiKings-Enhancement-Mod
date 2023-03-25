@@ -1,0 +1,6 @@
+{
+	"parent": "oem:block/glass/glass_wall_inventory",
+	"textures": {
+		"wall": "oem:block/red_stained_glass_wall"
+	}
+}

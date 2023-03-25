@@ -47,8 +47,24 @@
     "oem:purple_concrete_wall",
     "oem:magenta_concrete_wall",
     "oem:pink_concrete_wall",
-    "oem:sculk_wall"
-
+    "oem:sculk_wall",
+    "oem:glass_wall",
+    "oem:white_stained_glass_wall",
+    "oem:light_gray_stained_glass_wall",
+    "oem:gray_stained_glass_wall",
+    "oem:black_stained_glass_wall",
+    "oem:brown_stained_glass_wall",
+    "oem:red_stained_glass_wall",
+    "oem:orange_stained_glass_wall",
+    "oem:yellow_stained_glass_wall",
+    "oem:lime_stained_glass_wall",
+    "oem:green_stained_glass_wall",
+    "oem:cyan_stained_glass_wall",
+    "oem:light_blue_stained_glass_wall",
+    "oem:blue_stained_glass_wall",
+    "oem:purple_stained_glass_wall",
+    "oem:magenta_stained_glass_wall",
+    "oem:pink_stained_glass_wall"
 
   ]
 }

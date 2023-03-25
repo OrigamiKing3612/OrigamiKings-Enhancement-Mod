@@ -447,6 +447,23 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_TRAPDOOR);
         addDrop(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
         addDrop(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
+        addDropWithSilkTouch(GlassBlocks.GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.WHITE_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.LIGHT_GRAY_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.GRAY_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.BLACK_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.BROWN_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.RED_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.ORANGE_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.YELLOW_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.LIME_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.GREEN_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.CYAN_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.LIGHT_BLUE_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.BLUE_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.PURPLE_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.MAGENTA_GLASS_WALL);
+        addDropWithSilkTouch(GlassBlocks.PINK_GLASS_WALL);
 
     }
 }

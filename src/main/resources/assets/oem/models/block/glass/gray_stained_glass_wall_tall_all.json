@@ -1,0 +1,7 @@
+{
+	"parent": "oem:block/glass/glass_wall_tall_all",
+	"textures": {
+		"wall": "oem:block/gray_stained_glass_wall",
+		"particle": "minecraft:block/gray_stained_glass"
+	}
+}

@@ -1,0 +1,8 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "oem:block/glass/glass_wall_post",
+	"textures": {
+		"wall": "oem:block/cyan_stained_glass_wall",
+		"particle": "block/cyan_stained_glass"
+	}
+}

@@ -157,6 +157,23 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.JUNGLE_LEAVES_WALL, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.DARK_OAK_LEAVES_WALL, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.MANGROVE_LEAVES_WALL, RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.WHITE_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.LIGHT_GRAY_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.GRAY_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.BLACK_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.BROWN_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.RED_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.ORANGE_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.YELLOW_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.LIME_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.GREEN_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.CYAN_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.LIGHT_BLUE_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.BLUE_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.PURPLE_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.MAGENTA_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.PINK_GLASS_WALL, RenderLayer.getTranslucent());
       //leaf blocks
       ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.OAK_LEAVES_STAIRS, LeafSlabs.OAK_LEAVES_SLAB, LeafWalls.OAK_LEAVES_WALL);
       ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getSpruceColor(), LeafStairs.SPRUCE_LEAVES_STAIRS, LeafSlabs.SPRUCE_LEAVES_SLAB, LeafWalls.SPRUCE_LEAVES_WALL);

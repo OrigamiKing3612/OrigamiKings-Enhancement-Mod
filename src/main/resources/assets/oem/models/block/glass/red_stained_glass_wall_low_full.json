@@ -1,0 +1,7 @@
+{
+	"credit": "Made with Blockbench",
+	"parent": "oem:block/glass/glass_wall_low_full",
+	"textures": {
+		"wall": "oem:block/red_stained_glass_wall"
+	}
+}
