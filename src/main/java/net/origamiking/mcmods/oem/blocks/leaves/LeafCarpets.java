@@ -1,8 +1,8 @@
 package net.origamiking.mcmods.oem.blocks.leaves;
 
-import net.origamiking.mcmods.oem.blocks.ModBlocks;
+import net.origamiking.mcmods.oapi.blocks.BlocksUtils;
 
-public class LeafCarpets extends ModBlocks {
+public class LeafCarpets extends BlocksUtils {
 
 
 
