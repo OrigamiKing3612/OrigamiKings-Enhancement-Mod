@@ -620,6 +620,44 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ModRecipeProvider.offerWaxableRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR, CopperBlocks.OXIDIZED_COPPER_TRAPDOOR);
         ModRecipeProvider.offerLanternRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_LANTERN, Items.COPPER_INGOT);
 
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.GLASS_WALL, Blocks.GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.WHITE_GLASS_WALL, Blocks.WHITE_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.LIGHT_GRAY_GLASS_WALL, Blocks.LIGHT_GRAY_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.GRAY_GLASS_WALL, Blocks.GRAY_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.BLACK_GLASS_WALL, Blocks.BLACK_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.BROWN_GLASS_WALL, Blocks.BROWN_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.RED_GLASS_WALL, Blocks.RED_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.ORANGE_GLASS_WALL, Blocks.ORANGE_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.YELLOW_GLASS_WALL, Blocks.YELLOW_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.LIME_GLASS_WALL, Blocks.LIME_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.GREEN_GLASS_WALL, Blocks.GREEN_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.CYAN_GLASS_WALL, Blocks.CYAN_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.LIGHT_BLUE_GLASS_WALL, Blocks.LIGHT_BLUE_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.BLUE_GLASS_WALL, Blocks.BLUE_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.PURPLE_GLASS_WALL, Blocks.PURPLE_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.MAGENTA_GLASS_WALL, Blocks.MAGENTA_STAINED_GLASS);
+        RecipeProvider.offerWallRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.PINK_GLASS_WALL, Blocks.PINK_STAINED_GLASS);
+
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.GLASS_WALL, Blocks.GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.WHITE_GLASS_WALL, Blocks.WHITE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.LIGHT_GRAY_GLASS_WALL, Blocks.LIGHT_GRAY_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.GRAY_GLASS_WALL, Blocks.GRAY_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.BLACK_GLASS_WALL, Blocks.BLACK_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.BROWN_GLASS_WALL, Blocks.BROWN_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.RED_GLASS_WALL, Blocks.RED_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.ORANGE_GLASS_WALL, Blocks.ORANGE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.YELLOW_GLASS_WALL, Blocks.YELLOW_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.LIME_GLASS_WALL, Blocks.LIME_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.GREEN_GLASS_WALL, Blocks.GREEN_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.CYAN_GLASS_WALL, Blocks.CYAN_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.LIGHT_BLUE_GLASS_WALL, Blocks.LIGHT_BLUE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.BLUE_GLASS_WALL, Blocks.BLUE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.PURPLE_GLASS_WALL, Blocks.PURPLE_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.MAGENTA_GLASS_WALL, Blocks.MAGENTA_STAINED_GLASS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.PINK_GLASS_WALL, Blocks.PINK_STAINED_GLASS);
+
+
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, 2)
                 .pattern("   ").pattern("   ").pattern("###").input('#', Items.COPPER_INGOT)
                 .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT), RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))

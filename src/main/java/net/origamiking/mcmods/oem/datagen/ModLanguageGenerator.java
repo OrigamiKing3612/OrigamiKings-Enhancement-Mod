@@ -310,23 +310,23 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(CopperBlocks.OXIDIZED_COPPER_LANTERN, "Oxidized Copper Lantern");
 //        translationBuilder.add(ModExtraItems.FUT_GUN, "Future Gun");
 //        translationBuilder.add(ArmorRegistry.VIKING_ARMOR_HELMET, "Viking_Armor Helmet");
-//        translationBuilder.add(GlassBlocks.GLASS_WALL, "glass wall");
-//        translationBuilder.add(GlassBlocks.WHITE_GLASS_WALL, "white glass wall");
-//        translationBuilder.add(GlassBlocks.LIGHT_GRAY_GLASS_WALL, "light gray glass wall");
-//        translationBuilder.add(GlassBlocks.GRAY_GLASS_WALL, "gray glass wall");
-//        translationBuilder.add(GlassBlocks.BLACK_GLASS_WALL, "black glass wall");
-//        translationBuilder.add(GlassBlocks.BROWN_GLASS_WALL, "brown glass wall");
-//        translationBuilder.add(GlassBlocks.RED_GLASS_WALL, "red glass wall");
-//        translationBuilder.add(GlassBlocks.ORANGE_GLASS_WALL, "orange glass wall");
-//        translationBuilder.add(GlassBlocks.YELLOW_GLASS_WALL, "yellow glass wall");
-//        translationBuilder.add(GlassBlocks.LIME_GLASS_WALL, "lime glass wall");
-//        translationBuilder.add(GlassBlocks.GREEN_GLASS_WALL, "green glass wall");
-//        translationBuilder.add(GlassBlocks.CYAN_GLASS_WALL, "cyan glass wall");
-//        translationBuilder.add(GlassBlocks.LIGHT_BLUE_GLASS_WALL, "light blue glass wall");
-//        translationBuilder.add(GlassBlocks.BLUE_GLASS_WALL, "blue glass wall");
-//        translationBuilder.add(GlassBlocks.PURPLE_GLASS_WALL, "purple glass wall");
-//        translationBuilder.add(GlassBlocks.MAGENTA_GLASS_WALL, "magenta glass wall");
-//        translationBuilder.add(GlassBlocks.PINK_GLASS_WALL, "pink glass wall");
+//        translationBuilder.add(GlassBlocks.GLASS_WALL, "Glass Wall");
+//        translationBuilder.add(GlassBlocks.WHITE_GLASS_WALL, "White Glass Wall");
+//        translationBuilder.add(GlassBlocks.LIGHT_GRAY_GLASS_WALL, "Light Gray Glass Wall");
+//        translationBuilder.add(GlassBlocks.GRAY_GLASS_WALL, "Gray Glass Wall");
+//        translationBuilder.add(GlassBlocks.BLACK_GLASS_WALL, "Black Glass Wall");
+//        translationBuilder.add(GlassBlocks.BROWN_GLASS_WALL, "Brown Glass Wall");
+//        translationBuilder.add(GlassBlocks.RED_GLASS_WALL, "Red Glass Wall");
+//        translationBuilder.add(GlassBlocks.ORANGE_GLASS_WALL, "Orange Glass Wall");
+//        translationBuilder.add(GlassBlocks.YELLOW_GLASS_WALL, "Yellow Glass Wall");
+//        translationBuilder.add(GlassBlocks.LIME_GLASS_WALL, "Lime Glass Wall");
+//        translationBuilder.add(GlassBlocks.GREEN_GLASS_WALL, "Green Glass Wall");
+//        translationBuilder.add(GlassBlocks.CYAN_GLASS_WALL, "Cyan Glass Wall");
+//        translationBuilder.add(GlassBlocks.LIGHT_BLUE_GLASS_WALL, "Light Blue Glass Wall");
+//        translationBuilder.add(GlassBlocks.BLUE_GLASS_WALL, "Blue Glass Wall");
+//        translationBuilder.add(GlassBlocks.PURPLE_GLASS_WALL, "Purple Glass Wall");
+//        translationBuilder.add(GlassBlocks.MAGENTA_GLASS_WALL, "Magenta Glass Wall");
+//        translationBuilder.add(GlassBlocks.PINK_GLASS_WALL, "Pink Glass Wall");
 
 
         try {
