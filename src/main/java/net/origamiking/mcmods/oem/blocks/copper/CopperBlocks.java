@@ -10,7 +10,6 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oapi.blocks.custom.copper.oxidiziable.*;
 import net.origamiking.mcmods.oem.OemMain;
-import net.origamiking.mcmods.oem.blocks.custom.copper.oxidiziable.*;
 
 public class CopperBlocks {
     public static final Block COPPER_BARS = registerCopperBlock("copper_bars", new OxidizableCopperBarBlock(Oxidizable.OxidationLevel.UNAFFECTED, FabricBlockSettings.of(Material.METAL).requiresTool().strength(4f).nonOpaque().sounds(BlockSoundGroup.COPPER)));
