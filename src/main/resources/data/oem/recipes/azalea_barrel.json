@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "P": {
+      "item": "oem:azalea_planks"
+    },
+    "S": {
+      "item": "oem:azalea_plank_slab"
+    }
+  },
+  "pattern": [
+    "PSP",
+    "P P",
+    "PSP"
+  ],
+  "result": {
+    "item": "oem:azalea_barrel"
+  },
+  "show_notification": true
+}

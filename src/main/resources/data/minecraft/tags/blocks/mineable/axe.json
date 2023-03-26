@@ -51,27 +51,6 @@
     "oem:azalea_door",
     "oem:azalea_trapdoor",
     "oem:azalea_pressure_plate",
-    "oem:azalea_button",
-    "oem:acacia_chest",
-    "oem:acacia_trapped_chest",
-    "oem:azalea_chest",
-    "oem:azalea_trapped_chest",
-    "oem:birch_chest",
-    "oem:birch_trapped_chest",
-    "oem:crimson_chest",
-    "oem:crimson_trapped_chest",
-    "oem:dark_oak_chest",
-    "oem:dark_oak_trapped_chest",
-    "oem:jungle_chest",
-    "oem:jungle_trapped_chest",
-    "oem:mangrove_chest",
-    "oem:mangrove_trapped_chest",
-    "oem:oak_chest",
-    "oem:oak_trapped_chest",
-    "oem:spruce_chest",
-    "oem:spruce_trapped_chest",
-    "oem:warped_chest",
-    "oem:warped_trapped_chest"
-
+    "oem:azalea_button"
   ]
 }
