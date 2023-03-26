@@ -17,8 +17,8 @@ public class DarkOakWoodBlocks {
     public static final Block DARK_OAK_BARREL = registerBlock(OemMain.MOD_ID, "dark_oak_barrel", new BarrelBlock(OrigamiBlockSettings.of(Material.WOOD).strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block DARK_OAK_BOOKSHELF = registerBlock(OemMain.MOD_ID, "dark_oak_bookshelf", new Block(OrigamiBlockSettings.of(Material.WOOD).strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block DARK_OAK_LADDER = registerBlock(OemMain.MOD_ID, "dark_oak_ladder", new LadderBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.LADDER)));
-
     public static final Block DARK_OAK_CHEST = registerBlock(OemMain.MOD_ID, "dark_oak_chest", new ChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST), () -> BlockEntityType.CHEST));
+    public static final Block DARK_OAK_TRAPPED_CHEST = registerBlock(OemMain.MOD_ID, "dark_oak_trapped_chest", new TrappedChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST)));
 
     public static void getDarkOakBlocks() {}
 }
