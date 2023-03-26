@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:lime_wool"
+  },
+  "result": "oem:lime_wool_wall"
+}
