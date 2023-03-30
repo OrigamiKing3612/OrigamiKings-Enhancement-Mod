@@ -33,11 +33,11 @@ public class RandomBlocks {
     public static final Block SNOW_STAIRS = registerBlock(id, "snow_block_stairs", new StairsBlock(Blocks.SNOW_BLOCK.getDefaultState(), OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.SNOW)));
     public static final Block SNOW_SLAB = registerBlock(id, "snow_block_slab", new SlabBlock(OrigamiBlockSettings.of(Material.SNOW_BLOCK).strength(4f).requiresTool().sounds(BlockSoundGroup.SNOW)));
     public static final Block SNOW_WALL = registerBlock(id, "snow_block_wall", new WallBlock(OrigamiBlockSettings.of(Material.SNOW_BLOCK).strength(4f).requiresTool().sounds(BlockSoundGroup.SNOW)));
-    public static final Block IRON_BAR_DOOR = registerBlock(OemMain.MOD_ID, "iron_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
-    public static final Block GOLD_BAR_DOOR = registerBlock(OemMain.MOD_ID, "gold_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
-    public static final Block COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
-    public static final Block EXPOSED_COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "exposed_copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
-    public static final Block WEATHERED_COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "weathered_copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
-    public static final Block OXIDIZED_COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "oxidized_copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
+    public static final Block IRON_BAR_DOOR = registerBlock(OemMain.MOD_ID, "iron_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR)));
+    public static final Block GOLD_BAR_DOOR = registerBlock(OemMain.MOD_ID, "gold_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR)));
+    public static final Block COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR)));
+    public static final Block EXPOSED_COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "exposed_copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR)));
+    public static final Block WEATHERED_COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "weathered_copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR)));
+    public static final Block OXIDIZED_COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "oxidized_copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR)));
     public static void getRandomBlocks() {}
 }
