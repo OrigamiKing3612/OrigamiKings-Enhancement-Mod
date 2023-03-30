@@ -142,21 +142,18 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(LeafStairs.ACACIA_LEAVES_STAIRS, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafStairs.JUNGLE_LEAVES_STAIRS, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafStairs.DARK_OAK_LEAVES_STAIRS, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(LeafStairs.MANGROVE_LEAVES_STAIRS, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.OAK_LEAVES_SLAB, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.SPRUCE_LEAVES_SLAB, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.BIRCH_LEAVES_SLAB, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.ACACIA_LEAVES_SLAB, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.JUNGLE_LEAVES_SLAB, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.DARK_OAK_LEAVES_SLAB, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(LeafSlabs.MANGROVE_LEAVES_SLAB, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.OAK_LEAVES_WALL, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.SPRUCE_LEAVES_WALL, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.BIRCH_LEAVES_WALL, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.ACACIA_LEAVES_WALL, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.JUNGLE_LEAVES_WALL, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.DARK_OAK_LEAVES_WALL, RenderLayer.getCutout());
-      BlockRenderLayerMap.INSTANCE.putBlock(LeafWalls.MANGROVE_LEAVES_WALL, RenderLayer.getCutout());
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.GLASS_WALL, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.WHITE_GLASS_WALL, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.LIGHT_GRAY_GLASS_WALL, RenderLayer.getTranslucent());
@@ -181,7 +178,6 @@ public class OemClient implements ClientModInitializer {
       ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.ACACIA_LEAVES_STAIRS, LeafSlabs.ACACIA_LEAVES_SLAB, LeafWalls.ACACIA_LEAVES_WALL);
       ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.JUNGLE_LEAVES_STAIRS, LeafSlabs.JUNGLE_LEAVES_SLAB, LeafWalls.JUNGLE_LEAVES_WALL);
       ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.DARK_OAK_LEAVES_STAIRS, LeafSlabs.DARK_OAK_LEAVES_SLAB, LeafWalls.DARK_OAK_LEAVES_WALL);
-      ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getMangroveColor(), LeafStairs.MANGROVE_LEAVES_STAIRS, LeafSlabs.MANGROVE_LEAVES_SLAB, LeafWalls.MANGROVE_LEAVES_WALL);
 
       //leaf items
       ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.OAK_LEAVES_STAIRS, LeafSlabs.OAK_LEAVES_SLAB, LeafWalls.OAK_LEAVES_WALL);
@@ -190,7 +186,6 @@ public class OemClient implements ClientModInitializer {
       ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.ACACIA_LEAVES_STAIRS, LeafSlabs.ACACIA_LEAVES_SLAB, LeafWalls.ACACIA_LEAVES_WALL);
       ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.JUNGLE_LEAVES_STAIRS, LeafSlabs.JUNGLE_LEAVES_SLAB, LeafWalls.JUNGLE_LEAVES_WALL);
       ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.DARK_OAK_LEAVES_STAIRS, LeafSlabs.DARK_OAK_LEAVES_SLAB, LeafWalls.DARK_OAK_LEAVES_WALL);
-      ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getMangroveColor(), LeafStairs.MANGROVE_LEAVES_STAIRS, LeafSlabs.MANGROVE_LEAVES_SLAB, LeafWalls.MANGROVE_LEAVES_WALL);
       if (FabricLoader.getInstance().isModLoaded("oem-extra")) { OemExtraClient.onInitializeClient(); }
    }
 }

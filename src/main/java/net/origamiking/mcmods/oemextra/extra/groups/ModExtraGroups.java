@@ -14,7 +14,7 @@ import net.origamiking.mcmods.oemextra.extra.items.ModExtraItems;
 
 public class ModExtraGroups {
     private static final ItemGroup OEM_EXTRA_GROUP = FabricItemGroupBuilder.create(new Identifier(OemMain.MOD_ID, "oem_extra_group"))
-            .icon(() -> new ItemStack(ArmorRegistry.VIKING_ARMOR_HELMET))
+            .icon(() -> new ItemStack(ServerSpecificBlocks.PRIM))
             .appendItems((stacks) -> {
                 stacks.add(new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_ONE));
                 stacks.add(new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_TWO));
@@ -22,7 +22,6 @@ public class ModExtraGroups {
                 stacks.add(new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_FOUR));
                 stacks.add(new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE));
                 stacks.add(new ItemStack(ServerSpecificBlocks.CAVERNS_BLOCK_SIX));
-                stacks.add(new ItemStack(ArmorRegistry.VIKING_ARMOR_HELMET));
                 stacks.add(new ItemStack(ServerSpecificBlocks.PRIM));
                 stacks.add(new ItemStack(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS));
                 stacks.add(new ItemStack(WoodVStairs.OAK_VERTICAL_STAIRS));

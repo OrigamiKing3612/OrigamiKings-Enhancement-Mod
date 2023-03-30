@@ -19,7 +19,6 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
-import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.copper.CopperVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
@@ -257,9 +256,6 @@ public class ModGroups {
                 stacks.add(new ItemStack(RandomBlocks.SNOW_STAIRS));
                 stacks.add(new ItemStack(RandomBlocks.SNOW_SLAB));
                 stacks.add(new ItemStack(RandomBlocks.SNOW_WALL));
-                stacks.add(new ItemStack(SculkBlocks.SCULK_STAIR));
-                stacks.add(new ItemStack(SculkBlocks.SCULK_SLAB));
-                stacks.add(new ItemStack(SculkBlocks.SCULK_WALL));
                 //leaves
                 stacks.add(new ItemStack(LeafStairs.OAK_LEAVES_STAIRS));
                 stacks.add(new ItemStack(LeafSlabs.OAK_LEAVES_SLAB));
@@ -279,9 +275,6 @@ public class ModGroups {
                 stacks.add(new ItemStack(LeafStairs.DARK_OAK_LEAVES_STAIRS));
                 stacks.add(new ItemStack(LeafSlabs.DARK_OAK_LEAVES_SLAB));
                 stacks.add(new ItemStack(LeafWalls.DARK_OAK_LEAVES_WALL));
-                stacks.add(new ItemStack(LeafStairs.MANGROVE_LEAVES_STAIRS));
-                stacks.add(new ItemStack(LeafSlabs.MANGROVE_LEAVES_SLAB));
-                stacks.add(new ItemStack(LeafWalls.MANGROVE_LEAVES_WALL));
                 //gold
                 stacks.add(new ItemStack(GoldBlocks.GOLD_CHAIN));
                 stacks.add(new ItemStack(GoldBlocks.GOLD_LANTERN));
@@ -391,7 +384,6 @@ public class ModGroups {
                 stacks.add(new ItemStack(StoneVSlabs.VERTICAL_DEEPSLATE_BRICK_SLAB));
                 stacks.add(new ItemStack(StoneVSlabs.VERTICAL_DEEPSLATE_TILE_SLAB));
                 stacks.add(new ItemStack(StoneVSlabs.VERTICAL_BRICK_SLAB));
-                stacks.add(new ItemStack(StoneVSlabs.VERTICAL_MUD_BRICK_SLAB));
                 stacks.add(new ItemStack(StoneVSlabs.VERTICAL_SANDSTONE_SLAB));
                 stacks.add(new ItemStack(StoneVSlabs.VERTICAL_SMOOTH_SANDSTONE_SLAB));
                 stacks.add(new ItemStack(StoneVSlabs.VERTICAL_CUT_SANDSTONE_SLAB));
@@ -423,7 +415,6 @@ public class ModGroups {
                 stacks.add(new ItemStack(WoodVSlabs.VERTICAL_JUNGLE_SLAB));
                 stacks.add(new ItemStack(WoodVSlabs.VERTICAL_ACACIA_SLAB));
                 stacks.add(new ItemStack(WoodVSlabs.VERTICAL_DARK_OAK_SLAB));
-                stacks.add(new ItemStack(WoodVSlabs.VERTICAL_MANGROVE_SLAB));
                 stacks.add(new ItemStack(WoodVSlabs.VERTICAL_CRIMSON_SLAB));
                 stacks.add(new ItemStack(WoodVSlabs.VERTICAL_WARPED_SLAB));
                 stacks.add(new ItemStack(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB));

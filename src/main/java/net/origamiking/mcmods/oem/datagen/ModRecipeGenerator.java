@@ -22,7 +22,6 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
-import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
@@ -116,8 +115,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerWallRecipe(exporter, RandomBlocks.NETHERRACK_WALL, Blocks.NETHERRACK);
         offerWallRecipe(exporter, RandomBlocks.DRIPSTONE_WALL, Blocks.DRIPSTONE_BLOCK);
         offerWallRecipe(exporter, RandomBlocks.SNOW_WALL, Blocks.SNOW_BLOCK);
-        RecipeProvider.createStairsRecipe(SculkBlocks.SCULK_STAIR, Ingredient.ofItems(Blocks.SCULK));
-        RecipeProvider.createSlabRecipe(SculkBlocks.SCULK_SLAB, Ingredient.ofItems(Blocks.SCULK));
         offerBarRecipe(exporter, CopperBlocks.COPPER_BARS, Blocks.COPPER_BLOCK);
         offerBarRecipe(exporter, CopperBlocks.EXPOSED_COPPER_BARS, Blocks.EXPOSED_COPPER);
         offerBarRecipe(exporter, CopperBlocks.WEATHERED_COPPER_BARS, Blocks.WEATHERED_COPPER);
@@ -142,7 +139,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.createStairsRecipe(LeafStairs.ACACIA_LEAVES_STAIRS, Ingredient.ofItems(Blocks.ACACIA_LEAVES));
         RecipeProvider.createStairsRecipe(LeafStairs.JUNGLE_LEAVES_STAIRS, Ingredient.ofItems(Blocks.JUNGLE_LEAVES));
         RecipeProvider.createStairsRecipe(LeafStairs.DARK_OAK_LEAVES_STAIRS, Ingredient.ofItems(Blocks.DARK_OAK_LEAVES));
-        RecipeProvider.createStairsRecipe(LeafStairs.MANGROVE_LEAVES_STAIRS, Ingredient.ofItems(Blocks.MANGROVE_LEAVES));
         RecipeProvider.createSlabRecipe(WhiteWool.WHITE_WOOL_SLAB, Ingredient.ofItems(Blocks.WHITE_WOOL));
         RecipeProvider.createStairsRecipe(WhiteWool.WHITE_WOOL_STAIRS, Ingredient.ofItems(Blocks.WHITE_WOOL));
         RecipeProvider.offerWallRecipe(exporter, WhiteWool.WHITE_WOOL_WALL, Blocks.WHITE_WOOL);
@@ -197,14 +193,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.createSlabRecipe(LeafSlabs.JUNGLE_LEAVES_SLAB, Ingredient.ofItems(Blocks.JUNGLE_LEAVES));
         RecipeProvider.createSlabRecipe(LeafSlabs.ACACIA_LEAVES_SLAB, Ingredient.ofItems(Blocks.ACACIA_LEAVES));
         RecipeProvider.createSlabRecipe(LeafSlabs.DARK_OAK_LEAVES_SLAB, Ingredient.ofItems(Blocks.DARK_OAK_LEAVES));
-        RecipeProvider.createSlabRecipe(LeafSlabs.MANGROVE_LEAVES_SLAB, Ingredient.ofItems(Blocks.MANGROVE_LEAVES));
         RecipeProvider.offerWallRecipe(exporter, LeafWalls.OAK_LEAVES_WALL, Blocks.OAK_LEAVES);
         RecipeProvider.offerWallRecipe(exporter, LeafWalls.SPRUCE_LEAVES_WALL, Blocks.SPRUCE_LEAVES);
         RecipeProvider.offerWallRecipe(exporter, LeafWalls.BIRCH_LEAVES_WALL, Blocks.BIRCH_LEAVES);
         RecipeProvider.offerWallRecipe(exporter, LeafWalls.JUNGLE_LEAVES_WALL, Blocks.JUNGLE_LEAVES);
         RecipeProvider.offerWallRecipe(exporter, LeafWalls.ACACIA_LEAVES_WALL, Blocks.ACACIA_LEAVES);
         RecipeProvider.offerWallRecipe(exporter, LeafWalls.DARK_OAK_LEAVES_WALL, Blocks.DARK_OAK_LEAVES);
-        RecipeProvider.offerWallRecipe(exporter, LeafWalls.MANGROVE_LEAVES_WALL, Blocks.MANGROVE_LEAVES);
         RecipeProvider.createDoorRecipe(CopperBlocks.EXPOSED_COPPER_DOOR, Ingredient.ofItems(Blocks.EXPOSED_COPPER));
         RecipeProvider.createTrapdoorRecipe(CopperBlocks.EXPOSED_COPPER_TRAPDOOR, Ingredient.ofItems(Blocks.EXPOSED_COPPER));
         RecipeProvider.createDoorRecipe(CopperBlocks.WEATHERED_COPPER_DOOR, Ingredient.ofItems(Blocks.WEATHERED_COPPER));
@@ -227,7 +221,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerWallRecipe(exporter, ConcreteWalls.PURPLE_CONCRETE_WALL, Blocks.PURPLE_CONCRETE);
         RecipeProvider.offerWallRecipe(exporter, ConcreteWalls.MAGENTA_CONCRETE_WALL, Blocks.MAGENTA_CONCRETE);
         RecipeProvider.offerWallRecipe(exporter, ConcreteWalls.PINK_CONCRETE_WALL, Blocks.PINK_CONCRETE);
-        RecipeProvider.offerWallRecipe(exporter, SculkBlocks.SCULK_WALL, Blocks.SCULK);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.STONE_VERTICAL_SLAB, Blocks.STONE);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.COBBLESTONE_VERTICAL_SLAB, Blocks.COBBLESTONE);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.VERTICAL_MOSSY_COBBLESTONE_SLAB, Blocks.MOSSY_COBBLESTONE);
@@ -245,7 +238,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.VERTICAL_DEEPSLATE_BRICK_SLAB, Blocks.DEEPSLATE_BRICKS);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.VERTICAL_DEEPSLATE_TILE_SLAB, Blocks.DEEPSLATE_TILES);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.VERTICAL_BRICK_SLAB, Blocks.BRICKS);
-        ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.VERTICAL_MUD_BRICK_SLAB, Blocks.MUD_BRICKS);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.VERTICAL_SANDSTONE_SLAB, Blocks.SANDSTONE);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.VERTICAL_SMOOTH_SANDSTONE_SLAB, Blocks.SMOOTH_SANDSTONE);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, StoneVSlabs.VERTICAL_CUT_SANDSTONE_SLAB, Blocks.CUT_SANDSTONE);
@@ -269,7 +261,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, WoodVSlabs.VERTICAL_JUNGLE_SLAB, Blocks.JUNGLE_PLANKS);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, WoodVSlabs.VERTICAL_ACACIA_SLAB, Blocks.ACACIA_PLANKS);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, WoodVSlabs.VERTICAL_DARK_OAK_SLAB, Blocks.DARK_OAK_PLANKS);
-        ModRecipeProvider.offerVerticalSlabRecipe(exporter, WoodVSlabs.VERTICAL_MANGROVE_SLAB, Blocks.MANGROVE_PLANKS);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, WoodVSlabs.VERTICAL_CRIMSON_SLAB, Blocks.CRIMSON_PLANKS);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, WoodVSlabs.VERTICAL_WARPED_SLAB, Blocks.WARPED_PLANKS);
         ModRecipeProvider.offerVerticalSlabRecipe(exporter, ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB, Blocks.WHITE_CONCRETE);
@@ -358,8 +349,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RandomBlocks.NETHERRACK_WALL, Blocks.NETHERRACK);
         RecipeProvider.offerStonecuttingRecipe(exporter, RandomBlocks.DRIPSTONE_WALL, Blocks.DRIPSTONE_BLOCK);
         RecipeProvider.offerStonecuttingRecipe(exporter, RandomBlocks.SNOW_WALL, Blocks.SNOW_BLOCK);
-        RecipeProvider.offerStonecuttingRecipe(exporter, SculkBlocks.SCULK_STAIR, Blocks.SCULK);
-        RecipeProvider.offerStonecuttingRecipe(exporter, SculkBlocks.SCULK_SLAB, Blocks.SCULK, 2);
         RecipeProvider.offerReversibleCompactingRecipes(exporter, ModItems.COPPER_NUGGET, Items.COPPER_INGOT);
         RecipeProvider.offerStonecuttingRecipe(exporter, CopperBlocks.COPPER_CHAIN, Blocks.COPPER_BLOCK, 6);
         RecipeProvider.offerStonecuttingRecipe(exporter, CopperBlocks.EXPOSED_COPPER_CHAIN, Blocks.EXPOSED_COPPER, 6);
@@ -390,7 +379,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafStairs.ACACIA_LEAVES_STAIRS, Blocks.ACACIA_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafStairs.JUNGLE_LEAVES_STAIRS, Blocks.JUNGLE_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafStairs.DARK_OAK_LEAVES_STAIRS, Blocks.DARK_OAK_LEAVES);
-        RecipeProvider.offerStonecuttingRecipe(exporter, LeafStairs.MANGROVE_LEAVES_STAIRS, Blocks.MANGROVE_LEAVES);
         //wool
         RecipeProvider.offerStonecuttingRecipe(exporter, WhiteWool.WHITE_WOOL_SLAB, Blocks.WHITE_WOOL, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, WhiteWool.WHITE_WOOL_STAIRS, Blocks.WHITE_WOOL);
@@ -446,14 +434,12 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafSlabs.JUNGLE_LEAVES_SLAB, Blocks.JUNGLE_LEAVES, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafSlabs.ACACIA_LEAVES_SLAB, Blocks.ACACIA_LEAVES, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafSlabs.DARK_OAK_LEAVES_SLAB, Blocks.DARK_OAK_LEAVES, 2);
-        RecipeProvider.offerStonecuttingRecipe(exporter, LeafSlabs.MANGROVE_LEAVES_SLAB, Blocks.MANGROVE_LEAVES, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafWalls.OAK_LEAVES_WALL, Blocks.OAK_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafWalls.SPRUCE_LEAVES_WALL, Blocks.SPRUCE_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafWalls.BIRCH_LEAVES_WALL, Blocks.BIRCH_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafWalls.JUNGLE_LEAVES_WALL, Blocks.JUNGLE_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafWalls.ACACIA_LEAVES_WALL, Blocks.ACACIA_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafWalls.DARK_OAK_LEAVES_WALL, Blocks.DARK_OAK_LEAVES);
-        RecipeProvider.offerStonecuttingRecipe(exporter, LeafWalls.MANGROVE_LEAVES_WALL, Blocks.MANGROVE_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, CopperBlocks.EXPOSED_COPPER_DOOR, Blocks.EXPOSED_COPPER);
         RecipeProvider.offerStonecuttingRecipe(exporter, CopperBlocks.EXPOSED_COPPER_TRAPDOOR, Blocks.EXPOSED_COPPER);
         RecipeProvider.offerStonecuttingRecipe(exporter, CopperBlocks.WEATHERED_COPPER_DOOR, Blocks.WEATHERED_COPPER);
@@ -476,7 +462,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, ConcreteWalls.PURPLE_CONCRETE_WALL, Blocks.PURPLE_CONCRETE);
         RecipeProvider.offerStonecuttingRecipe(exporter, ConcreteWalls.MAGENTA_CONCRETE_WALL, Blocks.MAGENTA_CONCRETE);
         RecipeProvider.offerStonecuttingRecipe(exporter, ConcreteWalls.PINK_CONCRETE_WALL, Blocks.PINK_CONCRETE);
-        RecipeProvider.offerStonecuttingRecipe(exporter, SculkBlocks.SCULK_WALL, Blocks.SCULK);
         RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.STONE_VERTICAL_SLAB, Blocks.STONE);
         RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.COBBLESTONE_VERTICAL_SLAB, Blocks.COBBLESTONE);
         RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.VERTICAL_MOSSY_COBBLESTONE_SLAB, Blocks.MOSSY_COBBLESTONE);
@@ -494,7 +479,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.VERTICAL_DEEPSLATE_BRICK_SLAB, Blocks.DEEPSLATE_BRICKS);
         RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.VERTICAL_DEEPSLATE_TILE_SLAB, Blocks.DEEPSLATE_TILES);
         RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.VERTICAL_BRICK_SLAB, Blocks.BRICKS);
-        RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.VERTICAL_MUD_BRICK_SLAB, Blocks.MUD_BRICKS);
         RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.VERTICAL_SANDSTONE_SLAB, Blocks.SANDSTONE);
         RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.VERTICAL_SMOOTH_SANDSTONE_SLAB, Blocks.SMOOTH_SANDSTONE);
         RecipeProvider.offerStonecuttingRecipe(exporter, StoneVSlabs.VERTICAL_CUT_SANDSTONE_SLAB, Blocks.CUT_SANDSTONE);
@@ -526,7 +510,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, WoodVSlabs.VERTICAL_JUNGLE_SLAB, Blocks.JUNGLE_PLANKS);
         RecipeProvider.offerStonecuttingRecipe(exporter, WoodVSlabs.VERTICAL_ACACIA_SLAB, Blocks.ACACIA_PLANKS);
         RecipeProvider.offerStonecuttingRecipe(exporter, WoodVSlabs.VERTICAL_DARK_OAK_SLAB, Blocks.DARK_OAK_PLANKS);
-        RecipeProvider.offerStonecuttingRecipe(exporter, WoodVSlabs.VERTICAL_MANGROVE_SLAB, Blocks.MANGROVE_PLANKS);
         RecipeProvider.offerStonecuttingRecipe(exporter, WoodVSlabs.VERTICAL_CRIMSON_SLAB, Blocks.CRIMSON_PLANKS);
         RecipeProvider.offerStonecuttingRecipe(exporter, WoodVSlabs.VERTICAL_WARPED_SLAB, Blocks.WARPED_PLANKS);
         RecipeProvider.offerStonecuttingRecipe(exporter, ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB, Blocks.WHITE_CONCRETE);
@@ -586,8 +569,6 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         ModRecipeProvider.offerTrappedChestRecipe(exporter, DarkOakWoodBlocks.DARK_OAK_TRAPPED_CHEST, Blocks.DARK_OAK_PLANKS);
         ModRecipeProvider.offerChestRecipe(exporter, JungleWoodBlocks.JUNGLE_CHEST, Blocks.JUNGLE_PLANKS);
         ModRecipeProvider.offerTrappedChestRecipe(exporter, JungleWoodBlocks.JUNGLE_TRAPPED_CHEST, Blocks.JUNGLE_PLANKS);
-        ModRecipeProvider.offerChestRecipe(exporter, MangroveWoodBlocks.MANGROVE_CHEST, Blocks.MANGROVE_PLANKS);
-        ModRecipeProvider.offerTrappedChestRecipe(exporter, MangroveWoodBlocks.MANGROVE_TRAPPED_CHEST, Blocks.MANGROVE_PLANKS);
         ModRecipeProvider.offerChestRecipe(exporter, OakWoodBlocks.OAK_CHEST, Blocks.OAK_PLANKS);
         ModRecipeProvider.offerTrappedChestRecipe(exporter, OakWoodBlocks.OAK_TRAPPED_CHEST, Blocks.OAK_PLANKS);
         ModRecipeProvider.offerChestRecipe(exporter, SpruceWoodBlocks.SPRUCE_CHEST, Blocks.SPRUCE_PLANKS);

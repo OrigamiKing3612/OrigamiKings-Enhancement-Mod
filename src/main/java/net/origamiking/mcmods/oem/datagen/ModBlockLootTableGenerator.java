@@ -2,6 +2,7 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.data.DataCache;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
@@ -14,7 +15,6 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
-import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oemextra.extra.blocks.serverspecific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.copper.CopperVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
@@ -49,6 +49,9 @@ import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
+
+import java.io.IOException;
+
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     protected ModBlockLootTableGenerator(FabricDataGenerator dataGenerator) {
         super(dataGenerator);
@@ -91,8 +94,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ConcreteSlabs.MAGENTA_CONCRETE_SLAB);
         addDrop(ConcreteStairs.PINK_CONCRETE_STAIR);
         addDrop(ConcreteSlabs.PINK_CONCRETE_SLAB);
-        addDrop(SculkBlocks.SCULK_STAIR);
-        addDrop(SculkBlocks.SCULK_SLAB);
         addDrop(OakWoodBlocks.OAK_BARREL);
         addDrop(OakWoodBlocks.OAK_LADDER);
         addDrop(SpruceWoodBlocks.SPRUCE_BARREL);
@@ -251,19 +252,16 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(LeafStairs.BIRCH_LEAVES_STAIRS);
         addDropWithSilkTouch(LeafStairs.ACACIA_LEAVES_STAIRS);
         addDropWithSilkTouch(LeafStairs.JUNGLE_LEAVES_STAIRS);
-        addDropWithSilkTouch(LeafStairs.MANGROVE_LEAVES_STAIRS);
         addDropWithSilkTouch(LeafSlabs.OAK_LEAVES_SLAB);
         addDropWithSilkTouch(LeafSlabs.SPRUCE_LEAVES_SLAB);
         addDropWithSilkTouch(LeafSlabs.BIRCH_LEAVES_SLAB);
         addDropWithSilkTouch(LeafSlabs.ACACIA_LEAVES_SLAB);
         addDropWithSilkTouch(LeafSlabs.JUNGLE_LEAVES_SLAB);
-        addDropWithSilkTouch(LeafSlabs.MANGROVE_LEAVES_SLAB);
         addDropWithSilkTouch(LeafWalls.OAK_LEAVES_WALL);
         addDropWithSilkTouch(LeafWalls.SPRUCE_LEAVES_WALL);
         addDropWithSilkTouch(LeafWalls.BIRCH_LEAVES_WALL);
         addDropWithSilkTouch(LeafWalls.ACACIA_LEAVES_WALL);
         addDropWithSilkTouch(LeafWalls.JUNGLE_LEAVES_WALL);
-        addDropWithSilkTouch(LeafWalls.MANGROVE_LEAVES_WALL);
         addDrop(CopperBlocks.EXPOSED_COPPER_DOOR);
         addDrop(CopperBlocks.EXPOSED_COPPER_TRAPDOOR);
         addDrop(CopperBlocks.WEATHERED_COPPER_DOOR);
@@ -290,7 +288,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(PinkWool.PINK_WOOL_STAIRS);
         addDrop(PinkWool.PINK_WOOL_SLAB);
         addDrop(PinkWool.PINK_WOOL_WALL);
-        addDrop(SculkBlocks.SCULK_WALL);
         addDrop(StoneVSlabs.STONE_VERTICAL_SLAB);
         addDrop(StoneVSlabs.COBBLESTONE_VERTICAL_SLAB);
         addDrop(StoneVSlabs.STONE_VERTICAL_SLAB);
@@ -310,7 +307,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(StoneVSlabs.VERTICAL_DEEPSLATE_BRICK_SLAB);
         addDrop(StoneVSlabs.VERTICAL_DEEPSLATE_TILE_SLAB);
         addDrop(StoneVSlabs.VERTICAL_BRICK_SLAB);
-        addDrop(StoneVSlabs.VERTICAL_MUD_BRICK_SLAB);
         addDrop(StoneVSlabs.VERTICAL_SANDSTONE_SLAB);
         addDrop(StoneVSlabs.VERTICAL_SMOOTH_SANDSTONE_SLAB);
         addDrop(StoneVSlabs.VERTICAL_CUT_SANDSTONE_SLAB);
@@ -342,7 +338,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(WoodVSlabs.VERTICAL_JUNGLE_SLAB);
         addDrop(WoodVSlabs.VERTICAL_ACACIA_SLAB);
         addDrop(WoodVSlabs.VERTICAL_DARK_OAK_SLAB);
-        addDrop(WoodVSlabs.VERTICAL_MANGROVE_SLAB);
         addDrop(WoodVSlabs.VERTICAL_CRIMSON_SLAB);
         addDrop(WoodVSlabs.VERTICAL_WARPED_SLAB);
         addDrop(ConcreteVSlabs.WHITE_CONCRETE_VERTICAL_SLAB);
@@ -471,4 +466,8 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
 
     }
 
+    @Override
+    public void run(DataCache cache) throws IOException {
+
+    }
 }

@@ -2,7 +2,6 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.command.CommandRegistryWrapper;
 
 public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     public ModBlockTagProvider(FabricDataGenerator dataGenerator) {
@@ -21,5 +20,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
 //        getOrCreateTagBuilder(BlockTags.CRYSTAL_SOUND_BLOCKS)
 //        getOrCreateTagBuilder(BlockTags.WOOL)
 //        getOrCreateTagBuilder(BlockTags.OCCLUDES_VIBRATION_SIGNALS)
+    }
+
+    @Override
+    public String getName() {
+        return null;
     }
 }

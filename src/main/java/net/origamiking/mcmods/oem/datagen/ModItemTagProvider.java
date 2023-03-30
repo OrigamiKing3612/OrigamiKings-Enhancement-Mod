@@ -16,4 +16,9 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 //        getOrCreateTagBuilder(ItemTags.WOOL)
 
     }
+
+    @Override
+    public String getName() {
+        return null;
+    }
 }

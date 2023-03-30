@@ -15,7 +15,6 @@ public class LeafWalls extends BlocksUtils {
     public static final Block JUNGLE_LEAVES_WALL = registerBlock(id, "jungle_leaves_wall", new WallBlock(OrigamiBlockSettings.copyOf(Blocks.JUNGLE_LEAVES)/*of(Material.LEAVES).nonOpaque().strength(0.2f).requiresTool().sounds(BlockSoundGroup.GRASS).ticksRandomly()*/));
     public static final Block ACACIA_LEAVES_WALL = registerBlock(id, "acacia_leaves_wall", new WallBlock(OrigamiBlockSettings.copyOf(Blocks.ACACIA_LEAVES)/*of(Material.LEAVES).nonOpaque().strength(0.2f).requiresTool().sounds(BlockSoundGroup.GRASS).ticksRandomly()*/));
     public static final Block DARK_OAK_LEAVES_WALL = registerBlock(id, "dark_oak_leaves_wall", new WallBlock(OrigamiBlockSettings.copyOf(Blocks.DARK_OAK_LEAVES)/*of(Material.LEAVES).nonOpaque().strength(0.2f).requiresTool().sounds(BlockSoundGroup.GRASS).ticksRandomly()*/));
-    public static final Block MANGROVE_LEAVES_WALL = registerBlock(id, "mangrove_leaves_wall", new WallBlock(OrigamiBlockSettings.copyOf(Blocks.MANGROVE_LEAVES)/*of(Material.LEAVES).nonOpaque().strength(0.2f).requiresTool().sounds(BlockSoundGroup.GRASS).ticksRandomly()*/));
 
 
     public static void getLeafWalls() {}

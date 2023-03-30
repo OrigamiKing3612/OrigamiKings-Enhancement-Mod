@@ -2,6 +2,7 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.minecraft.data.DataCache;
 //import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 //import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 //import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
@@ -47,6 +48,7 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
 //import net.origamiking.mcmods.oemextra.extra.items.ModExtraItems;
 
 
+import java.io.IOException;
 import java.nio.file.Path;
 
 import static net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool.*;
@@ -336,5 +338,10 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
         } catch (Exception e) {
             throw new RuntimeException("Failed to add existing language file.", e);
         }
+    }
+
+    @Override
+    public void run(DataCache cache) throws IOException {
+
     }
 }

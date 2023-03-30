@@ -13,7 +13,6 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
-import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.ModVericalSlabs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
@@ -49,7 +48,6 @@ public class ModBlocks {
         ConcreteSlabs.getConcreteSlabs();
         ConcreteStairs.getConcreteStairs();
         ConcreteWalls.getConcreteWalls();
-        SculkBlocks.getSculkBlocks();
 
         AmethystBlocks.getAmethyst();
         RandomBlocks.getRandomBlocks();
