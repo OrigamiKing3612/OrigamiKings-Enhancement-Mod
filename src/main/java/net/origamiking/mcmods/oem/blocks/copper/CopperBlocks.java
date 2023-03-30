@@ -4,10 +4,9 @@ import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.Registry;
 import net.origamiking.mcmods.oapi.blocks.custom.copper.oxidiziable.*;
 import net.origamiking.mcmods.oem.OemMain;
 
@@ -43,11 +42,11 @@ public class CopperBlocks {
 
 
     private static Item registerBlockItem(String name, Block block) {
-        return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
+        return Registry.register(Registry.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
     public static Block registerCopperBlock(String name, Block block) {
         registerBlockItem(name, block);
-        return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, name), block);
+        return Registry.register(Registry.BLOCK, new Identifier(OemMain.MOD_ID, name), block);
     }
     public static void getCopperBlocks() {
         WaxedCopperBlocks.get();

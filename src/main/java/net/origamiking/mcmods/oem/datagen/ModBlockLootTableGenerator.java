@@ -1,6 +1,6 @@
 package net.origamiking.mcmods.oem.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
@@ -50,11 +50,15 @@ import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
 public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
-    public ModBlockLootTableGenerator(FabricDataOutput dataOutput) {
-        super(dataOutput);
+    protected ModBlockLootTableGenerator(FabricDataGenerator dataGenerator) {
+        super(dataGenerator);
     }
+
+    //    public ModBlockLootTableGenerator(FabricDataOutput dataOutput) {
+//        super(dataOutput);
+//    }
     @Override
-    public void generate() {
+    public void generateBlockLootTables() {
         addDrop(ConcreteStairs.WHITE_CONCRETE_STAIR);
         addDrop(ConcreteSlabs.WHITE_CONCRETE_SLAB);
         addDrop(ConcreteStairs.LIGHT_GRAY_CONCRETE_STAIR);
@@ -466,4 +470,5 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(GlassBlocks.PINK_GLASS_WALL);
 
     }
+
 }

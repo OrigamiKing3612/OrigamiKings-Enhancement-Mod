@@ -64,7 +64,7 @@ public class PrimBlock extends HorizontalFacingBlock /*implements Waterloggable*
 
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing());
+        return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getPlayerFacing());
     }
 
 

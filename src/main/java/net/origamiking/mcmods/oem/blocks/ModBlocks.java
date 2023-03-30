@@ -1,11 +1,5 @@
 package net.origamiking.mcmods.oem.blocks;
 
-import net.minecraft.block.*;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.registry.Registries;
-import net.minecraft.registry.Registry;
-import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
@@ -14,10 +8,10 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
-import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.ModVericalSlabs;
@@ -50,13 +44,6 @@ import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
 
 
 public class ModBlocks {
-//    public static Item registerBlockItem(String name, Block block) {
-//        return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
-//    }
-//    public static Block registerBlock(String name, Block block) {
-//        registerBlockItem(name, block);
-//        return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, name), block);
-//    }
     public static void register() {
         GlassBlocks.getGlassBlocks();
         ConcreteSlabs.getConcreteSlabs();

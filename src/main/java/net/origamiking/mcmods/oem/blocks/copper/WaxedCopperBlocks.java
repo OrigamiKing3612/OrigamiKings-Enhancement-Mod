@@ -2,6 +2,8 @@ package net.origamiking.mcmods.oem.blocks.copper;
 
 import net.minecraft.block.*;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.sound.SoundEvent;
+import net.minecraft.sound.SoundEvents;
 import net.origamiking.mcmods.oapi.blocks.OrigamiBlockSettings;
 
 public class WaxedCopperBlocks extends CopperBlocks {
@@ -34,9 +36,9 @@ public class WaxedCopperBlocks extends CopperBlocks {
     public static final Block WAXED_OXIDIZED_COPPER_DOOR = registerCopperBlock("waxed_oxidized_copper_door", createCopperDoor());
     public static final Block WAXED_OXIDIZED_COPPER_TRAPDOOR = registerCopperBlock("waxed_oxidized_copper_trapdoor",createCopperTrapdoor());
 
-    public static PressurePlateBlock createCopperPressurePlate() {return new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, OrigamiBlockSettings.of(Material.METAL).requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).noCollision(), BlockSetType.IRON);}
-    public static ButtonBlock createCopperButton() {return new ButtonBlock(OrigamiBlockSettings.of(Material.METAL).requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).noCollision(), BlockSetType.IRON, 30, false);}
-    public static DoorBlock createCopperDoor() {return new DoorBlock(OrigamiBlockSettings.of(Material.METAL).requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).nonOpaque(), BlockSetType.IRON);}
-    public static TrapdoorBlock createCopperTrapdoor() {return new TrapdoorBlock(OrigamiBlockSettings.of(Material.METAL).requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).nonOpaque(), BlockSetType.IRON);}
+    public static PressurePlateBlock createCopperPressurePlate() {return new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, OrigamiBlockSettings.of(Material.METAL).requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).noCollision());}
+    public static AbstractButtonBlock createCopperButton() {return new AbstractButtonBlock(false, OrigamiBlockSettings.of(Material.METAL).requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).noCollision()) {@Override protected SoundEvent getClickSound(boolean powered) {return SoundEvents.BLOCK_STONE_BUTTON_CLICK_ON;}};}
+    public static DoorBlock createCopperDoor() {return new DoorBlock(OrigamiBlockSettings.of(Material.METAL).requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).nonOpaque());}
+    public static TrapdoorBlock createCopperTrapdoor() {return new TrapdoorBlock(OrigamiBlockSettings.of(Material.METAL).requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).nonOpaque());}
     public static void get() {}
 }

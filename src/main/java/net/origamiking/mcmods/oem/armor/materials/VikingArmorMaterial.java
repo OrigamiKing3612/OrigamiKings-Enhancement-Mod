@@ -1,5 +1,6 @@
 package net.origamiking.mcmods.oem.armor.materials;
 
+import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
@@ -12,13 +13,13 @@ public class VikingArmorMaterial implements ArmorMaterial {
     private static final int[] PROTECTION_VALUES = new int[] {2, 3, 4, 2};
 
     @Override
-    public int getDurability(ArmorItem.Type type) {
-        return BASE_DURABILITY[type.ordinal()] * 6;
+    public int getDurability(EquipmentSlot slot) {
+        return BASE_DURABILITY[slot.getArmorStandSlotId()] * 6;
     }
 
     @Override
-    public int getProtection(ArmorItem.Type type) {
-        return PROTECTION_VALUES[type.ordinal()];
+    public int getProtectionAmount(EquipmentSlot slot) {
+        return PROTECTION_VALUES[slot.getArmorStandSlotId()];
     }
 
     @Override

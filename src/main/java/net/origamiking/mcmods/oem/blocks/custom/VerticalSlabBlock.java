@@ -81,7 +81,7 @@ public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterl
     Boolean PLACED_SUCESSFULLY = false;
     private ActionResult combineSlab(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit){
 
-        if (player.getAbilities().allowModifyWorld && player.getStackInHand(hand).isItemEqual(new ItemStack(this)) && state.get(SINGLE)) {
+        if (player.getAbilities().allowModifyWorld && player.getStackInHand(hand).isItemEqualIgnoreDamage(new ItemStack(this)) && state.get(SINGLE)) {
 
             ActionResult RESULT = ActionResult.FAIL;
             player.getBlockX();
@@ -150,7 +150,7 @@ public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterl
 
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing());
+        return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getPlayerFacing());
     }
 
 

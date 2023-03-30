@@ -68,7 +68,7 @@ public class VerticalStairsBlock extends HorizontalFacingBlock /*implements Wate
 
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing());
+        return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getPlayerFacing());
     }
 
 

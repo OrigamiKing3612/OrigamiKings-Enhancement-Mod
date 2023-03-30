@@ -1,6 +1,6 @@
 package net.origamiking.mcmods.oem.datagen;
 
-import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
+import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.data.client.*;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
@@ -19,9 +19,10 @@ import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oem.items.ModItems;
 
 public class ModModelProvider extends FabricModelProvider {
-    public ModModelProvider(FabricDataOutput output) {
-        super(output);
+    public ModModelProvider(FabricDataGenerator dataGenerator) {
+        super(dataGenerator);
     }
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(SpruceWoodBlocks.SPRUCE_BOOKSHELF);
