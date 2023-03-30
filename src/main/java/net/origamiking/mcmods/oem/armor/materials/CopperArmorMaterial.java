@@ -17,14 +17,13 @@ public class CopperArmorMaterial implements ArmorMaterial {
     private static final int[] PROTECTION_VALUES = new int[] {2, 3, 4, 2};
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getArmorStandSlotId()] * 6;
+        return BASE_DURABILITY[slot.getEntitySlotId()] * 6;
     }
 
     @Override
     public int getProtectionAmount(EquipmentSlot slot) {
-        return PROTECTION_VALUES[slot.getArmorStandSlotId()];
+        return PROTECTION_VALUES[slot.getEntitySlotId()];
     }
-
     @Override
     public int getEnchantability() {
         return 20;
