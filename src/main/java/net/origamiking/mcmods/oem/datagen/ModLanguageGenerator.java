@@ -48,6 +48,7 @@ import net.origamiking.mcmods.oemextra.extra.items.ModExtraItems;
 
 
 import java.nio.file.Path;
+import java.util.concurrent.CompletableFuture;
 
 import static net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool.*;
 

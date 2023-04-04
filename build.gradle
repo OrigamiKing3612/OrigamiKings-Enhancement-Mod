@@ -62,7 +62,7 @@ dependencies {
 
 	modImplementation "software.bernie.geckolib:geckolib-fabric-1.19.4:${gecklib_version}"
 
-	modImplementation "maven.modrinth:P3sjMa3U:${origamikings_api}"
+	modImplementation "maven.modrinth:origamikings-api:${origamikings_api}"
 }
 
 processResources {

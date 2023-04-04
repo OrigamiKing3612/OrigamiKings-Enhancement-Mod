@@ -2,8 +2,10 @@ package net.origamiking.mcmods.oem.blocks.wood.azalea;
 
 import net.minecraft.block.*;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.origamiking.mcmods.oapi.blocks.OrigamiBlockSettings;
+import net.origamiking.mcmods.oapi.entity.boat.api.OrigamiBoatType;
 import net.origamiking.mcmods.oem.OemMain;
 import static net.origamiking.mcmods.oapi.blocks.BlocksUtils.registerBlock;
 
@@ -26,6 +28,7 @@ public class AzaleaWoodBlocks {
     public static final Block AZALEA_BUTTON = registerBlock(OemMain.MOD_ID, "azalea_button", new ButtonBlock(OrigamiBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 30, true));
     public static final Block AZALEA_CHEST = registerBlock(OemMain.MOD_ID, "azalea_chest", new ChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST), () -> BlockEntityType.CHEST));
     public static final Block AZALEA_TRAPPED_CHEST = registerBlock(OemMain.MOD_ID, "azalea_trapped_chest", new TrappedChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST)));
+//    public static final OrigamiBoatType AZALEA_BOAT;
 
     public static void getAzaleaBlocks() {}
 }
