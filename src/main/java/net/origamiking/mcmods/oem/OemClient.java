@@ -32,8 +32,6 @@ import net.origamiking.mcmods.oemextra.extra.OemExtraClient;
 public class OemClient implements ClientModInitializer {
    @Override
    public void onInitializeClient() {
-      OrigamiBoatClientHelper.registerModelLayers(ModItems.CUSTOM_BOAT_ID, false);
-
       BlockRenderLayerMap.INSTANCE.putBlock(GoldBlocks.GOLD_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_BARS, RenderLayer.getTranslucent());
