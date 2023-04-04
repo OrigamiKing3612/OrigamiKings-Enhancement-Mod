@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.render.RenderLayer;
-import net.origamiking.mcmods.oapi.entity.boat.api.client.OrigamiBoatClientHelper;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
@@ -26,7 +25,6 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
-import net.origamiking.mcmods.oem.items.ModItems;
 import net.origamiking.mcmods.oemextra.extra.OemExtraClient;
 
 public class OemClient implements ClientModInitializer {
@@ -175,6 +173,15 @@ public class OemClient implements ClientModInitializer {
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.PURPLE_GLASS_WALL, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.MAGENTA_GLASS_WALL, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(GlassBlocks.PINK_GLASS_WALL, RenderLayer.getTranslucent());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_LANTERN,RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.EXPOSED_COPPER_LANTERN,RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.WEATHERED_COPPER_LANTERN,RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.OXIDIZED_COPPER_LANTERN,RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(WaxedCopperBlocks.WAXED_COPPER_LANTERN,RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(WaxedCopperBlocks.WAXED_EXPOSED_COPPER_LANTERN,RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(WaxedCopperBlocks.WAXED_WEATHERED_COPPER_LANTERN,RenderLayer.getCutout());
+      BlockRenderLayerMap.INSTANCE.putBlock(WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_LANTERN,RenderLayer.getCutout());
+
       //leaf blocks
       ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getDefaultColor(), LeafStairs.OAK_LEAVES_STAIRS, LeafSlabs.OAK_LEAVES_SLAB, LeafWalls.OAK_LEAVES_WALL);
       ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> FoliageColors.getSpruceColor(), LeafStairs.SPRUCE_LEAVES_STAIRS, LeafSlabs.SPRUCE_LEAVES_SLAB, LeafWalls.SPRUCE_LEAVES_WALL);
