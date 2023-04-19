@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "#": {
+      "item": "oem:azalea_planks"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "#  ",
+    "#  "
+  ],
+  "result": {
+    "count": 6,
+    "item": "oem:vertical_azalea_slab"
+  },
+  "show_notification": true
+}
