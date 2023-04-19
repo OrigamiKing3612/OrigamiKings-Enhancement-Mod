@@ -7,6 +7,7 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
@@ -328,6 +329,14 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(GlassBlocks.PURPLE_GLASS_WALL, "Purple Glass Wall");
 //        translationBuilder.add(GlassBlocks.MAGENTA_GLASS_WALL, "Magenta Glass Wall");
 //        translationBuilder.add(GlassBlocks.PINK_GLASS_WALL, "Pink Glass Wall");
+        translationBuilder.add(WoodVSlabs.VERTICAL_AZALEA_SLAB, "Azalea Plank Vertical Slab");
+        translationBuilder.add(LeafCarpets.OAK_LEAVES_CARPET, "Oak Leaf Carpet");
+        translationBuilder.add(LeafCarpets.SPRUCE_LEAVES_CARPET, "Spruce Leaf Carpet");
+        translationBuilder.add(LeafCarpets.BIRCH_LEAVES_CARPET, "Birch Leaf Carpet");
+        translationBuilder.add(LeafCarpets.JUNGLE_LEAVES_CARPET, "Jungle Leaf Carpet");
+        translationBuilder.add(LeafCarpets.ACACIA_LEAVES_CARPET, "Acacia Leaf Carpet");
+        translationBuilder.add(LeafCarpets.DARK_OAK_LEAVES_CARPET, "Dark Oak Leaf Carpet");
+        translationBuilder.add(LeafCarpets.MANGROVE_LEAVES_CARPET, "Mangrove Leaf Carpet");
 
 
         try {

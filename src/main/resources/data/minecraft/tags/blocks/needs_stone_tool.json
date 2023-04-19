@@ -301,6 +301,13 @@
     "oem:waxed_weathered_copper_door",
     "oem:waxed_weathered_copper_trapdoor",
     "oem:waxed_oxidized_copper_door",
-    "oem:waxed_oxidized_copper_trapdoor"
+    "oem:waxed_oxidized_copper_trapdoor",
+    "oem:oak_leaves_carpet",
+    "oem:spruce_leaves_carpet",
+    "oem:birch_leaves_carpet",
+    "oem:jungle_leaves_carpet",
+    "oem:acacia_leaves_carpet",
+    "oem:dark_oak_leaves_carpet",
+    "oem:mangrove_leaves_carpet"
   ]
 }

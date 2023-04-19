@@ -1,5 +1,6 @@
 package net.origamiking.mcmods.oem.blocks.vercticalslabs.wood;
 
+import net.minecraft.block.AzaleaBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.sound.BlockSoundGroup;
@@ -7,6 +8,7 @@ import net.origamiking.mcmods.oapi.blocks.BlocksUtils;
 import net.origamiking.mcmods.oapi.blocks.OrigamiBlockSettings;
 import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.custom.VerticalSlabBlock;
+import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 
 public class WoodVSlabs extends BlocksUtils {
     public static final Block VERTICAL_OAK_SLAB =  registerBlock(OemMain.MOD_ID,"vertical_oak_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.OAK_PLANKS).sounds(BlockSoundGroup.WOOD)));
@@ -18,6 +20,7 @@ public class WoodVSlabs extends BlocksUtils {
     public static final Block VERTICAL_MANGROVE_SLAB = registerBlock(OemMain.MOD_ID,"vertical_mangrove_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.MANGROVE_PLANKS).sounds(BlockSoundGroup.WOOD)));
     public static final Block VERTICAL_CRIMSON_SLAB = registerBlock(OemMain.MOD_ID,"vertical_crimson_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.CRIMSON_PLANKS).sounds(BlockSoundGroup.WOOD)));
     public static final Block VERTICAL_WARPED_SLAB = registerBlock(OemMain.MOD_ID,"vertical_warped_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.WARPED_PLANKS).sounds(BlockSoundGroup.WOOD)));
+    public static final Block VERTICAL_AZALEA_SLAB = registerBlock(OemMain.MOD_ID,"vertical_azalea_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(AzaleaWoodBlocks.AZALEA_PLANKS).sounds(BlockSoundGroup.WOOD)));
 
     public static void get() {}
 }

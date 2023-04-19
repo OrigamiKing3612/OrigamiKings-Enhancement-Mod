@@ -64,6 +64,13 @@
     "oem:magenta_wool_slab",
     "oem:pink_wool_stairs",
     "oem:pink_wool_wall",
-    "oem:pink_wool_slab"
+    "oem:pink_wool_slab",
+    "oem:oak_leaves_carpet",
+    "oem:spruce_leaves_carpet",
+    "oem:birch_leaves_carpet",
+    "oem:jungle_leaves_carpet",
+    "oem:acacia_leaves_carpet",
+    "oem:dark_oak_leaves_carpet",
+    "oem:mangrove_leaves_carpet"
   ]
 }

@@ -1,0 +1,6 @@
+{
+  "parent": "oem:block/leaves_carpet",
+  "textures": {
+    "leaves": "minecraft:block/spruce_leaves"
+  }
+}

@@ -15,6 +15,7 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
@@ -656,6 +657,23 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.MAGENTA_GLASS_WALL, Blocks.MAGENTA_STAINED_GLASS);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GlassBlocks.PINK_GLASS_WALL, Blocks.PINK_STAINED_GLASS);
 
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_AZALEA_SLAB, AzaleaWoodBlocks.AZALEA_PLANKS);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.OAK_LEAVES_CARPET, Blocks.OAK_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.SPRUCE_LEAVES_CARPET, Blocks.SPRUCE_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.BIRCH_LEAVES_CARPET, Blocks.BIRCH_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.JUNGLE_LEAVES_CARPET, Blocks.JUNGLE_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.ACACIA_LEAVES_CARPET, Blocks.ACACIA_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.DARK_OAK_LEAVES_CARPET, Blocks.DARK_OAK_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.MANGROVE_LEAVES_CARPET, Blocks.MANGROVE_LEAVES);
+
+        ModRecipeProvider.offerVerticalSlabRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WoodVSlabs.VERTICAL_AZALEA_SLAB, AzaleaWoodBlocks.AZALEA_PLANKS);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.OAK_LEAVES_CARPET, Blocks.OAK_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.SPRUCE_LEAVES_CARPET, Blocks.SPRUCE_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.BIRCH_LEAVES_CARPET, Blocks.BIRCH_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.JUNGLE_LEAVES_CARPET, Blocks.JUNGLE_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.ACACIA_LEAVES_CARPET, Blocks.ACACIA_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.DARK_OAK_LEAVES_CARPET, Blocks.DARK_OAK_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.MANGROVE_LEAVES_CARPET, Blocks.MANGROVE_LEAVES);
 
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, 2)
                 .pattern("   ").pattern("   ").pattern("###").input('#', Items.COPPER_INGOT)

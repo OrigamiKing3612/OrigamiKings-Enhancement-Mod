@@ -27,7 +27,6 @@ public class StoneVSlabs extends BlocksUtils {
     public static final Block VERTICAL_POLISHED_GRANITE_SLAB = registerBlock(OemMain.MOD_ID, "vertical_polished_granite_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.POLISHED_GRANITE).sounds(BlockSoundGroup.STONE)));
     public static final Block VERTICAL_SMOOTH_RED_SANDSTONE_SLAB = registerBlock(OemMain.MOD_ID, "vertical_smooth_red_sandstone_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.SMOOTH_RED_SANDSTONE).sounds(BlockSoundGroup.STONE)));
     public static final Block VERTICAL_MOSSY_STONE_BRICK_SLAB = registerBlock(OemMain.MOD_ID, "vertical_mossy_stone_brick_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.MOSSY_STONE_BRICKS).sounds(BlockSoundGroup.STONE)));
-
     public static final Block VERTICAL_POLISHED_DIORITE_SLAB = registerBlock(OemMain.MOD_ID, "vertical_polished_diorite_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.POLISHED_DIORITE).sounds(BlockSoundGroup.STONE)));
     public static final Block VERTICAL_MOSSY_COBBLESTONE_SLAB = registerBlock(OemMain.MOD_ID, "vertical_mossy_cobblestone_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.MOSSY_COBBLESTONE).sounds(BlockSoundGroup.STONE)));
     public static final Block VERTICAL_ENDSTONE_BRICK_SLAB = registerBlock(OemMain.MOD_ID, "vertical_end_stone_brick_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.END_STONE_BRICKS).sounds(BlockSoundGroup.STONE)));

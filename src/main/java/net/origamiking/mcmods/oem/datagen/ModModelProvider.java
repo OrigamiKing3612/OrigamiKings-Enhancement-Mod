@@ -64,8 +64,6 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(RandomBlocks.EXPOSED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(RandomBlocks.WEATHERED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR);
-
-
     }
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
