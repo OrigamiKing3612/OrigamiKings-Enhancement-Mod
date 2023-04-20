@@ -136,7 +136,7 @@ publishing {
 			embedded.project "fabric-api"
 			embedded.project "origamikings-api"
 		}
-		changelog = "Version 1.0.3: Added missing recipes"
+		changelog = "Version 1.0.4: Added Leaf Carpets"
 	}
 	//end
 }

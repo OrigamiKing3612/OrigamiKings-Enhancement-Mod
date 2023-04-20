@@ -329,7 +329,7 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(GlassBlocks.PURPLE_GLASS_WALL, "Purple Glass Wall");
 //        translationBuilder.add(GlassBlocks.MAGENTA_GLASS_WALL, "Magenta Glass Wall");
 //        translationBuilder.add(GlassBlocks.PINK_GLASS_WALL, "Pink Glass Wall");
-        translationBuilder.add(WoodVSlabs.VERTICAL_AZALEA_SLAB, "Azalea Plank Vertical Slab");
+//        translationBuilder.add(WoodVSlabs.VERTICAL_AZALEA_SLAB, "Azalea Plank Vertical Slab");
         translationBuilder.add(LeafCarpets.OAK_LEAVES_CARPET, "Oak Leaf Carpet");
         translationBuilder.add(LeafCarpets.SPRUCE_LEAVES_CARPET, "Spruce Leaf Carpet");
         translationBuilder.add(LeafCarpets.BIRCH_LEAVES_CARPET, "Birch Leaf Carpet");
