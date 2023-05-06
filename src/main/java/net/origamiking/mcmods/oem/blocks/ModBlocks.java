@@ -25,6 +25,7 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
@@ -91,6 +92,8 @@ public class ModBlocks {
         LeafCarpets.getLeafCarpets();
 
         ModVericalSlabs.registerVerticalSlabs();
+
+        ModWoodcutter.registerWoodcutter();
 
         OemMain.LOGGER.info("Registering Blocks for " + OemMain.NAME);
     }

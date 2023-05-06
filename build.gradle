@@ -104,6 +104,9 @@ jar {
 		rename { "${it}_${project.archivesBaseName}"}
 	}
 }
+loom {
+	accessWidenerPath = file("src/main/resources/oem.accesswidener")
+}
 
 // configure the maven publication
 publishing {

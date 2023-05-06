@@ -3,8 +3,10 @@ package net.origamiking.mcmods.oem;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
+import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.color.world.FoliageColors;
+import net.minecraft.client.gui.screen.ingame.StonecutterScreen;
 import net.minecraft.client.render.RenderLayer;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
@@ -26,6 +28,9 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
+import net.origamiking.mcmods.oem.screen.ModScreenHandlerType;
+import net.origamiking.mcmods.oem.screen.WoodcutterScreen;
 import net.origamiking.mcmods.oemextra.extra.OemExtraClient;
 
 public class OemClient implements ClientModInitializer {
@@ -33,6 +38,10 @@ public class OemClient implements ClientModInitializer {
    public void onInitializeClient() {
 
       OemMain.LOGGER.info("Registering Client stuff for " + OemMain.NAME);
+
+      BlockRenderLayerMap.INSTANCE.putBlock(ModWoodcutter.WOODCUTTER, RenderLayer.getCutout());
+      ScreenRegistry.register(ModScreenHandlerType.WOODCUTTER, WoodcutterScreen::new);
+
 
       BlockRenderLayerMap.INSTANCE.putBlock(GoldBlocks.GOLD_BARS, RenderLayer.getTranslucent());
       BlockRenderLayerMap.INSTANCE.putBlock(CopperBlocks.COPPER_BARS, RenderLayer.getTranslucent());
