@@ -139,7 +139,7 @@ publishing {
 			embedded.project "fabric-api"
 			embedded.project "origamikings-api"
 		}
-		changelog = "Version 1.0.4: Updated OrigamiKings-Api to fix a bug, adding woodcutter"
+		changelog = "Version 1.0.6: Added Gunpowder Block"
 	}
 	//end
 }
