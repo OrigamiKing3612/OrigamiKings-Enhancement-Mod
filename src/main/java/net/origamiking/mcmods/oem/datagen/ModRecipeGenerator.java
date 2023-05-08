@@ -675,6 +675,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.DARK_OAK_LEAVES_CARPET, Blocks.DARK_OAK_LEAVES);
         RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.MANGROVE_LEAVES_CARPET, Blocks.MANGROVE_LEAVES);
 
+        RecipeProvider.offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.GUNPOWDER_BLOCK, Items.GUNPOWDER);
+        RecipeProvider.offerShapelessRecipe(exporter, Items.GUNPOWDER, RandomBlocks.GUNPOWDER_BLOCK, "building_blocks", 4);
+
         ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, 2)
                 .pattern("   ").pattern("   ").pattern("###").input('#', Items.COPPER_INGOT)
                 .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT), RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))

@@ -383,6 +383,7 @@ public class ModGroups {
                 entries.add(RandomBlocks.WEATHERED_COPPER_BAR_DOOR);
                 entries.add(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR);
                 entries.add(ModWoodcutter.WOODCUTTER);
+                entries.add(RandomBlocks.GUNPOWDER_BLOCK);
             }).build();
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
             .displayName(Text.literal("Oem Vertical Slabs"))

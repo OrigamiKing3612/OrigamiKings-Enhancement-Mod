@@ -337,6 +337,7 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(LeafCarpets.ACACIA_LEAVES_CARPET, "Acacia Leaf Carpet");
 //        translationBuilder.add(LeafCarpets.DARK_OAK_LEAVES_CARPET, "Dark Oak Leaf Carpet");
 //        translationBuilder.add(LeafCarpets.MANGROVE_LEAVES_CARPET, "Mangrove Leaf Carpet");
+//        translationBuilder.add(RandomBlocks.GUNPOWDER_BLOCK, "Gunpowder Block");
 
 
         try {
