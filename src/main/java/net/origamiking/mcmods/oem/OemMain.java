@@ -23,7 +23,7 @@ public class OemMain implements ModInitializer {
 	public void onInitialize() {
 		Main();
 	}
-	//TODO add woodcutter recipe type/recipes, terracotta slabs stairs walls, map color for everything
+	//TODO add woodcutter recipe type/recipes, terracotta slabs stairs walls
 	public static void Main() {
 		ModBlocks.register();
 		ModItems.register();
