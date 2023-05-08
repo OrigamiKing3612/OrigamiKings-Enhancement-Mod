@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "oem:snow_block_slab",
-    "oem:snow_block_stairs"
+    "oem:snow_block_stairs",
+    "oem:gunpowder_block"
   ]
 }
