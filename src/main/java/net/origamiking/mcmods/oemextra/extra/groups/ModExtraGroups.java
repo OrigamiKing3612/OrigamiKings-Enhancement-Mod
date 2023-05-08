@@ -32,6 +32,6 @@ public class ModExtraGroups {
              }).build();
 
     public static void register() {
-        OemMain.LOGGER.info("Registering Extra Group for " + OemMain.NAME);
+        OemMain.LOGGER.info("Registering Extra Group for " + OemMain.VERSION);
     }
 }

@@ -16,15 +16,16 @@ import org.slf4j.LoggerFactory;
 
 public class OemMain implements ModInitializer {
 	public static final String MOD_ID = "oem";
-	public static final String NAME = "OEM-1.0.6-1.19.4";
-	public static final String VERSION = "Your version is: " + NAME;
-	public static final Logger LOGGER = LoggerFactory.getLogger("oem");
+	public static final String VERSION = "OEM-1.0.6-1.19.4";
+	public static final Logger LOGGER = LoggerFactory.getLogger(OemMain.MOD_ID);
 	@Override
 	public void onInitialize() {
 		Main();
 	}
 	//TODO add woodcutter recipe type/recipes, terracotta slabs stairs walls
 	public static void Main() {
+		if (!FabricLoader.getInstance().isModLoaded("origamikings-api"))
+			throw new RuntimeException("Please install OrigamiKings-API (https://modrinth.com/mod/origamikings-api)");
 		ModBlocks.register();
 		ModItems.register();
 		ModGroups.register();
@@ -32,8 +33,6 @@ public class OemMain implements ModInitializer {
 		Utils.register();
 		ModTags.register();
 		ModScreenHandlerType.get();
-		if (FabricLoader.getInstance().isModLoaded("oem-extra")) {
-			OemExtraMain.registerExtraStuff();
-		}
+		if (FabricLoader.getInstance().isModLoaded("oem-extra")) OemExtraMain.registerExtraStuff();
 	}
 }

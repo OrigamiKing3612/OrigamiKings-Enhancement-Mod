@@ -6,7 +6,6 @@ import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.fabric.api.client.screenhandler.v1.ScreenRegistry;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.color.world.FoliageColors;
-import net.minecraft.client.gui.screen.ingame.StonecutterScreen;
 import net.minecraft.client.render.RenderLayer;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
@@ -37,7 +36,7 @@ public class OemClient implements ClientModInitializer {
    @Override
    public void onInitializeClient() {
 
-      OemMain.LOGGER.info("Registering Client stuff for " + OemMain.NAME);
+      OemMain.LOGGER.info("Registering Client stuff for " + OemMain.VERSION);
 
       BlockRenderLayerMap.INSTANCE.putBlock(ModWoodcutter.WOODCUTTER, RenderLayer.getCutout());
       ScreenRegistry.register(ModScreenHandlerType.WOODCUTTER, WoodcutterScreen::new);

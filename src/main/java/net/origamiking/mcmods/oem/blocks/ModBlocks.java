@@ -95,7 +95,7 @@ public class ModBlocks {
 
         ModWoodcutter.registerWoodcutter();
 
-        OemMain.LOGGER.info("Registering Blocks for " + OemMain.NAME);
+        OemMain.LOGGER.info("Registering Blocks for " + OemMain.VERSION);
     }
 }
 

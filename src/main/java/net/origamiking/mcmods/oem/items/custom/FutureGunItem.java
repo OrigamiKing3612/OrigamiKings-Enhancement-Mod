@@ -3,6 +3,7 @@ package net.origamiking.mcmods.oem.items.custom;
 import net.minecraft.client.render.item.BuiltinModelItemRenderer;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.projectile.PersistentProjectileEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.server.world.ServerWorld;
@@ -87,7 +88,8 @@ public class FutureGunItem extends Item implements GeoItem {
                 arrow.setVelocity(player, player.getPitch(), player.getYaw(), 0, 1, 1);
                 arrow.setDamage(2.5);
                 arrow.hasNoGravity();
-
+                arrow.pickupType = PersistentProjectileEntity.PickupPermission.DISALLOWED;
+                
                 stack.damage(1, shooter, p -> p.sendToolBreakStatus(shooter.getActiveHand()));
                 level.spawnEntity(arrow);
 

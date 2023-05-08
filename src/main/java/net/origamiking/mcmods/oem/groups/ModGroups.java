@@ -14,7 +14,6 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
-import net.origamiking.mcmods.oem.blocks.custom.WoodcutterBlock;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
@@ -477,6 +476,6 @@ public class ModGroups {
                 entries.add(GlassVSlabs.PINK_GLASS_VERTICAL_SLAB);
             }).build();
     public static void register() {
-        OemMain.LOGGER.info("Registering Groups for " + OemMain.NAME);
+        OemMain.LOGGER.info("Registering Groups for " + OemMain.VERSION);
     }
 }

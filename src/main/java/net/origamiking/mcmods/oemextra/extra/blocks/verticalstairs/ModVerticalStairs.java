@@ -6,7 +6,7 @@ import net.origamiking.mcmods.oemextra.extra.blocks.verticalstairs.wood.WoodVSta
 
 public class ModVerticalStairs {
     public static void registerVerticalStairs() {
-        OemMain.LOGGER.info("Registering Vertical Stairs for " + OemMain.NAME);
+        OemMain.LOGGER.info("Registering Vertical Stairs for " + OemMain.VERSION);
         StoneVStairs.get();
         WoodVStairs.get();
     }
