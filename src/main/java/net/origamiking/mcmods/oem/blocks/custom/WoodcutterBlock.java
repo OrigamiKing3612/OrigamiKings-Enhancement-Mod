@@ -25,7 +25,7 @@ import net.origamiking.mcmods.oem.screen.WoodcutterScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
 public class WoodcutterBlock extends Block {
-    private static final Text TITLE = Text.translatable("container.woodcutter");
+    private static final Text TITLE = Text.translatable("container.oem.woodcutter");
     public static final DirectionProperty FACING = HorizontalFacingBlock.FACING;
     protected static final VoxelShape SHAPE = Block.createCuboidShape(0.0, 0.0, 0.0, 16.0, 9.0, 16.0);
 

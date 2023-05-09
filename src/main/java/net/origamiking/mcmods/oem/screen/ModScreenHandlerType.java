@@ -13,7 +13,7 @@ import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
 
 public class ModScreenHandlerType<T extends ScreenHandler> implements ToggleableFeature {
-    public static final ScreenHandlerType<WoodcutterScreenHandler> WOODCUTTER = ModScreenHandlerType.register("woodcutter", WoodcutterScreenHandler::new);
+//    public static final ScreenHandlerType<WoodcutterScreenHandler> WOODCUTTER_SCREEN_HANDLER = ModScreenHandlerType.register("woodcutter", WoodcutterScreenHandler::new);
     private final FeatureSet requiredFeatures;
     private final ScreenHandlerType.Factory<T> factory;
     private static <T extends ScreenHandler> ScreenHandlerType<T> register(String id, ScreenHandlerType.Factory<T> factory) {
@@ -41,5 +41,4 @@ public class ModScreenHandlerType<T extends ScreenHandler> implements Toggleable
     public static interface Factory<T extends ScreenHandler> {
         public T create(int var1, PlayerInventory var2);
     }
-    public static void get() {}
 }

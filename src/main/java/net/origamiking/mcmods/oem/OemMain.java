@@ -4,7 +4,9 @@ import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.origamiking.mcmods.oem.blocks.ModBlocks;
 import net.origamiking.mcmods.oem.commands.ModCommands;
+import net.origamiking.mcmods.oem.recipe.ModRecipeType;
 import net.origamiking.mcmods.oem.screen.ModScreenHandlerType;
+import net.origamiking.mcmods.oem.screen.ModScreenHandlers;
 import net.origamiking.mcmods.oem.tag.ModTags;
 import net.origamiking.mcmods.oemextra.extra.OemExtraMain;
 import net.origamiking.mcmods.oem.groups.ModGroups;
@@ -32,7 +34,10 @@ public class OemMain implements ModInitializer {
 		ModCommands.register();
 		Utils.register();
 		ModTags.register();
-		ModScreenHandlerType.get();
+		ModRecipeType.register();
+        ModScreenHandlers.registerAllScreenHandlers();
+//		ModRecipeType.register();
+
 		if (FabricLoader.getInstance().isModLoaded("oem-extra")) OemExtraMain.registerExtraStuff();
 	}
 }

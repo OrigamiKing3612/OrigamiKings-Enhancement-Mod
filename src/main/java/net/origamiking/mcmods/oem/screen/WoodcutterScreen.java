@@ -8,12 +8,11 @@ import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerInventory;
-import net.minecraft.recipe.StonecuttingRecipe;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.MathHelper;
-//import net.origamiking.mcmods.oem.recipe.WoodcutterRecipe;
+import net.origamiking.mcmods.oem.recipe.WoodcutterRecipe;
 
 import java.util.List;
 
@@ -69,7 +68,7 @@ public class WoodcutterScreen extends HandledScreen<WoodcutterScreenHandler> {
             int i = this.x + 52;
             int j = this.y + 14;
             int k = this.scrollOffset + 12;
-            List<StonecuttingRecipe> list = ((WoodcutterScreenHandler)this.handler).getAvailableRecipes();
+            List<WoodcutterRecipe> list = ((WoodcutterScreenHandler)this.handler).getAvailableRecipes();
             for (int l = this.scrollOffset; l < k && l < ((WoodcutterScreenHandler)this.handler).getAvailableRecipeCount(); ++l) {
                 int m = l - this.scrollOffset;
                 int n = i + m % 4 * 16;
@@ -97,7 +96,7 @@ public class WoodcutterScreen extends HandledScreen<WoodcutterScreenHandler> {
     }
 
     private void renderRecipeIcons(MatrixStack matrices, int x, int y, int scrollOffset) {
-        List<StonecuttingRecipe> list = ((WoodcutterScreenHandler)this.handler).getAvailableRecipes();
+        List<WoodcutterRecipe> list = ((WoodcutterScreenHandler)this.handler).getAvailableRecipes();
         for (int i = this.scrollOffset; i < scrollOffset && i < ((WoodcutterScreenHandler)this.handler).getAvailableRecipeCount(); ++i) {
             int j = i - this.scrollOffset;
             int k = x + j % 4 * 16;
