@@ -24,7 +24,7 @@ public class OemMain implements ModInitializer {
 	public void onInitialize() {
 		Main();
 	}
-	//TODO add woodcutter recipe type/recipes, terracotta slabs stairs walls
+	//TODO terracotta slabs stairs walls
 	public static void Main() {
 		if (!FabricLoader.getInstance().isModLoaded("origamikings-api"))
 			throw new RuntimeException("Please install OrigamiKings-API (https://modrinth.com/mod/origamikings-api)");

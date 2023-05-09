@@ -51,6 +51,7 @@
     "oem:azalea_door",
     "oem:azalea_trapdoor",
     "oem:azalea_pressure_plate",
-    "oem:azalea_button"
+    "oem:azalea_button",
+    "oem:woodcutter"
   ]
 }

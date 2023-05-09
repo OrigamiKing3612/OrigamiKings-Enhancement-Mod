@@ -1,1 +1,1 @@
-{"type":"oem:stonecutter","ingredient":{"item":"minecraft:birch_planks"},"result":"minecraft:birch_trapdoor","count":1}
+{"type":"oem:woodcutter","ingredient":{"item":"minecraft:birch_planks"},"result":"minecraft:birch_trapdoor","count":1}

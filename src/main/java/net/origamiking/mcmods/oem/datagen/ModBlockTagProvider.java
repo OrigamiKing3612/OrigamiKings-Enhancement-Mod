@@ -3,6 +3,8 @@ package net.origamiking.mcmods.oem.datagen;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.*;
+import net.minecraft.registry.tag.BlockTags;
+import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 
 
 import java.util.concurrent.CompletableFuture;

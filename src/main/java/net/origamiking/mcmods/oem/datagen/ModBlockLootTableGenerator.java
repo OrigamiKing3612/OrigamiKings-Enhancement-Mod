@@ -16,6 +16,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
+import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 import net.origamiking.mcmods.oemextra.extra.blocks.serverspecific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.copper.CopperVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
@@ -474,5 +475,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(LeafCarpets.DARK_OAK_LEAVES_CARPET);
         addDropWithSilkTouch(LeafCarpets.MANGROVE_LEAVES_CARPET);
         addDrop(RandomBlocks.GUNPOWDER_BLOCK);
+        addDrop(ModWoodcutter.WOODCUTTER);
     }
 }

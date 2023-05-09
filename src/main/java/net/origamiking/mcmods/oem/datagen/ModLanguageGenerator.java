@@ -27,6 +27,7 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
@@ -49,9 +50,6 @@ import net.origamiking.mcmods.oemextra.extra.items.ModExtraItems;
 
 
 import java.nio.file.Path;
-import java.util.concurrent.CompletableFuture;
-
-import static net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool.*;
 
 public class ModLanguageGenerator extends FabricLanguageProvider {
     protected ModLanguageGenerator(FabricDataOutput dataOutput) {
@@ -338,6 +336,8 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(LeafCarpets.DARK_OAK_LEAVES_CARPET, "Dark Oak Leaf Carpet");
 //        translationBuilder.add(LeafCarpets.MANGROVE_LEAVES_CARPET, "Mangrove Leaf Carpet");
 //        translationBuilder.add(RandomBlocks.GUNPOWDER_BLOCK, "Gunpowder Block");
+//        translationBuilder.add(ModWoodcutter.WOODCUTTER, "Woodcutter");
+//        translationBuilder.add("container.oem.woodcutter", "Woodcutter");
 
 
         try {

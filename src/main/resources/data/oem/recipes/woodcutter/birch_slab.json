@@ -1,1 +1,1 @@
-{"type":"oem:stonecutter","ingredient":{"item":"minecraft:birch_planks"},"result":"minecraft:birch_slab","count":2}
+{"type":"oem:woodcutter","ingredient":{"item":"minecraft:birch_planks"},"result":"minecraft:birch_slab","count":2}
