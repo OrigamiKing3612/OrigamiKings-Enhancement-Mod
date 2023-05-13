@@ -21,7 +21,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
-import net.origamiking.mcmods.oem.screen.WoodcutterScreenHandler;
+import net.origamiking.mcmods.oem.screen.woodcutter.WoodcutterScreenHandler;
 import org.jetbrains.annotations.Nullable;
 
 public class WoodcutterBlock extends Block {

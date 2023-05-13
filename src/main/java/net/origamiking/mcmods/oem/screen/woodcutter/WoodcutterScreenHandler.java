@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.screen;
+package net.origamiking.mcmods.oem.screen.woodcutter;
 
 import com.google.common.collect.Lists;
 import net.minecraft.entity.player.PlayerEntity;
@@ -16,6 +16,8 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 import net.origamiking.mcmods.oem.recipe.WoodcutterRecipe;
+import net.origamiking.mcmods.oem.screen.ModScreenHandlers;
+
 import java.util.List;
 
 public class WoodcutterScreenHandler extends ScreenHandler {

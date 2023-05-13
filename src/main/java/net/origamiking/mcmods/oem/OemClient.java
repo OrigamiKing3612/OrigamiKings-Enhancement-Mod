@@ -29,7 +29,7 @@ import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 import net.origamiking.mcmods.oem.screen.ModScreenHandlers;
-import net.origamiking.mcmods.oem.screen.WoodcutterScreen;
+import net.origamiking.mcmods.oem.screen.woodcutter.WoodcutterScreen;
 import net.origamiking.mcmods.oemextra.extra.OemExtraClient;
 
 public class OemClient implements ClientModInitializer {

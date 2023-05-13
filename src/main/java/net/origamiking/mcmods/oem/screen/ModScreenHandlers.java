@@ -6,6 +6,7 @@ import net.minecraft.resource.featuretoggle.FeatureFlags;
 import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
+import net.origamiking.mcmods.oem.screen.woodcutter.WoodcutterScreenHandler;
 
 public class ModScreenHandlers {
     public static ScreenHandlerType<WoodcutterScreenHandler> WOODCUTTER_SCREEN_HANDLER = new ScreenHandlerType<>(WoodcutterScreenHandler::new, FeatureFlags.VANILLA_FEATURES);

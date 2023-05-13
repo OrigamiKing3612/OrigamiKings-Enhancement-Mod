@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.screen;
+package net.origamiking.mcmods.oem.screen.woodcutter;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.fabricmc.api.EnvType;

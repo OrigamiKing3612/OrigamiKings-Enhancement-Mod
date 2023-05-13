@@ -1,4 +1,4 @@
-package net.origamiking.mcmods.oem.screen;
+package net.origamiking.mcmods.oem.screen.woodcutter;
 
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.registry.Registries;
