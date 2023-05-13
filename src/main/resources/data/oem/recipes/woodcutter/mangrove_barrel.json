@@ -1,0 +1,8 @@
+{
+    "type":"oem:woodcutter",
+    "ingredient": {
+        "item":"minecraft:mangrove_log"
+    },
+    "result":"oem:mangrove_barrel",
+    "count":1
+}
