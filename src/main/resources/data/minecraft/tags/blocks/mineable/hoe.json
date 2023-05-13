@@ -71,6 +71,8 @@
     "oem:jungle_leaves_carpet",
     "oem:acacia_leaves_carpet",
     "oem:dark_oak_leaves_carpet",
-    "oem:mangrove_leaves_carpet"
+    "oem:mangrove_leaves_carpet",
+    "oem:lava_sponge",
+    "oem:wet:lava_sponge"
   ]
 }

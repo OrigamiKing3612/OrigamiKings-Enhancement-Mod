@@ -12,6 +12,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
+import net.origamiking.mcmods.oem.blocks.sponge.ModSpongeBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.copper.CopperVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
@@ -338,6 +339,8 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(RandomBlocks.GUNPOWDER_BLOCK, "Gunpowder Block");
 //        translationBuilder.add(ModWoodcutter.WOODCUTTER, "Woodcutter");
 //        translationBuilder.add("container.oem.woodcutter", "Woodcutter");
+//        translationBuilder.add(ModSpongeBlocks.LAVA_SPONGE, "Lava Sponge");
+//        translationBuilder.add(ModSpongeBlocks.WET_LAVA_SPONGE, "Wet Lava Sponge");
 
 
         try {

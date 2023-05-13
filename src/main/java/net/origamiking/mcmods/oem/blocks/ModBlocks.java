@@ -14,6 +14,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
+import net.origamiking.mcmods.oem.blocks.sponge.ModSpongeBlocks;
 import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.ModVericalSlabs;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
@@ -100,6 +101,8 @@ public class ModBlocks {
 
         // getting terracotta blocks
         TerracottaBlocks.getTerracottaBlocks();
+
+        ModSpongeBlocks.get();
 
         OemMain.LOGGER.info("Registering Blocks for " + OemMain.VERSION);
     }

@@ -22,6 +22,7 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
+import net.origamiking.mcmods.oem.blocks.sponge.ModSpongeBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.copper.CopperVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
@@ -383,6 +384,8 @@ public class ModGroups {
                 entries.add(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR);
                 entries.add(ModWoodcutter.WOODCUTTER);
                 entries.add(RandomBlocks.GUNPOWDER_BLOCK);
+                entries.add(ModSpongeBlocks.LAVA_SPONGE);
+                entries.add(ModSpongeBlocks.WET_LAVA_SPONGE);
             }).build();
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
             .displayName(Text.literal("Oem Vertical Slabs"))
