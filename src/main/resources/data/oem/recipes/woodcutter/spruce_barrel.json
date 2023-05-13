@@ -1,0 +1,8 @@
+{
+    "type":"oem:woodcutter",
+    "ingredient": {
+        "item":"minecraft:spruce_log"
+    },
+    "result":"oem:spruce_barrel",
+    "count":1
+}

@@ -1,0 +1,9 @@
+{
+    "type":"oem:woodcutter",
+    "ingredient": {
+        "tag":"minecraft:planks"
+        
+    },
+    "result":"stick",
+    "count":4
+}

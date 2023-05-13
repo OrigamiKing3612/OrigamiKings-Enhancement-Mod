@@ -1,0 +1,8 @@
+{
+    "type":"oem:woodcutter",
+    "ingredient": {
+        "item":"minecraft:crimson_stem"
+    },
+    "result":"oem:crimson_barrel",
+    "count":1
+}

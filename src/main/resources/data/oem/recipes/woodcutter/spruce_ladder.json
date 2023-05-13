@@ -1,0 +1,8 @@
+{
+    "type":"oem:woodcutter",
+    "ingredient": {
+        "item":"minecraft:spruce_planks"
+    },
+    "result":"oem:spruce_ladder",
+    "count":1
+}
