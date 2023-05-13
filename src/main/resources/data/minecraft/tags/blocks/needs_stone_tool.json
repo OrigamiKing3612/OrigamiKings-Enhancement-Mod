@@ -312,6 +312,6 @@
     "oem:gunpowder_block",
     "oem:woodcutter",
     "oem:lava_sponge",
-    "oem:wet:lava_sponge"
+    "oem:wet_lava_sponge"
   ]
 }
