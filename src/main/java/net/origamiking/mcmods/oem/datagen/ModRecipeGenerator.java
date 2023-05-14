@@ -18,6 +18,7 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
+import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
@@ -659,6 +660,20 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, GlassBlocks.PURPLE_GLASS_WALL, Blocks.PURPLE_STAINED_GLASS);
         RecipeProvider.offerStonecuttingRecipe(exporter, GlassBlocks.MAGENTA_GLASS_WALL, Blocks.MAGENTA_STAINED_GLASS);
         RecipeProvider.offerStonecuttingRecipe(exporter, GlassBlocks.PINK_GLASS_WALL, Blocks.PINK_STAINED_GLASS);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.OAK_LEAVES_CARPET, Blocks.OAK_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.SPRUCE_LEAVES_CARPET, Blocks.SPRUCE_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.BIRCH_LEAVES_CARPET, Blocks.BIRCH_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.JUNGLE_LEAVES_CARPET, Blocks.JUNGLE_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.ACACIA_LEAVES_CARPET, Blocks.ACACIA_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.DARK_OAK_LEAVES_CARPET, Blocks.DARK_OAK_LEAVES);
+        RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.MANGROVE_LEAVES_CARPET, Blocks.MANGROVE_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.OAK_LEAVES_CARPET, Blocks.OAK_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.SPRUCE_LEAVES_CARPET, Blocks.SPRUCE_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.BIRCH_LEAVES_CARPET, Blocks.BIRCH_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.JUNGLE_LEAVES_CARPET, Blocks.JUNGLE_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.ACACIA_LEAVES_CARPET, Blocks.ACACIA_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.DARK_OAK_LEAVES_CARPET, Blocks.DARK_OAK_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.MANGROVE_LEAVES_CARPET, Blocks.MANGROVE_LEAVES);
 
 
         ShapedRecipeJsonBuilder.create(CopperBlocks.COPPER_PRESSURE_PLATE, 2)
