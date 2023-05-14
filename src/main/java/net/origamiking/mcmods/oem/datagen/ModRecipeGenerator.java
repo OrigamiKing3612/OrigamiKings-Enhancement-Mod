@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
 import net.minecraft.block.Blocks;
 import net.minecraft.data.server.recipe.*;
+import net.minecraft.item.ItemConvertible;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
@@ -25,7 +26,6 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
-import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
@@ -52,6 +52,7 @@ import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 import net.origamiking.mcmods.oem.blocks.wool.magenta.MagentaWool;
 import net.origamiking.mcmods.oem.blocks.wool.pink.PinkWool;
 import net.origamiking.mcmods.oem.items.ModItems;
+import net.origamiking.mcmods.oem.recipe.WoodcutterRecipe;
 
 import java.util.function.Consumer;
 
@@ -685,5 +686,14 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
                 .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT), RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(CopperBlocks.COPPER_PRESSURE_PLATE)));
 
+    }
+    public static SingleItemRecipeJsonBuilder createWoodcutting(Ingredient input, RecipeCategory category, ItemConvertible output, int count) {
+        return new SingleItemRecipeJsonBuilder(category, WoodcutterRecipe.Serializer.INSTANCE, input, output, count);
+    }
+    public static void offerWoodcuttingRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
+        offerWoodcuttingRecipe(exporter, category, output, input, 1);
+    }
+    public static void offerWoodcuttingRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input, int count) {
+        createWoodcutting(Ingredient.ofItems(input), category, output, count).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter, RecipeProvider.convertBetween(output, input) + "_woodcutting");
     }
 }
