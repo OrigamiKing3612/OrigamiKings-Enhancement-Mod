@@ -386,6 +386,15 @@ public class ModGroups {
                 entries.add(RandomBlocks.GUNPOWDER_BLOCK);
                 entries.add(ModSpongeBlocks.LAVA_SPONGE);
                 entries.add(ModSpongeBlocks.WET_LAVA_SPONGE);
+                entries.add(OakWoodBlocks.OAK_LOG_FENCE);
+                entries.add(SpruceWoodBlocks.SPRUCE_LOG_FENCE);
+                entries.add(BirchWoodBlocks.BIRCH_LOG_FENCE);
+                entries.add(JungleWoodBlocks.JUNGLE_LOG_FENCE);
+                entries.add(AcaciaWoodBlocks.ACACIA_LOG_FENCE);
+                entries.add(DarkOakWoodBlocks.DARK_OAK_LOG_FENCE);
+                entries.add(MangroveWoodBlocks.MANGROVE_LOG_FENCE);
+                entries.add(CrimsonWoodBlocks.CRIMSON_LOG_FENCE);
+                entries.add(WarpedWoodBlocks.WARPED_LOG_FENCE);
             }).build();
     public static final ItemGroup OEM_V_SLABS = FabricItemGroup.builder(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
             .displayName(Text.literal("Oem Vertical Slabs"))

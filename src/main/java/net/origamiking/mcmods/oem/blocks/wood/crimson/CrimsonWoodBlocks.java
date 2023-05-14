@@ -15,6 +15,7 @@ public class CrimsonWoodBlocks {
     public static final Block CRIMSON_LADDER = registerBlock(OemMain.MOD_ID, "crimson_ladder", new LadderBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.LADDER)));
     public static final Block CRIMSON_CHEST = registerBlock(OemMain.MOD_ID, "crimson_chest", new ChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST), () -> BlockEntityType.CHEST));
     public static final Block CRIMSON_TRAPPED_CHEST = registerBlock(OemMain.MOD_ID, "crimson_trapped_chest", new TrappedChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST)));
+    public static final Block CRIMSON_LOG_FENCE = registerBlock(OemMain.MOD_ID, "crimson_log_fence", new FenceBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
 
     public static void getCrimsonBlocks() {}
 }

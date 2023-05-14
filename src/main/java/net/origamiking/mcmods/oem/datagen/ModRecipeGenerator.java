@@ -25,6 +25,7 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
+import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
@@ -674,6 +675,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.ACACIA_LEAVES_CARPET, Blocks.ACACIA_LEAVES);
         RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.DARK_OAK_LEAVES_CARPET, Blocks.DARK_OAK_LEAVES);
         RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.MANGROVE_LEAVES_CARPET, Blocks.MANGROVE_LEAVES);
+
 
         RecipeProvider.offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.GUNPOWDER_BLOCK, Items.GUNPOWDER);
         RecipeProvider.offerShapelessRecipe(exporter, Items.GUNPOWDER, RandomBlocks.GUNPOWDER_BLOCK, "building_blocks", 4);

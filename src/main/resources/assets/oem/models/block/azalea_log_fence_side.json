@@ -1,0 +1,6 @@
+{
+    "parent": "minecraft:block/fence_side",
+    "textures": {
+      "texture": "oem:block/azalea_log"
+    }
+  }

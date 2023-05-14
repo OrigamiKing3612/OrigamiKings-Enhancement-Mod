@@ -15,6 +15,7 @@ public class MangroveWoodBlocks {
     public static final Block MANGROVE_LADDER = registerBlock(OemMain.MOD_ID, "mangrove_ladder", new LadderBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.LADDER)));
     public static final Block MANGROVE_CHEST = registerBlock(OemMain.MOD_ID, "mangrove_chest", new ChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST), () -> BlockEntityType.CHEST));
     public static final Block MANGROVE_TRAPPED_CHEST = registerBlock(OemMain.MOD_ID, "mangrove_trapped_chest", new TrappedChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST)));
+    public static final Block MANGROVE_LOG_FENCE = registerBlock(OemMain.MOD_ID, "mangrove_log_fence", new FenceBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
 
     public static void getMangroveBlocks() {}
 }

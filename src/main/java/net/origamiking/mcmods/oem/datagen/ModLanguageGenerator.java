@@ -341,6 +341,15 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add("container.oem.woodcutter", "Woodcutter");
 //        translationBuilder.add(ModSpongeBlocks.LAVA_SPONGE, "Lava Sponge");
 //        translationBuilder.add(ModSpongeBlocks.WET_LAVA_SPONGE, "Wet Lava Sponge");
+        translationBuilder.add(OakWoodBlocks.OAK_LOG_FENCE, "Oak Log Fence");
+        translationBuilder.add(SpruceWoodBlocks.SPRUCE_LOG_FENCE, "Spruce Log Fence");
+        translationBuilder.add(BirchWoodBlocks.BIRCH_LOG_FENCE, "Birch Log Fence");
+        translationBuilder.add(JungleWoodBlocks.JUNGLE_LOG_FENCE, "Jungle Log Fence");
+        translationBuilder.add(AcaciaWoodBlocks.ACACIA_LOG_FENCE, "Acacia Log Fence");
+        translationBuilder.add(DarkOakWoodBlocks.DARK_OAK_LOG_FENCE, "Dark Oak Log Fence");
+        translationBuilder.add(MangroveWoodBlocks.MANGROVE_LOG_FENCE, "Mangrove Log Fence");
+        translationBuilder.add(CrimsonWoodBlocks.CRIMSON_LOG_FENCE, "Crimson Log Fence");
+        translationBuilder.add(WarpedWoodBlocks.WARPED_LOG_FENCE, "Warped Log Fence");
 
 
         try {

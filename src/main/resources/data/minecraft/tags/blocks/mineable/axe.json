@@ -52,6 +52,15 @@
     "oem:azalea_trapdoor",
     "oem:azalea_pressure_plate",
     "oem:azalea_button",
-    "oem:woodcutter"
+    "oem:woodcutter",
+    "oem:oak_log_fence",
+    "oem:spruce_log_fence",
+    "oem:birch_log_fence",
+    "oem:jungle_log_fence",
+    "oem:acacia_log_fence",
+    "oem:dark_oak_log_fence",
+    "oem:mangrove_log_fence",
+    "oem:crimson_log_fence",
+    "oem:warped_log_fence"
   ]
 }

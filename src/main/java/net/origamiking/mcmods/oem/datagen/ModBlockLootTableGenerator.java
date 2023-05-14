@@ -479,5 +479,14 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(ModWoodcutter.WOODCUTTER);
         addDrop(ModSpongeBlocks.LAVA_SPONGE);
         addDrop(ModSpongeBlocks.WET_LAVA_SPONGE);
+        addDrop(OakWoodBlocks.OAK_LOG_FENCE);
+        addDrop(SpruceWoodBlocks.SPRUCE_LOG_FENCE);
+        addDrop(BirchWoodBlocks.BIRCH_LOG_FENCE);
+        addDrop(JungleWoodBlocks.JUNGLE_LOG_FENCE);
+        addDrop(AcaciaWoodBlocks.ACACIA_LOG_FENCE);
+        addDrop(DarkOakWoodBlocks.DARK_OAK_LOG_FENCE);
+        addDrop(MangroveWoodBlocks.MANGROVE_LOG_FENCE);
+        addDrop(CrimsonWoodBlocks.CRIMSON_LOG_FENCE);
+        addDrop(WarpedWoodBlocks.WARPED_LOG_FENCE);
     }
 }
