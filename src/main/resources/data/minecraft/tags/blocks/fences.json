@@ -1,6 +1,7 @@
 {
   "values": [
     "oem:azalea_fence",
+    "oem:azalea_log_fence",
     "oem:oak_log_fence",
     "oem:spruce_log_fence",
     "oem:birch_log_fence",

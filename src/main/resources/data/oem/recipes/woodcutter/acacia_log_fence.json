@@ -1,0 +1,8 @@
+{
+  "type":"oem:woodcutter",
+  "ingredient": {
+    "item":"minecraft:acacia_planks"
+  },
+  "result":"oem:acacia_log_fence",
+  "count":1
+}

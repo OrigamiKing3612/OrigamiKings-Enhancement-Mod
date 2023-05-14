@@ -386,6 +386,7 @@ public class ModGroups {
                 entries.add(RandomBlocks.GUNPOWDER_BLOCK);
                 entries.add(ModSpongeBlocks.LAVA_SPONGE);
                 entries.add(ModSpongeBlocks.WET_LAVA_SPONGE);
+                entries.add(AzaleaWoodBlocks.AZALEA_LOG_FENCE);
                 entries.add(OakWoodBlocks.OAK_LOG_FENCE);
                 entries.add(SpruceWoodBlocks.SPRUCE_LOG_FENCE);
                 entries.add(BirchWoodBlocks.BIRCH_LOG_FENCE);
