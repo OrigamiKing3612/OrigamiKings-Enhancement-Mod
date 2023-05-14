@@ -28,28 +28,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup registries) {
 //        getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL).add(
-        OakWoodBlocks.OAK_LOG_FENCE,
-        SpruceWoodBlocks.SPRUCE_LOG_FENCE,
-        BirchWoodBlocks.BIRCH_LOG_FENCE,
-        JungleWoodBlocks.JUNGLE_LOG_FENCE,
-        AcaciaWoodBlocks.ACACIA_LOG_FENCE,
-        DarkOakWoodBlocks.DARK_OAK_LOG_FENCE,
-        MangroveWoodBlocks.MANGROVE_LOG_FENCE,
-        CrimsonWoodBlocks.CRIMSON_LOG_FENCE,
-        WarpedWoodBlocks.WARPED_LOG_FENCE
-        );
-        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).add(
-                OakWoodBlocks.OAK_LOG_FENCE,
-                SpruceWoodBlocks.SPRUCE_LOG_FENCE,
-                BirchWoodBlocks.BIRCH_LOG_FENCE,
-                JungleWoodBlocks.JUNGLE_LOG_FENCE,
-                AcaciaWoodBlocks.ACACIA_LOG_FENCE,
-                DarkOakWoodBlocks.DARK_OAK_LOG_FENCE,
-                MangroveWoodBlocks.MANGROVE_LOG_FENCE,
-                CrimsonWoodBlocks.CRIMSON_LOG_FENCE,
-                WarpedWoodBlocks.WARPED_LOG_FENCE
-        );
+//        getOrCreateTagBuilder(BlockTags.NEEDS_STONE_TOOL)
+//        getOrCreateTagBuilder(BlockTags.AXE_MINEABLE).
 //        getOrCreateTagBuilder(BlockTags.WALLS)
 //        getOrCreateTagBuilder(BlockTags.HOE_MINEABLE)
 //        getOrCreateTagBuilder(BlockTags.DRAGON_IMMUNE)
