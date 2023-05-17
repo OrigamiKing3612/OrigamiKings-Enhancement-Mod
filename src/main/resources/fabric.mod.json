@@ -12,7 +12,6 @@
     "sources": "https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod",
     "website": "https://mods.origamiking.net/oem",
     "issues": "https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues"
-
   },
   "license": "Apache-2.0",
   "icon": "assets/oem/icon.png",
@@ -38,7 +37,7 @@
     "fabric-api": "*",
     "minecraft": "~1.19.4",
     "java": ">=17",
-    "origamikings-api": ">=0.1.3-1.19.4"
+    "origamikings-api": ">=0.1.9-1.19.4"
   },
   "jars": [
     {
@@ -48,7 +47,7 @@
       "file": "jars/fabric-api-0.76.0+1.19.4.jar"
     },
     {
-      "file": "jars/origamikings-api-0.1.9-1.19.4.jar"
+      "file": "jars/origamikings-api-0.1.10-1.19.4.jar"
     }
   ],
   "suggests": {
