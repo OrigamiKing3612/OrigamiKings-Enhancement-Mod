@@ -14,7 +14,7 @@ public class VikingArmorMaterial implements ArmorMaterial {
 
     @Override
     public int getDurability(EquipmentSlot slot) {
-        return BASE_DURABILITY[slot.getArmorStandSlotId()] * 6;
+        return BASE_DURABILITY[slot.getArmorStandSlotId()];
     }
 
     @Override
