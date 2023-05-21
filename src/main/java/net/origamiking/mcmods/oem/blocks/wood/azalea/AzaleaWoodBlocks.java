@@ -26,8 +26,6 @@ public class AzaleaWoodBlocks {
     public static final Block AZALEA_TRAPDOOR = registerBlock(OemMain.MOD_ID, "azalea_trapdoor", new TrapdoorBlock(OrigamiBlockSettings.copyOf(Blocks.OAK_TRAPDOOR), BlockSetType.OAK));
     public static final Block AZALEA_PRESSURE_PLATE = registerBlock(OemMain.MOD_ID, "azalea_pressure_plate", new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, OrigamiBlockSettings.copyOf(Blocks.OAK_PRESSURE_PLATE), BlockSetType.OAK));
     public static final Block AZALEA_BUTTON = registerBlock(OemMain.MOD_ID, "azalea_button", new ButtonBlock(OrigamiBlockSettings.copyOf(Blocks.OAK_BUTTON), BlockSetType.OAK, 30, true));
-    public static final Block AZALEA_CHEST = registerBlock(OemMain.MOD_ID, "azalea_chest", new ChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST), () -> BlockEntityType.CHEST));
-    public static final Block AZALEA_TRAPPED_CHEST = registerBlock(OemMain.MOD_ID, "azalea_trapped_chest", new TrappedChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST)));
     public static final Block AZALEA_LOG_FENCE = registerBlock(OemMain.MOD_ID, "azalea_log_fence", new FenceBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
 
     public static void getAzaleaBlocks() {}

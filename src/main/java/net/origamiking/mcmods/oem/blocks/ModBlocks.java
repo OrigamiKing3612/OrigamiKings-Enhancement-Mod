@@ -2,6 +2,7 @@ package net.origamiking.mcmods.oem.blocks;
 
 import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
+import net.origamiking.mcmods.oem.blocks.blockentities.ChestBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
@@ -103,6 +104,8 @@ public class ModBlocks {
         TerracottaBlocks.getTerracottaBlocks();
 
         ModSpongeBlocks.get();
+
+        ChestBlocks.get();
 
         OemMain.LOGGER.info("Registering Blocks for " + OemMain.VERSION);
     }

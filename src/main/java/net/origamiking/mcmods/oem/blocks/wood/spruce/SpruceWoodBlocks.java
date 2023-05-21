@@ -12,8 +12,6 @@ public class SpruceWoodBlocks {
     public static final Block SPRUCE_BARREL = registerBlock(OemMain.MOD_ID, "spruce_barrel", new BarrelBlock(OrigamiBlockSettings.of(Material.WOOD).strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block SPRUCE_BOOKSHELF = registerBlock(OemMain.MOD_ID, "spruce_bookshelf", new Block(OrigamiBlockSettings.of(Material.WOOD).strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block SPRUCE_LADDER = registerBlock(OemMain.MOD_ID, "spruce_ladder", new LadderBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.LADDER)));
-    public static final Block SPRUCE_CHEST = registerBlock(OemMain.MOD_ID, "spruce_chest", new ChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST), () -> BlockEntityType.CHEST));
-    public static final Block SPRUCE_TRAPPED_CHEST = registerBlock(OemMain.MOD_ID, "spruce_trapped_chest", new TrappedChestBlock(OrigamiBlockSettings.copyOf(Blocks.CHEST)));
     public static final Block SPRUCE_LOG_FENCE = registerBlock(OemMain.MOD_ID, "spruce_log_fence", new FenceBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
 
     public static void getSpruceBlocks() {}
