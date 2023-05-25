@@ -141,7 +141,7 @@ publishing {
 			id = "860010"
 			releaseType = "release"
 			changelogType = 'text'
-//			changelog = file('changelog.txt')
+			changelog = "Version 1.0.7: Added Log Fences and lava sponge"
 			addGameVersion("1.19.4")
 			addGameVersion("Fabric")
 			addGameVersion("Java 17")
