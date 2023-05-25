@@ -34,7 +34,7 @@ public class OemMain implements ModInitializer {
 		Utils.register();
 		ModTags.register();
 		ModRecipeType.register();
-        ModScreenHandlers.registerAllScreenHandlers();
+        ModScreenHandlers.register();
 //		ModRecipeType.register();
 
 		if (FabricLoader.getInstance().isModLoaded("oem-extra")) OemExtraMain.registerExtraStuff();

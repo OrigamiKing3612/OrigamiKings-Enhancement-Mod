@@ -11,7 +11,7 @@ import net.origamiking.mcmods.oem.screen.woodcutter.WoodcutterScreenHandler;
 public class ModScreenHandlers {
     public static ScreenHandlerType<WoodcutterScreenHandler> WOODCUTTER_SCREEN_HANDLER = new ScreenHandlerType<>(WoodcutterScreenHandler::new, FeatureFlags.VANILLA_FEATURES);
 
-    public static void registerAllScreenHandlers() {
+    public static void register() {
         OemMain.LOGGER.info("Registering Screen Handlers for " + OemMain.VERSION);
         
         Registry.register(Registries.SCREEN_HANDLER, new Identifier(OemMain.MOD_ID, "woodcutter"), WOODCUTTER_SCREEN_HANDLER);
