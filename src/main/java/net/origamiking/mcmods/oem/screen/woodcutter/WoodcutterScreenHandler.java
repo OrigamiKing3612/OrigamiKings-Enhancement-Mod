@@ -35,6 +35,7 @@ public class WoodcutterScreenHandler extends ScreenHandler {
     long lastTakeTime;
     final Slot inputSlot;
     final Slot outputSlot;
+    public  List<ItemStack> ingredients;
     Runnable contentsChangedListener = () -> {};
     public final Inventory input = new SimpleInventory(1){
 
@@ -55,7 +56,7 @@ public class WoodcutterScreenHandler extends ScreenHandler {
         super(ModScreenHandlers.WOODCUTTER_SCREEN_HANDLER, syncId);
         int i;
         this.context = context;
-        this.world = playerInventory.player.world;
+        this.world = playerInventory.player.getWorld();
         this.inputSlot = this.addSlot(new Slot(this.input, 0, 20, 33));
         this.outputSlot = this.addSlot(new Slot(this.output, 1, 143, 33){
 
@@ -66,8 +67,8 @@ public class WoodcutterScreenHandler extends ScreenHandler {
 
             @Override
             public void onTakeItem(PlayerEntity player, ItemStack stack) {
-                stack.onCraft(player.world, player, stack.getCount());
-                WoodcutterScreenHandler.this.output.unlockLastRecipe(player);
+                stack.onCraft(player.getWorld(), player, stack.getCount());
+                WoodcutterScreenHandler.this.output.unlockLastRecipe(player, ingredients);
                 ItemStack itemStack = WoodcutterScreenHandler.this.inputSlot.takeStack(1);
                 if (!itemStack.isEmpty()) {
                     WoodcutterScreenHandler.this.populateResult();
@@ -184,7 +185,7 @@ public class WoodcutterScreenHandler extends ScreenHandler {
             Item item = itemStack2.getItem();
             itemStack = itemStack2.copy();
             if (slot == 1) {
-                item.onCraft(itemStack2, player.world, player);
+                item.onCraft(itemStack2, player.getWorld(), player);
                 if (!this.insertItem(itemStack2, 2, 38, true)) {
                     return ItemStack.EMPTY;
                 }

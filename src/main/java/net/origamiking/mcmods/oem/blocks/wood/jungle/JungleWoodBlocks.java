@@ -10,10 +10,10 @@ import static net.origamiking.mcmods.oapi.blocks.BlocksUtils.registerBlock;
 
 
 public class JungleWoodBlocks {
-    public static final Block JUNGLE_BARREL = registerBlock(OemMain.MOD_ID, "jungle_barrel", new BarrelBlock(OrigamiBlockSettings.of(Material.WOOD).strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
-    public static final Block JUNGLE_BOOKSHELF = registerBlock(OemMain.MOD_ID, "jungle_bookshelf", new Block(OrigamiBlockSettings.of(Material.WOOD).strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
-    public static final Block JUNGLE_LADDER = registerBlock(OemMain.MOD_ID, "jungle_ladder", new LadderBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.LADDER)));
-    public static final Block JUNGLE_LOG_FENCE = registerBlock(OemMain.MOD_ID, "jungle_log_fence", new FenceBlock(OrigamiBlockSettings.of(Material.WOOD).nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block JUNGLE_BARREL = registerBlock(OemMain.MOD_ID, "jungle_barrel", new BarrelBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block JUNGLE_BOOKSHELF = registerBlock(OemMain.MOD_ID, "jungle_bookshelf", new Block(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
+    public static final Block JUNGLE_LADDER = registerBlock(OemMain.MOD_ID, "jungle_ladder", new LadderBlock(OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.LADDER)));
+    public static final Block JUNGLE_LOG_FENCE = registerBlock(OemMain.MOD_ID, "jungle_log_fence", new FenceBlock(OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
 
     public static void getJungleBlocks() {}
 }

@@ -3,6 +3,7 @@ package net.origamiking.mcmods.oem.oldworldscreen;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.font.MultilineText;
 import net.minecraft.client.font.TextRenderer;
+import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.world.CreateWorldScreen;
 import net.minecraft.client.gui.screen.world.LevelScreenProvider;
 import net.minecraft.client.gui.screen.world.WorldCreator;
@@ -117,15 +118,15 @@ public class MoreWorldOptions {
         this.seedField.setVisible(visible);
     }
 
-    public void render(MatrixStack matrices) {
+    public void render(DrawContext context) {
         boolean isDebug = isDebug();
 
         if (!isDebug) {
-            this.textRenderer.drawWithShadow(matrices, GENERATE_STRUCTURES_INFO_TEXT, this.halfWidth - 150, 122, GRAY_COLOR);
+            context.drawTextWithShadow(this.textRenderer, GENERATE_STRUCTURES_INFO_TEXT, this.halfWidth - 150, 122, GRAY_COLOR);
         }
 
         if (this.worldCreator.getWorldType().isAmplified()) {
-            this.amplifiedWorldInfo.drawWithShadow(matrices, this.worldTypeButton.getX() + 2, this.worldTypeButton.getY() + 22, 9, GRAY_COLOR);
+            this.amplifiedWorldInfo.drawWithShadow(context, this.worldTypeButton.getX() + 2, this.worldTypeButton.getY() + 22, 9, GRAY_COLOR);
         }
 
         this.generateStructuresButton.visible = !isDebug;
