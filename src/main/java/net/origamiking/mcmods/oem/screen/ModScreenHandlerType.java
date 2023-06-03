@@ -17,11 +17,11 @@ public class ModScreenHandlerType<T extends ScreenHandler> implements Toggleable
     private final FeatureSet requiredFeatures;
     private final ScreenHandlerType.Factory<T> factory;
     private static <T extends ScreenHandler> ScreenHandlerType<T> register(String id, ScreenHandlerType.Factory<T> factory) {
-        return Registry.register(Registries.SCREEN_HANDLER, new Identifier(OemMain.MOD_ID, id), new ScreenHandlerType<T>(factory, FeatureFlags.VANILLA_FEATURES));
+        return Registry.register(Registries.SCREEN_HANDLER, new Identifier(OemMain.MOD_ID, id), new ScreenHandlerType<>(factory, FeatureFlags.VANILLA_FEATURES));
     }
 
     private static <T extends ScreenHandler> ScreenHandlerType<T> register(String id, ScreenHandlerType.Factory<T> factory, FeatureFlag... requiredFeatures) {
-        return Registry.register(Registries.SCREEN_HANDLER, id, new ScreenHandlerType<T>(factory, FeatureFlags.FEATURE_MANAGER.featureSetOf(requiredFeatures)));
+        return Registry.register(Registries.SCREEN_HANDLER, id, new ScreenHandlerType<>(factory, FeatureFlags.FEATURE_MANAGER.featureSetOf(requiredFeatures)));
     }
 
     public ModScreenHandlerType(ScreenHandlerType.Factory<T> factory, FeatureSet requiredFeatures) {
@@ -38,7 +38,7 @@ public class ModScreenHandlerType<T extends ScreenHandler> implements Toggleable
         return this.requiredFeatures;
     }
 
-    public static interface Factory<T extends ScreenHandler> {
-        public T create(int var1, PlayerInventory var2);
+    public interface Factory<T extends ScreenHandler> {
+        T create(int var1, PlayerInventory var2);
     }
 }

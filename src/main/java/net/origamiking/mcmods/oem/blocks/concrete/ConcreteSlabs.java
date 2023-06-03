@@ -11,7 +11,7 @@ import net.origamiking.mcmods.oem.OemMain;
 import static net.origamiking.mcmods.oapi.blocks.BlocksUtils.registerBlock;
 
 public class ConcreteSlabs {
-    public static String id = OemMain.MOD_ID;
+    public static final String id = OemMain.MOD_ID;
     public static final Block WHITE_CONCRETE_SLAB = registerBlock(id, "white_concrete_slab", new SlabBlock(OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).mapColor(MapColor.WHITE)));
     public static final Block BLACK_CONCRETE_SLAB = registerBlock(id, "black_concrete_slab", new SlabBlock(OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
     public static final Block LIGHT_GRAY_CONCRETE_SLAB = registerBlock(id, "light_gray_concrete_slab", new SlabBlock(OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).mapColor(MapColor.LIGHT_GRAY)));

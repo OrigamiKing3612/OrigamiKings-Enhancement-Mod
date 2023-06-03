@@ -78,7 +78,7 @@ public class FutureGunItem extends Item implements GeoItem {
             if (stack.getDamage() >= stack.getMaxDamage() - 1)
                 return;
 
-            // Add a cooldown so you can't fire rapidly
+            // Add a cooldown, so you can't fire rapidly
 //            player.getItemCooldownManager().set(this, 5);
 
             if (!level.isClient) {
@@ -116,16 +116,6 @@ public class FutureGunItem extends Item implements GeoItem {
     public int getMaxUseTime(ItemStack stack) {
         return 72000;
     }
-
-    // Let's add some ammo text to the tooltip
-//    @Override
-//    public void appendTooltip(ItemStack stack, World worldIn, List<Text> tooltip, TooltipContext flagIn) {
-//        tooltip.add(Text.translatable("item." + GeckoLib.MOD_ID + ".pistol.ammo",
-//                        stack.getMaxDamage() - stack.getDamage() - 1,
-//                        stack.getMaxDamage() - 1)
-//                .formatted(Formatting.ITALIC));
-//    }
-
     @Override
     public AnimatableInstanceCache getAnimatableInstanceCache() {
         return this.cache;

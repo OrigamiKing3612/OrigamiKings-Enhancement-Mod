@@ -5,7 +5,6 @@ import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.armor.VikingArmorItem;
 import software.bernie.geckolib.model.DefaultedItemGeoModel;
 import software.bernie.geckolib.renderer.GeoArmorRenderer;
-import software.bernie.geckolib.renderer.layer.AutoGlowingGeoLayer;
 
 public class VikingArmorRenderer extends GeoArmorRenderer<VikingArmorItem>{
         public VikingArmorRenderer() {

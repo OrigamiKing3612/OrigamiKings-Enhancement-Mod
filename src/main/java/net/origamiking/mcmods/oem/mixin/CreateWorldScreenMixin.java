@@ -105,9 +105,7 @@ public abstract class CreateWorldScreenMixin extends Screen {
 						WorldCreator.Mode.CREATIVE
 				))
 				.initially(this.worldCreator.getGameMode())
-				.build(leftColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, GAME_MODE_LABEL, (button, gameMode) -> {
-					setGameMode(gameMode);
-				});
+				.build(leftColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, GAME_MODE_LABEL, (button, gameMode) -> setGameMode(gameMode));
 		this.worldCreator.addListener(creator -> {
 			this.gameModeButton.setValue(this.worldCreator.getGameMode());
 			this.gameModeButton.active = !this.worldCreator.isDebug();
@@ -116,38 +114,30 @@ public abstract class CreateWorldScreenMixin extends Screen {
 		this.difficultyButton = CyclingButtonWidget.builder(Difficulty::getTranslatableName)
 				.values(Difficulty.values())
 				.initially(this.worldCreator.getDifficulty())
-				.build(rightColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, DIFFICULTY_TEXT, (button, difficulty) -> {
-					this.worldCreator.setDifficulty(difficulty);
-				});
+				.build(rightColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, DIFFICULTY_TEXT, (button, difficulty) -> this.worldCreator.setDifficulty(difficulty));
 		this.worldCreator.addListener(creator -> {
 			this.difficultyButton.setValue(this.worldCreator.getDifficulty());
 			this.difficultyButton.active = !this.worldCreator.isHardcore();
 		});
 
 		this.allowCheatsButton = CyclingButtonWidget.onOffBuilder(this.worldCreator.areCheatsEnabled())
-				.build(leftColumnX, 151, BUTTON_WIDTH, BUTTON_HEIGHT, ALLOW_CHEATS_TEXT, (button, allowCheats) -> {
-					this.worldCreator.setCheatsEnabled(allowCheats);
-				});
+				.build(leftColumnX, 151, BUTTON_WIDTH, BUTTON_HEIGHT, ALLOW_CHEATS_TEXT, (button, allowCheats) -> this.worldCreator.setCheatsEnabled(allowCheats));
 		this.worldCreator.addListener(creator -> {
 			this.allowCheatsButton.setValue(this.worldCreator.areCheatsEnabled());
 			this.allowCheatsButton.active = !this.worldCreator.isDebug() && !this.worldCreator.isHardcore();
 		});
 
-		this.dataPacksButton = ButtonWidget.builder(DATA_PACKS_TEXT, button -> {
-					openPackScreen(this.worldCreator.getGeneratorOptionsHolder().dataConfiguration());
-				})
+		this.dataPacksButton = ButtonWidget.builder(DATA_PACKS_TEXT, button -> openPackScreen(this.worldCreator.getGeneratorOptionsHolder().dataConfiguration()))
 				.dimensions(rightColumnX, 151, BUTTON_WIDTH, BUTTON_HEIGHT)
 				.build();
 
-		this.gameRulesButton = ButtonWidget.builder(GAME_RULES_TEXT, button -> {
-					this.client.setScreen(new EditGameRulesScreen(
-							this.worldCreator.getGameRules().copy(),
-							optional -> {
-								this.client.setScreen(this);
-								optional.ifPresent(this.worldCreator::setGameRules);
-							}
-					));
-				})
+		this.gameRulesButton = ButtonWidget.builder(GAME_RULES_TEXT, button -> this.client.setScreen(new EditGameRulesScreen(
+				this.worldCreator.getGameRules().copy(),
+				optional -> {
+					this.client.setScreen(this);
+					optional.ifPresent(this.worldCreator::setGameRules);
+				}
+		)))
 				.dimensions(leftColumnX, 185, BUTTON_WIDTH, BUTTON_HEIGHT)
 				.build();
 

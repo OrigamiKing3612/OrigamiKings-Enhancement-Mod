@@ -9,7 +9,7 @@ import static net.origamiking.mcmods.oapi.blocks.BlocksUtils.registerBlock;
 
 
 public class RandomBlocks {
-    public static String id = OemMain.MOD_ID;
+    public static final String id = OemMain.MOD_ID;
     public static final Block CALSITE_STAIRS = registerBlock(id, "calcite_stairs", new StairsBlock(Blocks.CALCITE.getDefaultState(), OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
     public static final Block CALSITE_SLAB = registerBlock(id, "calcite_slab", new SlabBlock(OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.CALCITE)));
     public static final Block CALSITE_WALL = registerBlock(id, "calcite_wall", new WallBlock(OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.CALCITE)));

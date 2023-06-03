@@ -8,7 +8,7 @@ import net.origamiking.mcmods.oapi.blocks.OrigamiBlockSettings;
 import net.origamiking.mcmods.oem.OemMain;
 
 public class LeafWalls extends BlocksUtils {
-    public static String id = OemMain.MOD_ID;
+    public static final String id = OemMain.MOD_ID;
     public static final Block OAK_LEAVES_WALL = registerBlock(id, "oak_leaves_wall", new WallBlock(OrigamiBlockSettings.copyOf(Blocks.OAK_LEAVES)/*.of(Material.LEAVES).nonOpaque().strength(0.2f).requiresTool().sounds(BlockSoundGroup.GRASS).ticksRandomly()*/));
     public static final Block SPRUCE_LEAVES_WALL = registerBlock(id, "spruce_leaves_wall", new WallBlock(OrigamiBlockSettings.copyOf(Blocks.SPRUCE_LEAVES)/*.of(Material.LEAVES).nonOpaque().strength(0.2f).requiresTool().sounds(BlockSoundGroup.GRASS).ticksRandomly()*/));
     public static final Block BIRCH_LEAVES_WALL = registerBlock(id, "birch_leaves_wall", new WallBlock(OrigamiBlockSettings.copyOf(Blocks.BIRCH_LEAVES)/*of(Material.LEAVES).nonOpaque().strength(0.2f).requiresTool().sounds(BlockSoundGroup.GRASS).ticksRandomly()*/));

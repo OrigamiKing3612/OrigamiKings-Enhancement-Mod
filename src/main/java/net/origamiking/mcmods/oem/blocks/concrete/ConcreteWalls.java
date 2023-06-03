@@ -11,7 +11,7 @@ import static net.origamiking.mcmods.oapi.blocks.BlocksUtils.registerBlock;
 
 
 public class ConcreteWalls {
-    public static String id = OemMain.MOD_ID;
+    public static final String id = OemMain.MOD_ID;
     public static final Block WHITE_CONCRETE_WALL = registerBlock(id, "white_concrete_wall", new WallBlock(OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block BLACK_CONCRETE_WALL = registerBlock(id, "black_concrete_wall", new WallBlock(OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block LIGHT_GRAY_CONCRETE_WALL = registerBlock(id, "light_gray_concrete_wall", new WallBlock(OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));

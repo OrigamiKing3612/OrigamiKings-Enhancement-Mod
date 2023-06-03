@@ -16,10 +16,6 @@ public class FutureGunArrowEntity extends PersistentProjectileEntity {
     public FutureGunArrowEntity(EntityType<? extends FutureGunArrowEntity> entityType, World world) {
         super(entityType, world);
     }
-//    public FutureGunArrowEntity(World world, double x, double y, double z) {
-//        super(EntityType.ARROW, x, y, z, world);
-//    }
-
     public FutureGunArrowEntity(World world, LivingEntity owner) {
         super(EntityType.ARROW, owner, world);
     }

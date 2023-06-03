@@ -53,16 +53,12 @@ public class MoreWorldOptions {
         int rightColumnX = this.halfWidth + 5;
 
         this.generateStructuresButton = CyclingButtonWidget.onOffBuilder(this.worldCreator.shouldGenerateStructures())
-                .build(leftColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, GENERATE_STRUCTURES_TEXT, (button, shouldGenerateStructures) -> {
-                    this.worldCreator.setGenerateStructures(shouldGenerateStructures);
-                });
+                .build(leftColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, GENERATE_STRUCTURES_TEXT, (button, shouldGenerateStructures) -> this.worldCreator.setGenerateStructures(shouldGenerateStructures));
 
         this.worldTypeButton = CyclingButtonWidget.builder(WorldCreator.WorldType::getName)
                 .values(getWorldTypes())
                 .initially(this.worldCreator.getWorldType())
-                .build(rightColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, WORLD_TYPE_TEXT, (button, worldType) -> {
-                    this.worldCreator.setWorldType(worldType);
-                });
+                .build(rightColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, WORLD_TYPE_TEXT, (button, worldType) -> this.worldCreator.setWorldType(worldType));
 
         this.amplifiedWorldInfo = MultilineText.create(textRenderer, AMPLIFIED_INFO_TEXT, this.worldTypeButton.getWidth());
 
@@ -81,9 +77,7 @@ public class MoreWorldOptions {
                 .build();
 
         this.bonusChestButton = CyclingButtonWidget.onOffBuilder(this.worldCreator.isBonusChestEnabled())
-                .build(leftColumnX, 151, BUTTON_WIDTH, BUTTON_HEIGHT, BONUS_CHEST_TEXT, (button, bonusChestEnabled) -> {
-                    this.worldCreator.setBonusChestEnabled(bonusChestEnabled);
-                });
+                .build(leftColumnX, 151, BUTTON_WIDTH, BUTTON_HEIGHT, BONUS_CHEST_TEXT, (button, bonusChestEnabled) -> this.worldCreator.setBonusChestEnabled(bonusChestEnabled));
 
         elements.add(this.seedField);
         elements.add(this.generateStructuresButton);

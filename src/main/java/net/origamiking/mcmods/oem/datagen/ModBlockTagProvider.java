@@ -2,19 +2,7 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
-import net.minecraft.registry.*;
-import net.minecraft.registry.tag.BlockTags;
-import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
-import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
-
+import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 

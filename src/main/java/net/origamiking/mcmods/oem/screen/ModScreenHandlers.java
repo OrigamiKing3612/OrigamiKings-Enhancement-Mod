@@ -9,7 +9,7 @@ import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.screen.woodcutter.WoodcutterScreenHandler;
 
 public class ModScreenHandlers {
-    public static ScreenHandlerType<WoodcutterScreenHandler> WOODCUTTER_SCREEN_HANDLER = new ScreenHandlerType<>(WoodcutterScreenHandler::new, FeatureFlags.VANILLA_FEATURES);
+    public static final ScreenHandlerType<WoodcutterScreenHandler> WOODCUTTER_SCREEN_HANDLER = new ScreenHandlerType<>(WoodcutterScreenHandler::new, FeatureFlags.VANILLA_FEATURES);
 
     public static void register() {
         OemMain.LOGGER.info("Registering Screen Handlers for " + OemMain.VERSION);

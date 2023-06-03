@@ -1,7 +1,7 @@
 # OrigamiKings Enhancement mod
 This is a small mod based on enhancing Minecraft
 
-### **The [Modrinth page](https://modrinth.com/mod/origamikings-enhancement-mod) will now have all versions and the this will only have the major updates.**
+### **The [Modrinth page](https://modrinth.com/mod/origamikings-enhancement-mod) will now have all versions and this will only have the major updates.**
 
 **As of 0.6.0 and greater this mod will now require my [API Mod](https://modrinth.com/mod/origamikings-api)**
 

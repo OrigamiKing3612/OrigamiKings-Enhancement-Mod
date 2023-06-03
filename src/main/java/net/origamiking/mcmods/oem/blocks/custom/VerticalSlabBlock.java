@@ -40,12 +40,6 @@ public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterl
 
     }
 
-//    public void playPlaceSound(World world, BlockPos pos){
-//        world.playSound(
-//                null, pos, blockSoundGroup, SoundCategory.BLOCKS, 1f, 1f
-//        );
-//    }
-
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView view, BlockPos pos, ShapeContext ctx) {
 
@@ -85,37 +79,28 @@ public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterl
 
             ActionResult RESULT = ActionResult.FAIL;
             player.getBlockX();
-            /*LOGGER.info("VERTICAL SLAB");
-            LOGGER.info(player.getBlockX());
-            LOGGER.info(player.getBlockY());
-            LOGGER.info(player.getBlockZ());
-            LOGGER.info(hit.getSide());*/
 
             if(state.get(SINGLE)){
                 Direction HITSIDE = hit.getSide();
 
-                // is facing north and hit from south
                 if(state.get(FACING) == Direction.NORTH){
                     if(HITSIDE == Direction.SOUTH){
                         world.setBlockState(pos, state.with(SINGLE, false));
                         RESULT = sucessfulPlace(player, hand, world, pos);
                     }
                 }
-                // is facing east and hit from west
                 else if(state.get(FACING) == Direction.EAST){
                     if(HITSIDE == Direction.WEST){
                         world.setBlockState(pos, state.with(SINGLE, false));
                         RESULT = sucessfulPlace(player, hand, world, pos);
                     }
                 }
-                // is facing south and hit from north
                 else if(state.get(FACING) == Direction.SOUTH){
                     if(HITSIDE == Direction.NORTH){
                         world.setBlockState(pos, state.with(SINGLE, false));
                         RESULT = sucessfulPlace(player, hand, world, pos);
                     }
                 }
-                // is facing west and hit from east
                 else if(state.get(FACING) == Direction.WEST){
                     if(HITSIDE == Direction.EAST){
                         world.setBlockState(pos, state.with(SINGLE, false));
@@ -137,14 +122,10 @@ public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterl
     }
 
     private ActionResult sucessfulPlace(PlayerEntity player, Hand hand, World world, BlockPos pos) {
-        // checks if player is in creative and removes 1 item if not
         boolean isInCreative = player.getAbilities().creativeMode;
         if (!isInCreative) {
             player.getStackInHand(hand).setCount(player.getStackInHand(hand).getCount() - 1);
         }
-//        playPlaceSound(world, pos);
-
-        // makes arm swing
         return ActionResult.success(world.isClient);
     }
 
@@ -152,31 +133,4 @@ public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterl
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing());
     }
-
-
-//    @Override
-//    public boolean tryFillWithFluid(WorldAccess world, BlockPos pos, BlockState state, FluidState fluidState) {
-//        if (state.get(SINGLE) != false) {
-//            return Waterloggable.super.tryFillWithFluid(world, pos, state, fluidState);
-//        }
-//        return false;
-//    }
-
-//    @Override
-//    public boolean canFillWithFluid(BlockView world, BlockPos pos, BlockState state, Fluid fluid) {
-//        if (state.get(SINGLE) != false) {
-//            return Waterloggable.super.canFillWithFluid(world, pos, state, fluid);
-//        }
-//        return false;
-//    }
-
-//    @Override
-//    public FluidState getFluidState(BlockState state) {
-//        if (state.get(Properties.WATERLOGGED).booleanValue()) {
-//            return Fluids.WATER.getStill(false);
-//        }
-//        // return state.getFluidState();
-//        return state.getFluidState();
-//    }
-
 }

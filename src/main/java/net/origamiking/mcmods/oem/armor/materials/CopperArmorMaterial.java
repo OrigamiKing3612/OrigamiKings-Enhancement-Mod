@@ -55,7 +55,7 @@ public class CopperArmorMaterial implements ArmorMaterial {
         return 0.1F;
     }
 
-    public class getCopperArmor {
+    public static class getCopperArmor {
         public static final ArmorMaterial COPPER_ARMOR_MATERIAL = new CopperArmorMaterial();
         // If you made a new material, this is where you would note it.
         public static final Item COPPER_HELMET = new ArmorItem(COPPER_ARMOR_MATERIAL, ArmorItem.Type.HELMET, new OrigamiItemSettings());

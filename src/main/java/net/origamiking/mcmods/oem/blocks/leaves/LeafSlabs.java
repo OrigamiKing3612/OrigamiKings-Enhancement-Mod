@@ -8,7 +8,7 @@ import net.origamiking.mcmods.oapi.blocks.OrigamiBlockSettings;
 import net.origamiking.mcmods.oem.OemMain;
 
 public class LeafSlabs extends BlocksUtils {
-    public static String id = OemMain.MOD_ID;
+    public static final String id = OemMain.MOD_ID;
     public static final Block OAK_LEAVES_SLAB = registerBlock(id, "oak_leaves_slab", new SlabBlock(OrigamiBlockSettings.copyOf(Blocks.OAK_LEAVES)));
     public static final Block SPRUCE_LEAVES_SLAB = registerBlock(id, "spruce_leaves_slab", new SlabBlock(OrigamiBlockSettings.copyOf(Blocks.SPRUCE_LEAVES)));
     public static final Block BIRCH_LEAVES_SLAB = registerBlock(id, "birch_leaves_slab", new SlabBlock(OrigamiBlockSettings.copyOf(Blocks.BIRCH_LEAVES)));

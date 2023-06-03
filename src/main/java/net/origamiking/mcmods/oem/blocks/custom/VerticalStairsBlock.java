@@ -29,30 +29,18 @@ public class VerticalStairsBlock extends HorizontalFacingBlock /*implements Wate
     public VerticalStairsBlock(Settings settings) {
         super(settings);
         setDefaultState(this.stateManager.getDefaultState().with(Properties.HORIZONTAL_FACING, Direction.NORTH));
-        //this.setDefaultState((BlockState)((BlockState)this.getDefaultState()/*.with(Properties.WATERLOGGED, false)*/));
-
     }
 
-//    public void playPlaceSound(World world, BlockPos pos){
-//        world.playSound(
-//                null, pos, blockSoundGroup, SoundCategory.BLOCKS, 1f, 1f
-//        );
-//    }
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext ctx) {
         Direction dir = state.get(FACING);
-        switch(dir) {
-            case NORTH:
-                return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.5f);//0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.5f
-            case SOUTH:
-                return VoxelShapes.cuboid(0.0f, 0.0f, 0.5f, 1.0f, 1.0f, 1.0f);
-            case EAST:
-                return VoxelShapes.cuboid(0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
-            case WEST:
-                return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 0.5f, 1.0f, 1.0f);
-            default:
-                return VoxelShapes.fullCube();
-        }
+        return switch (dir) {
+            case NORTH -> VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.5f);//0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.5f
+            case SOUTH -> VoxelShapes.cuboid(0.0f, 0.0f, 0.5f, 1.0f, 1.0f, 1.0f);
+            case EAST -> VoxelShapes.cuboid(0.5f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
+            case WEST -> VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 0.5f, 1.0f, 1.0f);
+            default -> VoxelShapes.fullCube();
+        };
     }
     private ActionResult sucessfulPlace(PlayerEntity player, Hand hand, World world, BlockPos pos) {
         // checks if player is in creative and removes 1 item if not
@@ -70,31 +58,5 @@ public class VerticalStairsBlock extends HorizontalFacingBlock /*implements Wate
     public BlockState getPlacementState(ItemPlacementContext ctx) {
         return this.getDefaultState().with(Properties.HORIZONTAL_FACING, ctx.getHorizontalPlayerFacing());
     }
-
-
-//    @Override
-//    public boolean tryFillWithFluid(WorldAccess world, BlockPos pos, BlockState state, FluidState fluidState) {
-//        if (state.get(SINGLE) != false) {
-//            return Waterloggable.super.tryFillWithFluid(world, pos, state, fluidState);
-//        }
-//        return false;
-//    }
-
-//    @Override
-//    public boolean canFillWithFluid(BlockView world, BlockPos pos, BlockState state, Fluid fluid) {
-//        if (state.get(SINGLE) != false) {
-//            return Waterloggable.super.canFillWithFluid(world, pos, state, fluid);
-//        }
-//        return false;
-//    }
-
-//    @Override
-//    public FluidState getFluidState(BlockState state) {
-//        if (state.get(Properties.WATERLOGGED).booleanValue()) {
-//            return Fluids.WATER.getStill(false);
-//        }
-//        // return state.getFluidState();
-//        return state.getFluidState();
-//    }
 
 }

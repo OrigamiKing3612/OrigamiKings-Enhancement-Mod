@@ -8,7 +8,7 @@ import net.origamiking.mcmods.oem.OemMain;
 import static net.origamiking.mcmods.oapi.blocks.BlocksUtils.registerBlock;
 
 public class ConcreteStairs {
-    public static String id = OemMain.MOD_ID;
+    public static final String id = OemMain.MOD_ID;
     public static final Block WHITE_CONCRETE_STAIR = registerBlock(id, "white_concrete_stairs", new StairsBlock(Blocks.WHITE_CONCRETE.getDefaultState(), OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).mapColor(MapColor.WHITE)));
     public static final Block BLACK_CONCRETE_STAIR = registerBlock(id, "black_concrete_stairs", new StairsBlock(Blocks.BLACK_CONCRETE.getDefaultState(),OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).mapColor(MapColor.BLACK)));
     public static final Block LIGHT_GRAY_CONCRETE_STAIR = registerBlock(id, "light_gray_concrete_stairs", new StairsBlock(Blocks.LIGHT_GRAY_CONCRETE.getDefaultState(),OrigamiBlockSettings.of(Material.STONE).strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).mapColor(MapColor.LIGHT_GRAY)));

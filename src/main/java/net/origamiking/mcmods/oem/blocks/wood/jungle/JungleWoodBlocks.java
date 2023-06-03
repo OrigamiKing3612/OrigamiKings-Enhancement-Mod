@@ -1,7 +1,6 @@
 package net.origamiking.mcmods.oem.blocks.wood.jungle;
 
 import net.minecraft.block.*;
-import net.minecraft.block.entity.BlockEntityType;
 import net.minecraft.sound.BlockSoundGroup;
 import net.origamiking.mcmods.oapi.blocks.OrigamiBlockSettings;
 import net.origamiking.mcmods.oem.OemMain;
