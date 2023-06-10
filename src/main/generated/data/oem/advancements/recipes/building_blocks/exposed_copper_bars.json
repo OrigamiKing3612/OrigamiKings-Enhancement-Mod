@@ -30,5 +30,6 @@
     "recipes": [
       "oem:exposed_copper_bars"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

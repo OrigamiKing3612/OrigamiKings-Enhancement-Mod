@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:sculk_wall_from_sculk_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

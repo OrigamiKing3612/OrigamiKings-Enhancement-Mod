@@ -30,5 +30,6 @@
     "recipes": [
       "oem:green_wool_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

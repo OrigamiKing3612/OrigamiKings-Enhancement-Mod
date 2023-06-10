@@ -30,5 +30,6 @@
     "recipes": [
       "oem:oak_leaves_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:yellow_glass_stairs_from_yellow_stained_glass_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

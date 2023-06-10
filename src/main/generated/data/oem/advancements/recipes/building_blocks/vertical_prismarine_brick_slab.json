@@ -30,5 +30,6 @@
     "recipes": [
       "oem:vertical_prismarine_brick_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

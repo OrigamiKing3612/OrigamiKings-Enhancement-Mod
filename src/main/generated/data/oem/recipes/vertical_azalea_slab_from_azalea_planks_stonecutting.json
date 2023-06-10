@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "item": "oem:azalea_planks"
-  },
-  "result": "oem:vertical_azalea_slab"
-}

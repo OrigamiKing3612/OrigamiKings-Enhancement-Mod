@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:oxidized_copper_chain_from_oxidized_copper_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

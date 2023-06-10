@@ -30,5 +30,6 @@
     "recipes": [
       "oem:waxed_exposed_copper_lantern"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

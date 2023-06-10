@@ -30,5 +30,6 @@
     "recipes": [
       "oem:waxed_exposed_copper_chain"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

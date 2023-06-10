@@ -30,5 +30,6 @@
     "recipes": [
       "oem:gold_bar_door"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

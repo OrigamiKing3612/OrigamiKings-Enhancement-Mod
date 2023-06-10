@@ -30,5 +30,6 @@
     "recipes": [
       "oem:purple_stained_glass_wall"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

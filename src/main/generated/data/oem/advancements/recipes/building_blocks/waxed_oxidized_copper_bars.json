@@ -30,5 +30,6 @@
     "recipes": [
       "oem:waxed_oxidized_copper_bars"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

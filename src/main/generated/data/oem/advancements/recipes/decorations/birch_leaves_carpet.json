@@ -30,5 +30,6 @@
     "recipes": [
       "oem:birch_leaves_carpet"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

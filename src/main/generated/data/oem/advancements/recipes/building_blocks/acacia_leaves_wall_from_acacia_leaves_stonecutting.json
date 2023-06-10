@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:acacia_leaves_wall_from_acacia_leaves_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

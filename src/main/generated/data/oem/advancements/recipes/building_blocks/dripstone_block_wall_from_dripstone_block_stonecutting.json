@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:dripstone_block_wall_from_dripstone_block_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

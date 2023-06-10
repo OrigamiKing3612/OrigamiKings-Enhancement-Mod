@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:vertical_warped_slab_from_warped_planks_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

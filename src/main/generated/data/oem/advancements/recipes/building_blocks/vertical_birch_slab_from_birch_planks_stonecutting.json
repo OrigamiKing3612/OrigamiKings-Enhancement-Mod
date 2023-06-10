@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:vertical_birch_slab_from_birch_planks_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:mangrove_leaves_carpet_from_mangrove_leaves_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

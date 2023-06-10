@@ -455,7 +455,6 @@ public class ModGroups {
                 entries.add(CopperVSlabs.VERTICAL_WAXED_EXPOSED_CUT_COPPER_SLAB);
                 entries.add(CopperVSlabs.VERTICAL_WAXED_WEATHERED_CUT_COPPER_SLAB);
                 entries.add(CopperVSlabs.VERTICAL_WAXED_OXIDIZED_CUT_COPPER_SLAB);
-                entries.add(WoodVSlabs.VERTICAL_AZALEA_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_OAK_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_SPRUCE_SLAB);
                 entries.add(WoodVSlabs.VERTICAL_BIRCH_SLAB);

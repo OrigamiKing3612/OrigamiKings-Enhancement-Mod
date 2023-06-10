@@ -30,5 +30,6 @@
     "recipes": [
       "minecraft:birch_leaves_carpet_from_birch_leaves_stonecutting"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }

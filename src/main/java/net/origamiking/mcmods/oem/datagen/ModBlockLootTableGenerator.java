@@ -467,7 +467,6 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDropWithSilkTouch(GlassBlocks.PURPLE_GLASS_WALL);
         addDropWithSilkTouch(GlassBlocks.MAGENTA_GLASS_WALL);
         addDropWithSilkTouch(GlassBlocks.PINK_GLASS_WALL);
-        addDrop(WoodVSlabs.VERTICAL_AZALEA_SLAB);
         addDropWithSilkTouch(LeafCarpets.OAK_LEAVES_CARPET);
         addDropWithSilkTouch(LeafCarpets.SPRUCE_LEAVES_CARPET);
         addDropWithSilkTouch(LeafCarpets.BIRCH_LEAVES_CARPET);

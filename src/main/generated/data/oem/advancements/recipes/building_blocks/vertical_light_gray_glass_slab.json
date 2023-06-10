@@ -30,5 +30,6 @@
     "recipes": [
       "oem:vertical_light_gray_glass_slab"
     ]
-  }
+  },
+  "sends_telemetry_event": false
 }
