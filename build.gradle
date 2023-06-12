@@ -123,7 +123,7 @@ publishing {
 		versionNumber = "${mod_version}"
 		versionType = "${version_type}"
 		uploadFile = remapJar
-		gameVersions = ['1.20'] // Must be an array, even with only one version
+		gameVersions = ['1.20.1'] // Must be an array, even with only one version
 		dependencies {
 			// scope.type
 			// The scope can be `required`, `optional`, `incompatible`, or `embedded`
@@ -142,7 +142,7 @@ publishing {
 			releaseType = "release"
 			changelogType = 'text'
 			changelog = "Version 1.0.7: Added Log Fences and lava sponge"
-			addGameVersion("1.20")
+			addGameVersion("1.20.1")
 			addGameVersion("Fabric")
 			addGameVersion("Java 17")
 
