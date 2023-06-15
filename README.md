@@ -13,7 +13,7 @@ Some things this mod adds are:
 3. Variants of barrels, bookshelves, and ladders
 4. Glass Stairs and Slabs
 5. Leaf stairs and slabs and walls
-    * See [The wiki](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/wiki) for more information about the mod
+    * See [The wiki](http://wiki.origamiking.net/oem/OEM.html) for more information about the mod
 
 
 <details><summary>Click me to see the inventory</summary>
