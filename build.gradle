@@ -111,53 +111,63 @@ publishing {
 	publications {
 		mavenJava(MavenPublication) {
 			from components.java
+			artifactId = project.archives_base_name
 		}
 	}
 	repositories {
-
-	}
-	modrinth {
-		debugMode = false
-		token = System.getenv("MODRINTH_TOKEN")
-		projectId = "${project_id}"
-		versionNumber = "${mod_version}"
-		versionType = "${version_type}"
-		uploadFile = remapJar
-		gameVersions = ['1.20.1'] // Must be an array, even with only one version
-		dependencies {
-			// scope.type
-			// The scope can be `required`, `optional`, `incompatible`, or `embedded`
-			// The type can either be `project` or `version`
-			embedded.project "geckolib"
-			embedded.project "fabric-api"
-			embedded.project "origamikings-api"
+		repositories {
+			maven {
+				name = "cloudsmith"
+				url = "https://maven.cloudsmith.io/origamiking3612/origamiKings-enhancement-mod/"
+				credentials {
+					username = System.getenv("CLOUDSMITH_USERNAME")
+					password = System.getenv("CLOUDSMITH_PASSWORD")
+				}
+			}
 		}
-		changelog = "Version 1.0.7: Added Log Fences and lava sponge"
 	}
-	//end
-	curseforge {
-		project {
-			apiKey = System.getenv("CURSEFORGE_TOKEN")
-			id = "860010"
-			releaseType = "release"
-			changelogType = 'text'
-			changelog = "Version 1.0.7: Added Log Fences and lava sponge"
-			addGameVersion("1.20.1")
-			addGameVersion("Fabric")
-			addGameVersion("Java 17")
+}
+modrinth {
+	debugMode = false
+	token = System.getenv("MODRINTH_TOKEN")
+	projectId = "${project_id}"
+	versionNumber = "${mod_version}"
+	versionType = "${version_type}"
+	uploadFile = remapJar
+	gameVersions = ['1.20.1'] // Must be an array, even with only one version
+	dependencies {
+		// scope.type
+		// The scope can be `required`, `optional`, `incompatible`, or `embedded`
+		// The type can either be `project` or `version`
+		embedded.project "geckolib"
+		embedded.project "fabric-api"
+		embedded.project "origamikings-api"
+	}
+	changelog = "Version 1.0.7: Added Log Fences and lava sponge"
+}
+//end
+curseforge {
+	project {
+		apiKey = System.getenv("CURSEFORGE_TOKEN")
+		id = "860010"
+		releaseType = "release"
+		changelogType = 'text'
+		changelog = "Version 1.0.7: Added Log Fences and lava sponge"
+		addGameVersion("1.20.1")
+		addGameVersion("Fabric")
+		addGameVersion("Java 17")
 
 //			relations {
 //				requiredDependency 'fabric-api'
 //			}
-			mainArtifact(remapJar)
+		mainArtifact(remapJar)
 
-			afterEvaluate {
-				uploadTask.dependsOn("remapJar")
-			}
+		afterEvaluate {
+			uploadTask.dependsOn("remapJar")
 		}
-		options {
+	}
+	options {
 //			debug = true
-			forgeGradleIntegration = false
-		}
+		forgeGradleIntegration = false
 	}
 }
