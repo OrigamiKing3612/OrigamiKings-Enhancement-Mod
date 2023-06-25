@@ -16,18 +16,7 @@ group = project.maven_group
 
 repositories {
 	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
-
-	exclusiveContent {
-		forRepository {
-			maven {
-				name = "Modrinth"
-				url = "https://api.modrinth.com/maven"
-			}
-		}
-		filter {
-			includeGroup "maven.modrinth"
-		}
-	}
+	maven { url 'https://dl.cloudsmith.io/public/origamiking3612/origamikings-api/maven/' }
 }
 
 
@@ -64,7 +53,7 @@ dependencies {
 
 	modImplementation "software.bernie.geckolib:geckolib-fabric-1.20:${gecklib_version}"
 
-	modImplementation "maven.modrinth:origamikings-api:${origamikings_api}"
+	modImplementation "net.origamiking.mcmods.oapi:Origamikings-API:${origamikings_api}"
 }
 
 processResources {
