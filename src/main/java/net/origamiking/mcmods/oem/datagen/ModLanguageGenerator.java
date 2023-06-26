@@ -313,7 +313,7 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 
 
         try {
-            Path existingFilePath = dataOutput.getModContainer().findPath("assets/oem/lang/en_us.json").get();
+            Path existingFilePath = dataOutput.getModContainer().findPath("assets/oem/lang/en_us.json").orElseThrow();
             translationBuilder.add(existingFilePath);
         } catch (Exception e) {
             throw new RuntimeException("Failed to add existing language file.", e);
