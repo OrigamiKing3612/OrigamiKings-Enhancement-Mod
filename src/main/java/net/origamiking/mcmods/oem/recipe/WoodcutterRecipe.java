@@ -17,7 +17,7 @@ import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 
 public class WoodcutterRecipe extends CuttingRecipe {
     public WoodcutterRecipe(Identifier id, String group, Ingredient input, ItemStack output) {
-        super(new Type(), new net.origamiking.mcmods.oem.recipe.WoodcutterRecipe.Serializer(), id, group, input, output);
+        super(new Type(), new Serializer(), id, group, input, output);
     }
 
     public boolean matches(Inventory inventory, World world) {
@@ -30,7 +30,7 @@ public class WoodcutterRecipe extends CuttingRecipe {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return net.origamiking.mcmods.oem.recipe.WoodcutterRecipe.Serializer.INSTANCE;
+        return Serializer.INSTANCE;
     }
 
     @Override
@@ -45,7 +45,7 @@ public class WoodcutterRecipe extends CuttingRecipe {
     }
 
     public static class Serializer implements RecipeSerializer<WoodcutterRecipe> {
-        public static final net.origamiking.mcmods.oem.recipe.WoodcutterRecipe.Serializer INSTANCE = new net.origamiking.mcmods.oem.recipe.WoodcutterRecipe.Serializer();
+        public static final Serializer INSTANCE = new Serializer();
         public static final String ID = "woodcutter";
 
         @Override
