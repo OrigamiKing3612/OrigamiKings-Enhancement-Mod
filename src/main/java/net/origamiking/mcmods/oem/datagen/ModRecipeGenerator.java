@@ -674,6 +674,8 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.ACACIA_LEAVES_CARPET, Blocks.ACACIA_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.DARK_OAK_LEAVES_CARPET, Blocks.DARK_OAK_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, LeafCarpets.MANGROVE_LEAVES_CARPET, Blocks.MANGROVE_LEAVES);
+        RecipeProvider.offerReversibleCompactingRecipes(exporter, RandomBlocks.GUNPOWDER_BLOCK, Items.GUNPOWDER);
+        RecipeProvider.offerShapelessRecipe(exporter, Items.GUNPOWDER, RandomBlocks.GUNPOWDER_BLOCK, "building_blocks", 4);
 
 
         ShapedRecipeJsonBuilder.create(CopperBlocks.COPPER_PRESSURE_PLATE, 2)

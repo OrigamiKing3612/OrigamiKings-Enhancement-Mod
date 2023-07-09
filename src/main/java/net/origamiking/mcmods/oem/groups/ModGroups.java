@@ -21,8 +21,9 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
-import net.origamiking.mcmods.oem.blocks.vercticalslabs.copper.CopperVSlabs;
+import net.origamiking.mcmods.oem.blocks.sponge.ModSpongeBlocks;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
+import net.origamiking.mcmods.oem.blocks.vercticalslabs.copper.CopperVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
@@ -48,10 +49,10 @@ import net.origamiking.mcmods.oem.blocks.wool.lime.LimeWool;
 import net.origamiking.mcmods.oem.blocks.wool.magenta.MagentaWool;
 import net.origamiking.mcmods.oem.blocks.wool.orange.OrangeWool;
 import net.origamiking.mcmods.oem.blocks.wool.pink.PinkWool;
+import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 import net.origamiking.mcmods.oem.blocks.wool.red.RedWool;
 import net.origamiking.mcmods.oem.blocks.wool.white.WhiteWool;
 import net.origamiking.mcmods.oem.blocks.wool.yellow.YellowWool;
-import net.origamiking.mcmods.oem.blocks.wool.purple.PurpleWool;
 import net.origamiking.mcmods.oem.items.ModItems;
 
 public class ModGroups {
@@ -378,6 +379,20 @@ public class ModGroups {
                 stacks.add(new ItemStack(RandomBlocks.EXPOSED_COPPER_BAR_DOOR));
                 stacks.add(new ItemStack(RandomBlocks.WEATHERED_COPPER_BAR_DOOR));
                 stacks.add(new ItemStack(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR));
+//                stacks.add(new ItemStack(ModWoodcutter.WOODCUTTER));
+                stacks.add(new ItemStack(RandomBlocks.GUNPOWDER_BLOCK));
+                stacks.add(new ItemStack(ModSpongeBlocks.LAVA_SPONGE));
+                stacks.add(new ItemStack(ModSpongeBlocks.WET_LAVA_SPONGE));
+//                stacks.add(new ItemStack(AzaleaWoodBlocks.AZALEA_LOG_FENCE));
+//                stacks.add(new ItemStack(OakWoodBlocks.OAK_LOG_FENCE));
+//                stacks.add(new ItemStack(SpruceWoodBlocks.SPRUCE_LOG_FENCE));
+//                stacks.add(new ItemStack(BirchWoodBlocks.BIRCH_LOG_FENCE));
+//                stacks.add(new ItemStack(JungleWoodBlocks.JUNGLE_LOG_FENCE));
+//                stacks.add(new ItemStack(AcaciaWoodBlocks.ACACIA_LOG_FENCE));
+//                stacks.add(new ItemStack(DarkOakWoodBlocks.DARK_OAK_LOG_FENCE));
+//                stacks.add(new ItemStack(MangroveWoodBlocks.MANGROVE_LOG_FENCE));
+//                stacks.add(new ItemStack(CrimsonWoodBlocks.CRIMSON_LOG_FENCE));
+//                stacks.add(new ItemStack(WarpedWoodBlocks.WARPED_LOG_FENCE));
             }).build();
     public static final ItemGroup OEM_V_SLABS = FabricItemGroupBuilder.create(new Identifier(OemMain.MOD_ID, "oem_v_slabs"))
             .icon(()-> new ItemStack(StoneVSlabs.STONE_VERTICAL_SLAB))

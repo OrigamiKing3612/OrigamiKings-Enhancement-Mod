@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:cyan_stained_glass"
+  },
+  "result": "oem:cyan_glass_stairs"
+}

@@ -6,6 +6,7 @@ import net.minecraft.data.client.*;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
+import net.origamiking.mcmods.oem.blocks.sponge.ModSpongeBlocks;
 import net.origamiking.mcmods.oemextra.extra.blocks.serverspecific.ServerSpecificBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
@@ -65,7 +66,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockStateModelGenerator.registerDoor(RandomBlocks.EXPOSED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(RandomBlocks.WEATHERED_COPPER_BAR_DOOR);
         blockStateModelGenerator.registerDoor(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR);
-
+        blockStateModelGenerator.registerSimpleCubeAll(RandomBlocks.GUNPOWDER_BLOCK);
+        blockStateModelGenerator.registerSimpleCubeAll(ModSpongeBlocks.LAVA_SPONGE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModSpongeBlocks.WET_LAVA_SPONGE);
 
     }
     @Override

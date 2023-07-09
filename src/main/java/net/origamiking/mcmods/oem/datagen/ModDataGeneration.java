@@ -7,9 +7,9 @@ public class ModDataGeneration implements DataGeneratorEntrypoint {
     @Override
     public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
         fabricDataGenerator.addProvider(ModBlockLootTableGenerator::new);
-        fabricDataGenerator.addProvider(ModRecipeGenerator::new);
         fabricDataGenerator.addProvider(ModLanguageGenerator::new);
         fabricDataGenerator.addProvider(ModBlockTagProvider::new);
         fabricDataGenerator.addProvider(ModModelProvider::new);
+        fabricDataGenerator.addProvider(ModRecipeGenerator::new);
     }
 }
