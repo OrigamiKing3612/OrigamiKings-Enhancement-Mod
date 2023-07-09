@@ -1,0 +1,8 @@
+{
+    "type":"oem:woodcutter",
+    "ingredient": {
+        "item":"minecraft:acacia_log"
+    },
+    "result":"oem:acacia_barrel",
+    "count":1
+}

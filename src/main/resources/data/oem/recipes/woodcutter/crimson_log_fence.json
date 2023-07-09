@@ -1,0 +1,8 @@
+{
+  "type":"oem:woodcutter",
+  "ingredient": {
+    "item":"minecraft:crimson_planks"
+  },
+  "result":"oem:crimson_log_fence",
+  "count":1
+}

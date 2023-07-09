@@ -1,0 +1,8 @@
+{
+    "type":"oem:woodcutter",
+    "ingredient": {
+        "item":"minecraft:warped_stem"
+    },
+    "result":"oem:warped_barrel",
+    "count":1
+}

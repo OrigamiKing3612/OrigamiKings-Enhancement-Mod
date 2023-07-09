@@ -1,0 +1,8 @@
+{
+  "type":"oem:woodcutter",
+  "ingredient": {
+    "item":"minecraft:oak_planks"
+  },
+  "result":"oem:oak_log_fence",
+  "count":1
+}

@@ -37,6 +37,7 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
@@ -379,7 +380,7 @@ public class ModGroups {
                 stacks.add(new ItemStack(RandomBlocks.EXPOSED_COPPER_BAR_DOOR));
                 stacks.add(new ItemStack(RandomBlocks.WEATHERED_COPPER_BAR_DOOR));
                 stacks.add(new ItemStack(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR));
-//                stacks.add(new ItemStack(ModWoodcutter.WOODCUTTER));
+                stacks.add(new ItemStack(ModWoodcutter.WOODCUTTER));
                 stacks.add(new ItemStack(RandomBlocks.GUNPOWDER_BLOCK));
                 stacks.add(new ItemStack(ModSpongeBlocks.LAVA_SPONGE));
                 stacks.add(new ItemStack(ModSpongeBlocks.WET_LAVA_SPONGE));

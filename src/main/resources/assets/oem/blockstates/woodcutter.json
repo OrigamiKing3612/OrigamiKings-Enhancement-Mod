@@ -1,18 +1,18 @@
 {
   "variants": {
     "facing=east": {
-      "model": "charm:block/woodcutter",
+      "model": "oem:block/woodcutter",
       "y": 90
     },
     "facing=north": {
-      "model": "charm:block/woodcutter"
+      "model": "oem:block/woodcutter"
     },
     "facing=south": {
-      "model": "charm:block/woodcutter",
+      "model": "oem:block/woodcutter",
       "y": 180
     },
     "facing=west": {
-      "model": "charm:block/woodcutter",
+      "model": "oem:block/woodcutter",
       "y": 270
     }
   }
