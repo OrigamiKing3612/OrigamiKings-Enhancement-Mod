@@ -48,12 +48,9 @@ loom {
 sourceSets { main { resources { srcDirs += dataOutput} } }
 
 dependencies {
-	// To change the versions see the gradle.properties file
 	minecraft "com.mojang:minecraft:${project.minecraft_version}"
 	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
 	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
-
-	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
 	// Uncomment the following line to enable the deprecated Fabric API modules.
@@ -76,26 +73,22 @@ processResources {
 jar {
 	manifest {
 		attributes([
-				"Specification-Title"     : "OrigamiKings Enhancement Mod",
-				"Specification-Vendor"    : "OrigamiKing3612",
-				"Specification-Version"   : "1",
-				"Implementation-Title"    : project.name,
-				"Implementation-Version"  : mod_version,
-				"Implementation-Vendor"   : "OrigamiKing3612",
+				"Specification-Title": "OrigamiKings Enhancement Mod",
+				"Specification-Vendor": "OrigamiKing3612",
+				"Specification-Version": "1",
+				"Implementation-Title": project.name,
+				"Implementation-Version": mod_version,
+				"Implementation-Vendor": "OrigamiKing3612",
 				"Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
 		])
 	}
 }
 
 tasks.withType(JavaCompile).configureEach {
-	// Minecraft 1.18 (1.18-pre2) upwards uses Java 17.
 	it.options.release = 17
 }
 
 java {
-	// Loom will automatically attach sourcesJar to a RemapSourcesJar task and to the "build" task
-	// if it is present.
-	// If you remove this line, sources will not be generated.
 	withSourcesJar()
 }
 
@@ -105,7 +98,6 @@ jar {
 	}
 }
 
-// configure the maven publication
 publishing {
 	publications {
 		mavenJava(MavenPublication) {
@@ -113,30 +105,25 @@ publishing {
 		}
 	}
 
-	// See https://docs.gradle.org/current/userguide/publishing_maven.html for information on how to set up publishing.
 	repositories {
-		// Add repositories to publish to here.
-		// Notice: This block does NOT have the same function as the block in the top level.
-		// The repositories here will be used for publishing your artifact, not for
-		// retrieving dependencies.
+
 	}
-	modrinth {
-		debugMode = false
-		token = System.getenv("MODRINTH_TOKEN")
-		projectId = "${project_id}"
-		versionNumber = "${mod_version}"
-		versionType = "${version_type}"
-		uploadFile = remapJar
-		gameVersions = ['1.19.2'] // Must be an array, even with only one version
-		dependencies {
-			// scope.type
-			// The scope can be `required`, `optional`, `incompatible`, or `embedded`
-			// The type can either be `project` or `version`
-			embedded.project "geckolib"
-			embedded.project "fabric-api"
-			embedded.project "origamikings-api"
-		}
-		changelog = "Version 1.0.6: Port to 1.19.2"
+}
+modrinth {
+	debugMode = false
+	token = System.getenv("MODRINTH_TOKEN")
+	projectId = "${project_id}"
+	versionNumber = "${mod_version}"
+	versionType = "${version_type}"
+	uploadFile = remapJar
+	gameVersions = ['1.19.2'] // Must be an array, even with only one version
+	dependencies {
+		// scope.type
+		// The scope can be `required`, `optional`, `incompatible`, or `embedded`
+		// The type can either be `project` or `version`
+		embedded.project "geckolib"
+		embedded.project "fabric-api"
+		embedded.project "origamikings-api"
 	}
-	//end
+	changelog = "Version 1.0.6: Port to 1.19.2"
 }
