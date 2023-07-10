@@ -1,13 +1,10 @@
 package net.origamiking.mcmods.oem;
 
 import net.fabricmc.api.ClientModInitializer;
-import net.fabricmc.fabric.api.blockrenderlayer.v1.BlockRenderLayerMap;
 import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.fabricmc.loader.api.FabricLoader;
-import net.minecraft.block.Block;
 import net.minecraft.client.color.world.FoliageColors;
 import net.minecraft.client.gui.screen.ingame.HandledScreens;
-import net.minecraft.client.render.RenderLayer;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
@@ -32,6 +29,9 @@ import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 import net.origamiking.mcmods.oem.screen.ModScreenHandlers;
 import net.origamiking.mcmods.oem.screen.woodcutter.WoodcutterScreen;
 import net.origamiking.mcmods.oemextra.extra.OemExtraClient;
+
+import static net.origamiking.mcmods.oapi.client.ClientUtils.getCutout;
+import static net.origamiking.mcmods.oapi.client.ClientUtils.getTranslucent;
 
 public class OemClient implements ClientModInitializer {
    @Override
@@ -221,11 +221,5 @@ public class OemClient implements ClientModInitializer {
       ColorProviderRegistry.ITEM.register((stack, tintIndex) -> FoliageColors.getMangroveColor(), LeafStairs.MANGROVE_LEAVES_STAIRS, LeafSlabs.MANGROVE_LEAVES_SLAB, LeafWalls.MANGROVE_LEAVES_WALL, LeafCarpets.MANGROVE_LEAVES_CARPET);
 
       if (FabricLoader.getInstance().isModLoaded("oem-extra")) { OemExtraClient.onInitializeClient(); }
-   }
-   public static void getCutout(Block block) {
-      BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getCutout());
-   }
-   public static void getTranslucent(Block block) {
-      BlockRenderLayerMap.INSTANCE.putBlock(block, RenderLayer.getTranslucent());
    }
 }
