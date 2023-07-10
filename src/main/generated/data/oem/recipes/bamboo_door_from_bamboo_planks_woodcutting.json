@@ -1,8 +1,0 @@
-{
-  "type": "oem:woodcutter",
-  "count": 1,
-  "ingredient": {
-    "item": "minecraft:bamboo_planks"
-  },
-  "result": "minecraft:bamboo_door"
-}

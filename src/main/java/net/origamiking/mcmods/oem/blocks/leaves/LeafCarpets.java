@@ -16,8 +16,5 @@ public class LeafCarpets extends BlocksUtils {
     public static final Block DARK_OAK_LEAVES_CARPET = registerBlock(OemMain.MOD_ID, "dark_oak_leaves_carpet", new CarpetBlock(OrigamiBlockSettings.copyOf(Blocks.DARK_OAK_LEAVES)));
     public static final Block MANGROVE_LEAVES_CARPET = registerBlock(OemMain.MOD_ID, "mangrove_leaves_carpet", new CarpetBlock(OrigamiBlockSettings.copyOf(Blocks.MANGROVE_LEAVES)));
 
-
-
     public static void getLeafCarpets() {}
-
 }
