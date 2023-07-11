@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+      "###",
+      "XXX",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "oem:azalea_planks"
+      },
+      "X": {
+        "item": "minecraft:book"
+      }
+    },
+    "result": {
+      "item": "oem:azalea_bookshelf"
+    }
+}

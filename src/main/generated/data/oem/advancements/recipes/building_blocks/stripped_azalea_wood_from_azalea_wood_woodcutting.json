@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_azalea_wood": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "oem:azalea_wood"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:stripped_azalea_wood_from_azalea_wood_woodcutting"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_azalea_wood",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:stripped_azalea_wood_from_azalea_wood_woodcutting"
+    ]
+  },
+  "sends_telemetry_event": false
+}

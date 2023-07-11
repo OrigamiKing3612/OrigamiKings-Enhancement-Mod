@@ -1,0 +1,16 @@
+{
+  "result": "betterend:end_lotus_stairs",
+  "ingredient": {
+    "item": "betterend:end_lotus_planks"
+  },
+  "count": 1,
+  "type": "oem:woodcutter",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ]
+}

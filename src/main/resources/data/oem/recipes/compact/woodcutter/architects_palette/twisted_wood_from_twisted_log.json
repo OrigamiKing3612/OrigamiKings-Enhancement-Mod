@@ -1,0 +1,16 @@
+{
+  "result": "architects_palette:twisted_wood",
+  "ingredient": {
+    "item": "architects_palette:twisted_log"
+  },
+  "count": 1,
+  "type": "oem:woodcutter",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "architects_palette"
+      ]
+    }
+  ]
+}

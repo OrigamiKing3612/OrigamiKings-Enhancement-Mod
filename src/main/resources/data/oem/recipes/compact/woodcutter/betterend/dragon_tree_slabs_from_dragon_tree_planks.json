@@ -1,0 +1,16 @@
+{
+  "result": "betterend:dragon_tree_slab",
+  "ingredient": {
+    "item": "betterend:dragon_tree_planks"
+  },
+  "count": 2,
+  "type": "oem:woodcutter",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ]
+}

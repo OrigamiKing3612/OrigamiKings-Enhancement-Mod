@@ -1,0 +1,16 @@
+{
+  "result": "blockus:white_oak_fence",
+  "ingredient": {
+    "item": "blockus:white_oak_planks"
+  },
+  "count": 1,
+  "type": "oem:woodcutter",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "blockus"
+      ]
+    }
+  ]
+}

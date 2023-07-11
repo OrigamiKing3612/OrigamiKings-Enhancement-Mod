@@ -29,6 +29,16 @@ import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.stone.StoneVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.wood.WoodVSlabs;
+import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
@@ -671,7 +681,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, 4);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BAMBOO_STAIRS, Blocks.BAMBOO_PLANKS);
-        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BAMBOO_SLAB, Blocks.BAMBOO_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BAMBOO_SLAB, Blocks.BAMBOO_PLANKS, 2);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BAMBOO_FENCE, Blocks.BAMBOO_PLANKS);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BAMBOO_FENCE_GATE, Blocks.BAMBOO_PLANKS);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.BAMBOO_DOOR, Blocks.BAMBOO_PLANKS);
@@ -687,7 +697,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
 
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_PLANKS, Blocks.CHERRY_LOG, 4);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_STAIRS, Blocks.CHERRY_PLANKS);
-        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_SLAB, Blocks.CHERRY_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_SLAB, Blocks.CHERRY_PLANKS, 2);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_FENCE, Blocks.CHERRY_PLANKS);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_FENCE_GATE, Blocks.CHERRY_PLANKS);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_DOOR, Blocks.CHERRY_PLANKS);
@@ -697,7 +707,33 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_SIGN, Blocks.CHERRY_PLANKS);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.CHERRY_HANGING_SIGN, Blocks.CHERRY_PLANKS);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.STRIPPED_CHERRY_LOG, Blocks.CHERRY_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, Blocks.STRIPPED_CHERRY_WOOD, Blocks.CHERRY_WOOD);
 
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_PLANKS, AzaleaWoodBlocks.AZALEA_LOG, 4);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_STAIR, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_SLAB, AzaleaWoodBlocks.AZALEA_PLANKS, 2);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_FENCE, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_FENCE_GATE, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_DOOR, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_TRAPDOOR, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_PRESSURE_PLATE, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_BUTTON, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.STRIPPED_AZALEA_WOOD, AzaleaWoodBlocks.AZALEA_WOOD);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.STRIPPED_AZALEA_LOG, AzaleaWoodBlocks.AZALEA_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_BARREL, AzaleaWoodBlocks.AZALEA_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_LADDER, AzaleaWoodBlocks.AZALEA_PLANKS);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AzaleaWoodBlocks.AZALEA_LOG_FENCE, AzaleaWoodBlocks.AZALEA_PLANKS);
+
+
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_BARREL, Blocks.ACACIA_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BirchWoodBlocks.BIRCH_BARREL, Blocks.BIRCH_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CrimsonWoodBlocks.CRIMSON_BARREL, Blocks.CRIMSON_STEM);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DarkOakWoodBlocks.DARK_OAK_BARREL, Blocks.DARK_OAK_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, JungleWoodBlocks.JUNGLE_BARREL, Blocks.JUNGLE_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MangroveWoodBlocks.MANGROVE_BARREL, Blocks.MANGROVE_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OakWoodBlocks.OAK_BARREL, Blocks.OAK_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SpruceWoodBlocks.SPRUCE_BARREL, Blocks.SPRUCE_LOG);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WarpedWoodBlocks.WARPED_BARREL, Blocks.WARPED_STEM);
 
         RecipeProvider.offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.GUNPOWDER_BLOCK, Items.GUNPOWDER);
         RecipeProvider.offerShapelessRecipe(exporter, Items.GUNPOWDER, RandomBlocks.GUNPOWDER_BLOCK, "building_blocks", 4);
