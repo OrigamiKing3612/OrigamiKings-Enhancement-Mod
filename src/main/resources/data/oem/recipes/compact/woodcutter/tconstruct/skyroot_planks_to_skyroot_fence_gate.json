@@ -1,0 +1,1 @@
+{"result":"tconstruct:skyroot_fence_gate","ingredient":{"item":"tconstruct:skyroot_planks"},"fabric:load_conditions":[{"condition":"fabric:all_mods_loaded","values":["tconstruct"]}],"count":1,"type":"oem:woodcutter"}
