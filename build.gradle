@@ -1,9 +1,12 @@
 plugins {
-	id 'fabric-loom' version '1.2-SNAPSHOT'
-	id 'maven-publish'
-	id "com.modrinth.minotaur" version "2.+"
-	id 'com.matthewprenger.cursegradle' version '1.4.0'
+    id 'fabric-loom' version '1.2-SNAPSHOT'
+    id 'maven-publish'
+    id "com.modrinth.minotaur" version "2.+"
+    id 'com.matthewprenger.cursegradle' version '1.4.0'
 }
+
+import groovy.json.JsonOutput
+import groovy.json.JsonSlurper
 
 sourceCompatibility = JavaVersion.VERSION_17
 targetCompatibility = JavaVersion.VERSION_17
@@ -14,145 +17,161 @@ group = project.maven_group
 
 
 repositories {
-	maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
-	maven { url 'https://dl.cloudsmith.io/public/origamiking3612/origamikings-api/maven/' }
+    maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
+    maven { url 'https://dl.cloudsmith.io/public/origamiking3612/origamikings-api/maven/' }
 }
 
 
 def dataOutput = 'src/main/generated'
 
 loom {
-	runs {
-		datagen {
-			server()
+    runs {
+        datagen {
+            server()
 
-			name "Data Generation"
-			vmArg "-Dfabric-api.datagen"
-			vmArg "-Dfabric-api.datagen.output-dir=${file(dataOutput)}"
+            name "Data Generation"
+            vmArg "-Dfabric-api.datagen"
+            vmArg "-Dfabric-api.datagen.output-dir=${file(dataOutput)}"
 
-			runDir "build/datagen"
-		}
-	}
+            runDir "build/datagen"
+        }
+    }
 }
 
-sourceSets { main { resources { srcDirs += dataOutput} } }
+sourceSets { main { resources { srcDirs += dataOutput } } }
 
 dependencies {
-	minecraft "com.mojang:minecraft:${project.minecraft_version}"
-	mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
-	modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
 
-	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Uncomment the following line to enable the deprecated Fabric API modules.
-	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
-	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
+    // Uncomment the following line to enable the deprecated Fabric API modules.
+    // These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
+    // modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 
-	modImplementation "software.bernie.geckolib:geckolib-fabric-1.20:${gecklib_version}"
+    modImplementation "software.bernie.geckolib:geckolib-fabric-1.20:${gecklib_version}"
 
-	modImplementation "net.origamiking:Origamikings-API:${origamikings_api}"
+    modImplementation "net.origamiking:Origamikings-API:${origamikings_api}"
 }
 
 processResources {
-	inputs.property "version", project.version
+    inputs.property "version", project.version
 
-	filesMatching("fabric.mod.json") {
-		expand "version": project.version
-	}
+    filesMatching("fabric.mod.json") {
+        expand "version": project.version
+    }
+}
+//processResources code from Geckolib
+processResources {
+    doLast {
+        def jsonMinifyStart = System.currentTimeMillis()
+        def jsonMinified = 0
+        def jsonBytesSaved = 0
+        fileTree(dir: outputs.files.asPath, include: '**/*.json').each {
+            File file = it
+            jsonMinified++
+            def oldLength = file.length()
+            file.text = JsonOutput.toJson(new JsonSlurper().parse(file))
+            jsonBytesSaved += oldLength - file.length()
+        }
+        println('Minified ' + jsonMinified + ' json files. Saved ' + jsonBytesSaved + ' bytes. Took ' + (System.currentTimeMillis() - jsonMinifyStart) + 'ms.')
+    }
 }
 
 jar {
-	manifest {
-		attributes([
-				"Specification-Title": "OrigamiKings Enhancement Mod",
-				"Specification-Vendor": "OrigamiKing3612",
-				"Specification-Version": "1",
-				"Implementation-Title": project.name,
-				"Implementation-Version": mod_version,
-				"Implementation-Vendor": "OrigamiKing3612",
-				"Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
-		])
-	}
+    manifest {
+        attributes([
+                "Specification-Title"     : "OrigamiKings Enhancement Mod",
+                "Specification-Vendor"    : "OrigamiKing3612",
+                "Specification-Version"   : "1",
+                "Implementation-Title"    : project.name,
+                "Implementation-Version"  : mod_version,
+                "Implementation-Vendor"   : "OrigamiKing3612",
+                "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 17
+    it.options.release = 17
 }
 
 java {
-	withSourcesJar()
+    withSourcesJar()
 }
 
 jar {
-	from("LICENSE") {
-		rename { "${it}_${project.archivesBaseName}"}
-	}
+    from("LICENSE") {
+        rename { "${it}_${project.archivesBaseName}" }
+    }
 }
 loom {
-	accessWidenerPath = file("src/main/resources/oem.accesswidener")
+    accessWidenerPath = file("src/main/resources/oem.accesswidener")
 }
 
 publishing {
-	publications {
-		mavenJava(MavenPublication) {
-			from components.java
-			artifactId = project.archives_base_name
-		}
-	}
-	repositories {
-		repositories {
-			maven {
-				name = "cloudsmith"
-				url = "https://maven.cloudsmith.io/origamiking3612/origamiKings-enhancement-mod/"
-				credentials {
-					username = System.getenv("CLOUDSMITH_USERNAME")
-					password = System.getenv("CLOUDSMITH_PASSWORD")
-				}
-			}
-		}
-	}
+    publications {
+        mavenJava(MavenPublication) {
+            from components.java
+            artifactId = project.archives_base_name
+        }
+    }
+    repositories {
+        repositories {
+            maven {
+                name = "cloudsmith"
+                url = "https://maven.cloudsmith.io/origamiking3612/origamiKings-enhancement-mod/"
+                credentials {
+                    username = System.getenv("CLOUDSMITH_USERNAME")
+                    password = System.getenv("CLOUDSMITH_PASSWORD")
+                }
+            }
+        }
+    }
 }
 modrinth {
-	debugMode = false
-	token = System.getenv("MODRINTH_TOKEN")
-	projectId = "${project_id}"
-	versionNumber = "${mod_version}"
-	versionType = "${version_type}"
-	uploadFile = remapJar
-	gameVersions = ['1.20.1'] // Must be an array, even with only one version
-	dependencies {
-		// scope.type
-		// The scope can be `required`, `optional`, `incompatible`, or `embedded`
-		// The type can either be `project` or `version`
-		embedded.project "geckolib"
-		embedded.project "fabric-api"
-		embedded.project "origamikings-api"
-	}
-	changelog = "Version 1.0.7: Added Log Fences and lava sponge"
+    debugMode = false
+    token = System.getenv("MODRINTH_TOKEN")
+    projectId = "${project_id}"
+    versionNumber = "${mod_version}"
+    versionType = "${version_type}"
+    uploadFile = remapJar
+    gameVersions = ['1.20.1'] // Must be an array, even with only one version
+    dependencies {
+        // scope.type
+        // The scope can be `required`, `optional`, `incompatible`, or `embedded`
+        // The type can either be `project` or `version`
+        embedded.project "geckolib"
+        embedded.project "fabric-api"
+        embedded.project "origamikings-api"
+    }
+    changelog = "Version 1.0.7: Added Log Fences and lava sponge"
 }
 //end
 curseforge {
-	project {
-		apiKey = System.getenv("CURSEFORGE_TOKEN")
-		id = "860010"
-		releaseType = "release"
-		changelogType = 'text'
-		changelog = "Version 1.0.7: Added Log Fences and lava sponge"
-		addGameVersion("1.20.1")
-		addGameVersion("Fabric")
-		addGameVersion("Java 17")
+    project {
+        apiKey = System.getenv("CURSEFORGE_TOKEN")
+        id = "860010"
+        releaseType = "release"
+        changelogType = 'text'
+        changelog = "Version 1.0.7: Added Log Fences and lava sponge"
+        addGameVersion("1.20.1")
+        addGameVersion("Fabric")
+        addGameVersion("Java 17")
 
 //			relations {
 //				requiredDependency 'fabric-api'
 //			}
-		mainArtifact(remapJar)
+        mainArtifact(remapJar)
 
-		afterEvaluate {
-			uploadTask.dependsOn("remapJar")
-		}
-	}
-	options {
+        afterEvaluate {
+            uploadTask.dependsOn("remapJar")
+        }
+    }
+    options {
 //			debug = true
-		forgeGradleIntegration = false
-	}
+        forgeGradleIntegration = false
+    }
 }
