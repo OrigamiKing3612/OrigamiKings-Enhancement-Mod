@@ -156,7 +156,7 @@ curseforge {
         id = "860010"
         releaseType = "release"
         changelogType = 'text'
-        changelog = "Version 1.0.7: Added Log Fences and lava sponge"
+        changelog = "Version 1.0.8: Added compactiblty with abundance, architects_palette, atmospheric, betterend, betternether, blockus,"
         addGameVersion("1.20.1")
         addGameVersion("Fabric")
         addGameVersion("Java 17")
