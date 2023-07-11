@@ -1,0 +1,8 @@
+{
+  "type": "oem:woodcutter",
+  "count": 4,
+  "ingredient": {
+    "item": "oem:azalea_log"
+  },
+  "result": "oem:azalea_planks"
+}

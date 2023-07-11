@@ -1,0 +1,16 @@
+{
+  "result": "architects_palette:twisted_slab",
+  "ingredient": {
+    "item": "architects_palette:twisted_planks"
+  },
+  "count": 2,
+  "type": "oem:woodcutter",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "architects_palette"
+      ]
+    }
+  ]
+}

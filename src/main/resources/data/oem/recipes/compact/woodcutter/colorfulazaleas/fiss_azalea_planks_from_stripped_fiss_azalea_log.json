@@ -1,0 +1,16 @@
+{
+  "result": "colorfulazaleas:fiss_azalea_planks",
+  "ingredient": {
+    "item": "colorfulazaleas:stripped_fiss_azalea_log"
+  },
+  "count": 4,
+  "type": "oem:woodcutter",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "colorfulazaleas"
+      ]
+    }
+  ]
+}

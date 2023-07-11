@@ -1,0 +1,16 @@
+{
+  "result": "betternether:nether_sakura_door",
+  "ingredient": {
+    "item": "betternether:nether_sakura_planks"
+  },
+  "count": 1,
+  "type": "oem:woodcutter",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betternether"
+      ]
+    }
+  ]
+}

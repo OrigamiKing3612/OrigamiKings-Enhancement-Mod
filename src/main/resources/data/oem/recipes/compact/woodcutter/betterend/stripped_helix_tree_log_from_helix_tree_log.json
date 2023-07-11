@@ -1,0 +1,16 @@
+{
+  "result": "betterend:helix_tree_stripped_log",
+  "ingredient": {
+    "item": "betterend:helix_tree_log"
+  },
+  "count": 1,
+  "type": "oem:woodcutter",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "betterend"
+      ]
+    }
+  ]
+}

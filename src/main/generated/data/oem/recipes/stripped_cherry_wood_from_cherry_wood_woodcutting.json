@@ -1,0 +1,8 @@
+{
+  "type": "oem:woodcutter",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:cherry_wood"
+  },
+  "result": "minecraft:stripped_cherry_wood"
+}
