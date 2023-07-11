@@ -1,0 +1,16 @@
+{
+  "result": "atmospheric:vertical_yucca_planks",
+  "ingredient": {
+    "item": "atmospheric:yucca_planks"
+  },
+  "count": 1,
+  "type": "oem:woodcutter",
+  "fabric:load_conditions": [
+    {
+      "condition": "fabric:all_mods_loaded",
+      "values": [
+        "atmospheric"
+      ]
+    }
+  ]
+}
