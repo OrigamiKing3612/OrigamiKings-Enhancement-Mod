@@ -19,6 +19,7 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
+import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafCarpets;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafSlabs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
@@ -670,6 +671,9 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.ACACIA_LEAVES_CARPET, Blocks.ACACIA_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.DARK_OAK_LEAVES_CARPET, Blocks.DARK_OAK_LEAVES);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, LeafCarpets.MANGROVE_LEAVES_CARPET, Blocks.MANGROVE_LEAVES);
+        RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GoldBlocks.GOLD_BARS, Blocks.GOLD_BLOCK, 10);
+        ModRecipeProvider.offerBarRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GoldBlocks.GOLD_BARS, Items.GOLD_INGOT);
+
 
         RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.OAK_LEAVES_CARPET, Blocks.OAK_LEAVES);
         RecipeProvider.offerCarpetRecipe(exporter, LeafCarpets.SPRUCE_LEAVES_CARPET, Blocks.SPRUCE_LEAVES);

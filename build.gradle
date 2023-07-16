@@ -19,6 +19,10 @@ group = project.maven_group
 repositories {
     maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     maven { url 'https://dl.cloudsmith.io/public/origamiking3612/origamikings-api/maven/' }
+    maven {
+        name = "TerraformersMC"
+        url = "https://maven.terraformersmc.com/"
+    }
 }
 
 
@@ -54,6 +58,9 @@ dependencies {
     modImplementation "software.bernie.geckolib:geckolib-fabric-1.20:${gecklib_version}"
 
     modImplementation "net.origamiking:Origamikings-API:${origamikings_api}"
+
+    modCompileOnly "dev.emi:emi-fabric:${emi_version}:api"
+    modLocalRuntime "dev.emi:emi-fabric:${emi_version}"
 }
 
 processResources {
