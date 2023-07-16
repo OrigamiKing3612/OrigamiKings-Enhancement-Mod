@@ -434,5 +434,6 @@
   "item.oem.viking_helmet": "Viking Helmet",
   "oem.group.main_group": "OrigamiKing's Enhancement Mod",
   "oem.group.oem_extra_group": "OEM Extra",
-  "oem.group.oem_v_slabs": "Oem Vertical Slabs"
+  "oem.group.oem_v_slabs": "Oem Vertical Slabs",
+  "stat.oem.interact_with_woodcutter": "Interact With Woodcutter"
 }

@@ -3,6 +3,7 @@ package net.origamiking.mcmods.oem;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.origamiking.mcmods.oem.blocks.ModBlocks;
+import net.origamiking.mcmods.oem.stats.ModStats;
 import net.origamiking.mcmods.oem.commands.ModCommands;
 import net.origamiking.mcmods.oem.groups.ModGroups;
 import net.origamiking.mcmods.oem.items.ModItems;
@@ -27,8 +28,6 @@ public class OemMain implements ModInitializer {
 	//TODO terracotta slabs stairs walls
 	//test woodcutter, v slabs, and
 	public static void Main() {
-		if (!FabricLoader.getInstance().isModLoaded("origamikings-api"))
-			throw new RuntimeException("Please install OrigamiKings-API (https://modrinth.com/mod/origamikings-api)");
 		ModBlocks.register();
 		ModItems.register();
 		ModGroups.register();
@@ -37,6 +36,7 @@ public class OemMain implements ModInitializer {
 		ModTags.register();
 		ModRecipeType.register();
         ModScreenHandlers.register();
+		ModStats.register();
 //		ModRecipeType.register();
 
 		if (FabricLoader.getInstance().isModLoaded("oem-extra")) OemExtraMain.registerExtraStuff();
