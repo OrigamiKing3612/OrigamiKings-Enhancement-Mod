@@ -764,7 +764,7 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
     public static void offerWoodcuttingRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input) {
         offerWoodcuttingRecipe(exporter, category, output, input, 1);
     }
-    private static void offerWoodcuttingRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input, int count) {
+    public static void offerWoodcuttingRecipe(Consumer<RecipeJsonProvider> exporter, RecipeCategory category, ItemConvertible output, ItemConvertible input, int count) {
         createWoodcutting(Ingredient.ofItems(input), category, output, count).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter, RecipeProvider.convertBetween(output, input) + "_woodcutting");
     }
 }
