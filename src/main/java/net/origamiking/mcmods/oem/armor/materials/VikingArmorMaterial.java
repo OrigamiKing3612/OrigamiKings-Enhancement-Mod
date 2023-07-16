@@ -53,17 +53,8 @@ public class VikingArmorMaterial implements ArmorMaterial {
 
     public class getVikingArmor {
         public static final ArmorMaterial VIKING_ARMOR_MATERIAL = new VikingArmorMaterial();
-        // If you made a new material, this is where you would note it.
-        //public static final Item VIKING_HELMET = new ArmorItem(VIKING_ARMOR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings());
-//        public static final Item COPPER_CHESTPLATE = new ArmorItem(COPPER_ARMOR_MATERIAL, EquipmentSlot.CHEST, new Item.Settings());
-//        public static final Item COPPER_LEGGINGS = new ArmorItem(COPPER_ARMOR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings());
-//        public static final Item COPPER_BOOTS = new ArmorItem(COPPER_ARMOR_MATERIAL, EquipmentSlot.FEET, new Item.Settings());
 
         public static void register() {
-                //Registry.register(Registries.ITEM, new Identifier("oem", "viking_helmet"), VIKING_HELMET);
-//                Registry.register(Registries.ITEM, new Identifier("oem", "copper_chestplate"), COPPER_CHESTPLATE);
-//                Registry.register(Registries.ITEM, new Identifier("oem", "copper_leggings"), COPPER_LEGGINGS);
-//                Registry.register(Registries.ITEM, new Identifier("oem", "copper_boots"), COPPER_BOOTS);
             }
         }
     }

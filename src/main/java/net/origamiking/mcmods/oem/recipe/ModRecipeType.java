@@ -13,5 +13,4 @@ public class ModRecipeType {
         Registry.register(Registries.RECIPE_TYPE, new Identifier(OemMain.MOD_ID, WoodcutterRecipe.Type.ID),
                 WoodcutterRecipe.Type.INSTANCE);
     }
-
 }

@@ -26,7 +26,6 @@ public class OemMain implements ModInitializer {
 		Main();
 	}
 	//TODO terracotta slabs stairs walls
-	//test woodcutter, v slabs, and
 	public static void Main() {
 		ModBlocks.register();
 		ModItems.register();

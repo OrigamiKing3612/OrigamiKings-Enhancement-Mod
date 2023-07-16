@@ -8,7 +8,7 @@ import net.origamiking.mcmods.oem.OemMain;
 
 public class ModPaintings {
     public static final PaintingVariant SUS = registerPainting("sus", new PaintingVariant(32, 32));
-
+    //TODO move to oapi
     private static PaintingVariant registerPainting(String name, PaintingVariant paintingVariant) {
         return Registry.register(Registries.PAINTING_VARIANT, new Identifier(OemMain.MOD_ID, name), paintingVariant);
     }

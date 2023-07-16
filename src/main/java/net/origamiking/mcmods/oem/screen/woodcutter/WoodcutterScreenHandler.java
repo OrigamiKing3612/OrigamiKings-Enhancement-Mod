@@ -21,12 +21,6 @@ import net.origamiking.mcmods.oem.screen.ModScreenHandlers;
 import java.util.List;
 
 public class WoodcutterScreenHandler extends ScreenHandler {
-    public static final int field_30842 = 0;
-    public static final int field_30843 = 1;
-    private static final int field_30844 = 2;
-    private static final int field_30845 = 29;
-    private static final int field_30846 = 29;
-    private static final int field_30847 = 38;
     private final ScreenHandlerContext context;
     private final Property selectedRecipe = Property.create();
     private final World world;

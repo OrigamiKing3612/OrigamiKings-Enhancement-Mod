@@ -309,7 +309,7 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add("oem.group.oem_extra_group", "OEM Extra");
 //        translationBuilder.add(ModSpongeBlocks.LAVA_SPONGE, "Lava Sponge");
 //        translationBuilder.add(ModSpongeBlocks.WET_LAVA_SPONGE, "Wet Lava Sponge");
-        translationBuilder.add("stat.oem.interact_with_woodcutter", "Interact With Woodcutter");
+//        translationBuilder.add("stat.oem.interact_with_woodcutter", "Interact With Woodcutter");
 
 
 

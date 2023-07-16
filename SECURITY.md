@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-Minecraft 1.20.1 and greater will resevie updates. Anything under (1.19.2 and 1.18.2) will only get bug fixes if needed.
+Minecraft 1.20.1 and greater will receive updates. Anything under (1.19.2 and 1.18.2) will only get bug fixes if needed.
 
 | Version | Supported          |
 | ------- | ------------------ |

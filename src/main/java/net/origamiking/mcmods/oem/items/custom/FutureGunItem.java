@@ -11,6 +11,7 @@ import net.minecraft.util.Hand;
 import net.minecraft.util.TypedActionResult;
 import net.minecraft.util.UseAction;
 import net.minecraft.world.World;
+import net.origamiking.mcmods.oapi.items.OrigamiItemSettings;
 import net.origamiking.mcmods.oem.items.custom.renderers.FutureGunRenderer;
 import software.bernie.geckolib.animatable.GeoItem;
 import software.bernie.geckolib.animatable.SingletonGeoAnimatable;
@@ -30,7 +31,7 @@ public class FutureGunItem extends Item implements GeoItem {
     private final Supplier<Object> renderProvider = GeoItem.makeRenderer(this);
 
     public FutureGunItem() {
-        super(new Settings().maxCount(1).maxDamage(201));
+        super(new OrigamiItemSettings().maxCount(1).maxDamage(201));
 
         // Register our item as server-side handled.
         // This enables both animation data syncing and server-side animation triggering

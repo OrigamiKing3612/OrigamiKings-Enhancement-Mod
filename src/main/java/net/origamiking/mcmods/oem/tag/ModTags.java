@@ -7,6 +7,7 @@ import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
 
 public class ModTags {
+    //todo move to oapi
     public static final TagKey<Block> AZALEA_LOGS = TagKey.of(RegistryKeys.BLOCK, new Identifier(OemMain.MOD_ID, "azalea_logs"));
 
     public static void register() {
