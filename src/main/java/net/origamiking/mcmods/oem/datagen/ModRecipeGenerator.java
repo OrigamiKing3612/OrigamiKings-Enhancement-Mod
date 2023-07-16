@@ -739,6 +739,16 @@ public class ModRecipeGenerator extends FabricRecipeProvider {
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SpruceWoodBlocks.SPRUCE_BARREL, Blocks.SPRUCE_LOG);
         offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WarpedWoodBlocks.WARPED_BARREL, Blocks.WARPED_STEM);
 
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, AcaciaWoodBlocks.ACACIA_LADDER, Blocks.ACACIA_LOG, 2);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, BirchWoodBlocks.BIRCH_LADDER, Blocks.BIRCH_LOG, 2);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, CrimsonWoodBlocks.CRIMSON_LADDER, Blocks.CRIMSON_STEM, 2);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, DarkOakWoodBlocks.DARK_OAK_LADDER, Blocks.DARK_OAK_LOG, 2);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, JungleWoodBlocks.JUNGLE_LADDER, Blocks.JUNGLE_LOG, 2);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, MangroveWoodBlocks.MANGROVE_LADDER, Blocks.MANGROVE_LOG, 2);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, OakWoodBlocks.OAK_LADDER, Blocks.OAK_LOG, 2);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, SpruceWoodBlocks.SPRUCE_LADDER, Blocks.SPRUCE_LOG, 2);
+        offerWoodcuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, WarpedWoodBlocks.WARPED_LADDER, Blocks.WARPED_STEM, 2);
+
         RecipeProvider.offer2x2CompactingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.GUNPOWDER_BLOCK, Items.GUNPOWDER);
         RecipeProvider.offerShapelessRecipe(exporter, Items.GUNPOWDER, RandomBlocks.GUNPOWDER_BLOCK, "building_blocks", 4);
 

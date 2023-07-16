@@ -154,7 +154,7 @@ modrinth {
         embedded.project "fabric-api"
         embedded.project "origamikings-api"
     }
-    changelog = "Version 1.1.0-1.20.1: Compatibility Update! \n\n Added compatibility with architects_palette, betterend, betternether, blockus, and promenade. If you want more compatibility just open an [issue](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues)"
+    changelog = "Version 1.1.1-1.20.1: Compatibility Update! \n\n Fixed a bug with crafting Gold Bars and added recipes for the ladders. If you want more compatibility or find a bug just open an [issue](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues)"
 }
 //end
 curseforge {
@@ -163,7 +163,7 @@ curseforge {
         id = "860010"
         releaseType = "release"
         changelogType = 'text'
-        changelog = "Version 1.1.0-1.20.1: Compatibility Update! \n\n Added compatibility with architects_palette, betterend, betternether, blockus, and promenade. If you want more compatibility just open an [issue](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues)"
+        changelog = "Version 1.1.1-1.20.1: Compatibility Update! \n\n Fixed a bug with crafting Gold Bars and added recipes for the ladders. If you want more compatibility or find a bug just open an [issue](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues)"
         addGameVersion("1.20.1")
         addGameVersion("Fabric")
         addGameVersion("Java 17")

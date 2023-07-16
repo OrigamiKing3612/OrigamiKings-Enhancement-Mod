@@ -1,0 +1,8 @@
+{
+  "type": "oem:woodcutter",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:jungle_log"
+  },
+  "result": "oem:jungle_ladder"
+}

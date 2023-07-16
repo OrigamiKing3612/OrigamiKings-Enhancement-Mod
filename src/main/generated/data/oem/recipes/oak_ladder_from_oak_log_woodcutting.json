@@ -1,0 +1,8 @@
+{
+  "type": "oem:woodcutter",
+  "count": 2,
+  "ingredient": {
+    "item": "minecraft:oak_log"
+  },
+  "result": "oem:oak_ladder"
+}
