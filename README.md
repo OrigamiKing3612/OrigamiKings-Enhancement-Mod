@@ -36,7 +36,6 @@ Some things this mod adds are:
 </p>
 </details>
 
-# The 0.6.0 Update!
-![update](https://user-images.githubusercontent.com/115757805/225779971-eaca0714-d15c-464f-8bf2-bf842ce5f5af.png)
-
+# The 1.0.7 Update!
+![1 0 6+7](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/assets/115757805/1e2faebb-2356-41ae-96b0-8a05cfef93c6)
 
