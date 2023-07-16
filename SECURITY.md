@@ -2,12 +2,12 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Minecraft 1.20.1 and greater will resevie updates. Anything under (1.19.2 and 1.18.2) will only get bug fixes if needed.
 
 | Version | Supported          |
 | ------- | ------------------ |
-|  all versions | :white_check_mark: |
+|  Minecraft 1.20.1 and greater | 🟩 |
+|  Minecraft 1.20 and under  | 🟥 |
 
 
 ## Reporting a Vulnerability
