@@ -1,8 +1,0 @@
-{
-  "type":"oem:woodcutter",
-  "ingredient": {
-    "item":"minecraft:mangrove_planks"
-  },
-  "result":"oem:mangrove_log_fence",
-  "count":1
-}

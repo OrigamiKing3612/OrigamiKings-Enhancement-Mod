@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:birch_leaves"
+    }
+  },
+  "pattern": [
+    "III"
+  ],
+  "result": {
+    "count": 6,
+    "item": "oem:birch_leaves_slab"
+  },
+  "show_notification": true
+}

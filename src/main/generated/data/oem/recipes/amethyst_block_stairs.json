@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:amethyst_block"
+    }
+  },
+  "pattern": [
+    "I  ",
+    "II ",
+    "III"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oem:amethyst_block_stairs"
+  },
+  "show_notification": true
+}

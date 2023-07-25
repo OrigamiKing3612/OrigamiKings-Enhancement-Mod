@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "pattern": [
+    "III"
+  ],
+  "result": {
+    "count": 6,
+    "item": "oem:netherrack_slab"
+  },
+  "show_notification": true
+}

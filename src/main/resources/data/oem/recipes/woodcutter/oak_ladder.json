@@ -1,8 +1,0 @@
-{
-    "type":"oem:woodcutter",
-    "ingredient": {
-        "item":"minecraft:oak_planks"
-    },
-    "result":"oem:oak_ladder",
-    "count":1
-}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:copper_ingot"
+    }
+  },
+  "pattern": [
+    "III",
+    "I I",
+    "I I"
+  ],
+  "result": {
+    "item": "oem:copper_leggings"
+  },
+  "show_notification": true
+}

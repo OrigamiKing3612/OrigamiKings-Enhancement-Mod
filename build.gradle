@@ -19,6 +19,7 @@ group = project.maven_group
 repositories {
     maven { url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
     maven { url 'https://dl.cloudsmith.io/public/origamiking3612/origamikings-api/maven/' }
+    maven { url "https://maven.shedaniel.me" }
     maven {
         name = "TerraformersMC"
         url = "https://maven.terraformersmc.com/"
@@ -59,9 +60,11 @@ dependencies {
 
     modImplementation "net.origamiking:Origamikings-API:${origamikings_api}"
 
+    modCompileOnly "me.shedaniel:RoughlyEnoughItems-api-fabric:${rei_version}"
     modCompileOnly "dev.emi:emi-fabric:${emi_version}:api"
-    modLocalRuntime "dev.emi:emi-fabric:${emi_version}"
-}
+
+//    modLocalRuntime "dev.emi:emi-fabric:${emi_version}"
+    modRuntimeOnly "me.shedaniel:RoughlyEnoughItems-fabric:${rei_version}"}
 
 processResources {
     inputs.property "version", project.version
@@ -138,6 +141,10 @@ publishing {
         }
     }
 }
+def mod_changelog = "Version ${mod_version}: The Great Recipe Update! \n\n . " +
+        "Cleaned up and fixed Recipes. " +
+        "If you want more compatibility or find a bug just open an [issue](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues)"
+
 modrinth {
     debugMode = false
     token = System.getenv("MODRINTH_TOKEN")
@@ -153,8 +160,10 @@ modrinth {
         embedded.project "geckolib"
         embedded.project "fabric-api"
         embedded.project "origamikings-api"
+        optional.project "emi"
+        optional.project "rei"
     }
-    changelog = "Version 1.1.1-1.20.1: Compatibility Update! \n\n Fixed a bug with crafting Gold Bars and added recipes for the ladders. If you want more compatibility or find a bug just open an [issue](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues)"
+    changelog = mod_changelog;
 }
 //end
 curseforge {
@@ -163,7 +172,7 @@ curseforge {
         id = "860010"
         releaseType = "release"
         changelogType = 'text'
-        changelog = "Version 1.1.1-1.20.1: Compatibility Update! \n\n Fixed a bug with crafting Gold Bars and added recipes for the ladders. If you want more compatibility or find a bug just open an [issue](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues)"
+        changelog = mod_changelog
         addGameVersion("1.20.1")
         addGameVersion("Fabric")
         addGameVersion("Java 17")

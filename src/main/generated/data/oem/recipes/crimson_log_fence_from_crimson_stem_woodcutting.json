@@ -1,0 +1,8 @@
+{
+  "type": "oem:woodcutter",
+  "count": 1,
+  "ingredient": {
+    "item": "minecraft:crimson_stem"
+  },
+  "result": "oem:crimson_log_fence"
+}

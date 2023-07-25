@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:netherrack"
+    }
+  },
+  "pattern": [
+    "I  ",
+    "II ",
+    "III"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oem:netherrack_stairs"
+  },
+  "show_notification": true
+}

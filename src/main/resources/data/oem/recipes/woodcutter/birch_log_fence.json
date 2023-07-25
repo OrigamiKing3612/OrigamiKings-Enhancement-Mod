@@ -1,8 +1,0 @@
-{
-  "type":"oem:woodcutter",
-  "ingredient": {
-    "item":"minecraft:birch_planks"
-  },
-  "result":"oem:birch_log_fence",
-  "count":1
-}

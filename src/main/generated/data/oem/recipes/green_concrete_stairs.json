@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:green_concrete"
+    }
+  },
+  "pattern": [
+    "I  ",
+    "II ",
+    "III"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oem:green_concrete_stairs"
+  },
+  "show_notification": true
+}

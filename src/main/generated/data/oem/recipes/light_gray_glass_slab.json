@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:light_gray_stained_glass"
+    }
+  },
+  "pattern": [
+    "III"
+  ],
+  "result": {
+    "count": 6,
+    "item": "oem:light_gray_glass_slab"
+  },
+  "show_notification": true
+}

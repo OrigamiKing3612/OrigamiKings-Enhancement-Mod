@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:white_stained_glass"
+    }
+  },
+  "pattern": [
+    "I  ",
+    "II ",
+    "III"
+  ],
+  "result": {
+    "count": 4,
+    "item": "oem:white_glass_stairs"
+  },
+  "show_notification": true
+}

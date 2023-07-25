@@ -1,8 +1,0 @@
-{
-    "type":"oem:woodcutter",
-    "ingredient": {
-        "item":"minecraft:acacia_planks"
-    },
-    "result":"oem:acacia_ladder",
-    "count":1
-}

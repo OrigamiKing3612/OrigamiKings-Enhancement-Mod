@@ -1,8 +1,0 @@
-{
-  "type":"oem:woodcutter",
-  "ingredient": {
-    "item":"minecraft:warped_planks"
-  },
-  "result":"oem:warped_log_fence",
-  "count":1
-}

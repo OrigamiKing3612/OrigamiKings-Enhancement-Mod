@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "I": {
+      "item": "minecraft:cyan_stained_glass"
+    }
+  },
+  "pattern": [
+    "III"
+  ],
+  "result": {
+    "count": 6,
+    "item": "oem:cyan_glass_slab"
+  },
+  "show_notification": true
+}

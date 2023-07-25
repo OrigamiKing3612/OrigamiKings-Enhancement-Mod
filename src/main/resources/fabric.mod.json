@@ -26,6 +26,12 @@
     ],
     "client": [
       "net.origamiking.mcmods.oem.OemClient"
+    ],
+    "rei_client": [
+      "net.origamiking.mcmods.oem.compact.rei.OemREIClientPlugin"
+    ],
+    "emi": [
+      "net.origamiking.mcmods.oem.compact.emi.OemEMIClientPlugin"
     ]
 },
   "mixins": [
