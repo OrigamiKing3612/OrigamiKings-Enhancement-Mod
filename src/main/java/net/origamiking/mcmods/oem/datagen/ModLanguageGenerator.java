@@ -2,6 +2,9 @@ package net.origamiking.mcmods.oem.datagen;
 
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricLanguageProvider;
+import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaSlabs;
+import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaStairs;
+import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaWalls;
 
 import java.nio.file.Path;
 
@@ -310,6 +313,56 @@ public class ModLanguageGenerator extends FabricLanguageProvider {
 //        translationBuilder.add(ModSpongeBlocks.LAVA_SPONGE, "Lava Sponge");
 //        translationBuilder.add(ModSpongeBlocks.WET_LAVA_SPONGE, "Wet Lava Sponge");
 //        translationBuilder.add("stat.oem.interact_with_woodcutter", "Interact With Woodcutter");
+        translationBuilder.add(TerracottaWalls.WHITE_TERRACOTTA_WALL, "White Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.LIGHT_GRAY_TERRACOTTA_WALL,"Light Gray Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.GRAY_TERRACOTTA_WALL,"Gray Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.BLACK_TERRACOTTA_WALL,"Black Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.BROWN_TERRACOTTA_WALL,"Brown Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.RED_TERRACOTTA_WALL,"Red Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.ORANGE_TERRACOTTA_WALL,"Orange Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.YELLOW_TERRACOTTA_WALL,"Yellow Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.LIME_TERRACOTTA_WALL,"Lime Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.GREEN_TERRACOTTA_WALL,"Green Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.CYAN_TERRACOTTA_WALL,"Cyan Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.LIGHT_BLUE_TERRACOTTA_WALL,"Light Blue Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.BLUE_TERRACOTTA_WALL,"Blue Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.PURPLE_TERRACOTTA_WALL,"Purple Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.MAGENTA_TERRACOTTA_WALL,"Mangenta Terracotta Wall");
+        translationBuilder.add(TerracottaWalls.PINK_TERRACOTTA_WALL,"Pink Terracotta Wall");
+
+        translationBuilder.add(TerracottaStairs.WHITE_TERRACOTTA_STAIR, "White Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.LIGHT_GRAY_TERRACOTTA_STAIR,"Light Gray Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.GRAY_TERRACOTTA_STAIR,"Gray Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.BLACK_TERRACOTTA_STAIR,"Black Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.BROWN_TERRACOTTA_STAIR,"Brown Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.RED_TERRACOTTA_STAIR,"Red Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.ORANGE_TERRACOTTA_STAIR,"Orange Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.YELLOW_TERRACOTTA_STAIR,"Yellow Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.LIME_TERRACOTTA_STAIR,"Lime Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.GREEN_TERRACOTTA_STAIR,"Green Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.CYAN_TERRACOTTA_STAIR,"Cyan Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.LIGHT_BLUE_TERRACOTTA_STAIR,"Light Blue Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.BLUE_TERRACOTTA_STAIR,"Blue Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.PURPLE_TERRACOTTA_STAIR,"Purple Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.MAGENTA_TERRACOTTA_STAIR,"Mangenta Terracotta Stairs");
+        translationBuilder.add(TerracottaStairs.PINK_TERRACOTTA_STAIR,"Pink Terracotta Stairs");
+
+        translationBuilder.add(TerracottaSlabs.WHITE_TERRACOTTA_SLAB, "White Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.LIGHT_GRAY_TERRACOTTA_SLAB,"Light Gray Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.GRAY_TERRACOTTA_SLAB,"Gray Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.BLACK_TERRACOTTA_SLAB,"Black Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.BROWN_TERRACOTTA_SLAB,"Brown Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.RED_TERRACOTTA_SLAB,"Red Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.ORANGE_TERRACOTTA_SLAB,"Orange Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.YELLOW_TERRACOTTA_SLAB,"Yellow Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.LIME_TERRACOTTA_SLAB,"Lime Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.GREEN_TERRACOTTA_SLAB,"Green Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.CYAN_TERRACOTTA_SLAB,"Cyan Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.LIGHT_BLUE_TERRACOTTA_SLAB,"Light Blue Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.BLUE_TERRACOTTA_SLAB,"Blue Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.PURPLE_TERRACOTTA_SLAB,"Purple Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.MAGENTA_TERRACOTTA_SLAB,"Mangenta Terracotta Slab");
+        translationBuilder.add(TerracottaSlabs.PINK_TERRACOTTA_SLAB,"Pink Terracotta Slab");
 
 
 

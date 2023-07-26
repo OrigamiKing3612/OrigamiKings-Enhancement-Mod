@@ -6,6 +6,9 @@ import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
+import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaSlabs;
+import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaStairs;
+import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaWalls;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
@@ -78,5 +81,22 @@ public class BlockSetModels {
         blockSet(blockStateModelGenerator, Blocks.PURPLE_CONCRETE, ConcreteSlabs.PURPLE_CONCRETE_SLAB, ConcreteStairs.PURPLE_CONCRETE_STAIR, ConcreteWalls.PURPLE_CONCRETE_WALL);
         blockSet(blockStateModelGenerator, Blocks.MAGENTA_CONCRETE, ConcreteSlabs.MAGENTA_CONCRETE_SLAB, ConcreteStairs.MAGENTA_CONCRETE_STAIR, ConcreteWalls.MAGENTA_CONCRETE_WALL);
         blockSet(blockStateModelGenerator, Blocks.PINK_CONCRETE, ConcreteSlabs.PINK_CONCRETE_SLAB, ConcreteStairs.PINK_CONCRETE_STAIR, ConcreteWalls.PINK_CONCRETE_WALL);
+
+        blockSet(blockStateModelGenerator, Blocks.BLACK_TERRACOTTA, TerracottaSlabs.BLACK_TERRACOTTA_SLAB, TerracottaStairs.BLACK_TERRACOTTA_STAIR, TerracottaWalls.BLACK_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.GRAY_TERRACOTTA, TerracottaSlabs.GRAY_TERRACOTTA_SLAB, TerracottaStairs.GRAY_TERRACOTTA_STAIR, TerracottaWalls.GRAY_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.LIGHT_GRAY_TERRACOTTA, TerracottaSlabs.LIGHT_GRAY_TERRACOTTA_SLAB, TerracottaStairs.LIGHT_GRAY_TERRACOTTA_STAIR, TerracottaWalls.LIGHT_GRAY_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.WHITE_TERRACOTTA, TerracottaSlabs.WHITE_TERRACOTTA_SLAB, TerracottaStairs.WHITE_TERRACOTTA_STAIR, TerracottaWalls.WHITE_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.BROWN_TERRACOTTA, TerracottaSlabs.BROWN_TERRACOTTA_SLAB, TerracottaStairs.BROWN_TERRACOTTA_STAIR, TerracottaWalls.BROWN_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.RED_TERRACOTTA, TerracottaSlabs.RED_TERRACOTTA_SLAB, TerracottaStairs.RED_TERRACOTTA_STAIR, TerracottaWalls.RED_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.ORANGE_TERRACOTTA, TerracottaSlabs.ORANGE_TERRACOTTA_SLAB, TerracottaStairs.ORANGE_TERRACOTTA_STAIR, TerracottaWalls.ORANGE_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.YELLOW_TERRACOTTA, TerracottaSlabs.YELLOW_TERRACOTTA_SLAB, TerracottaStairs.YELLOW_TERRACOTTA_STAIR, TerracottaWalls.YELLOW_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.LIME_TERRACOTTA, TerracottaSlabs.LIME_TERRACOTTA_SLAB, TerracottaStairs.LIME_TERRACOTTA_STAIR, TerracottaWalls.LIME_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.GREEN_TERRACOTTA, TerracottaSlabs.GREEN_TERRACOTTA_SLAB, TerracottaStairs.GREEN_TERRACOTTA_STAIR, TerracottaWalls.GREEN_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.CYAN_TERRACOTTA, TerracottaSlabs.CYAN_TERRACOTTA_SLAB, TerracottaStairs.CYAN_TERRACOTTA_STAIR, TerracottaWalls.CYAN_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.BLUE_TERRACOTTA, TerracottaSlabs.BLUE_TERRACOTTA_SLAB, TerracottaStairs.BLUE_TERRACOTTA_STAIR, TerracottaWalls.BLUE_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.LIGHT_BLUE_TERRACOTTA, TerracottaSlabs.LIGHT_BLUE_TERRACOTTA_SLAB, TerracottaStairs.LIGHT_BLUE_TERRACOTTA_STAIR, TerracottaWalls.LIGHT_BLUE_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.PURPLE_TERRACOTTA, TerracottaSlabs.PURPLE_TERRACOTTA_SLAB, TerracottaStairs.PURPLE_TERRACOTTA_STAIR, TerracottaWalls.PURPLE_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.MAGENTA_TERRACOTTA, TerracottaSlabs.MAGENTA_TERRACOTTA_SLAB, TerracottaStairs.MAGENTA_TERRACOTTA_STAIR, TerracottaWalls.MAGENTA_TERRACOTTA_WALL);
+        blockSet(blockStateModelGenerator, Blocks.PINK_TERRACOTTA, TerracottaSlabs.PINK_TERRACOTTA_SLAB, TerracottaStairs.PINK_TERRACOTTA_STAIR, TerracottaWalls.PINK_TERRACOTTA_WALL);
     }
 }

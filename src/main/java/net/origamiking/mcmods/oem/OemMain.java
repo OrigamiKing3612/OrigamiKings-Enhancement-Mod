@@ -25,7 +25,6 @@ public class OemMain implements ModInitializer {
 	public void onInitialize() {
 		Main();
 	}
-	//TODO terracotta slabs stairs walls
 	//TODO add welcome advancement from oapi
 
 	public static void Main() {

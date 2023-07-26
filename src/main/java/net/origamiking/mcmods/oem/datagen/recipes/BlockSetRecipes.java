@@ -13,6 +13,9 @@ import net.origamiking.mcmods.oem.blocks.leaves.LeafStairs;
 import net.origamiking.mcmods.oem.blocks.leaves.LeafWalls;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
+import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaSlabs;
+import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaStairs;
+import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaWalls;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
@@ -113,5 +116,22 @@ public class BlockSetRecipes {
         offerCarpets(exporter, LeafCarpets.ACACIA_LEAVES_CARPET, Blocks.ACACIA_LEAVES);
         offerCarpets(exporter, LeafCarpets.DARK_OAK_LEAVES_CARPET, Blocks.DARK_OAK_LEAVES);
         offerCarpets(exporter, LeafCarpets.MANGROVE_LEAVES_CARPET, Blocks.MANGROVE_LEAVES);
+
+        offerBlockSet(exporter, Blocks.BLACK_TERRACOTTA, TerracottaSlabs.BLACK_TERRACOTTA_SLAB, TerracottaStairs.BLACK_TERRACOTTA_STAIR, TerracottaWalls.BLACK_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.GRAY_TERRACOTTA, TerracottaSlabs.GRAY_TERRACOTTA_SLAB, TerracottaStairs.GRAY_TERRACOTTA_STAIR, TerracottaWalls.GRAY_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.LIGHT_GRAY_TERRACOTTA, TerracottaSlabs.LIGHT_GRAY_TERRACOTTA_SLAB, TerracottaStairs.LIGHT_GRAY_TERRACOTTA_STAIR, TerracottaWalls.LIGHT_GRAY_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.WHITE_TERRACOTTA, TerracottaSlabs.WHITE_TERRACOTTA_SLAB, TerracottaStairs.WHITE_TERRACOTTA_STAIR, TerracottaWalls.WHITE_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.BROWN_TERRACOTTA, TerracottaSlabs.BROWN_TERRACOTTA_SLAB, TerracottaStairs.BROWN_TERRACOTTA_STAIR, TerracottaWalls.BROWN_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.RED_TERRACOTTA, TerracottaSlabs.RED_TERRACOTTA_SLAB, TerracottaStairs.RED_TERRACOTTA_STAIR, TerracottaWalls.RED_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.ORANGE_TERRACOTTA, TerracottaSlabs.ORANGE_TERRACOTTA_SLAB, TerracottaStairs.ORANGE_TERRACOTTA_STAIR, TerracottaWalls.ORANGE_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.YELLOW_TERRACOTTA, TerracottaSlabs.YELLOW_TERRACOTTA_SLAB, TerracottaStairs.YELLOW_TERRACOTTA_STAIR, TerracottaWalls.YELLOW_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.LIME_TERRACOTTA, TerracottaSlabs.LIME_TERRACOTTA_SLAB, TerracottaStairs.LIME_TERRACOTTA_STAIR, TerracottaWalls.LIME_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.GREEN_TERRACOTTA, TerracottaSlabs.GREEN_TERRACOTTA_SLAB, TerracottaStairs.GREEN_TERRACOTTA_STAIR, TerracottaWalls.GREEN_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.CYAN_TERRACOTTA, TerracottaSlabs.CYAN_TERRACOTTA_SLAB, TerracottaStairs.CYAN_TERRACOTTA_STAIR, TerracottaWalls.CYAN_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.BLUE_TERRACOTTA, TerracottaSlabs.BLUE_TERRACOTTA_SLAB, TerracottaStairs.BLUE_TERRACOTTA_STAIR, TerracottaWalls.BLUE_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.LIGHT_BLUE_TERRACOTTA, TerracottaSlabs.LIGHT_BLUE_TERRACOTTA_SLAB, TerracottaStairs.LIGHT_BLUE_TERRACOTTA_STAIR, TerracottaWalls.LIGHT_BLUE_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.PURPLE_TERRACOTTA, TerracottaSlabs.PURPLE_TERRACOTTA_SLAB, TerracottaStairs.PURPLE_TERRACOTTA_STAIR, TerracottaWalls.PURPLE_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.MAGENTA_TERRACOTTA, TerracottaSlabs.MAGENTA_TERRACOTTA_SLAB, TerracottaStairs.MAGENTA_TERRACOTTA_STAIR, TerracottaWalls.MAGENTA_TERRACOTTA_WALL);
+        offerBlockSet(exporter, Blocks.PINK_TERRACOTTA, TerracottaSlabs.PINK_TERRACOTTA_SLAB, TerracottaStairs.PINK_TERRACOTTA_STAIR, TerracottaWalls.PINK_TERRACOTTA_WALL);
     }
 }

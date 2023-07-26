@@ -64,7 +64,23 @@
     "oem:blue_stained_glass_wall",
     "oem:purple_stained_glass_wall",
     "oem:magenta_stained_glass_wall",
-    "oem:pink_stained_glass_wall"
+    "oem:pink_stained_glass_wall",
+    "oem:white_terracotta_wall",
+    "oem:black_terracotta_wall",
+    "oem:light_gray_terracotta_wall",
+    "oem:gray_terracotta_wall",
+    "oem:brown_terracotta_wall",
+    "oem:red_terracotta_wall",
+    "oem:orange_terracotta_wall",
+    "oem:yellow_terracotta_wall",
+    "oem:lime_terracotta_wall",
+    "oem:green_terracotta_wall",
+    "oem:cyan_terracotta_wall",
+    "oem:light_blue_terracotta_wall",
+    "oem:blue_terracotta_wall",
+    "oem:purple_terracotta_wall",
+    "oem:magenta_terracotta_wall",
+    "oem:pink_terracotta_wall"
 
   ]
 }
