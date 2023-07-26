@@ -1,0 +1,30 @@
+{
+  "criteria": {
+    "welcome": {
+      "conditions": {},
+      "trigger": "origamikings-api:welcome"
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "oem:textures/block/azalea_planks.png",
+    "description": {
+      "translate": "advancement.oem.welcome.description"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "item": "oem:spruce_barrel"
+    },
+    "show_toast": true,
+    "title": {
+      "translate": "advancement.oem.welcome.title"
+    }
+  },
+  "requirements": [
+    [
+      "welcome"
+    ]
+  ],
+  "sends_telemetry_event": true
+}

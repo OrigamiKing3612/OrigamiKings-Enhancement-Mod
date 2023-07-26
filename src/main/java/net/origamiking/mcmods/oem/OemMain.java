@@ -18,14 +18,13 @@ import org.slf4j.LoggerFactory;
 
 public class OemMain implements ModInitializer {
 	public static final String MOD_ID = "oem";
-	public static final String VERSION = "OEM-1.2.0-1.20.1";
+	public static final String VERSION = "OEM-1.2.1-1.20.1";
 	public static final Logger LOGGER = LoggerFactory.getLogger(OemMain.MOD_ID);
 
 	@Override
 	public void onInitialize() {
 		Main();
 	}
-	//TODO add welcome advancement from oapi
 
 	public static void Main() {
 		ModBlocks.register();
@@ -37,7 +36,6 @@ public class OemMain implements ModInitializer {
 		ModRecipeType.register();
         ModScreenHandlers.register();
 		ModStats.register();
-//		ModRecipeType.register();
 
 		if (FabricLoader.getInstance().isModLoaded("oem-extra")) OemExtraMain.registerExtraStuff();
 	}
