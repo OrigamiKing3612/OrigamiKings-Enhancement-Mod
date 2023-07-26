@@ -2,6 +2,9 @@ package net.origamiking.mcmods.oem.datagen.models;
 
 import net.minecraft.block.Blocks;
 import net.minecraft.data.client.BlockStateModelGenerator;
+import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
+import net.origamiking.mcmods.oem.blocks.concrete.ConcreteStairs;
+import net.origamiking.mcmods.oem.blocks.concrete.ConcreteWalls;
 import net.origamiking.mcmods.oem.blocks.glass.GlassBlocks;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
@@ -58,5 +61,22 @@ public class BlockSetModels {
         blockSet(blockStateModelGenerator, Blocks.PURPLE_WOOL, PurpleWool.PURPLE_WOOL_SLAB, PurpleWool.PURPLE_WOOL_STAIRS, PurpleWool.PURPLE_WOOL_WALL);
         blockSet(blockStateModelGenerator, Blocks.MAGENTA_WOOL, MagentaWool.MAGENTA_WOOL_SLAB, MagentaWool.MAGENTA_WOOL_STAIRS, MagentaWool.MAGENTA_WOOL_WALL);
         blockSet(blockStateModelGenerator, Blocks.PINK_WOOL, PinkWool.PINK_WOOL_SLAB, PinkWool.PINK_WOOL_STAIRS, PinkWool.PINK_WOOL_WALL);
+
+        blockSet(blockStateModelGenerator, Blocks.BLACK_CONCRETE, ConcreteSlabs.BLACK_CONCRETE_SLAB, ConcreteStairs.BLACK_CONCRETE_STAIR, ConcreteWalls.BLACK_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.GRAY_CONCRETE, ConcreteSlabs.GRAY_CONCRETE_SLAB, ConcreteStairs.GRAY_CONCRETE_STAIR, ConcreteWalls.GRAY_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.LIGHT_GRAY_CONCRETE, ConcreteSlabs.LIGHT_GRAY_CONCRETE_SLAB, ConcreteStairs.LIGHT_GRAY_CONCRETE_STAIR, ConcreteWalls.LIGHT_GRAY_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.WHITE_CONCRETE, ConcreteSlabs.WHITE_CONCRETE_SLAB, ConcreteStairs.WHITE_CONCRETE_STAIR, ConcreteWalls.WHITE_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.BROWN_CONCRETE, ConcreteSlabs.BROWN_CONCRETE_SLAB, ConcreteStairs.BROWN_CONCRETE_STAIR, ConcreteWalls.BROWN_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.RED_CONCRETE, ConcreteSlabs.RED_CONCRETE_SLAB, ConcreteStairs.RED_CONCRETE_STAIR, ConcreteWalls.RED_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.ORANGE_CONCRETE, ConcreteSlabs.ORANGE_CONCRETE_SLAB, ConcreteStairs.ORANGE_CONCRETE_STAIR, ConcreteWalls.ORANGE_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.YELLOW_CONCRETE, ConcreteSlabs.YELLOW_CONCRETE_SLAB, ConcreteStairs.YELLOW_CONCRETE_STAIR, ConcreteWalls.YELLOW_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.LIME_CONCRETE, ConcreteSlabs.LIME_CONCRETE_SLAB, ConcreteStairs.LIME_CONCRETE_STAIR, ConcreteWalls.LIME_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.GREEN_CONCRETE, ConcreteSlabs.GREEN_CONCRETE_SLAB, ConcreteStairs.GREEN_CONCRETE_STAIR, ConcreteWalls.GREEN_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.CYAN_CONCRETE, ConcreteSlabs.CYAN_CONCRETE_SLAB, ConcreteStairs.CYAN_CONCRETE_STAIR, ConcreteWalls.CYAN_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.BLUE_CONCRETE, ConcreteSlabs.BLUE_CONCRETE_SLAB, ConcreteStairs.BLUE_CONCRETE_STAIR, ConcreteWalls.BLUE_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.LIGHT_BLUE_CONCRETE, ConcreteSlabs.LIGHT_BLUE_CONCRETE_SLAB, ConcreteStairs.LIGHT_BLUE_CONCRETE_STAIR, ConcreteWalls.LIGHT_BLUE_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.PURPLE_CONCRETE, ConcreteSlabs.PURPLE_CONCRETE_SLAB, ConcreteStairs.PURPLE_CONCRETE_STAIR, ConcreteWalls.PURPLE_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.MAGENTA_CONCRETE, ConcreteSlabs.MAGENTA_CONCRETE_SLAB, ConcreteStairs.MAGENTA_CONCRETE_STAIR, ConcreteWalls.MAGENTA_CONCRETE_WALL);
+        blockSet(blockStateModelGenerator, Blocks.PINK_CONCRETE, ConcreteSlabs.PINK_CONCRETE_SLAB, ConcreteStairs.PINK_CONCRETE_STAIR, ConcreteWalls.PINK_CONCRETE_WALL);
     }
 }
