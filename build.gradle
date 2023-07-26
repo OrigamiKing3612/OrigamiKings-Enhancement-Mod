@@ -158,8 +158,8 @@ modrinth {
         // scope.type
         // The scope can be `required`, `optional`, `incompatible`, or `embedded`
         // The type can either be `project` or `version`
-        embedded.project "geckolib"
-        embedded.project "fabric-api"
+        required.project "geckolib"
+        required.project "fabric-api"
         embedded.project "origamikings-api"
         optional.project "emi"
         optional.project "rei"
