@@ -1,7 +1,0 @@
-{
-	"parent": "oem:block/glass/glass_wall_post",
-	"textures": {
-		"wall": "oem:block/blue_stained_glass_wall",
-		"particle": "block/blue_stained_glass"
-	}
-}

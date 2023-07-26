@@ -1,9 +1,0 @@
-{
-  "parent": "oem:block/glass/glass_models/glass/glass_stairs_inner",
-  "textures": {
-    "bottom": "minecraft:block/white_stained_glass",
-    "front": "oem:block/white_stained_glass_slab_side",
-    "side": "oem:block/white_stained_glass_stair_side",
-    "top": "oem:block/white_stained_glass_stair_small"
-  }
-}

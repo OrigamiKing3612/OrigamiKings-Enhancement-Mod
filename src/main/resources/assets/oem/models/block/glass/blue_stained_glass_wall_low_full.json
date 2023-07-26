@@ -1,6 +1,0 @@
-{
-	"parent": "oem:block/glass/glass_wall_low_full",
-	"textures": {
-		"wall": "oem:block/blue_stained_glass_wall"
-	}
-}

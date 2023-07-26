@@ -1,7 +1,0 @@
-{
-	"parent": "oem:block/glass/glass_wall_side_low",
-	"textures": {
-		"wall": "oem:block/red_stained_glass_wall",
-		"particle": "minecraft:block/red_stained_glass"
-	}
-}
