@@ -1,9 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "oem:azalea_log",
-    "oem:stripped_azalea_log",
-    "oem:azalea_wood",
-    "oem:stripped_azalea_wood"
-  ]
-}
