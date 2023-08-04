@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 2,
+  "ingredient": {
+    "item": "oem:azalea_log"
+  },
+  "result": "oem:azalea_log_slab"
+}

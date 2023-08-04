@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "oem:acacia_log_fence",
+    "oem:acacia_log_slab",
+    "oem:acacia_log_stairs"
+  ]
+}

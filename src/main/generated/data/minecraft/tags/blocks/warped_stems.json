@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "oem:warped_log_fence",
+    "oem:warped_log_slab",
+    "oem:warped_log_stairs"
+  ]
+}

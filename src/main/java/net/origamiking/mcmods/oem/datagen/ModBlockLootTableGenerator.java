@@ -60,6 +60,7 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
     public ModBlockLootTableGenerator(FabricDataOutput dataOutput) {
         super(dataOutput);
     }
+
     @Override
     public void generate() {
         addDrop(ConcreteStairs.WHITE_CONCRETE_STAIR);
@@ -540,5 +541,26 @@ public class ModBlockLootTableGenerator extends FabricBlockLootTableProvider {
         addDrop(TerracottaStairs.PINK_TERRACOTTA_STAIR);
         addDrop(TerracottaSlabs.PINK_TERRACOTTA_SLAB, slabDrops(TerracottaSlabs.PINK_TERRACOTTA_SLAB));
         addDrop(TerracottaWalls.PINK_TERRACOTTA_WALL);
+
+        addDrop(AcaciaWoodBlocks.ACACIA_LOG_SLAB, slabDrops(AcaciaWoodBlocks.ACACIA_LOG_SLAB));
+        addDrop(AcaciaWoodBlocks.ACACIA_LOG_STAIRS);
+        addDrop(AzaleaWoodBlocks.AZALEA_LOG_SLAB, slabDrops(AzaleaWoodBlocks.AZALEA_LOG_SLAB));
+        addDrop(AzaleaWoodBlocks.AZALEA_LOG_STAIRS);
+        addDrop(BirchWoodBlocks.BIRCH_LOG_SLAB, slabDrops(BirchWoodBlocks.BIRCH_LOG_SLAB));
+        addDrop(BirchWoodBlocks.BIRCH_LOG_STAIRS);
+        addDrop(CrimsonWoodBlocks.CRIMSON_LOG_SLAB, slabDrops(CrimsonWoodBlocks.CRIMSON_LOG_SLAB));
+        addDrop(CrimsonWoodBlocks.CRIMSON_LOG_STAIRS);
+        addDrop(DarkOakWoodBlocks.DARK_OAK_LOG_SLAB, slabDrops(DarkOakWoodBlocks.DARK_OAK_LOG_SLAB));
+        addDrop(DarkOakWoodBlocks.DARK_OAK_LOG_STAIRS);
+        addDrop(JungleWoodBlocks.JUNGLE_LOG_SLAB, slabDrops(JungleWoodBlocks.JUNGLE_LOG_SLAB));
+        addDrop(JungleWoodBlocks.JUNGLE_LOG_STAIRS);
+        addDrop(MangroveWoodBlocks.MANGROVE_LOG_SLAB, slabDrops(MangroveWoodBlocks.MANGROVE_LOG_SLAB));
+        addDrop(MangroveWoodBlocks.MANGROVE_LOG_STAIRS);
+        addDrop(OakWoodBlocks.OAK_LOG_SLAB, slabDrops(OakWoodBlocks.OAK_LOG_SLAB));
+        addDrop(OakWoodBlocks.OAK_LOG_STAIRS);
+        addDrop(SpruceWoodBlocks.SPRUCE_LOG_SLAB, slabDrops(SpruceWoodBlocks.SPRUCE_LOG_SLAB));
+        addDrop(SpruceWoodBlocks.SPRUCE_LOG_STAIRS);
+        addDrop(WarpedWoodBlocks.WARPED_LOG_SLAB, slabDrops(WarpedWoodBlocks.WARPED_LOG_SLAB));
+        addDrop(WarpedWoodBlocks.WARPED_LOG_STAIRS);
     }
 }

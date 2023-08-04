@@ -16,6 +16,16 @@ import net.origamiking.mcmods.oem.blocks.sculk.SculkBlocks;
 import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaSlabs;
 import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaStairs;
 import net.origamiking.mcmods.oem.blocks.terracotta.TerracottaWalls;
+import net.origamiking.mcmods.oem.blocks.wood.acacia.AcaciaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.azalea.AzaleaWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.birch.BirchWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.crimson.CrimsonWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.darkoak.DarkOakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.jungle.JungleWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
+import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wool.black.BlackWool;
 import net.origamiking.mcmods.oem.blocks.wool.blue.BlueWool;
 import net.origamiking.mcmods.oem.blocks.wool.brown.BrownWool;
@@ -133,5 +143,16 @@ public class BlockSetRecipes {
         offerBlockSet(exporter, Blocks.PURPLE_TERRACOTTA, TerracottaSlabs.PURPLE_TERRACOTTA_SLAB, TerracottaStairs.PURPLE_TERRACOTTA_STAIR, TerracottaWalls.PURPLE_TERRACOTTA_WALL);
         offerBlockSet(exporter, Blocks.MAGENTA_TERRACOTTA, TerracottaSlabs.MAGENTA_TERRACOTTA_SLAB, TerracottaStairs.MAGENTA_TERRACOTTA_STAIR, TerracottaWalls.MAGENTA_TERRACOTTA_WALL);
         offerBlockSet(exporter, Blocks.PINK_TERRACOTTA, TerracottaSlabs.PINK_TERRACOTTA_SLAB, TerracottaStairs.PINK_TERRACOTTA_STAIR, TerracottaWalls.PINK_TERRACOTTA_WALL);
+
+        offerBlockSet(exporter, Blocks.ACACIA_LOG, AcaciaWoodBlocks.ACACIA_LOG_SLAB, AcaciaWoodBlocks.ACACIA_LOG_STAIRS);
+        offerBlockSet(exporter, AzaleaWoodBlocks.AZALEA_LOG, AzaleaWoodBlocks.AZALEA_LOG_SLAB, AzaleaWoodBlocks.AZALEA_LOG_STAIRS);
+        offerBlockSet(exporter, Blocks.BIRCH_LOG, BirchWoodBlocks.BIRCH_LOG_SLAB, BirchWoodBlocks.BIRCH_LOG_STAIRS);
+        offerBlockSet(exporter, Blocks.CRIMSON_STEM, CrimsonWoodBlocks.CRIMSON_LOG_SLAB, CrimsonWoodBlocks.CRIMSON_LOG_STAIRS);
+        offerBlockSet(exporter, Blocks.DARK_OAK_LOG, DarkOakWoodBlocks.DARK_OAK_LOG_SLAB, DarkOakWoodBlocks.DARK_OAK_LOG_STAIRS);
+        offerBlockSet(exporter, Blocks.JUNGLE_LOG, JungleWoodBlocks.JUNGLE_LOG_SLAB, JungleWoodBlocks.JUNGLE_LOG_STAIRS);
+        offerBlockSet(exporter, Blocks.MANGROVE_LOG, MangroveWoodBlocks.MANGROVE_LOG_SLAB, MangroveWoodBlocks.MANGROVE_LOG_STAIRS);
+        offerBlockSet(exporter, Blocks.OAK_LOG, OakWoodBlocks.OAK_LOG_SLAB, OakWoodBlocks.OAK_LOG_STAIRS);
+        offerBlockSet(exporter, Blocks.SPRUCE_LOG, SpruceWoodBlocks.SPRUCE_LOG_SLAB, SpruceWoodBlocks.SPRUCE_LOG_STAIRS);
+        offerBlockSet(exporter, Blocks.WARPED_STEM, WarpedWoodBlocks.WARPED_LOG_SLAB, WarpedWoodBlocks.WARPED_LOG_STAIRS);
     }
 }

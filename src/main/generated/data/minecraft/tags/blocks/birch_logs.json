@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "oem:birch_log_fence",
+    "oem:birch_log_slab",
+    "oem:birch_log_stairs"
+  ]
+}

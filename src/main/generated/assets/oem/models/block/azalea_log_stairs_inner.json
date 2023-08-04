@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "oem:block/azalea_log",
+    "side": "oem:block/azalea_log",
+    "top": "oem:block/azalea_log"
+  }
+}

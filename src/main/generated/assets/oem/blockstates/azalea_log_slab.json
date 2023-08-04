@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "oem:block/azalea_log_slab"
+    },
+    "type=double": {
+      "model": "oem:block/azalea_log"
+    },
+    "type=top": {
+      "model": "oem:block/azalea_log_slab_top"
+    }
+  }
+}
