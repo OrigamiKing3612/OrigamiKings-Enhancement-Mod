@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "oem:mangrove_log_fence",
-    "oem:mangrove_log_slab",
-    "oem:mangrove_log_stairs"
-  ]
-}

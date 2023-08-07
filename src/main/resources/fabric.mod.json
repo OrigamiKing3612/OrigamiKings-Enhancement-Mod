@@ -32,6 +32,9 @@
     ],
     "emi": [
       "net.origamiking.mcmods.oem.compact.emi.OemEMIClientPlugin"
+    ],
+    "modmenu": [
+      "net.origamiking.mcmods.oem.compact.modmenu.OemModMenuCompact"
     ]
 },
   "mixins": [

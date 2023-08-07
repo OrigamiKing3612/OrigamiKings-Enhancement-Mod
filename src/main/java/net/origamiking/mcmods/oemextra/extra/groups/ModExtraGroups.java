@@ -33,7 +33,6 @@ public class ModExtraGroups {
                     entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_FIVE);
                     entries.add(ServerSpecificBlocks.CAVERNS_BLOCK_SIX);
                     entries.add(ArmorRegistry.VIKING_ARMOR_HELMET);
-                    //entries.add(ServerSpecificBlocks.BOOMBOX);
                     entries.add(ServerSpecificBlocks.PRIM);
                     entries.add(StoneVStairs.STONE_BRICK_VERTICAL_STAIRS);
                     entries.add(WoodVStairs.OAK_VERTICAL_STAIRS);

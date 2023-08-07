@@ -19,6 +19,7 @@ import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache
 import software.bernie.geckolib.core.animation.AnimatableManager;
 import software.bernie.geckolib.core.animation.AnimationController;
 import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.renderer.GeoArmorRenderer;
 import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.Set;
@@ -34,13 +35,10 @@ public final class VikingArmorItem extends ArmorItem implements GeoItem {
         super(armorMaterial, type, properties);
     }
 
-    // Create our armor model/renderer for Fabric and return it
     @Override
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
-            //private GeoArmorRenderer<?> renderer;
-            private VikingArmorRenderer renderer;
-
+            private GeoArmorRenderer<?> renderer;
             @Override
             public BipedEntityModel<LivingEntity> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, BipedEntityModel<LivingEntity> original) {
                 if(this.renderer == null)
@@ -72,7 +70,6 @@ public final class VikingArmorItem extends ArmorItem implements GeoItem {
                 wornArmor.add(stack.getItem());
             }
 
-            // Check each of the pieces match our set
             boolean isFullSet = wornArmor.containsAll(ObjectArrayList.of(
                     ArmorRegistry.VIKING_ARMOR_HELMET));
 

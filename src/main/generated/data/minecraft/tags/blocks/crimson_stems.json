@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "oem:crimson_log_fence",
-    "oem:crimson_log_slab",
-    "oem:crimson_log_stairs"
-  ]
-}
