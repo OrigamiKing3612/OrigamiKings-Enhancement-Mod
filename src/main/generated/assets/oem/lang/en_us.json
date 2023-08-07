@@ -505,5 +505,7 @@
   "oem.group.main_group": "OrigamiKing's Enhancement Mod",
   "oem.group.oem_extra_group": "OEM Extra",
   "oem.group.oem_v_slabs": "Oem Vertical Slabs",
+  "option.oem.disableOldWorldScreen": "Disables the old Create New World Screen",
+  "option.oem.disableOldWorldScreen.description": "Changes the Create New World Screen back to the 1.20+ Screen",
   "stat.oem.interact_with_woodcutter": "Interact With Woodcutter"
 }

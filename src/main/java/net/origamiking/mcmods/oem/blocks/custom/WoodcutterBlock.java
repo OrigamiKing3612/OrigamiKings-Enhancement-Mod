@@ -20,6 +20,7 @@ import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
+import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.stats.ModStats;
 import net.origamiking.mcmods.oem.screen.woodcutter.WoodcutterScreenHandler;
 import org.jetbrains.annotations.Nullable;
@@ -44,8 +45,10 @@ public class WoodcutterBlock extends Block {
         if (world.isClient) {
             return ActionResult.SUCCESS;
         }
-        player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
-        player.incrementStat(ModStats.INTERACT_WITH_WOODCUTTER);
+        if (OemMain.getOemConfig().enableWoodcutter) {
+            player.openHandledScreen(state.createScreenHandlerFactory(world, pos));
+            player.incrementStat(ModStats.INTERACT_WITH_WOODCUTTER);
+        }
         return ActionResult.CONSUME;
     }
 

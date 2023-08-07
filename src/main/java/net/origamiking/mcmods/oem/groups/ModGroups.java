@@ -471,7 +471,7 @@ public class ModGroups {
                     entries.add(RandomBlocks.EXPOSED_COPPER_BAR_DOOR);
                     entries.add(RandomBlocks.WEATHERED_COPPER_BAR_DOOR);
                     entries.add(RandomBlocks.OXIDIZED_COPPER_BAR_DOOR);
-                    entries.add(ModWoodcutter.WOODCUTTER);
+                    if (!OemMain.getOemConfig().disableWoodcutter) entries.add(ModWoodcutter.WOODCUTTER);
                     entries.add(RandomBlocks.GUNPOWDER_BLOCK);
                     entries.add(ModSpongeBlocks.LAVA_SPONGE);
                     entries.add(ModSpongeBlocks.WET_LAVA_SPONGE);

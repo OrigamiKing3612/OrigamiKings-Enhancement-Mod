@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "oem:spruce_log_fence",
-    "oem:spruce_log_slab",
-    "oem:spruce_log_stairs"
-  ]
-}

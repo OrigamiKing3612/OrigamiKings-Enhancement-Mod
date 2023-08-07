@@ -1,8 +1,0 @@
-{
-  "replace": false,
-  "values": [
-    "oem:oak_log_fence",
-    "oem:oak_log_slab",
-    "oem:oak_log_stairs"
-  ]
-}
