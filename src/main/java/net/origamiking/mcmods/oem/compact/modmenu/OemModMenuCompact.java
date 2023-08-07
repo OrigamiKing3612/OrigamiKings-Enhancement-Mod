@@ -8,10 +8,6 @@ import net.origamiking.mcmods.oem.config.OemConfigScreen;
 public class OemModMenuCompact implements ModMenuApi {
     @Override
     public ConfigScreenFactory<?> getModConfigScreenFactory() {
-        if (FabricLoader.getInstance().isModLoaded("cloth-config")) {
-            return OemConfigScreen::getScreen;
-        } else {
-            return null;
-        }
+        return FabricLoader.getInstance().isModLoaded("cloth-config") ? OemConfigScreen::getScreen : null;
     }
 }
