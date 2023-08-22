@@ -12,6 +12,7 @@ import net.origamiking.mcmods.oem.items.ModItems;
 import net.origamiking.mcmods.oem.recipe.ModRecipeType;
 import net.origamiking.mcmods.oem.screen.ModScreenHandlers;
 import net.origamiking.mcmods.oem.tag.ModBlockTags;
+import net.origamiking.mcmods.oem.tag.ModItemTags;
 import net.origamiking.mcmods.oem.util.Utils;
 import net.origamiking.mcmods.oemextra.extra.OemExtraMain;
 import org.slf4j.Logger;
@@ -37,6 +38,7 @@ public class OemMain implements ModInitializer {
 		ModCommands.register();
 		Utils.register();
 		ModBlockTags.register();
+		ModItemTags.register();
 		ModRecipeType.register();
         ModScreenHandlers.register();
 		ModStats.register();

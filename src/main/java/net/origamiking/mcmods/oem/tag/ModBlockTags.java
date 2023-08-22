@@ -9,7 +9,7 @@ public class ModBlockTags {
     public static final TagKey<Block> AZALEA_LOGS = TagUtils.blockTagKey(OemMain.MOD_ID, "azalea_logs");
 
     public static void register() {
-        OemMain.LOGGER.info("Registering Tags for " + OemMain.VERSION);
+        OemMain.LOGGER.info("Registering Block Tags for " + OemMain.VERSION);
     }
 
 }

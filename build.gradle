@@ -147,6 +147,14 @@ publishing {
         }
     }
 }
+
+tasks.register('publishAll') {
+    dependsOn publish, curseforge, modrinth
+    doLast {
+        println "All publish tasks completed!"
+    }
+}
+
 def mod_changelog = "Version ${mod_version}: The Great Recipe Update! \n\n . " +
         "Cleaned up and fixed Recipes. Added Terracotta Stairs Slabs and Walls. Added Welcome advancement." +
         "If you want more compatibility or find a bug just open an [issue](https://github.com/OrigamiKing3612/OrigamiKings-Enhancement-Mod/issues)"
