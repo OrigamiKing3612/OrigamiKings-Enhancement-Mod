@@ -14,5 +14,7 @@ public class SpruceWoodBlocks {
     public static final Block SPRUCE_LOG_FENCE = registerBlock(OemMain.MOD_ID, "spruce_log_fence", new FenceBlock(OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block SPRUCE_LOG_SLAB = registerBlock(OemMain.MOD_ID, "spruce_log_slab", new SlabBlock(OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block SPRUCE_LOG_STAIRS = registerBlock(OemMain.MOD_ID, "spruce_log_stairs", new StairsBlock(Blocks.SPRUCE_LOG.getDefaultState(), OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
-    public static void getSpruceBlocks() {}
+
+    public static void getSpruceBlocks() {
+    }
 }

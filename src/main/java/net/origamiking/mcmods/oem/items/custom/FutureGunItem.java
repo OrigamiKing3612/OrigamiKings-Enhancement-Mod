@@ -90,14 +90,14 @@ public class FutureGunItem extends Item implements GeoItem {
                 arrow.setDamage(2.5);
                 arrow.hasNoGravity();
                 arrow.pickupType = PersistentProjectileEntity.PickupPermission.DISALLOWED;
-                
+
                 stack.damage(1, shooter, p -> p.sendToolBreakStatus(shooter.getActiveHand()));
                 level.spawnEntity(arrow);
 
                 // Trigger our animation
                 // We could trigger this outside of the client-side check if only wanted the animation to play for the shooter
                 // But we'll fire it on the server so all nearby players can see it
-                triggerAnim(player, GeoItem.getOrAssignId(stack, (ServerWorld)level), "shoot_controller", "shoot");
+                triggerAnim(player, GeoItem.getOrAssignId(stack, (ServerWorld) level), "shoot_controller", "shoot");
             }
         }
     }

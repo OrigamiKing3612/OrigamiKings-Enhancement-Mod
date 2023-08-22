@@ -40,5 +40,7 @@ public class RandomBlocks {
     public static final Block WEATHERED_COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "weathered_copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
     public static final Block OXIDIZED_COPPER_BAR_DOOR = registerBlock(OemMain.MOD_ID, "oxidized_copper_bar_door", new DoorBlock(OrigamiBlockSettings.copyOf(Blocks.IRON_DOOR), BlockSetType.IRON));
     public static final Block GUNPOWDER_BLOCK = registerBlock(OemMain.MOD_ID, "gunpowder_block", new Block(OrigamiBlockSettings.copyOf(Blocks.MUD).sounds(BlockSoundGroup.SAND)));
-    public static void getRandomBlocks() {}
+
+    public static void getRandomBlocks() {
+    }
 }

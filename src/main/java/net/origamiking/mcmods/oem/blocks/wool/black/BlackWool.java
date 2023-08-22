@@ -12,8 +12,6 @@ public class BlackWool extends BlocksUtils {
     public static final Block BLACK_WOOL_WALL = registerBlock(OemMain.MOD_ID, "black_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-
-
-    public static void getBlackWool() {}
+    public static void getBlackWool() {
+    }
 }

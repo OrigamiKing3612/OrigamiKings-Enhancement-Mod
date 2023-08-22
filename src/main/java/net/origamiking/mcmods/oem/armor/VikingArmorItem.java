@@ -39,9 +39,10 @@ public final class VikingArmorItem extends ArmorItem implements GeoItem {
     public void createRenderer(Consumer<Object> consumer) {
         consumer.accept(new RenderProvider() {
             private GeoArmorRenderer<?> renderer;
+
             @Override
             public BipedEntityModel<LivingEntity> getHumanoidArmorModel(LivingEntity livingEntity, ItemStack itemStack, EquipmentSlot equipmentSlot, BipedEntityModel<LivingEntity> original) {
-                if(this.renderer == null)
+                if (this.renderer == null)
                     this.renderer = new VikingArmorRenderer();
                 this.renderer.prepForRender(livingEntity, itemStack, equipmentSlot, original);
 

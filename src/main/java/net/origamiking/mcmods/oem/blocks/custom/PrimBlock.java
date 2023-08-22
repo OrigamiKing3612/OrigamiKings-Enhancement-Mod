@@ -14,7 +14,7 @@ import net.minecraft.util.shape.VoxelShapes;
 import net.minecraft.world.BlockView;
 
 
-public class PrimBlock extends HorizontalFacingBlock /*implements Waterloggable*/{
+public class PrimBlock extends HorizontalFacingBlock /*implements Waterloggable*/ {
 
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
         stateManager.add(Properties.HORIZONTAL_FACING);
@@ -29,7 +29,7 @@ public class PrimBlock extends HorizontalFacingBlock /*implements Waterloggable*
 
     }
 
-//    public void playPlaceSound(World world, BlockPos pos){
+    //    public void playPlaceSound(World world, BlockPos pos){
 //        world.playSound(
 //                null, pos, blockSoundGroup, SoundCategory.BLOCKS, 1f, 1f
 //        );
@@ -37,7 +37,7 @@ public class PrimBlock extends HorizontalFacingBlock /*implements Waterloggable*
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext ctx) {
         Direction dir = state.get(FACING);
-        switch(dir) {
+        switch (dir) {
             case NORTH, SOUTH, EAST, WEST:
                 return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 1.0f);
 //            case SOUTH:

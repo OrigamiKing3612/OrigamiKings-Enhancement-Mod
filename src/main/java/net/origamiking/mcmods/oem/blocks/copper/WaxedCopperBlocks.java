@@ -32,11 +32,24 @@ public class WaxedCopperBlocks extends CopperBlocks {
     public static final Block WAXED_WEATHERED_COPPER_DOOR = registerCopperBlock("waxed_weathered_copper_door", createCopperDoor());
     public static final Block WAXED_WEATHERED_COPPER_TRAPDOOR = registerCopperBlock("waxed_weathered_copper_trapdoor", createCopperTrapdoor());
     public static final Block WAXED_OXIDIZED_COPPER_DOOR = registerCopperBlock("waxed_oxidized_copper_door", createCopperDoor());
-    public static final Block WAXED_OXIDIZED_COPPER_TRAPDOOR = registerCopperBlock("waxed_oxidized_copper_trapdoor",createCopperTrapdoor());
+    public static final Block WAXED_OXIDIZED_COPPER_TRAPDOOR = registerCopperBlock("waxed_oxidized_copper_trapdoor", createCopperTrapdoor());
 
-    public static PressurePlateBlock createCopperPressurePlate() {return new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, OrigamiBlockSettings.create().requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).noCollision(), BlockSetType.IRON);}
-    public static ButtonBlock createCopperButton() {return new ButtonBlock(OrigamiBlockSettings.create().requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).noCollision(), BlockSetType.IRON, 30, false);}
-    public static DoorBlock createCopperDoor() {return new DoorBlock(OrigamiBlockSettings.create().requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).nonOpaque(), BlockSetType.IRON);}
-    public static TrapdoorBlock createCopperTrapdoor() {return new TrapdoorBlock(OrigamiBlockSettings.create().requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).nonOpaque(), BlockSetType.IRON);}
-    public static void get() {}
+    public static PressurePlateBlock createCopperPressurePlate() {
+        return new PressurePlateBlock(PressurePlateBlock.ActivationRule.EVERYTHING, OrigamiBlockSettings.create().requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).noCollision(), BlockSetType.IRON);
+    }
+
+    public static ButtonBlock createCopperButton() {
+        return new ButtonBlock(OrigamiBlockSettings.create().requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).noCollision(), BlockSetType.IRON, 30, false);
+    }
+
+    public static DoorBlock createCopperDoor() {
+        return new DoorBlock(OrigamiBlockSettings.create().requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).nonOpaque(), BlockSetType.IRON);
+    }
+
+    public static TrapdoorBlock createCopperTrapdoor() {
+        return new TrapdoorBlock(OrigamiBlockSettings.create().requiresTool().strength(0.5f).sounds(BlockSoundGroup.COPPER).nonOpaque(), BlockSetType.IRON);
+    }
+
+    public static void get() {
+    }
 }

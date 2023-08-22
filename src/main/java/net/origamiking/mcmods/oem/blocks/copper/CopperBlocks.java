@@ -1,7 +1,8 @@
 package net.origamiking.mcmods.oem.blocks.copper;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.Oxidizable;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.registry.Registries;
@@ -45,10 +46,12 @@ public class CopperBlocks {
     private static Item registerBlockItem(String name, Block block) {
         return Registry.register(Registries.ITEM, new Identifier(OemMain.MOD_ID, name), new BlockItem(block, new Item.Settings()));
     }
+
     public static Block registerCopperBlock(String name, Block block) {
         registerBlockItem(name, block);
         return Registry.register(Registries.BLOCK, new Identifier(OemMain.MOD_ID, name), block);
     }
+
     public static void getCopperBlocks() {
         WaxedCopperBlocks.get();
         OtherCopperStuff.pairWaxedAndNotWaxed();

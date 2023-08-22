@@ -39,7 +39,9 @@ public class WoodcutterRecipe extends CuttingRecipe {
     }
 
     public static class Type implements RecipeType<WoodcutterRecipe> {
-        public Type() { }
+        public Type() {
+        }
+
         public static final Type INSTANCE = new Type();
         public static final String ID = "woodcutter";
     }
@@ -49,7 +51,7 @@ public class WoodcutterRecipe extends CuttingRecipe {
         public static final String ID = "woodcutter";
 
         @Override
-        public WoodcutterRecipe read(Identifier id, JsonObject json){
+        public WoodcutterRecipe read(Identifier id, JsonObject json) {
             String string = JsonHelper.getString(json, "group", "");
             Ingredient ingredient;
             if (JsonHelper.hasArray(json, "ingredient")) {
@@ -65,7 +67,7 @@ public class WoodcutterRecipe extends CuttingRecipe {
         }
 
         @Override
-        public WoodcutterRecipe read(Identifier id, PacketByteBuf buf){
+        public WoodcutterRecipe read(Identifier id, PacketByteBuf buf) {
             String string = buf.readString();
             Ingredient ingredient = Ingredient.fromPacket(buf);
             ItemStack itemStack = buf.readItemStack();
@@ -73,7 +75,7 @@ public class WoodcutterRecipe extends CuttingRecipe {
         }
 
         @Override
-        public void write(PacketByteBuf buf, WoodcutterRecipe recipe){
+        public void write(PacketByteBuf buf, WoodcutterRecipe recipe) {
             buf.writeString(recipe.group);
             recipe.input.write(buf);
             buf.writeItemStack(recipe.output);

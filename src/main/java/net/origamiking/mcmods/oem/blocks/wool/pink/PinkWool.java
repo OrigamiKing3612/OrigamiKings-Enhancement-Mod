@@ -12,6 +12,6 @@ public class PinkWool extends BlocksUtils {
     public static final Block PINK_WOOL_WALL = registerBlock(OemMain.MOD_ID, "pink_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getPinkWool() {}
+    public static void getPinkWool() {
+    }
 }

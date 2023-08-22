@@ -12,6 +12,6 @@ public class RedWool extends BlocksUtils {
     public static final Block RED_WOOL_WALL = registerBlock(OemMain.MOD_ID, "red_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getRedWool() {}
+    public static void getRedWool() {
+    }
 }

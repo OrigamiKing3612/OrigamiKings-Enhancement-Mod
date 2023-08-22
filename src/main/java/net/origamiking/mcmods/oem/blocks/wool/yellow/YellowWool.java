@@ -12,6 +12,6 @@ public class YellowWool extends BlocksUtils {
     public static final Block YELLOW_WOOL_WALL = registerBlock(OemMain.MOD_ID, "yellow_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getYellowWool() {}
+    public static void getYellowWool() {
+    }
 }

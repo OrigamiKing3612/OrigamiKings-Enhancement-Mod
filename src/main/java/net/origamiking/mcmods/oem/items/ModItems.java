@@ -16,7 +16,7 @@ import net.origamiking.mcmods.oem.items.custom.FutureGunArrowEntity;
 import static net.origamiking.mcmods.oapi.items.ItemsUtils.registerItem;
 
 public class ModItems {
-    public static final Item COPPER_NUGGET = registerItem(OemMain.MOD_ID,"copper_nugget", new Item(new OrigamiItemSettings()));
+    public static final Item COPPER_NUGGET = registerItem(OemMain.MOD_ID, "copper_nugget", new Item(new OrigamiItemSettings()));
     public static final EntityType<FutureGunArrowEntity> FutureGunArrowEntityType = Registry.register(
             Registries.ENTITY_TYPE,
             new Identifier(OemMain.MOD_ID, "fut_gun_arrow"),

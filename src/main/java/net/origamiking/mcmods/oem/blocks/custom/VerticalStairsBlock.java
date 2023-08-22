@@ -18,7 +18,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 
-public class VerticalStairsBlock extends HorizontalFacingBlock /*implements Waterloggable*/{
+public class VerticalStairsBlock extends HorizontalFacingBlock /*implements Waterloggable*/ {
 
     protected void appendProperties(StateManager.Builder<Block, BlockState> stateManager) {
         stateManager.add(Properties.HORIZONTAL_FACING);
@@ -33,7 +33,7 @@ public class VerticalStairsBlock extends HorizontalFacingBlock /*implements Wate
 
     }
 
-//    public void playPlaceSound(World world, BlockPos pos){
+    //    public void playPlaceSound(World world, BlockPos pos){
 //        world.playSound(
 //                null, pos, blockSoundGroup, SoundCategory.BLOCKS, 1f, 1f
 //        );
@@ -41,7 +41,7 @@ public class VerticalStairsBlock extends HorizontalFacingBlock /*implements Wate
     @Override
     public VoxelShape getOutlineShape(BlockState state, BlockView world, BlockPos pos, ShapeContext ctx) {
         Direction dir = state.get(FACING);
-        switch(dir) {
+        switch (dir) {
             case NORTH:
                 return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.5f);//0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.5f
             case SOUTH:
@@ -54,6 +54,7 @@ public class VerticalStairsBlock extends HorizontalFacingBlock /*implements Wate
                 return VoxelShapes.fullCube();
         }
     }
+
     private ActionResult sucessfulPlace(PlayerEntity player, Hand hand, World world, BlockPos pos) {
         // checks if player is in creative and removes 1 item if not
         boolean isInCreative = player.getAbilities().creativeMode;

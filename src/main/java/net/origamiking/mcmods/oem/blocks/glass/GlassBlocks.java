@@ -62,6 +62,7 @@ public class GlassBlocks {
     public static final Block PURPLE_GLASS_WALL = registerBlock(OemMain.MOD_ID, "purple_stained_glass_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.GLASS)));
     public static final Block MAGENTA_GLASS_WALL = registerBlock(OemMain.MOD_ID, "magenta_stained_glass_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.GLASS)));
     public static final Block PINK_GLASS_WALL = registerBlock(OemMain.MOD_ID, "pink_stained_glass_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.3f).requiresTool().nonOpaque().sounds(BlockSoundGroup.GLASS)));
+
     public static void getGlassBlocks() {
 
     }

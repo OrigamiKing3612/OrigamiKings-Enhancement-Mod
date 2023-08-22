@@ -21,7 +21,7 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 
 
-public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterloggable*/{
+public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterloggable*/ {
     public static final BooleanProperty SINGLE = BooleanProperty.of("single_slab");
     public static Boolean CAN_COMBINE = true;
 
@@ -52,7 +52,7 @@ public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterl
         // changes hitbox depending on block state
 
         Direction dir = state.get(FACING);
-        if(!state.get(SINGLE)){
+        if (!state.get(SINGLE)) {
             return VoxelShapes.fullCube();
         } else if (dir == Direction.NORTH) {
             return VoxelShapes.cuboid(0.0f, 0.0f, 0.0f, 1.0f, 1.0f, 0.5f);
@@ -79,7 +79,8 @@ public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterl
     }
 
     Boolean PLACED_SUCESSFULLY = false;
-    private ActionResult combineSlab(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit){
+
+    private ActionResult combineSlab(BlockState state, World world, BlockPos pos, PlayerEntity player, Hand hand, BlockHitResult hit) {
 
         if (player.getAbilities().allowModifyWorld && player.getStackInHand(hand).equals(new ItemStack(this)) && state.get(SINGLE)) {
 
@@ -91,39 +92,37 @@ public class VerticalSlabBlock extends HorizontalFacingBlock /*implements Waterl
             LOGGER.info(player.getBlockZ());
             LOGGER.info(hit.getSide());*/
 
-            if(state.get(SINGLE)){
+            if (state.get(SINGLE)) {
                 Direction HITSIDE = hit.getSide();
 
                 // is facing north and hit from south
-                if(state.get(FACING) == Direction.NORTH){
-                    if(HITSIDE == Direction.SOUTH){
+                if (state.get(FACING) == Direction.NORTH) {
+                    if (HITSIDE == Direction.SOUTH) {
                         world.setBlockState(pos, state.with(SINGLE, false));
                         RESULT = sucessfulPlace(player, hand, world, pos);
                     }
                 }
                 // is facing east and hit from west
-                else if(state.get(FACING) == Direction.EAST){
-                    if(HITSIDE == Direction.WEST){
+                else if (state.get(FACING) == Direction.EAST) {
+                    if (HITSIDE == Direction.WEST) {
                         world.setBlockState(pos, state.with(SINGLE, false));
                         RESULT = sucessfulPlace(player, hand, world, pos);
                     }
                 }
                 // is facing south and hit from north
-                else if(state.get(FACING) == Direction.SOUTH){
-                    if(HITSIDE == Direction.NORTH){
+                else if (state.get(FACING) == Direction.SOUTH) {
+                    if (HITSIDE == Direction.NORTH) {
                         world.setBlockState(pos, state.with(SINGLE, false));
                         RESULT = sucessfulPlace(player, hand, world, pos);
                     }
                 }
                 // is facing west and hit from east
-                else if(state.get(FACING) == Direction.WEST){
-                    if(HITSIDE == Direction.EAST){
+                else if (state.get(FACING) == Direction.WEST) {
+                    if (HITSIDE == Direction.EAST) {
                         world.setBlockState(pos, state.with(SINGLE, false));
                         RESULT = sucessfulPlace(player, hand, world, pos);
                     }
-                }
-
-                else{
+                } else {
 
                 }
 

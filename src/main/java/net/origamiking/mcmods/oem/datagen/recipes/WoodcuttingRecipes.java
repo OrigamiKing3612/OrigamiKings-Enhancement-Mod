@@ -99,12 +99,15 @@ public class WoodcuttingRecipes {
         offerWoodcuttingRecipe(exporter, SpruceWoodBlocks.SPRUCE_LOG_FENCE, Blocks.SPRUCE_LOG);
         offerWoodcuttingRecipe(exporter, WarpedWoodBlocks.WARPED_LOG_FENCE, Blocks.WARPED_STEM);
     }
+
     private static SingleItemRecipeJsonBuilder createWoodcutting(Ingredient input, ItemConvertible output, int count) {
         return new SingleItemRecipeJsonBuilder(RecipeCategory.BUILDING_BLOCKS, WoodcutterRecipe.Serializer.INSTANCE, input, output, count);
     }
+
     public static void offerWoodcuttingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
         offerWoodcuttingRecipe(exporter, output, input, 1);
     }
+
     public static void offerWoodcuttingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input, int count) {
         createWoodcutting(Ingredient.ofItems(input), output, count).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter, RecipeProvider.convertBetween(output, input) + "_woodcutting");
     }

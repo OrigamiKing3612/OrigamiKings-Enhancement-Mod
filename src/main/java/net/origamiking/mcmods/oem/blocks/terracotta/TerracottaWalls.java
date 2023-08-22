@@ -25,6 +25,7 @@ public class TerracottaWalls {
     public static final Block PURPLE_TERRACOTTA_WALL = registerBlock(OemMain.MOD_ID, "purple_terracotta_wall", new WallBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block MAGENTA_TERRACOTTA_WALL = registerBlock(OemMain.MOD_ID, "magenta_terracotta_wall", new WallBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block PINK_TERRACOTTA_WALL = registerBlock(OemMain.MOD_ID, "pink_terracotta_wall", new WallBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
+
     public static void get() {
 
     }

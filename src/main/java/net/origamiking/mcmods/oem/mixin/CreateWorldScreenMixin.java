@@ -24,261 +24,262 @@ import static net.origamiking.mcmods.oem.oldworldscreen.VariablesForOldWorldScre
 @Mixin(CreateWorldScreen.class)
 public abstract class CreateWorldScreenMixin extends Screen {
 
-	@Shadow
-	abstract void openPackScreen(DataConfiguration dataConfiguration);
-	@Shadow
-	protected abstract void createLevel();
+    @Shadow
+    abstract void openPackScreen(DataConfiguration dataConfiguration);
 
-	@Shadow
-	@Final
-	WorldCreator worldCreator;
+    @Shadow
+    protected abstract void createLevel();
 
-	private MoreWorldOptions moreWorldOptions;
-	private boolean isWorldOptionsToggled;
+    @Shadow
+    @Final
+    WorldCreator worldCreator;
 
-	private TextFieldWidget worldName;
-	private Text worldDirectoryName;
+    private MoreWorldOptions moreWorldOptions;
+    private boolean isWorldOptionsToggled;
 
-	private CyclingButtonWidget<WorldCreator.Mode> gameModeButton;
-	private WorldCreator.Mode nonDebugGameMode;
-	private Text gameModeHelp1;
-	private Text gameModeHelp2;
+    private TextFieldWidget worldName;
+    private Text worldDirectoryName;
 
-	private CyclingButtonWidget<Difficulty> difficultyButton;
-	private CyclingButtonWidget<Boolean> allowCheatsButton;
+    private CyclingButtonWidget<WorldCreator.Mode> gameModeButton;
+    private WorldCreator.Mode nonDebugGameMode;
+    private Text gameModeHelp1;
+    private Text gameModeHelp2;
 
-	private ButtonWidget dataPacksButton;
-	private ButtonWidget gameRulesButton;
-	private ButtonWidget moreWorldOptionsButton;
+    private CyclingButtonWidget<Difficulty> difficultyButton;
+    private CyclingButtonWidget<Boolean> allowCheatsButton;
 
-	private int halfWidth;
+    private ButtonWidget dataPacksButton;
+    private ButtonWidget gameRulesButton;
+    private ButtonWidget moreWorldOptionsButton;
 
-	protected CreateWorldScreenMixin(Text title) {
-		super(title);
+    private int halfWidth;
 
-		this.isWorldOptionsToggled = false;
-	}
+    protected CreateWorldScreenMixin(Text title) {
+        super(title);
 
-	@Override
-	public void render(DrawContext context, int mouseX, int mouseY, float delta) {
-		super.render(context, mouseX, mouseY, delta);
+        this.isWorldOptionsToggled = false;
+    }
 
-		renderBackground(context);
-		context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.halfWidth, 20, -1);
+    @Override
+    public void render(DrawContext context, int mouseX, int mouseY, float delta) {
+        super.render(context, mouseX, mouseY, delta);
 
-		int textPositionX = this.halfWidth - 100;
-		if (this.isWorldOptionsToggled) {
-			context.drawTextWithShadow(this.textRenderer, SEED_LABEL, textPositionX, 47, GRAY_COLOR);
-			context.drawTextWithShadow(this.textRenderer, SEED_INFO_LABEL, textPositionX, 85, GRAY_COLOR);
+        renderBackground(context);
+        context.drawCenteredTextWithShadow(this.textRenderer, this.title, this.halfWidth, 20, -1);
 
-			this.moreWorldOptions.render(context);
-		} else {
-			context.drawTextWithShadow(this.textRenderer, WORLD_NAME_LABEL, textPositionX, 47, GRAY_COLOR);
-			context.drawTextWithShadow(this.textRenderer, this.worldDirectoryName, textPositionX, 85, GRAY_COLOR);
+        int textPositionX = this.halfWidth - 100;
+        if (this.isWorldOptionsToggled) {
+            context.drawTextWithShadow(this.textRenderer, SEED_LABEL, textPositionX, 47, GRAY_COLOR);
+            context.drawTextWithShadow(this.textRenderer, SEED_INFO_LABEL, textPositionX, 85, GRAY_COLOR);
 
-			textPositionX -= 50;
-			context.drawTextWithShadow(this.textRenderer, this.gameModeHelp1, textPositionX, 122, GRAY_COLOR);
-			context.drawTextWithShadow(this.textRenderer, this.gameModeHelp2, textPositionX, 134, GRAY_COLOR);
+            this.moreWorldOptions.render(context);
+        } else {
+            context.drawTextWithShadow(this.textRenderer, WORLD_NAME_LABEL, textPositionX, 47, GRAY_COLOR);
+            context.drawTextWithShadow(this.textRenderer, this.worldDirectoryName, textPositionX, 85, GRAY_COLOR);
 
-			if (!this.worldCreator.isDebug()) {
-				context.drawTextWithShadow(this.textRenderer, ALLOW_CHEATS_INFO_LABEL, textPositionX, 172, GRAY_COLOR);
-			}
-		}
+            textPositionX -= 50;
+            context.drawTextWithShadow(this.textRenderer, this.gameModeHelp1, textPositionX, 122, GRAY_COLOR);
+            context.drawTextWithShadow(this.textRenderer, this.gameModeHelp2, textPositionX, 134, GRAY_COLOR);
 
-		super.render(context, mouseX, mouseY, delta);
-	}
+            if (!this.worldCreator.isDebug()) {
+                context.drawTextWithShadow(this.textRenderer, ALLOW_CHEATS_INFO_LABEL, textPositionX, 172, GRAY_COLOR);
+            }
+        }
 
-	@Override
-	public void init() {
-		this.moreWorldOptions = new MoreWorldOptions();
-		this.halfWidth = this.width / 2;
+        super.render(context, mouseX, mouseY, delta);
+    }
 
-		this.worldName = new TextFieldWidget(this.textRenderer, this.halfWidth - 100, 60, 200, 20, WORLD_NAME_LABEL);
-		this.worldName.setText(this.worldCreator.getWorldName());
-		this.worldName.setChangedListener(this::setWorldName);
+    @Override
+    public void init() {
+        this.moreWorldOptions = new MoreWorldOptions();
+        this.halfWidth = this.width / 2;
 
-		int leftColumnX = this.halfWidth - 155;
-		int rightColumnX = this.halfWidth + 5;
+        this.worldName = new TextFieldWidget(this.textRenderer, this.halfWidth - 100, 60, 200, 20, WORLD_NAME_LABEL);
+        this.worldName.setText(this.worldCreator.getWorldName());
+        this.worldName.setChangedListener(this::setWorldName);
 
-		this.gameModeButton = CyclingButtonWidget.<WorldCreator.Mode>builder(value -> value.name)
-				.values(List.of(
-						WorldCreator.Mode.SURVIVAL,
-						WorldCreator.Mode.HARDCORE,
-						WorldCreator.Mode.CREATIVE
-				))
-				.initially(this.worldCreator.getGameMode())
-				.build(leftColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, GAME_MODE_LABEL, (button, gameMode) -> {
-					setGameMode(gameMode);
-				});
-		this.worldCreator.addListener(creator -> {
-			this.gameModeButton.setValue(this.worldCreator.getGameMode());
-			this.gameModeButton.active = !this.worldCreator.isDebug();
-		});
+        int leftColumnX = this.halfWidth - 155;
+        int rightColumnX = this.halfWidth + 5;
 
-		this.difficultyButton = CyclingButtonWidget.builder(Difficulty::getTranslatableName)
-				.values(Difficulty.values())
-				.initially(this.worldCreator.getDifficulty())
-				.build(rightColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, DIFFICULTY_TEXT, (button, difficulty) -> {
-					this.worldCreator.setDifficulty(difficulty);
-				});
-		this.worldCreator.addListener(creator -> {
-			this.difficultyButton.setValue(this.worldCreator.getDifficulty());
-			this.difficultyButton.active = !this.worldCreator.isHardcore();
-		});
+        this.gameModeButton = CyclingButtonWidget.<WorldCreator.Mode>builder(value -> value.name)
+                .values(List.of(
+                        WorldCreator.Mode.SURVIVAL,
+                        WorldCreator.Mode.HARDCORE,
+                        WorldCreator.Mode.CREATIVE
+                ))
+                .initially(this.worldCreator.getGameMode())
+                .build(leftColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, GAME_MODE_LABEL, (button, gameMode) -> {
+                    setGameMode(gameMode);
+                });
+        this.worldCreator.addListener(creator -> {
+            this.gameModeButton.setValue(this.worldCreator.getGameMode());
+            this.gameModeButton.active = !this.worldCreator.isDebug();
+        });
 
-		this.allowCheatsButton = CyclingButtonWidget.onOffBuilder(this.worldCreator.areCheatsEnabled())
-				.build(leftColumnX, 151, BUTTON_WIDTH, BUTTON_HEIGHT, ALLOW_CHEATS_TEXT, (button, allowCheats) -> {
-					this.worldCreator.setCheatsEnabled(allowCheats);
-				});
-		this.worldCreator.addListener(creator -> {
-			this.allowCheatsButton.setValue(this.worldCreator.areCheatsEnabled());
-			this.allowCheatsButton.active = !this.worldCreator.isDebug() && !this.worldCreator.isHardcore();
-		});
+        this.difficultyButton = CyclingButtonWidget.builder(Difficulty::getTranslatableName)
+                .values(Difficulty.values())
+                .initially(this.worldCreator.getDifficulty())
+                .build(rightColumnX, 100, BUTTON_WIDTH, BUTTON_HEIGHT, DIFFICULTY_TEXT, (button, difficulty) -> {
+                    this.worldCreator.setDifficulty(difficulty);
+                });
+        this.worldCreator.addListener(creator -> {
+            this.difficultyButton.setValue(this.worldCreator.getDifficulty());
+            this.difficultyButton.active = !this.worldCreator.isHardcore();
+        });
 
-		this.dataPacksButton = ButtonWidget.builder(DATA_PACKS_TEXT, button -> {
-					openPackScreen(this.worldCreator.getGeneratorOptionsHolder().dataConfiguration());
-				})
-				.dimensions(rightColumnX, 151, BUTTON_WIDTH, BUTTON_HEIGHT)
-				.build();
+        this.allowCheatsButton = CyclingButtonWidget.onOffBuilder(this.worldCreator.areCheatsEnabled())
+                .build(leftColumnX, 151, BUTTON_WIDTH, BUTTON_HEIGHT, ALLOW_CHEATS_TEXT, (button, allowCheats) -> {
+                    this.worldCreator.setCheatsEnabled(allowCheats);
+                });
+        this.worldCreator.addListener(creator -> {
+            this.allowCheatsButton.setValue(this.worldCreator.areCheatsEnabled());
+            this.allowCheatsButton.active = !this.worldCreator.isDebug() && !this.worldCreator.isHardcore();
+        });
 
-		this.gameRulesButton = ButtonWidget.builder(GAME_RULES_TEXT, button -> {
-					this.client.setScreen(new EditGameRulesScreen(
-							this.worldCreator.getGameRules().copy(),
-							optional -> {
-								this.client.setScreen(this);
-								optional.ifPresent(this.worldCreator::setGameRules);
-							}
-					));
-				})
-				.dimensions(leftColumnX, 185, BUTTON_WIDTH, BUTTON_HEIGHT)
-				.build();
+        this.dataPacksButton = ButtonWidget.builder(DATA_PACKS_TEXT, button -> {
+                    openPackScreen(this.worldCreator.getGeneratorOptionsHolder().dataConfiguration());
+                })
+                .dimensions(rightColumnX, 151, BUTTON_WIDTH, BUTTON_HEIGHT)
+                .build();
 
-		this.moreWorldOptionsButton = ButtonWidget.builder(MORE_WORLD_OPTIONS_TEXT, button -> toggleWorldOptionsVisibility())
-				.dimensions(rightColumnX, 185, BUTTON_WIDTH, BUTTON_HEIGHT)
-				.build();
+        this.gameRulesButton = ButtonWidget.builder(GAME_RULES_TEXT, button -> {
+                    this.client.setScreen(new EditGameRulesScreen(
+                            this.worldCreator.getGameRules().copy(),
+                            optional -> {
+                                this.client.setScreen(this);
+                                optional.ifPresent(this.worldCreator::setGameRules);
+                            }
+                    ));
+                })
+                .dimensions(leftColumnX, 185, BUTTON_WIDTH, BUTTON_HEIGHT)
+                .build();
 
-		ButtonWidget createNewWorldButton = ButtonWidget.builder(CREATE_NEW_WORLD_TEXT, button -> createLevel())
-				.dimensions(leftColumnX, this.height - 28, BUTTON_WIDTH, BUTTON_HEIGHT)
-				.build();
+        this.moreWorldOptionsButton = ButtonWidget.builder(MORE_WORLD_OPTIONS_TEXT, button -> toggleWorldOptionsVisibility())
+                .dimensions(rightColumnX, 185, BUTTON_WIDTH, BUTTON_HEIGHT)
+                .build();
 
-		ButtonWidget cancelButton = ButtonWidget.builder(CANCEL_TEXT, button -> close())
-				.dimensions(rightColumnX, this.height - 28, BUTTON_WIDTH, BUTTON_HEIGHT)
-				.build();
+        ButtonWidget createNewWorldButton = ButtonWidget.builder(CREATE_NEW_WORLD_TEXT, button -> createLevel())
+                .dimensions(leftColumnX, this.height - 28, BUTTON_WIDTH, BUTTON_HEIGHT)
+                .build();
 
-		List<ClickableWidget> moreWorldOptionsElements = this.moreWorldOptions.init(
-				(CreateWorldScreen) (Object) this,
-				this.textRenderer
-		);
+        ButtonWidget cancelButton = ButtonWidget.builder(CANCEL_TEXT, button -> close())
+                .dimensions(rightColumnX, this.height - 28, BUTTON_WIDTH, BUTTON_HEIGHT)
+                .build();
 
-		addDrawableChild(this.worldName);
-		addDrawableChild(this.gameModeButton);
-		addDrawableChild(this.difficultyButton);
-		addDrawableChild(this.allowCheatsButton);
-		addDrawableChild(this.dataPacksButton);
-		addDrawableChild(this.gameRulesButton);
-		addDrawableChild(this.moreWorldOptionsButton);
+        List<ClickableWidget> moreWorldOptionsElements = this.moreWorldOptions.init(
+                (CreateWorldScreen) (Object) this,
+                this.textRenderer
+        );
 
-		addDrawableChild(createNewWorldButton);
-		addDrawableChild(cancelButton);
+        addDrawableChild(this.worldName);
+        addDrawableChild(this.gameModeButton);
+        addDrawableChild(this.difficultyButton);
+        addDrawableChild(this.allowCheatsButton);
+        addDrawableChild(this.dataPacksButton);
+        addDrawableChild(this.gameRulesButton);
+        addDrawableChild(this.moreWorldOptionsButton);
 
-		moreWorldOptionsElements.forEach(this::addDrawableChild);
+        addDrawableChild(createNewWorldButton);
+        addDrawableChild(cancelButton);
 
-		updateWorldOptionsVisibility();
-		setInitialFocus(this.worldName);
+        moreWorldOptionsElements.forEach(this::addDrawableChild);
 
-		this.worldCreator.update();
-		updateGameModeHelp(this.worldCreator.getGameMode());
-		updateWorldDirectoryName();
-	}
+        updateWorldOptionsVisibility();
+        setInitialFocus(this.worldName);
 
-	@Override
-	public void tick() {
-		this.worldName.tick();
-		this.moreWorldOptions.tick();
-	}
+        this.worldCreator.update();
+        updateGameModeHelp(this.worldCreator.getGameMode());
+        updateWorldDirectoryName();
+    }
 
-	@Override
-	public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
-		return super.keyPressed(keyCode, scanCode, modifiers);
-	}
+    @Override
+    public void tick() {
+        this.worldName.tick();
+        this.moreWorldOptions.tick();
+    }
 
-	@Override
-	public void initTabNavigation() {
-		super.initTabNavigation();
-	}
+    @Override
+    public boolean keyPressed(int keyCode, int scanCode, int modifiers) {
+        return super.keyPressed(keyCode, scanCode, modifiers);
+    }
 
-	private void setWorldName(String newWorldName) {
-		this.worldCreator.setWorldName(newWorldName);
+    @Override
+    public void initTabNavigation() {
+        super.initTabNavigation();
+    }
 
-		updateWorldDirectoryName();
-	}
+    private void setWorldName(String newWorldName) {
+        this.worldCreator.setWorldName(newWorldName);
 
-	private void updateWorldDirectoryName() {
-		this.worldDirectoryName = Text.empty()
-				.append(WORLD_DIRECTORY_NAME_LABEL)
-				.append(" ")
-				.append(this.worldCreator.getWorldDirectoryName());
-	}
+        updateWorldDirectoryName();
+    }
 
-	private void setGameMode(WorldCreator.Mode gameMode) {
-		this.worldCreator.setGameMode(gameMode);
+    private void updateWorldDirectoryName() {
+        this.worldDirectoryName = Text.empty()
+                .append(WORLD_DIRECTORY_NAME_LABEL)
+                .append(" ")
+                .append(this.worldCreator.getWorldDirectoryName());
+    }
 
-		updateGameModeHelp(gameMode);
-	}
+    private void setGameMode(WorldCreator.Mode gameMode) {
+        this.worldCreator.setGameMode(gameMode);
 
-	private void updateGameModeHelp(WorldCreator.Mode gameMode) {
-		String gameModeName = gameMode.name().toLowerCase();
-		if (gameModeName.equals("debug")) {
-			gameModeName = "spectator";
-		}
+        updateGameModeHelp(gameMode);
+    }
 
-		this.gameModeHelp1 = Text.translatable("selectWorld.gameMode." + gameModeName + ".line1");
-		this.gameModeHelp2 = Text.translatable("selectWorld.gameMode." + gameModeName + ".line2");
-	}
+    private void updateGameModeHelp(WorldCreator.Mode gameMode) {
+        String gameModeName = gameMode.name().toLowerCase();
+        if (gameModeName.equals("debug")) {
+            gameModeName = "spectator";
+        }
 
-	private void toggleWorldOptionsVisibility() {
-		setWorldOptionsVisibility(!this.isWorldOptionsToggled);
-	}
+        this.gameModeHelp1 = Text.translatable("selectWorld.gameMode." + gameModeName + ".line1");
+        this.gameModeHelp2 = Text.translatable("selectWorld.gameMode." + gameModeName + ".line2");
+    }
 
-	private void updateWorldOptionsVisibility() {
-		setWorldOptionsVisibility(this.isWorldOptionsToggled);
-	}
+    private void toggleWorldOptionsVisibility() {
+        setWorldOptionsVisibility(!this.isWorldOptionsToggled);
+    }
 
-	private void setWorldOptionsVisibility(boolean visible) {
-		this.isWorldOptionsToggled = visible;
-		this.gameModeButton.visible = !visible;
-		this.difficultyButton.visible = !visible;
+    private void updateWorldOptionsVisibility() {
+        setWorldOptionsVisibility(this.isWorldOptionsToggled);
+    }
 
-		if (this.moreWorldOptions.isDebug()) {
-			this.dataPacksButton.visible = false;
-			this.gameModeButton.active = false;
+    private void setWorldOptionsVisibility(boolean visible) {
+        this.isWorldOptionsToggled = visible;
+        this.gameModeButton.visible = !visible;
+        this.difficultyButton.visible = !visible;
 
-			if (this.nonDebugGameMode == null) {
-				this.nonDebugGameMode = this.gameModeButton.getValue();
-			}
+        if (this.moreWorldOptions.isDebug()) {
+            this.dataPacksButton.visible = false;
+            this.gameModeButton.active = false;
 
-			this.allowCheatsButton.visible = false;
-			setGameMode(WorldCreator.Mode.DEBUG);
-		} else {
-			this.gameModeButton.active = true;
-			if (this.nonDebugGameMode != null) {
-				setGameMode(this.nonDebugGameMode);
-			}
+            if (this.nonDebugGameMode == null) {
+                this.nonDebugGameMode = this.gameModeButton.getValue();
+            }
 
-			this.allowCheatsButton.visible = !visible;
-			this.dataPacksButton.visible = !visible;
-		}
+            this.allowCheatsButton.visible = false;
+            setGameMode(WorldCreator.Mode.DEBUG);
+        } else {
+            this.gameModeButton.active = true;
+            if (this.nonDebugGameMode != null) {
+                setGameMode(this.nonDebugGameMode);
+            }
 
-		this.moreWorldOptions.setVisibility(visible);
-		this.worldName.setVisible(!visible);
+            this.allowCheatsButton.visible = !visible;
+            this.dataPacksButton.visible = !visible;
+        }
 
-		if (visible) {
-			this.moreWorldOptionsButton.setMessage(DONE_TEXT);
-		} else {
-			this.moreWorldOptionsButton.setMessage(MORE_WORLD_OPTIONS_TEXT);
-		}
+        this.moreWorldOptions.setVisibility(visible);
+        this.worldName.setVisible(!visible);
 
-		this.gameRulesButton.visible = !visible;
-	}
+        if (visible) {
+            this.moreWorldOptionsButton.setMessage(DONE_TEXT);
+        } else {
+            this.moreWorldOptionsButton.setMessage(MORE_WORLD_OPTIONS_TEXT);
+        }
+
+        this.gameRulesButton.visible = !visible;
+    }
 
 }

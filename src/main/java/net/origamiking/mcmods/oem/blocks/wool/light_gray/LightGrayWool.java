@@ -11,6 +11,7 @@ public class LightGrayWool extends BlocksUtils {
     public static final Block LIGHT_GRAY_WOOL_SLAB = registerBlock(OemMain.MOD_ID, "light_gray_wool_slab", new SlabBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
     public static final Block LIGHT_GRAY_WOOL_WALL = registerBlock(OemMain.MOD_ID, "light_gray_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
-    public static void getLightGrayWool() {}
+    public static void getLightGrayWool() {
+    }
 
 }

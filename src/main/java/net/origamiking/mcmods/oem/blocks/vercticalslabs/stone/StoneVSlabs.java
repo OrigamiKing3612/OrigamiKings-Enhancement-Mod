@@ -46,5 +46,7 @@ public class StoneVSlabs extends BlocksUtils {
 
 
     public static final Block VERTICAL_MUD_BRICK_SLAB = registerBlock(OemMain.MOD_ID, "vertical_mud_brick_slab", new VerticalSlabBlock(OrigamiBlockSettings.copyOf(Blocks.MUD_BRICKS).sounds(BlockSoundGroup.MUD_BRICKS)));
-    public static void get() {}
+
+    public static void get() {
+    }
 }

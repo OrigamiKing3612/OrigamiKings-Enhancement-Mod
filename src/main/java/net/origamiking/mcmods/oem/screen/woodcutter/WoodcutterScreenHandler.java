@@ -8,7 +8,10 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.inventory.SimpleInventory;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
-import net.minecraft.screen.*;
+import net.minecraft.screen.Property;
+import net.minecraft.screen.ScreenHandler;
+import net.minecraft.screen.ScreenHandlerContext;
+import net.minecraft.screen.ScreenHandlerType;
 import net.minecraft.screen.slot.Slot;
 import net.minecraft.sound.SoundCategory;
 import net.minecraft.sound.SoundEvents;
@@ -29,9 +32,10 @@ public class WoodcutterScreenHandler extends ScreenHandler {
     long lastTakeTime;
     final Slot inputSlot;
     final Slot outputSlot;
-    public  List<ItemStack> ingredients;
-    Runnable contentsChangedListener = () -> {};
-    public final Inventory input = new SimpleInventory(1){
+    public List<ItemStack> ingredients;
+    Runnable contentsChangedListener = () -> {
+    };
+    public final Inventory input = new SimpleInventory(1) {
 
         @Override
         public void markDirty() {
@@ -52,7 +56,7 @@ public class WoodcutterScreenHandler extends ScreenHandler {
         this.context = context;
         this.world = playerInventory.player.getWorld();
         this.inputSlot = this.addSlot(new Slot(this.input, 0, 20, 33));
-        this.outputSlot = this.addSlot(new Slot(this.output, 1, 143, 33){
+        this.outputSlot = this.addSlot(new Slot(this.output, 1, 143, 33) {
 
             @Override
             public boolean canInsert(ItemStack stack) {
@@ -70,7 +74,7 @@ public class WoodcutterScreenHandler extends ScreenHandler {
                 context.run((world, pos) -> {
                     long l = world.getTime();
                     if (WoodcutterScreenHandler.this.lastTakeTime != l) {
-                        world.playSound(null, (BlockPos)pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundCategory.BLOCKS, 1.0f, 1.0f);
+                        world.playSound(null, (BlockPos) pos, SoundEvents.UI_STONECUTTER_TAKE_RESULT, SoundCategory.BLOCKS, 1.0f, 1.0f);
                         WoodcutterScreenHandler.this.lastTakeTime = l;
                     }
                 });
@@ -173,7 +177,7 @@ public class WoodcutterScreenHandler extends ScreenHandler {
     @Override
     public ItemStack quickMove(PlayerEntity player, int slot) {
         ItemStack itemStack = ItemStack.EMPTY;
-        Slot slot2 = (Slot)this.slots.get(slot);
+        Slot slot2 = (Slot) this.slots.get(slot);
         if (slot2 != null && slot2.hasStack()) {
             ItemStack itemStack2 = slot2.getStack();
             Item item = itemStack2.getItem();

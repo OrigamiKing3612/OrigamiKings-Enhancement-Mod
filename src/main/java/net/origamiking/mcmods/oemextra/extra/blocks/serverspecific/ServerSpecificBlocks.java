@@ -1,10 +1,12 @@
 package net.origamiking.mcmods.oemextra.extra.blocks.serverspecific;
 
-import net.minecraft.block.*;
+import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.sound.BlockSoundGroup;
 import net.origamiking.mcmods.oapi.blocks.OrigamiBlockSettings;
 import net.origamiking.mcmods.oem.OemMain;
 import net.origamiking.mcmods.oem.blocks.custom.PrimBlock;
+
 import static net.origamiking.mcmods.oapi.blocks.BlocksUtils.registerBlock;
 
 

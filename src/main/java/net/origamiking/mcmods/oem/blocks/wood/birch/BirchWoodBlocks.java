@@ -15,5 +15,7 @@ public class BirchWoodBlocks {
     public static final Block BIRCH_LOG_FENCE = registerBlock(OemMain.MOD_ID, "birch_log_fence", new FenceBlock(OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block BIRCH_LOG_SLAB = registerBlock(OemMain.MOD_ID, "birch_log_slab", new SlabBlock(OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block BIRCH_LOG_STAIRS = registerBlock(OemMain.MOD_ID, "birch_log_stairs", new StairsBlock(Blocks.BIRCH_LOG.getDefaultState(), OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
-    public static void getBirchBlocks() {}
+
+    public static void getBirchBlocks() {
+    }
 }

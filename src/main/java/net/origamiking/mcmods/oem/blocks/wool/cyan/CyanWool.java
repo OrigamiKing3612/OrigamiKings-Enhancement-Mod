@@ -12,6 +12,6 @@ public class CyanWool extends BlocksUtils {
     public static final Block CYAN_WOOL_WALL = registerBlock(OemMain.MOD_ID, "cyan_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getCyanWool() {}
+    public static void getCyanWool() {
+    }
 }

@@ -12,6 +12,6 @@ public class GreenWool extends BlocksUtils {
     public static final Block GREEN_WOOL_WALL = registerBlock(OemMain.MOD_ID, "green_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getGreenWool() {}
+    public static void getGreenWool() {
+    }
 }

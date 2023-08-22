@@ -16,5 +16,6 @@ public class DarkOakWoodBlocks {
     public static final Block DARK_OAK_LOG_SLAB = registerBlock(OemMain.MOD_ID, "dark_oak_log_slab", new SlabBlock(OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
     public static final Block DARK_OAK_LOG_STAIRS = registerBlock(OemMain.MOD_ID, "dark_oak_log_stairs", new StairsBlock(Blocks.DARK_OAK_LOG.getDefaultState(), OrigamiBlockSettings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.WOOD)));
 
-    public static void getDarkOakBlocks() {}
+    public static void getDarkOakBlocks() {
+    }
 }

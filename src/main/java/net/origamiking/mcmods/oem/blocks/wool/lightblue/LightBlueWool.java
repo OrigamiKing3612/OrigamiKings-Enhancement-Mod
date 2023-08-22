@@ -12,6 +12,6 @@ public class LightBlueWool extends BlocksUtils {
     public static final Block LIGHT_BLUE_WOOL_WALL = registerBlock(OemMain.MOD_ID, "light_blue_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getLightBlueWool() {}
+    public static void getLightBlueWool() {
+    }
 }

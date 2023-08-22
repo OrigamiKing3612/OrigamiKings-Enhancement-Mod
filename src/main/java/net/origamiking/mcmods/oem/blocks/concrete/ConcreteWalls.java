@@ -27,5 +27,7 @@ public class ConcreteWalls {
     public static final Block PURPLE_CONCRETE_WALL = registerBlock(id, "purple_concrete_wall", new WallBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block MAGENTA_CONCRETE_WALL = registerBlock(id, "magenta_concrete_wall", new WallBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
     public static final Block PINK_CONCRETE_WALL = registerBlock(id, "pink_concrete_wall", new WallBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE)));
-    public static void getConcreteWalls() {}
+
+    public static void getConcreteWalls() {
+    }
 }

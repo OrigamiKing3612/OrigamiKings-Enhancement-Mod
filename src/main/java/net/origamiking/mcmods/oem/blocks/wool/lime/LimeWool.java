@@ -12,6 +12,6 @@ public class LimeWool extends BlocksUtils {
     public static final Block LIME_WOOL_WALL = registerBlock(OemMain.MOD_ID, "lime_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getLimeWool() {}
+    public static void getLimeWool() {
+    }
 }

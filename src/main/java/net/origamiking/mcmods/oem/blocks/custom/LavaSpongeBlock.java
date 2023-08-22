@@ -26,6 +26,7 @@ public class LavaSpongeBlock extends Block {
     public void setWetSponge(Block wetSponge) {
         this.wetSponge = wetSponge;
     }
+
     public void onBlockAdded(BlockState state, World world, BlockPos pos, BlockState oldState, boolean notify) {
         if (!oldState.isOf(state.getBlock())) {
             this.update(world, pos);
@@ -50,7 +51,7 @@ public class LavaSpongeBlock extends Block {
         queue.add(new Pair<>(pos, 0));
         int i = 0;
 
-        while(!queue.isEmpty()) {
+        while (!queue.isEmpty()) {
             Pair<BlockPos, Integer> pair = queue.poll();
             BlockPos blockPos = pair.getLeft();
             int j = pair.getRight();

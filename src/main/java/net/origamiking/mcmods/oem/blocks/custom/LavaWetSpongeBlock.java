@@ -15,6 +15,7 @@ import net.minecraft.world.World;
 
 public class LavaWetSpongeBlock extends Block {
     private final BlockState originalBlock;
+
     public LavaWetSpongeBlock(Settings settings, BlockState originalBlock) {
         super(settings);
         this.originalBlock = originalBlock;

@@ -12,6 +12,6 @@ public class PurpleWool extends BlocksUtils {
     public static final Block PURPLE_WOOL_WALL = registerBlock(OemMain.MOD_ID, "purple_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getPurpleWool() {}
+    public static void getPurpleWool() {
+    }
 }

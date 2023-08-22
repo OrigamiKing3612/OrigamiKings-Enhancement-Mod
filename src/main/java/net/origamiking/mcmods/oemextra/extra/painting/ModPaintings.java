@@ -7,6 +7,7 @@ import static net.origamiking.mcmods.oapi.painting.PaintingUtils.registerPaintin
 
 public class ModPaintings {
     public static final PaintingVariant SUS = registerPainting(OemMain.MOD_ID, "sus", new PaintingVariant(32, 32));
+
     public static void register() {
         OemMain.LOGGER.info("Registering Extra Paintings for " + OemMain.VERSION);
     }

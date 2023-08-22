@@ -11,5 +11,7 @@ public class AmethystBlocks {
     public static final Block AMETHYST_STAIR = BlocksUtils.registerBlock(OemMain.MOD_ID, "amethyst_block_stairs", new StairsBlock(Blocks.AMETHYST_BLOCK.getDefaultState(), OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block AMETHYST_SLAB = BlocksUtils.registerBlock(OemMain.MOD_ID, "amethyst_block_slab", new SlabBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
     public static final Block AMETHYST_WALL = BlocksUtils.registerBlock(OemMain.MOD_ID, "amethyst_block_wall", new WallBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-    public static void getAmethyst() {}
+
+    public static void getAmethyst() {
+    }
 }

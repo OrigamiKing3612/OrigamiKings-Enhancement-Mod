@@ -28,11 +28,12 @@ public class FutureGunArrowEntity extends PersistentProjectileEntity {
     protected ItemStack asItemStack() {
         return Items.ARROW.getDefaultStack();
     }
+
     public void onEntityHit(EntityHitResult entityHitResult) { // called on entity hit.
         super.onEntityHit(entityHitResult);
         Entity entity = entityHitResult.getEntity(); // sets a new Entity instance as the EntityHitResult (victim)
         int i = entity instanceof BlazeEntity ? 3 : 0; // sets i to 3 if the Entity instance is an instance of BlazeEntity
-        entity.damage(getWorld().getDamageSources().arrow(this, this.getOwner()), (float)i); // deals damage
+        entity.damage(getWorld().getDamageSources().arrow(this, this.getOwner()), (float) i); // deals damage
 
         if (entity instanceof LivingEntity livingEntity) { // checks if entity is an instance of LivingEntity (meaning it is not a boat or minecart)
             livingEntity.addStatusEffect((new StatusEffectInstance(StatusEffects.SLOWNESS, 200, 255))); // applies a status effect

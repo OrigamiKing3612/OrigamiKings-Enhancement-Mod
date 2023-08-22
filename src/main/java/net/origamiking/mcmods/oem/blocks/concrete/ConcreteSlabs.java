@@ -27,5 +27,7 @@ public class ConcreteSlabs {
     public static final Block PURPLE_CONCRETE_SLAB = registerBlock(id, "purple_concrete_slab", new SlabBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).mapColor(MapColor.PURPLE)));
     public static final Block MAGENTA_CONCRETE_SLAB = registerBlock(id, "magenta_concrete_slab", new SlabBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).mapColor(MapColor.MAGENTA)));
     public static final Block PINK_CONCRETE_SLAB = registerBlock(id, "pink_concrete_slab", new SlabBlock(OrigamiBlockSettings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.STONE).mapColor(MapColor.PINK)));
-    public static void getConcreteSlabs() {}
+
+    public static void getConcreteSlabs() {
+    }
 }

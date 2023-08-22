@@ -42,9 +42,9 @@ public class MetalRecipes {
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.EXPOSED_COPPER_BAR_DOOR, Blocks.EXPOSED_COPPER, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.WEATHERED_COPPER_BAR_DOOR, Blocks.WEATHERED_COPPER, 2);
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, RandomBlocks.OXIDIZED_COPPER_BAR_DOOR, Blocks.OXIDIZED_COPPER, 2);
-        ModRecipeProvider.offerDoorRecipe(exporter,RandomBlocks.IRON_BAR_DOOR, Items.IRON_INGOT);
-        ModRecipeProvider.offerDoorRecipe(exporter,RandomBlocks.GOLD_BAR_DOOR, Items.GOLD_INGOT);
-        ModRecipeProvider.offerDoorRecipe(exporter,RandomBlocks.COPPER_BAR_DOOR, Items.COPPER_INGOT);
+        ModRecipeProvider.offerDoorRecipe(exporter, RandomBlocks.IRON_BAR_DOOR, Items.IRON_INGOT);
+        ModRecipeProvider.offerDoorRecipe(exporter, RandomBlocks.GOLD_BAR_DOOR, Items.GOLD_INGOT);
+        ModRecipeProvider.offerDoorRecipe(exporter, RandomBlocks.COPPER_BAR_DOOR, Items.COPPER_INGOT);
         ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_COPPER_BARS, CopperBlocks.COPPER_BARS);
         ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_EXPOSED_COPPER_BARS, CopperBlocks.EXPOSED_COPPER_BARS);
         ModRecipeProvider.offerWaxableRecipe(exporter, WaxedCopperBlocks.WAXED_WEATHERED_COPPER_BARS, CopperBlocks.WEATHERED_COPPER_BARS);

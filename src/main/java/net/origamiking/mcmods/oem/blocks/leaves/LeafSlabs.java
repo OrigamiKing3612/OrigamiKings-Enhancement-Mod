@@ -17,5 +17,6 @@ public class LeafSlabs extends BlocksUtils {
     public static final Block DARK_OAK_LEAVES_SLAB = registerBlock(id, "dark_oak_leaves_slab", new SlabBlock(OrigamiBlockSettings.copyOf(Blocks.DARK_OAK_LEAVES)));
     public static final Block MANGROVE_LEAVES_SLAB = registerBlock(id, "mangrove_leaves_slab", new SlabBlock(OrigamiBlockSettings.copyOf(Blocks.MANGROVE_LEAVES)));
 
-    public static void getLeafSlabs() {}
+    public static void getLeafSlabs() {
+    }
 }

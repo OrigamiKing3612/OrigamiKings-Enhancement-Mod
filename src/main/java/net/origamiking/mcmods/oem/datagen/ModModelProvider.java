@@ -14,12 +14,14 @@ public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
         super(output);
     }
+
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         SimpleCubeAllModels.get(blockStateModelGenerator);
         BlockSetModels.get(blockStateModelGenerator);
         OtherModels.get(blockStateModelGenerator);
     }
+
     @Override
     public void generateItemModels(ItemModelGenerator itemModelGenerator) {
         itemModelGenerator.register(ModItems.COPPER_NUGGET, Models.GENERATED);

@@ -20,5 +20,6 @@ public class LeafStairs extends BlocksUtils {
     //public static final Block CRIMSON_LEAVES_STAIRS = registerBlock(id, "crimson_leaves_stairs", new StairsBlock(Blocks.SPRUCE_LEAVES.getDefaultState(), OrigamiBlockSettings.create().nonOpaque().strength(0.2f).requiresTool().sounds(BlockSoundGroup.GRASS)));
     //public static final Block WARPED_LEAVES_STAIRS = registerBlock(id, "crimson_leaves_stairs", new StairsBlock(Blocks.SPRUCE_LEAVES.getDefaultState(), OrigamiBlockSettings.create().nonOpaque().strength(0.2f).requiresTool().sounds(BlockSoundGroup.GRASS)));
 
-        public static void getLeafStairs () {}
+    public static void getLeafStairs() {
+    }
 }

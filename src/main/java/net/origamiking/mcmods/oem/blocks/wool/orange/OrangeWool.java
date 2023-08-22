@@ -12,6 +12,6 @@ public class OrangeWool extends BlocksUtils {
     public static final Block ORANGE_WOOL_WALL = registerBlock(OemMain.MOD_ID, "orange_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getOrangeWool() {}
+    public static void getOrangeWool() {
+    }
 }

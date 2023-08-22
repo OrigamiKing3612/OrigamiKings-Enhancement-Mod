@@ -20,6 +20,7 @@ import java.util.List;
 public class WoodcutterCategory implements DisplayCategory<BasicDisplay> {
     private static final Identifier TEXTURE = new Identifier("textures/gui/container/stonecutter.png");
     public static final CategoryIdentifier<WoodcutterDisplay> WOODCUTTING = CategoryIdentifier.of(OemMain.MOD_ID, "woodcutting");
+
     @Override
     public CategoryIdentifier<? extends BasicDisplay> getCategoryIdentifier() {
         return WOODCUTTING;

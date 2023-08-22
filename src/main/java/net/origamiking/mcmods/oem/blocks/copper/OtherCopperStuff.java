@@ -33,6 +33,7 @@ public class OtherCopperStuff {
         OxidizableBlocksRegistry.registerWaxableBlockPair(CopperBlocks.OXIDIZED_COPPER_DOOR, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_DOOR);
         OxidizableBlocksRegistry.registerWaxableBlockPair(CopperBlocks.OXIDIZED_COPPER_TRAPDOOR, WaxedCopperBlocks.WAXED_OXIDIZED_COPPER_TRAPDOOR);
     }
+
     public static void pairTypesofCopper() {
         //bars
         OxidizableBlocksRegistry.registerOxidizableBlockPair(CopperBlocks.COPPER_BARS, CopperBlocks.EXPOSED_COPPER_BARS);

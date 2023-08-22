@@ -21,8 +21,8 @@ import net.minecraft.util.shape.VoxelShape;
 import net.minecraft.world.BlockView;
 import net.minecraft.world.World;
 import net.origamiking.mcmods.oem.OemMain;
-import net.origamiking.mcmods.oem.stats.ModStats;
 import net.origamiking.mcmods.oem.screen.woodcutter.WoodcutterScreenHandler;
+import net.origamiking.mcmods.oem.stats.ModStats;
 import org.jetbrains.annotations.Nullable;
 
 public class WoodcutterBlock extends Block {
@@ -32,12 +32,13 @@ public class WoodcutterBlock extends Block {
 
     public WoodcutterBlock(Settings settings) {
         super(settings);
-        this.setDefaultState((BlockState)((BlockState)this.stateManager.getDefaultState()).with(FACING, Direction.NORTH));
+        this.setDefaultState((BlockState) ((BlockState) this.stateManager.getDefaultState()).with(FACING, Direction.NORTH));
 
     }
+
     @Override
     public BlockState getPlacementState(ItemPlacementContext ctx) {
-        return (BlockState)this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
+        return (BlockState) this.getDefaultState().with(FACING, ctx.getHorizontalPlayerFacing().getOpposite());
     }
 
     @Override
@@ -75,7 +76,7 @@ public class WoodcutterBlock extends Block {
 
     @Override
     public BlockState rotate(BlockState state, BlockRotation rotation) {
-        return (BlockState)state.with(FACING, rotation.rotate(state.get(FACING)));
+        return (BlockState) state.with(FACING, rotation.rotate(state.get(FACING)));
     }
 
     @Override

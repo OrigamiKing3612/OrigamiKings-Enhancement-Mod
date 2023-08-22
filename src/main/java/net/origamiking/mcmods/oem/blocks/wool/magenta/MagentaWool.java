@@ -12,6 +12,6 @@ public class MagentaWool extends BlocksUtils {
     public static final Block MAGENTA_WOOL_WALL = registerBlock(OemMain.MOD_ID, "magenta_wool_wall", new WallBlock(OrigamiBlockSettings.create().strength(0.8f).requiresTool().sounds(BlockSoundGroup.WOOL)));
 
 
-
-    public static void getMagentaWool() {}
+    public static void getMagentaWool() {
+    }
 }
