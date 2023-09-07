@@ -8,6 +8,7 @@ import net.minecraft.client.gui.DrawContext;
 import net.minecraft.client.gui.screen.ingame.HandledScreen;
 import net.minecraft.client.sound.PositionedSoundInstance;
 import net.minecraft.entity.player.PlayerInventory;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
@@ -39,7 +40,7 @@ public class WoodcutterScreen extends HandledScreen<WoodcutterScreenHandler> {
 
     @Override
     protected void drawBackground(DrawContext context, float delta, int mouseX, int mouseY) {
-        this.renderBackground(context);
+        this.renderBackground(context, mouseX, mouseY, delta);
         RenderSystem.setShaderTexture(0, TEXTURE);
         int i = this.x;
         int j = this.y;
@@ -60,13 +61,13 @@ public class WoodcutterScreen extends HandledScreen<WoodcutterScreenHandler> {
             int i = this.x + 52;
             int j = this.y + 14;
             int k = this.scrollOffset + 12;
-            List<WoodcutterRecipe> list = ((WoodcutterScreenHandler) this.handler).getAvailableRecipes();
+            List<RecipeEntry<WoodcutterRecipe>> list = ((WoodcutterScreenHandler) this.handler).getAvailableRecipes();
             for (int l = this.scrollOffset; l < k && l < ((WoodcutterScreenHandler) this.handler).getAvailableRecipeCount(); ++l) {
                 int m = l - this.scrollOffset;
                 int n = i + m % 4 * 16;
                 int o = j + m / 4 * 18 + 2;
                 if (x < n || x >= n + 16 || y < o || y >= o + 18) continue;
-                context.drawItemTooltip(this.textRenderer, list.get(l).getOutput(this.client.world.getRegistryManager()), x, y);
+                context.drawItemTooltip(this.textRenderer, list.get(l).value().getResult(this.client.world.getRegistryManager()), x, y);
             }
         }
     }
@@ -88,13 +89,13 @@ public class WoodcutterScreen extends HandledScreen<WoodcutterScreenHandler> {
     }
 
     private void renderRecipeIcons(DrawContext context, int x, int y, int scrollOffset) {
-        List<WoodcutterRecipe> list = ((WoodcutterScreenHandler) this.handler).getAvailableRecipes();
+        List<RecipeEntry<WoodcutterRecipe>> list = ((WoodcutterScreenHandler) this.handler).getAvailableRecipes();
         for (int i = this.scrollOffset; i < scrollOffset && i < ((WoodcutterScreenHandler) this.handler).getAvailableRecipeCount(); ++i) {
             int j = i - this.scrollOffset;
             int k = x + j % 4 * 16;
             int l = j / 4;
             int m = y + l * 18 + 2;
-            context.drawItem(list.get(i).getOutput(this.client.world.getRegistryManager()), k, m);
+            context.drawItem(list.get(i).value().getResult(this.client.world.getRegistryManager()), k, m);
         }
     }
 
@@ -138,15 +139,14 @@ public class WoodcutterScreen extends HandledScreen<WoodcutterScreenHandler> {
     }
 
     @Override
-    public boolean mouseScrolled(double mouseX, double mouseY, double amount) {
+    public boolean mouseScrolled(double mouseX, double mouseY, double horizontalAmount, double verticalAmount) {
         if (this.shouldScroll()) {
             int i = this.getMaxScroll();
-            float f = (float) amount / (float) i;
+            float f = (float) verticalAmount / (float) i;
             this.scrollAmount = MathHelper.clamp(this.scrollAmount - f, 0.0f, 1.0f);
             this.scrollOffset = (int) ((double) (this.scrollAmount * (float) i) + 0.5) * 4;
         }
-        return true;
-    }
+        return true;    }
 
     private boolean shouldScroll() {
         return this.canCraft && ((WoodcutterScreenHandler) this.handler).getAvailableRecipeCount() > 12;

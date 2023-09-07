@@ -17,7 +17,7 @@ public class WoodcutterDisplay extends BasicDisplay {
     }
 
     public WoodcutterDisplay(WoodcutterRecipe recipe) {
-        super(getInputList(recipe), List.of(EntryIngredient.of(EntryStacks.of(recipe.getOutput(null)))));
+        super(getInputList(recipe), List.of(EntryIngredient.of(EntryStacks.of(recipe.getResult(null)))));
     }
 
     private static List<EntryIngredient> getInputList(WoodcutterRecipe recipe) {

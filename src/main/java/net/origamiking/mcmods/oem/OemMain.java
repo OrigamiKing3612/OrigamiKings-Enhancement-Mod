@@ -8,6 +8,7 @@ import net.origamiking.mcmods.oem.config.OemConfig;
 import net.origamiking.mcmods.oem.config.OemConfigHandler;
 import net.origamiking.mcmods.oem.groups.ModGroups;
 import net.origamiking.mcmods.oem.items.ModItems;
+import net.origamiking.mcmods.oem.recipe.ModRecipeSerializers;
 import net.origamiking.mcmods.oem.recipe.ModRecipeType;
 import net.origamiking.mcmods.oem.screen.ModScreenHandlers;
 import net.origamiking.mcmods.oem.stats.ModStats;
@@ -21,7 +22,7 @@ import org.slf4j.LoggerFactory;
 
 public class OemMain implements ModInitializer {
     public static final String MOD_ID = "oem";
-    public static final String VERSION = "OEM-1.2.1-1.20.1";
+    public static final String VERSION = "OEM-1.2.1-1.20.2";
     public static final int CONFIG_VERSION = 1;
     public static final Logger LOGGER = LoggerFactory.getLogger(OemMain.MOD_ID);
     public static OemConfigHandler OEM_CONFIG;
@@ -41,6 +42,7 @@ public class OemMain implements ModInitializer {
         ModBlockTags.register();
         ModItemTags.register();
         ModRecipeType.register();
+        ModRecipeSerializers.register();
         ModScreenHandlers.register();
         ModStats.register();
 

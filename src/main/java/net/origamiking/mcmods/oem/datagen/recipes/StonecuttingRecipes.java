@@ -1,17 +1,15 @@
 package net.origamiking.mcmods.oem.datagen.recipes;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 
-import java.util.function.Consumer;
-
 public class StonecuttingRecipes {
-    public static void get(Consumer<RecipeJsonProvider> exporter) {
+    public static void get(RecipeExporter exporter) {
 
         RecipeProvider.offerStonecuttingRecipe(exporter, RecipeCategory.BUILDING_BLOCKS, GoldBlocks.GOLD_BARS, Blocks.GOLD_BLOCK, 10);
 

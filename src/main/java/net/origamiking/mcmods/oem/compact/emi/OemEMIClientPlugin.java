@@ -5,6 +5,7 @@ import dev.emi.emi.api.EmiRegistry;
 import dev.emi.emi.api.recipe.EmiRecipeCategory;
 import dev.emi.emi.api.render.EmiTexture;
 import dev.emi.emi.api.stack.EmiStack;
+import net.minecraft.recipe.RecipeEntry;
 import net.minecraft.recipe.RecipeManager;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oem.OemMain;
@@ -26,8 +27,8 @@ public class OemEMIClientPlugin implements EmiPlugin {
         RecipeManager manager = registry.getRecipeManager();
 
         // Use vanilla's concept of your recipes and pass them to your EmiRecipe representation
-        for (WoodcutterRecipe recipe : manager.listAllOfType(ModRecipeType.WOODCUTTER_RECIPE)) {
-            registry.addRecipe(new WoodcutterEmiRecipe(recipe));
+        for (RecipeEntry<WoodcutterRecipe> recipe : manager.listAllOfType(ModRecipeType.WOODCUTTER_RECIPE)) {
+            registry.addRecipe(new WoodcutterEmiRecipe(recipe.value()));
         }
     }
 }

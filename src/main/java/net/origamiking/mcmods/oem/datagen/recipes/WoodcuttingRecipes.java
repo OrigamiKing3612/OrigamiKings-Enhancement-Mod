@@ -1,7 +1,7 @@
 package net.origamiking.mcmods.oem.datagen.recipes;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
 import net.minecraft.data.server.recipe.SingleItemRecipeJsonBuilder;
 import net.minecraft.item.ItemConvertible;
@@ -17,12 +17,10 @@ import net.origamiking.mcmods.oem.blocks.wood.mangrove.MangroveWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.oak.OakWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.spruce.SpruceWoodBlocks;
 import net.origamiking.mcmods.oem.blocks.wood.warped.WarpedWoodBlocks;
-import net.origamiking.mcmods.oem.recipe.WoodcutterRecipe;
-
-import java.util.function.Consumer;
+import net.origamiking.mcmods.oem.recipe.ModRecipeSerializers;
 
 public class WoodcuttingRecipes {
-    public static void get(Consumer<RecipeJsonProvider> exporter) {
+    public static void get(RecipeExporter exporter) {
         offerWoodcuttingRecipe(exporter, Blocks.BAMBOO_PLANKS, Blocks.BAMBOO_BLOCK, 4);
         offerWoodcuttingRecipe(exporter, Blocks.BAMBOO_STAIRS, Blocks.BAMBOO_PLANKS);
         offerWoodcuttingRecipe(exporter, Blocks.BAMBOO_SLAB, Blocks.BAMBOO_PLANKS, 2);
@@ -101,14 +99,14 @@ public class WoodcuttingRecipes {
     }
 
     private static SingleItemRecipeJsonBuilder createWoodcutting(Ingredient input, ItemConvertible output, int count) {
-        return new SingleItemRecipeJsonBuilder(RecipeCategory.BUILDING_BLOCKS, WoodcutterRecipe.Serializer.INSTANCE, input, output, count);
+        return new SingleItemRecipeJsonBuilder(RecipeCategory.BUILDING_BLOCKS, ModRecipeSerializers.WOODCUTTER, input, output, count);
     }
 
-    public static void offerWoodcuttingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input) {
+    public static void offerWoodcuttingRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input) {
         offerWoodcuttingRecipe(exporter, output, input, 1);
     }
 
-    public static void offerWoodcuttingRecipe(Consumer<RecipeJsonProvider> exporter, ItemConvertible output, ItemConvertible input, int count) {
+    public static void offerWoodcuttingRecipe(RecipeExporter exporter, ItemConvertible output, ItemConvertible input, int count) {
         createWoodcutting(Ingredient.ofItems(input), output, count).criterion(RecipeProvider.hasItem(input), RecipeProvider.conditionsFromItem(input)).offerTo(exporter, RecipeProvider.convertBetween(output, input) + "_woodcutting");
     }
 }

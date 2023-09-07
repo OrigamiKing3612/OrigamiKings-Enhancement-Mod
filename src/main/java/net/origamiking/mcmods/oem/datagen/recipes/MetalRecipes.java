@@ -1,27 +1,25 @@
 package net.origamiking.mcmods.oem.datagen.recipes;
 
 import net.minecraft.block.Blocks;
-import net.minecraft.data.server.recipe.RecipeJsonProvider;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeProvider;
+import net.minecraft.data.server.recipe.ShapedRecipeJsonBuilder;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.util.Identifier;
 import net.origamiking.mcmods.oapi.recipes.ModRecipeProvider;
 import net.origamiking.mcmods.oapi.recipes.ModRecipeProviders;
-import net.origamiking.mcmods.oapi.recipes.OrigamiShapedRecipeJsonBuilder;
 import net.origamiking.mcmods.oem.blocks.copper.CopperBlocks;
 import net.origamiking.mcmods.oem.blocks.copper.WaxedCopperBlocks;
 import net.origamiking.mcmods.oem.blocks.gold.GoldBlocks;
 import net.origamiking.mcmods.oem.blocks.randomblocks.RandomBlocks;
 import net.origamiking.mcmods.oem.items.ModItems;
 
-import java.util.function.Consumer;
-
 import static net.origamiking.mcmods.oem.armor.materials.CopperArmorMaterial.getCopperArmor.*;
 
 public class MetalRecipes {
-    public static void get(Consumer<RecipeJsonProvider> exporter) {
+    public static void get(RecipeExporter exporter) {
         ModRecipeProvider.offerBarRecipe(exporter, CopperBlocks.COPPER_BARS, Items.COPPER_INGOT);
         RecipeProvider.createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, Ingredient.ofItems(Blocks.COPPER_BLOCK));
         RecipeProvider.createPressurePlateRecipe(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.EXPOSED_COPPER_PRESSURE_PLATE, Ingredient.ofItems(Blocks.EXPOSED_COPPER));
@@ -78,8 +76,10 @@ public class MetalRecipes {
         ModRecipeProviders.offerArmorSet(exporter, Items.COPPER_INGOT, COPPER_HELMET, COPPER_CHESTPLATE, COPPER_LEGGINGS, COPPER_BOOTS);
 
 
-        OrigamiShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, 2)
-                .pattern("   ").pattern("   ").pattern("###").inputWithCriterion('#', Items.COPPER_INGOT)
+        ShapedRecipeJsonBuilder.create(RecipeCategory.BUILDING_BLOCKS, CopperBlocks.COPPER_PRESSURE_PLATE, 2)
+                .pattern("   ").pattern("   ").pattern("###")
+                .input('#', Items.COPPER_INGOT)
+                .criterion(RecipeProvider.hasItem(Items.COPPER_INGOT), RecipeProvider.conditionsFromItem(Items.COPPER_INGOT))
                 .offerTo(exporter, new Identifier(RecipeProvider.getRecipeName(CopperBlocks.COPPER_PRESSURE_PLATE)));
     }
 }

@@ -6,5 +6,4 @@ public class OemConfigHandler {
     public int configVersion = defaultConfigVersion;
     public boolean enableWoodcutter = defaultEnableWoodcutter;
     public boolean disableWoodcutter = defaultDisableWoodcutter;
-    public boolean disableOldWorldScreen = defaultDisableOldWorldScreen;
 }

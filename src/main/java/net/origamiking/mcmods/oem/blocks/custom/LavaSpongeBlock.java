@@ -2,6 +2,7 @@ package net.origamiking.mcmods.oem.blocks.custom;
 
 import com.google.common.collect.Lists;
 import net.minecraft.block.*;
+import net.minecraft.client.MinecraftClient;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.registry.tag.FluidTags;
 import net.minecraft.util.Pair;
@@ -50,19 +51,18 @@ public class LavaSpongeBlock extends Block {
         Queue<Pair<BlockPos, Integer>> queue = Lists.newLinkedList();
         queue.add(new Pair<>(pos, 0));
         int i = 0;
-
         while (!queue.isEmpty()) {
             Pair<BlockPos, Integer> pair = queue.poll();
             BlockPos blockPos = pair.getLeft();
             int j = pair.getRight();
             Direction[] directions = Direction.values();
-
             for (Direction direction : directions) {
                 BlockPos blockPos2 = blockPos.offset(direction);
                 BlockState blockState = world.getBlockState(blockPos2);
                 FluidState fluidState = world.getFluidState(blockPos2);
+
                 if (fluidState.isIn(FluidTags.LAVA)) {
-                    if (blockState.getBlock() instanceof FluidDrainable && !((FluidDrainable) blockState.getBlock()).tryDrainFluid(world, blockPos2, blockState).isEmpty()) {
+                    if (blockState.getBlock() instanceof FluidDrainable && !((FluidDrainable) blockState.getBlock()).tryDrainFluid(null, world, blockPos2, blockState).isEmpty()) {
                         ++i;
                         if (j < range) {
                             queue.add(new Pair<>(blockPos2, j + 1));

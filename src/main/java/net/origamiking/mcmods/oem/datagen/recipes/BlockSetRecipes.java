@@ -1,6 +1,7 @@
 package net.origamiking.mcmods.oem.datagen.recipes;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.origamiking.mcmods.oem.blocks.amethyst.AmethystBlocks;
 import net.origamiking.mcmods.oem.blocks.concrete.ConcreteSlabs;
@@ -49,7 +50,7 @@ import static net.origamiking.mcmods.oapi.recipes.ModRecipeProviders.offerBlockS
 import static net.origamiking.mcmods.oem.datagen.recipes.providers.OemRecipeProviders.offerCarpets;
 
 public class BlockSetRecipes {
-    public static void get(Consumer<RecipeJsonProvider> exporter) {
+    public static void get(RecipeExporter exporter) {
         offerBlockSet(exporter, Blocks.BLACK_WOOL, BlackWool.BLACK_WOOL_SLAB, BlackWool.BLACK_WOOL_STAIRS, BlackWool.BLACK_WOOL_WALL);
         offerBlockSet(exporter, Blocks.GRAY_WOOL, GrayWool.GRAY_WOOL_SLAB, GrayWool.GRAY_WOOL_STAIRS, GrayWool.GRAY_WOOL_WALL);
         offerBlockSet(exporter, Blocks.LIGHT_GRAY_WOOL, LightGrayWool.LIGHT_GRAY_WOOL_SLAB, LightGrayWool.LIGHT_GRAY_WOOL_STAIRS, LightGrayWool.LIGHT_GRAY_WOOL_WALL);

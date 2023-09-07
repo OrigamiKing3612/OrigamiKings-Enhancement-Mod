@@ -1,6 +1,7 @@
 package net.origamiking.mcmods.oem.datagen.recipes;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.data.server.recipe.RecipeExporter;
 import net.minecraft.data.server.recipe.RecipeJsonProvider;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.concrete.ConcreteVSlabs;
 import net.origamiking.mcmods.oem.blocks.vercticalslabs.glass.GlassVSlabs;
@@ -12,7 +13,7 @@ import java.util.function.Consumer;
 import static net.origamiking.mcmods.oapi.recipes.ModRecipeProviders.offerVerticalSlabs;
 
 public class VerticalSlabRecipes {
-    public static void get(Consumer<RecipeJsonProvider> exporter) {
+    public static void get(RecipeExporter exporter) {
         offerVerticalSlabs(exporter, StoneVSlabs.STONE_VERTICAL_SLAB, Blocks.STONE);
         offerVerticalSlabs(exporter, StoneVSlabs.COBBLESTONE_VERTICAL_SLAB, Blocks.COBBLESTONE);
         offerVerticalSlabs(exporter, StoneVSlabs.VERTICAL_MOSSY_COBBLESTONE_SLAB, Blocks.MOSSY_COBBLESTONE);

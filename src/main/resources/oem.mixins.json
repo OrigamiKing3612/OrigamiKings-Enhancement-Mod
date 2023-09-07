@@ -8,7 +8,7 @@
 
   ],
   "client": [
-      "CreateWorldScreenMixin"
+
   ],
   "server": [],
   "injectors": {

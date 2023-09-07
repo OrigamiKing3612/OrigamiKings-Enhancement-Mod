@@ -14,14 +14,14 @@ import org.jetbrains.annotations.Nullable;
 import java.util.List;
 
 public class WoodcutterEmiRecipe implements EmiRecipe {
-    private final Identifier id;
+//    private final Identifier id;
     private final List<EmiIngredient> input;
     private final List<EmiStack> output;
 
     public WoodcutterEmiRecipe(WoodcutterRecipe recipe) {
-        this.id = recipe.getId();
+//        this.id = recipe.getId();
         this.input = List.of(EmiIngredient.of(recipe.getIngredients().get(0)));
-        this.output = List.of(EmiStack.of(recipe.getOutput(null)));
+        this.output = List.of(EmiStack.of(recipe.getResult(null)));
     }
 
     @Override
@@ -29,9 +29,10 @@ public class WoodcutterEmiRecipe implements EmiRecipe {
         return OemEMIClientPlugin.WOODCUTTER_CATEGORY;
     }
 
+    //todo
     @Override
     public @Nullable Identifier getId() {
-        return id;
+        return null;
     }
 
     @Override

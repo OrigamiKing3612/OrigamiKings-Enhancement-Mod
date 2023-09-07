@@ -9,6 +9,7 @@ import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.origamiking.mcmods.oem.blocks.woodcutter.ModWoodcutter;
 import net.origamiking.mcmods.oem.compact.rei.woodcutter.WoodcutterCategory;
 import net.origamiking.mcmods.oem.compact.rei.woodcutter.WoodcutterDisplay;
+import net.origamiking.mcmods.oem.recipe.ModRecipeType;
 import net.origamiking.mcmods.oem.recipe.WoodcutterRecipe;
 import net.origamiking.mcmods.oem.screen.woodcutter.WoodcutterScreen;
 
@@ -22,7 +23,7 @@ public class OemREIClientPlugin implements REIClientPlugin {
 
     @Override
     public void registerDisplays(DisplayRegistry registry) {
-        registry.registerRecipeFiller(WoodcutterRecipe.class, WoodcutterRecipe.Type.INSTANCE,
+        registry.registerRecipeFiller(WoodcutterRecipe.class, ModRecipeType.WOODCUTTER_RECIPE,
                 WoodcutterDisplay::new);
     }
 

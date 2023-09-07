@@ -34,13 +34,6 @@ public class OemConfigScreen {
                 .requireRestart()
                 .build());
 
-        general.addEntry(entryBuilder.startBooleanToggle(Text.translatable("option." + OemMain.MOD_ID + ".disableOldWorldScreen"), getOemConfig().disableOldWorldScreen)
-                .setDefaultValue(ConfigDefaultValues.defaultDisableWoodcutter)
-                .setTooltip(Text.translatable("option." + OemMain.MOD_ID + ".disableOldWorldScreen.description"))
-                .setSaveConsumer(newValue -> getOemConfig().disableOldWorldScreen = newValue)
-                .requireRestart()
-                .build());
-
 
         return builder.build();
     }

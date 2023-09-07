@@ -1,7 +1,5 @@
 package net.origamiking.mcmods.oem.mixin.plugins;
 
-import net.origamiking.mcmods.oem.OemMain;
-import net.origamiking.mcmods.oem.config.OemConfig;
 import org.objectweb.asm.tree.ClassNode;
 import org.spongepowered.asm.mixin.extensibility.IMixinConfigPlugin;
 import org.spongepowered.asm.mixin.extensibility.IMixinInfo;
@@ -23,12 +21,9 @@ public class OemPlugin implements IMixinConfigPlugin {
 
     @Override
     public boolean shouldApplyMixin(String targetClassName, String mixinClassName) {
-        if (OemMain.OEM_CONFIG == null) OemConfig.load();
-        if (mixinClassName.contains("CreateWorldScreenMixin")) {
-            return !OemMain.getOemConfig().disableOldWorldScreen;
-        }
         return true;
     }
+
 
     @Override
     public void acceptTargets(Set<String> myTargets, Set<String> otherTargets) {
